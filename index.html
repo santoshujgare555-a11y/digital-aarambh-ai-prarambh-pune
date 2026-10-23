@@ -3,284 +3,725 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Digital Aarambh AI – स्थानिक दुकानदारांसाठी स्मार्ट डिजिटल टूल्स</title>
+<title>Digital Aarambh AI – दुकानदारांसाठी 12 स्मार्ट डिजिटल एजंट्स</title>
+<meta name="description" content="Digital Aarambh AI: दुकानाची मिनी वेबसाइट, QR कोड, पोस्टर, सणाचे पोस्टर, WhatsApp मेसेज, हिशोब वही, UPI QR, Visiting Card – मोफत, मराठीत, थेट मोबाइलवर.">
 <meta name="theme-color" content="#0a0b3a">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="mr_IN">
+<meta property="og:title" content="Digital Aarambh AI – डिजिटल साधने | स्मार्ट व्यवसाय">
+<meta property="og:description" content="छोट्या दुकानदारांसाठी 12 मोफत स्मार्ट एजंट्स: मिनी वेबसाइट, QR, पोस्टर, WhatsApp मेसेज, हिशोब वही, UPI QR आणि बरेच काही.">
+<meta property="og:url" content="https://santoshujgare555-a11y.github.io/digital-aarambh-ai-prarambh-pune/">
+<meta property="og:image" content="https://santoshujgare555-a11y.github.io/digital-aarambh-ai-prarambh-pune/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"%3E%3Crect width="64" height="64" rx="14" fill="%230d1050"/%3E%3Ctext x="8" y="42" font-family="Arial%2Csans-serif" font-weight="900" font-size="27" fill="%23ffc23d"%3EDA%3C/text%3E%3Crect x="40" y="44" width="18" height="12" rx="3" fill="none" stroke="%2338e1ff" stroke-width="2"/%3E%3Ctext x="43" y="54" font-family="Arial%2Csans-serif" font-weight="700" font-size="9" fill="%2338e1ff"%3EAI%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;600;800&display=swap">
 <style>
-:root{--navy:#0a0b3a;--ink:#14165c;--cyan:#22e0ff;--gold:#ffc23d;--vio:#8b5cf6;--blu:#3b82f6;--ora:#fb923c;--txt:#f1f3ff;--mut:#b4b9e6;box-sizing:border-box}
-*{box-sizing:inherit;margin:0;padding:0}
-body{font-family:'Mukta','Noto Sans Devanagari',system-ui,sans-serif;color:var(--txt);line-height:1.5;min-height:100vh;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
-background:radial-gradient(700px 420px at 85% 0,#5b2fd8aa,transparent 65%),radial-gradient(600px 400px at 0 35%,#1d4ed8aa,transparent 65%),linear-gradient(#0a0b3a,#10104a 60%,#07072a)}
-main{max-width:860px;margin:0 auto;padding:22px 14px 40px}
-.top{text-align:center}
-.mark{display:flex;justify-content:center;align-items:center;gap:14px}
-.da{font-size:78px;font-weight:800;line-height:1;background:linear-gradient(135deg,#ffd35c 0,#f59e0b 35%,#3b82f6 60%,#6366f1);-webkit-background-clip:text;background-clip:text;color:transparent;letter-spacing:-4px}
-.chip{border:2px solid var(--cyan);color:var(--cyan);border-radius:12px;padding:6px 14px;font-weight:800;font-size:26px;box-shadow:0 0 18px #22e0ff66,inset 0 0 12px #22e0ff33}
-h1{font-size:clamp(32px,8vw,52px);font-weight:800;line-height:1.1;margin-top:6px}
-h1 span{color:var(--cyan);text-shadow:0 0 18px #22e0ffaa}
-.sub{color:var(--mut);font-size:clamp(15px,3.6vw,20px);margin:8px 0 14px}
-.pill{display:inline-flex;gap:8px;align-items:center;border:1.5px solid var(--cyan);border-radius:99px;padding:8px 20px;font-weight:600;background:#0b1b5a88}
-.stage{position:relative;height:370px;margin:22px auto 6px;max-width:420px}
-.phone{position:absolute;left:50%;top:0;transform:translateX(-50%) rotate(8deg);width:200px;height:360px;border-radius:30px;border:3px solid #7c8cff;background:linear-gradient(160deg,#27309a,#131660);box-shadow:0 0 60px #6d5cff88,0 20px 40px #0008;padding:18px 14px}
-.phone small{display:block;color:var(--mut);font-size:11px;margin-bottom:8px}
-.phone .qrbox{background:#fff;border-radius:14px;padding:10px;width:132px;margin:20px auto 0;box-shadow:0 0 28px #fff6}
-.phone .apps{display:flex;gap:8px;justify-content:center;margin-top:20px}
-.phone .apps i{width:40px;height:40px;border-radius:12px;display:block}
-.float{position:absolute;display:grid;place-items:center;font-size:34px;border-radius:20px;width:64px;height:64px;backdrop-filter:blur(4px)}
-.f1{left:4%;top:60px;background:#6d4af2aa;box-shadow:0 0 30px #8b5cf6}
-.f2{left:20%;top:0;background:#2a4dd0aa;border-radius:50%;box-shadow:0 0 30px #3b82f6}
-.f3{right:6%;top:96px;background:transparent;font-size:56px}
-.f4{right:2%;top:230px;background:#22c55e;box-shadow:0 0 28px #22c55e}
-.tools{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin-top:22px}
-.tool{border-radius:20px;padding:18px 16px 16px;color:#10124a;text-align:center;cursor:pointer;border:1.5px solid #ffffff55;position:relative;font:inherit;display:block;width:100%}
-.tool .no{position:absolute;left:12px;top:12px;width:30px;height:30px;border-radius:50%;background:#1e3a8a;color:#fff;display:grid;place-items:center;font-weight:800}
-.tool .ic{width:68px;height:68px;border-radius:50%;margin:0 auto 8px;display:grid;place-items:center;font-size:32px;color:#fff}
-.tool h2{font-size:21px;line-height:1.2}
-.tool p{font-size:14px;margin:6px 0 8px}
-.tool ul{list-style:none;text-align:left;font-size:14px;display:inline-block}
-.tool li:before{content:"✔ ";font-weight:800}
-.t1{background:linear-gradient(160deg,#dbe8ff,#a9c4ff)}.t1 .ic{background:#2748c8}.t1 .no{background:#2748c8}
-.t2{background:linear-gradient(160deg,#eadfff,#c5b0ff)}.t2 .ic{background:#6d3fd8}.t2 .no{background:#6d3fd8}
-.t3{background:linear-gradient(160deg,#ffe8cf,#ffc592)}.t3 .ic{background:#f26a12}.t3 .no{background:#f26a12}
-.tool.on{outline:3px solid var(--cyan);box-shadow:0 0 28px #22e0ff88}
-.panel{display:none;margin-top:16px;background:#12155acc;border:1px solid #3a42b0;border-radius:18px;padding:16px}
-.panel.on{display:block}
-.panel h3{margin-bottom:10px;color:var(--gold)}
-label{font-size:13px;color:var(--mut);display:block;margin-top:8px}
-input,select,textarea{width:100%;padding:11px;margin-top:3px;border-radius:10px;border:1px solid #4650c0;background:#0a0d46;color:var(--txt);font:inherit}
-textarea{min-height:150px;resize:vertical}
-.row{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
-.btn{background:linear-gradient(135deg,#ffd35c,#f59e0b);color:#241a00;border:0;padding:10px 18px;border-radius:12px;font:inherit;font-weight:800;cursor:pointer}
-.btn.alt{background:transparent;color:var(--cyan);border:1.5px solid var(--cyan)}
-.btn.wa{background:#22c55e;color:#04210f}
-.two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-@media(max-width:480px){.two{grid-template-columns:1fr}}
+:root{--bg:#070826;--navy:#0b0d3d;--ink:#141760;--cyan:#38e1ff;--gold:#ffc23d;--vio:#8b5cf6;--blu:#3b82f6;--ora:#fb923c;--pink:#f472b6;--grn:#22c55e;--txt:#f1f3ff;--mut:#b6bbe8;--line:#3a42b0;--F:'Mukta','Noto Sans Devanagari','Nirmala UI',system-ui,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{font-family:var(--F);color:var(--txt);line-height:1.5;min-height:100vh;background:radial-gradient(700px 420px at 90% -5%,#5b2fd899,transparent 65%),radial-gradient(600px 420px at -10% 30%,#1d4ed877,transparent 65%),linear-gradient(#0a0b3a,#10104a 55%,#07072a) no-repeat;background-color:#07072a}
+html{background:#07072a}
+a{color:var(--cyan)}
+button{font:inherit;cursor:pointer}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
 .hide{display:none!important}
-.sec{margin-top:30px}
-.sec>h2{font-size:22px;margin-bottom:10px}
-.glass{background:#12155acc;border:1px solid #3a42b0;border-radius:18px;padding:16px}
-.id{background:linear-gradient(135deg,#2a1f8f,#5b2fd8);border:2px solid var(--gold);border-radius:18px;padding:16px;max-width:360px;margin:0 auto;position:relative}
-.id .pr{position:absolute;right:12px;top:12px;background:var(--gold);color:#241a00;font-size:11px;font-weight:800;padding:2px 9px;border-radius:99px}
-.id .q{background:#fff;padding:7px;border-radius:10px;width:fit-content;margin:10px 0 6px}
-.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:12px 0}
-.stats div{background:#0a0d46;border-radius:12px;padding:10px;text-align:center;font-size:12px;color:var(--mut)}
-.stats b{display:block;font-size:22px;color:var(--gold)}
-.agents{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:10px}
-.ag{background:#12155acc;border:1px dashed #5a63d8;border-radius:14px;padding:12px;font-size:14px}
-.ag b{display:block}.ag em{font-style:normal;font-size:11px;color:var(--gold)}
-.ag.si{border:1.5px solid var(--gold)}
-canvas{max-width:100%;border-radius:12px;margin-top:10px}
-.foot{margin-top:34px;text-align:center;color:var(--mut);font-size:14px}
-.foot a{color:var(--cyan);word-break:break-all;font-size:12px}
-#toast{position:fixed;left:50%;bottom:calc(18px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--gold);color:#241a00;padding:9px 18px;border-radius:99px;font-weight:700;opacity:0;pointer-events:none;transition:.25s;z-index:9}
-#toast.s{opacity:1}
-:focus-visible{outline:2px solid var(--cyan);outline-offset:2px}
+.wrap{max-width:980px;margin:0 auto;padding:12px 14px 40px}
+/* header */
+header.top{display:flex;align-items:center;gap:12px;padding:6px 0 4px}
+.logo{width:58px;height:58px;flex:none;filter:drop-shadow(0 0 10px #6d5cff99)}
+.brand h1{font-size:clamp(22px,6vw,40px);font-weight:800;line-height:1.05;letter-spacing:.2px}
+.brand h1 b{color:var(--cyan);text-shadow:0 0 14px #38e1ffaa}
+.brand p{color:var(--mut);font-size:clamp(12.5px,3.4vw,17px);margin-top:3px}
+.brand p i{font-style:normal;color:var(--gold);padding:0 4px}
+.hero{position:relative;margin:8px 0 10px;border-radius:18px;overflow:hidden;border:1px solid #4c4fd055;background:linear-gradient(180deg,transparent 82%,#1b1550 82%),linear-gradient(180deg,#1a1460 0%,#3b1d7a 55%,#c2410c55 100%);min-height:64px}
+.hero svg{display:block;width:100%;height:90px}
+.hero span{position:absolute;left:14px;top:9px;font-size:14px;font-weight:600;text-shadow:0 1px 4px #000}
+.shopbar{display:flex;align-items:center;gap:10px;background:#12155acc;border:1px solid var(--line);border-radius:14px;padding:10px 12px;margin:6px 0 12px}
+.shopbar .t{flex:1;min-width:0}
+.shopbar .t b{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.shopbar .t small{color:var(--mut);display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.shopbar.warn{border-color:var(--gold);box-shadow:0 0 16px #ffc23d44}
+h2.sec{font-size:19px;margin:6px 0 10px;display:flex;align-items:center;gap:8px}
+h2.sec small{font-size:13px;color:var(--mut);font-weight:400}
+/* agents grid */
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+@media(min-width:640px){.grid{grid-template-columns:repeat(3,1fr);gap:14px}}
+@media(min-width:900px){.grid{grid-template-columns:repeat(4,1fr)}}
+.ag{position:relative;text-align:left;color:var(--txt);border-radius:16px;padding:12px 11px 11px;border:1.5px solid var(--c);background:linear-gradient(160deg,var(--d),#0b0c38 72%);box-shadow:0 0 14px var(--g),inset 0 0 18px var(--g);min-height:118px;display:flex;flex-direction:column;gap:4px;transition:transform .15s}
+.ag:active{transform:scale(.97)}
+.ag .ic{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;font-size:23px;background:var(--c);box-shadow:0 0 14px var(--c)}
+.ag .no{position:absolute;right:9px;top:8px;font-size:12px;font-weight:800;color:var(--c);opacity:.95}
+.ag b{font-size:15.5px;line-height:1.2;margin-top:4px}
+.ag small{font-size:12px;color:var(--mut);line-height:1.25}
+.c1{--c:#3b82f6;--d:#1a2c78;--g:#3b82f666}.c2{--c:#8b5cf6;--d:#33208a;--g:#8b5cf666}.c3{--c:#f97316;--d:#5a2a1a;--g:#f9731666}
+/* cards & forms */
+.glass{background:#12155add;border:1px solid var(--line);border-radius:16px;padding:14px;margin-top:12px}
+label{font-size:13.5px;color:var(--mut);display:block;margin-top:9px}
+label em{font-style:normal;color:#8f95d6;font-size:12px}
+input,select,textarea{width:100%;padding:11px 12px;margin-top:3px;border-radius:10px;border:1px solid #4650c0;background:#0a0d46;color:var(--txt);font:inherit;font-size:16px}
+textarea{min-height:110px;resize:vertical}
+input.bad{border-color:#f87171;box-shadow:0 0 0 2px #f8717155}
+.err{color:#fca5a5;font-size:12.5px;min-height:0}
+.two{display:grid;grid-template-columns:1fr;gap:0 10px}
+@media(min-width:560px){.two{grid-template-columns:1fr 1fr}}
+.row{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.btn{background:linear-gradient(135deg,#ffd35c,#f59e0b);color:#241a00;border:0;padding:10px 16px;border-radius:12px;font-weight:800;text-decoration:none;display:inline-flex;align-items:center;gap:6px;min-height:44px}
+.btn.alt{background:transparent;color:var(--cyan);border:1.5px solid var(--cyan)}
+.btn.wa{background:#22c55e;color:#03210e}
+.btn.red{background:transparent;color:#fca5a5;border:1.5px solid #f87171}
+.btn.sm{padding:6px 11px;min-height:36px;font-size:14px}
+.tabs{display:flex;gap:6px;margin-bottom:6px}
+.tabs button{flex:1;padding:9px;border-radius:10px;border:1px solid var(--line);background:#0a0d46;color:var(--mut);font-weight:700}
+.tabs button.on{background:var(--vio);color:#fff;border-color:var(--vio)}
+.var{background:#0a0d46;border:1px solid #333aa8;border-radius:12px;padding:12px;margin-top:10px;white-space:pre-wrap;word-break:break-word;font-size:15px}
+.var .row{margin-top:8px}
+.note{font-size:13px;color:var(--mut);margin-top:8px}
+.note.gold{color:#fde68a}
+.cv{display:block;width:100%;max-width:380px;margin:12px auto 0;border-radius:12px;box-shadow:0 6px 24px #0008}
+.qrv{display:block;background:#fff;border-radius:10px;margin:12px auto 0;width:240px;max-width:80%;height:auto}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:10px 0}
+.stats div{background:#0a0d46;border-radius:12px;padding:8px 4px;text-align:center;font-size:12px;color:var(--mut)}
+.stats b{display:block;font-size:18px;color:var(--gold);white-space:nowrap}
+.list{margin-top:10px}
+.li{display:flex;align-items:center;gap:8px;padding:9px 4px;border-bottom:1px solid #2b318f}
+.li .m{flex:1;min-width:0}
+.li .m small{display:block;color:var(--mut);font-size:12px}
+.li .a{font-weight:800;white-space:nowrap}
+.in{color:#4ade80}.out{color:#fca5a5}
+.li button.x{background:none;border:0;color:#fca5a5;font-size:18px;padding:4px 8px}
+.pill{display:inline-block;font-size:12px;padding:2px 10px;border-radius:99px;background:#ffc23d22;color:var(--gold);border:1px solid #ffc23d66}
+details.info{background:#12155acc;border:1px solid var(--line);border-radius:14px;padding:12px 14px;margin-top:10px}
+details.info summary{font-weight:700;cursor:pointer}
+details.info p,details.info li{font-size:14.5px;color:#d7dbff;margin-top:6px}
+details.info ul{padding-left:18px}
+footer{text-align:center;color:var(--mut);font-size:13.5px;margin-top:24px;line-height:1.8}
+footer b{color:var(--txt)}
+/* sheet */
+.sheet{position:fixed;inset:0;z-index:50;background:linear-gradient(#0b0c3c,#08082c);overflow-y:auto;-webkit-overflow-scrolling:touch;display:none}
+.sheet.on{display:block}
+.sheet .bar{position:sticky;top:0;z-index:2;display:flex;align-items:center;gap:10px;padding:10px 12px;background:#0b0d3dee;border-bottom:1px solid var(--line);backdrop-filter:blur(6px)}
+.sheet .bar button{background:none;border:1px solid var(--line);color:var(--txt);border-radius:10px;width:42px;height:42px;font-size:20px;flex:none}
+.sheet .bar h3{font-size:17px;line-height:1.2;flex:1;min-width:0}
+.sheet .body{max-width:640px;margin:0 auto;padding:6px 14px 60px}
+#toast{position:fixed;left:50%;bottom:22px;transform:translateX(-50%) translateY(120px);background:#111;color:#fff;padding:10px 18px;border-radius:12px;font-size:15px;z-index:99;transition:transform .25s;max-width:92vw;text-align:center;border:1px solid #ffffff33}
+#toast.s{transform:translateX(-50%) translateY(0)}
+/* mini site */
+.pub{max-width:480px;margin:0 auto;padding:18px 14px 40px;text-align:center}
+.pub .card{background:#12155ae6;border:1.5px solid #6d5cff;border-radius:22px;padding:22px 16px;box-shadow:0 0 30px #6d5cff55}
+.pub h1{font-size:clamp(26px,8vw,36px);line-height:1.15;word-break:break-word;margin-top:6px}
+.pub .ty{color:var(--gold);font-weight:700}
+.pub .ab{color:#d7dbff;margin-top:8px;white-space:pre-wrap;word-break:break-word}
+.pub .inf{text-align:left;line-height:1.8;margin:14px 0;word-break:break-word}
+.pub .btns{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.pub .btns .btn{justify-content:center}
+/* splash */
+#splash{position:fixed;inset:0;z-index:100;overflow:hidden;background:radial-gradient(120% 80% at 50% 100%,#3b1d7a 0%,#1a1460 45%,#05061f 100%);transition:opacity .6s;touch-action:manipulation;cursor:pointer}
+#splash.out{opacity:0;pointer-events:none}
+#splash .stars{position:absolute;inset:0;background-image:radial-gradient(1.5px 1.5px at 12% 18%,#fff,transparent),radial-gradient(1px 1px at 32% 8%,#fff,transparent),radial-gradient(1.5px 1.5px at 58% 22%,#fff,transparent),radial-gradient(1px 1px at 78% 12%,#fff,transparent),radial-gradient(1.2px 1.2px at 90% 30%,#fff,transparent),radial-gradient(1px 1px at 22% 38%,#fff,transparent),radial-gradient(1px 1px at 66% 40%,#fff,transparent),radial-gradient(1.4px 1.4px at 45% 5%,#fff,transparent);opacity:.8}
+#splash .rb{position:absolute;left:50%;top:15%;width:min(118vw,760px);transform:translateX(-50%);opacity:.92;filter:drop-shadow(0 0 10px #ffffff55)}
+#splash .rb path{fill:none;stroke-width:9;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1}
+@keyframes draw{to{stroke-dashoffset:0}}
+#splash .tm{position:absolute;left:0;right:0;bottom:0;width:100%;height:24vh;min-height:120px}
+#fx{position:absolute;inset:0;width:100%;height:100%}
+#splash .tx{position:absolute;left:0;right:0;top:41%;text-align:center;padding:0 12px;pointer-events:none}
+#splash .w{font-family:Georgia,'Times New Roman',serif;font-style:italic;font-size:clamp(40px,13vw,86px);font-weight:700;color:#fff;opacity:0;transform:scale(.6);animation:pop .9s .6s cubic-bezier(.2,1.4,.4,1) forwards;text-shadow:0 0 18px #ff7ad9,0 0 40px #8b5cf6}
+#splash .n{font-family:var(--F);font-size:clamp(26px,8.6vw,58px);font-weight:800;color:#fff;margin-top:6px;opacity:0;text-shadow:0 0 16px #38e1ff,0 0 34px #3b82f6}
+#splash .n b{color:var(--gold);text-shadow:0 0 16px #ffc23d,0 0 30px #f97316}
+#splash .tg{color:#e9e6ff;font-size:clamp(13px,3.8vw,19px);margin-top:6px;opacity:0;text-shadow:0 1px 6px #000}
+@keyframes pop{to{opacity:1;transform:scale(1)}}
+@keyframes up{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+#splash .skip{position:absolute;right:14px;top:calc(14px + env(safe-area-inset-top,0px));background:#ffffff1f;color:#fff;border:1px solid #ffffff66;border-radius:99px;padding:8px 18px;font-size:15px;font-weight:700;z-index:3}
+@media (prefers-reduced-motion:reduce){#splash .rb path{animation:none;stroke-dashoffset:0}#splash .w,#splash .n,#splash .tg{animation:none;opacity:1;transform:none}#splash{transition:none}}
+
+#splash .wv{position:absolute;left:50%;top:5%;height:min(60vh,160vw);aspect-ratio:9/16;transform:translateX(-50%);transition:opacity .7s,transform .7s;border-radius:22px;overflow:hidden;border:2px solid #ffd16699;box-shadow:0 0 22px #ffb70366,0 0 60px #8b5cf655}
+#splash .wv video,#splash .wv img{width:100%;height:100%;object-fit:cover;display:block}
+#splash .wv img{animation:kb 4s ease-out forwards}
+@keyframes kb{from{opacity:0;transform:scale(1.08)}to{opacity:1;transform:scale(1)}}
+#splash.nov .wv{display:none}
+#splash .tx{top:63%;transition:top .8s ease}
+#splash.p2 .wv{opacity:0;transform:translateX(-50%) scale(.9)}
+#splash.p2 .tx,#splash.nov .tx{top:calc(15% + min(59vw,375px) - 30px)}
+#splash .rb{opacity:0;transition:opacity .4s}
+#splash.p2 .rb{opacity:.92}
+#splash.p2 .rb path{animation:draw 1.7s cubic-bezier(.5,.1,.3,1) forwards}
+#splash .n,#splash .tg{animation:none!important}
+#splash.p2 .n{animation:up .8s .5s ease-out forwards!important}
+#splash.p2 .tg{animation:up .8s 1.1s ease-out forwards!important}
+#splash .w small{display:block;font-family:var(--F);font-style:normal;font-size:clamp(16px,4.6vw,24px);color:#ffe9b0;text-shadow:0 0 10px #f97316;margin-top:-4px}
+@media (prefers-reduced-motion:reduce){#splash .rb{opacity:.92}#splash .n,#splash .tg{opacity:1!important;transform:none!important}#splash .wv img{animation:none}}
+
+.founder{display:flex;gap:16px;align-items:center;margin-top:16px;padding:16px;border-radius:20px;background:linear-gradient(150deg,#2a1a7acc,#12155acc 60%,#3b2a0acc);border:1.5px solid #ffc23d88;box-shadow:0 0 26px #8b5cf655,0 0 14px #ffc23d33}
+.founder img{width:132px;height:132px;flex:none;border-radius:18px;object-fit:cover;border:2px solid #ffc23d;box-shadow:0 0 22px #ffc23d66,0 0 40px #8b5cf666;background:#1a1460}
+.founder small{color:var(--gold);font-weight:700;letter-spacing:.5px}
+.founder h2{font-size:24px;line-height:1.15}
+.founder .ft{color:#dcd6ff;font-size:14px}
+.founder .tl{color:var(--cyan);font-style:italic;font-weight:600;margin-top:2px}
+.founder p{font-size:14.5px}
+@media(max-width:520px){.founder{flex-direction:column;text-align:center}.founder img{width:180px;height:180px}.founder .row{justify-content:center}}
+
+/* spoken welcome: caption under her + sound button */
+#splash .w{animation:none!important}
+#splash.p2 .w,#splash.nov .w{animation:pop .9s .1s cubic-bezier(.2,1.4,.4,1) forwards!important}
+#splash .cap{position:absolute;left:0;right:0;top:67%;height:96px;text-align:center;padding:0 14px;pointer-events:none;transition:opacity .5s}
+#splash .cap>div{position:absolute;left:0;right:0;padding:0 14px;opacity:0;transform:translateY(10px);transition:opacity .45s,transform .45s}
+#splash .cap .c1{font-family:var(--F);font-size:clamp(26px,8vw,46px);font-weight:800;color:#fff;text-shadow:0 0 14px #ff7ad9,0 0 32px #8b5cf6}
+#splash .cap .c2{font-family:var(--F);font-size:clamp(21px,6.2vw,36px);font-weight:800;color:#fff;line-height:1.2;text-shadow:0 0 14px #38e1ff,0 0 30px #3b82f6}
+#splash .cap .c2 b{color:var(--gold);text-shadow:0 0 14px #ffc23d,0 0 28px #f97316}
+#splash .cap .c2 small{display:block;font-size:clamp(15px,4.4vw,22px);font-weight:700;color:#ffe9b0;text-shadow:0 0 10px #f97316,0 1px 4px #000;margin-top:4px}
+#splash .cap.l1 .c1,#splash .cap.l2 .c2{opacity:1;transform:none}
+#splash.p2 .cap,#splash.nov .cap{opacity:0}
+#splash .snd{position:absolute;left:50%;bottom:calc(9vh + env(safe-area-inset-bottom,0px));transform:translateX(-50%);z-index:3;font:800 clamp(17px,5vw,22px)/1 var(--F);color:#1a1033;background:linear-gradient(135deg,#ffd166,#ff9f1c);border:2px solid #fff5d6;border-radius:99px;padding:13px 26px;white-space:nowrap;box-shadow:0 0 18px #ffb703,0 0 42px #ff7ad9aa;animation:sndglow 1.4s ease-in-out infinite;cursor:pointer}
+#splash .snd:active{transform:translateX(-50%) scale(.96)}
+@keyframes sndglow{0%,100%{box-shadow:0 0 14px #ffb703,0 0 30px #ff7ad988}50%{box-shadow:0 0 26px #ffd166,0 0 60px #ff7ad9}}
+#splash.heard .snd,#splash.novid .snd,#splash.nov .snd{display:none}
+@media (prefers-reduced-motion:reduce){#splash.p2 .w,#splash.nov .w{animation:none!important}#splash .snd{animation:none}#splash .cap>div{transition:none}}
 </style>
 </head>
 <body>
-<main>
-<div class="top">
-  <div class="mark"><div class="da">DA</div><div class="chip">AI</div></div>
-  <h1>Digital Aarambh <span>AI</span></h1>
-  <p class="sub">डिजिटल साधने &nbsp;|&nbsp; स्मार्ट व्यवसाय &nbsp;|&nbsp; उज्ज्वल भविष्य</p>
-  <div class="pill">🏪 स्थानिक दुकानदारांसाठी स्मार्ट डिजिटल टूल्स</div>
-  <div class="stage">
-    <div class="float f2">🌐</div><div class="float f1">▦</div><div class="float f3">📢</div><div class="float f4">💬</div>
-    <div class="phone"><small>QR Code · दुकानाची लिंक भरा</small><div class="qrbox" id="heroQr"></div>
-      <div class="apps"><i style="background:#3b5bdb"></i><i style="background:#6d3fd8"></i><i style="background:#22c55e"></i></div></div>
-  </div>
+<div id="splash" role="dialog" aria-label="Welcome to Digital Aarambh AI">
+ <div class="stars"></div>
+ <svg class="rb" viewBox="0 0 400 210" aria-hidden="true"><path pathLength="1" stroke="#ff3b3b" style="animation-delay:0.00s" d="M10 206A190 190 0 0 1 390 206"/><path pathLength="1" stroke="#ff8c1a" style="animation-delay:0.08s" d="M20 206A180 180 0 0 1 380 206"/><path pathLength="1" stroke="#ffd60a" style="animation-delay:0.16s" d="M30 206A170 170 0 0 1 370 206"/><path pathLength="1" stroke="#2fd36b" style="animation-delay:0.24s" d="M40 206A160 160 0 0 1 360 206"/><path pathLength="1" stroke="#2fb6ff" style="animation-delay:0.32s" d="M50 206A150 150 0 0 1 350 206"/><path pathLength="1" stroke="#4b5bff" style="animation-delay:0.40s" d="M60 206A140 140 0 0 1 340 206"/><path pathLength="1" stroke="#a855f7" style="animation-delay:0.48s" d="M70 206A130 130 0 0 1 330 206"/></svg>
+ <svg class="tm" viewBox="0 0 400 100" preserveAspectRatio="xMidYMax slice" aria-hidden="true"><path fill="#0a0820" d="M0 80H30V70H36V64C38 56 42 48 46 42C50 48 54 56 56 64V70H62V80H90V66H96V58C99 46 105 34 112 24V14H114L122 17L114 20V24C120 34 126 46 129 58V66H135V80H170V72H176C178 66 181 62 184 58C187 62 190 66 192 72H198V80H250V68H256V60C259 50 264 40 270 32C276 40 281 50 284 60V68H290V80H330V74H334C336 68 339 64 342 61C345 64 348 68 350 74H354V80H400V100H0Z"/><path fill="#1b1550" opacity=".7" d="M0 84H400V100H0Z"/><g fill="#ffc23d"><circle cx="70" cy="82" r="1.3"/><circle cx="150" cy="82" r="1.3"/><circle cx="215" cy="82" r="1.3"/><circle cx="310" cy="82" r="1.3"/><circle cx="375" cy="82" r="1.3"/></g><g stroke="#ffb54a" stroke-width=".8" opacity=".55"><path d="M64 88h12M144 91h12M208 88h14M304 92h12M368 88h12"/></g></svg>
+ <div class="wv" id="wv"><video id="wvid" data-src="welcome.mp4?v=fw13" data-poster="welcome.jpg?v=fw13" autoplay muted playsinline preload="auto" aria-hidden="true"></video></div>
+ <canvas id="fx"></canvas>
+ <div class="cap" id="cap" aria-live="polite"><div class="c1">नमस्कार! सुस्वागतम! 🙏</div><div class="c2">Welcome to Digital Aarambh <b>AI</b><small>डिजिटल आरंभ AI मध्ये आपलं स्वागत आहे</small></div></div>
+ <div class="tx"><div class="w">Welcome<small>🙏 नमस्कार, स्वागत आहे!</small></div><div class="n">Digital Aarambh <b>AI</b></div><div class="tg">डिजिटल साधने | स्मार्ट व्यवसाय | उज्ज्वल भविष्य</div></div>
+ <button class="snd" type="button" id="snd" aria-label="आवाज ऐका — Play welcome with sound">🔊 आवाज ऐका</button>
+ <button class="skip" type="button" id="skip">Skip ›</button>
+</div>
+<script>try{if(sessionStorage.getItem('da_splash')||/^#shop=/.test(location.hash)){var s=document.getElementById('splash');s.parentNode.removeChild(s)}}catch(e){}</script>
+
+<div id="app" class="wrap">
+ <header class="top"><svg class="logo" viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffd35c"/><stop offset=".45" stop-color="#f59e0b"/><stop offset=".55" stop-color="#3b82f6"/><stop offset="1" stop-color="#8b5cf6"/></linearGradient></defs><rect x="2" y="2" width="60" height="60" rx="16" fill="#0d1050" stroke="url(#lg)" stroke-width="3"/><text x="9" y="43" font-family="Arial Black,Arial,sans-serif" font-weight="900" font-size="27" fill="url(#lg)">DA</text><path d="M12 50 L40 22" stroke="#ffc23d" stroke-width="3.5" stroke-linecap="round"/><path d="M33 21h8v8" fill="none" stroke="#ffc23d" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/><rect x="40" y="43" width="18" height="12" rx="3" fill="#0d1050" stroke="#38e1ff" stroke-width="1.8"/><text x="43" y="53" font-family="Arial,sans-serif" font-weight="700" font-size="9" fill="#38e1ff">AI</text></svg>
+  <div class="brand"><h1>Digital Aarambh <b>AI</b></h1><p>डिजिटल साधने<i>|</i>स्मार्ट व्यवसाय<i>|</i>उज्ज्वल भविष्य</p></div>
+ </header>
+ <button class="shopbar" id="shopbar" type="button" style="width:100%;text-align:left;color:inherit;font:inherit"></button>
+ <h2 class="sec">🤖 12 स्मार्ट एजंट्स <small>– कोणतेही एक निवडा</small></h2>
+ <nav class="grid" id="grid" aria-label="12 एजंट्स"></nav>
+
+ <div class="hero" aria-hidden="true"><svg viewBox="0 0 400 100" preserveAspectRatio="xMidYMax meet"><path fill="#0a0820" d="M0 80H30V70H36V64C38 56 42 48 46 42C50 48 54 56 56 64V70H62V80H90V66H96V58C99 46 105 34 112 24V14H114L122 17L114 20V24C120 34 126 46 129 58V66H135V80H170V72H176C178 66 181 62 184 58C187 62 190 66 192 72H198V80H250V68H256V60C259 50 264 40 270 32C276 40 281 50 284 60V68H290V80H330V74H334C336 68 339 64 342 61C345 64 348 68 350 74H354V80H400V100H0Z"/><path fill="#1b1550" opacity=".7" d="M0 84H400V100H0Z"/><g fill="#ffc23d"><circle cx="70" cy="82" r="1.3"/><circle cx="150" cy="82" r="1.3"/><circle cx="215" cy="82" r="1.3"/><circle cx="310" cy="82" r="1.3"/><circle cx="375" cy="82" r="1.3"/></g><g stroke="#ffb54a" stroke-width=".8" opacity=".55"><path d="M64 88h12M144 91h12M208 88h14M304 92h12M368 88h12"/></g></svg><span>🙏 आळंदी · चऱ्होली · मोशी · पिंपरी – स्थानिक व्यवसायांसाठी</span></div>
+
+ <details class="info" id="howto"><summary>❓ हे कसं वापरायचं?</summary>
+  <ul><li>सर्वात वर <b>“दुकानाची माहिती”</b> एकदाच भरा – सगळे 12 एजंट्स तीच माहिती वापरतात.</li>
+  <li>कोणताही एजंट उघडा → मजकूर / QR / पोस्टर तयार करा → <b>कॉपी</b>, <b>Download</b> किंवा <b>WhatsApp</b> वर पाठवा.</li>
+  <li>हे एजंट्स तयार मराठी साच्यांवर (templates) आणि तुमच्या माहितीवर चालतात. एकदा पेज उघडलं की इंटरनेटशिवायही चालतात.</li></ul></details>
+
+
+ <section class="founder" id="founder" aria-labelledby="fT">
+  <img id="founderImg" src="founder.jpg" loading="lazy" width="800" height="800" alt="S. R. Ujgare – संस्थापक, Digital Aarambh AI">
+  <div class="fx"><small>संस्थापक / Founder</small><h2 id="fT">S. R. Ujgare</h2><p class="ft">संस्थापक व संकल्पना — Digital Aarambh AI</p><p class="tl">“Journey from AI to SI”</p><p>महाराष्ट्रातील प्रत्येक छोट्या व्यावसायिकाला डिजिटल बनवण्याचे स्वप्न 🙏</p>
+  <div class="row"><button class="btn wa" type="button" id="founderBtn">💬 WhatsApp वर संपर्क</button></div></div>
+ </section>
+ <details class="info" id="backup"><summary>💾 बॅकअप / Restore (फोन बदलताना)</summary>
+  <p>तुमची सगळी माहिती (दुकान, हिशोब वही, उधारी, मेंबर ID) फक्त <b>या फोनच्या browser मध्ये</b> असते. फोन बदलण्याआधी किंवा browser clear करण्याआधी बॅकअप घ्या.</p>
+  <div class="row"><button class="btn" type="button" id="bkDl">⬇️ बॅकअप फाइल Download</button><button class="btn alt" type="button" id="bkCopy">📋 बॅकअप कोड कॉपी</button></div>
+  <label for="bkIn">Restore: बॅकअप कोड इथे paste करा किंवा फाइल निवडा</label>
+  <textarea id="bkIn" style="min-height:70px" placeholder="DA1:...."></textarea>
+  <input type="file" id="bkFile" accept=".json,application/json,text/plain">
+  <div class="row"><button class="btn alt" type="button" id="bkRestore">♻️ Restore करा</button></div></details>
+
+ <details class="info" id="privacy"><summary>🔒 गोपनीयता (Privacy) व अटी (Terms)</summary>
+  <p><b>तुमची माहिती तुमच्याच फोनमध्ये:</b> दुकानाची माहिती, हिशोब, उधारी, मेंबर ID – सगळं फक्त या फोनच्या browser (localStorage) मध्ये सेव्ह होतं. आमच्या कोणत्याही सर्व्हरवर काहीही पाठवलं जात नाही.</p>
+  <p><b>शेअर लिंक:</b> “दुकान-लिंक” मध्ये तुम्ही भरलेली दुकानाची माहिती लिंकमध्येच असते. ती लिंक ज्यांना पाठवाल त्यांना ती माहिती दिसेल – म्हणून फक्त सार्वजनिक (public) माहितीच भरा.</p>
+  <p><b>मेंबर ID:</b> हा फक्त या फोनवर तयार होणारा ओळख क्रमांक आहे. कोणतीही OTP/पडताळणी नाही.</p>
+  <p><b>Referral:</b> रेफरल रिवॉर्ड्स योजना अजून सुरू झालेली नाही. कोणतेही पैसे/कमिशन सध्या दिले जात नाहीत. नियम व पात्रता जाहीर झाल्यावरच योजना लागू होईल.</p>
+  <p><b>जबाबदारी:</b> तयार झालेले मजकूर, पोस्टर व QR वापरण्याआधी एकदा तपासा (फोन नंबर, UPI ID, किंमत). UPI पेमेंट थेट तुमच्या बँक/UPI ॲपमधून होतं – हे ॲप पैसे हाताळत नाही.</p>
+  <p><b>Fonts:</b> मराठी अक्षरांसाठी Google Fonts वरून font लोड होतो; तो न मिळाल्यास फोनचा font वापरला जातो.</p></details>
+
+ <div class="glass hide" id="contactBox" style="text-align:center">
+  <b>📞 मदत हवी आहे? संपर्क करा</b>
+  <div class="row" style="justify-content:center"><button class="btn wa" type="button" id="contactBtn">💬 WhatsApp वर संपर्क</button></div>
+ </div>
+
+ <footer>Made with ❤️ in Pune for Alandi, Charholi, Moshi, Pimpri<br>
+  <b>Digital Aarambh AI</b> – आपला व्यवसाय, आपली डिजिटल ओळख! 🙏<br>
+  निर्मिती व संकल्पना: S. R. Ujgare</footer>
 </div>
 
-<div class="tools">
-  <button class="tool t1" data-p="p1"><span class="no">1</span><div class="ic">🌐</div><h2>1. Business Website<br>Majkur Generator</h2><p>तुमच्या दुकानाची माहिती मराठीत तयार करा.</p>
-    <ul><li>नाव, प्रकार, पत्ता, फोन, वेळ</li><li>मराठी मजकूर तयार होतो</li><li>कॉपी व WhatsApp शेअर</li></ul></button>
-  <button class="tool t2" data-p="p2"><span class="no">2</span><div class="ic">▦</div><h2>2. QR Code<br>Generator</h2><p>ग्राहकांपर्यंत पोहोचण्याचा स्मार्ट मार्ग!</p>
-    <ul><li>दुकानाचे नाव / फोन / लिंक भरा</li><li>QR कोड तयार करा</li><li>Download करून शेअर करा</li></ul></button>
-  <button class="tool t3" data-p="p3"><span class="no">3</span><div class="ic">📢</div><h2>3. जाहिरात &amp; ग्राहक<br>संदेश Generator</h2><p>सण, ऑफर आणि ग्राहकांसाठी सोपे संदेश.</p>
-    <ul><li>जाहिरात मजकूर तयार करा</li><li>तीन पर्यायांमधून निवडा</li><li>पोस्टर Download करा</li></ul></button>
+<div id="pub" class="hide"></div>
+
+<div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheetT">
+ <div class="bar"><button type="button" id="sheetBack" aria-label="मागे">←</button><h3 id="sheetT"></h3></div>
+ <div class="body" id="sheetB"></div>
 </div>
-
-<!-- Shared shop details -->
-<div class="panel on glass" id="shop" style="margin-top:16px">
-  <h3>🏪 तुमच्या दुकानाची माहिती (एकदा भरा – तिन्ही टूल्समध्ये वापरली जाते)</h3>
-  <div class="two">
-    <div><label>दुकानाचे नाव</label><input id="sName" placeholder="उदा. श्री साई किराणा"></div>
-    <div><label>दुकानाचा प्रकार</label><input id="sType" placeholder="किराणा / मोबाईल शॉप / हॉटेल"></div>
-    <div><label>पत्ता</label><input id="sAddr" placeholder="आळंदी, ता. खेड, पुणे"></div>
-    <div><label>फोन / WhatsApp (10 अंक)</label><input id="sPhone" type="tel" inputmode="numeric" maxlength="10"></div>
-  </div>
-  <label>वेळ</label><input id="sTime" placeholder="सकाळी 8 ते रात्री 9 (रविवार बंद)">
-  <label>UPI ID (पर्यायी – पेमेंट QR साठी)</label><input id="sUpi" placeholder="name@upi" autocapitalize="none">
-</div>
-
-<div class="panel" id="p1"><h3>1. Business Website मजकूर</h3>
-  <textarea id="o1" readonly placeholder="वरची माहिती भरून 'मजकूर तयार करा' दाबा"></textarea>
-  <div class="row"><button class="btn" data-a="gen1">मजकूर तयार करा</button><button class="btn alt" data-a="copy1">कॉपी</button><button class="btn wa" data-a="wa1">WhatsApp शेअर</button><button class="btn alt" data-a="site">मिनी वेबसाईट Download</button></div>
-  <div class="row"><button class="btn" data-a="link">🔗 शेअर करता येणारी दुकान-लिंक</button></div>
-  <div id="linkBox" class="hide"><input id="shopLink" readonly style="margin-top:10px"><div class="row"><button class="btn wa" data-a="waLink">लिंक WhatsApp वर</button><button class="btn alt" data-a="cpLink">लिंक कॉपी</button></div></div>
-</div>
-
-<div class="panel" id="p2"><h3>2. QR Code Generator</h3>
-  <label>QR मध्ये काय हवं?</label>
-  <select id="qType"><option value="wa">WhatsApp वर संपर्क (फोन नंबरवरून)</option><option value="tel">थेट कॉल (फोन नंबरवरून)</option><option value="upi">UPI पेमेंट (वरील UPI ID वरून)</option><option value="url">माझी लिंक / वेबसाईट</option></select>
-  <div id="qUrlRow" class="hide"><label>लिंक</label><input id="qUrl" placeholder="https://..."></div>
-  <div class="row"><button class="btn" data-a="genQr">QR तयार करा</button><button class="btn alt" data-a="dlQr">Download (PNG)</button></div>
-  <div id="qrOut" style="background:#fff;padding:12px;border-radius:12px;width:fit-content;margin-top:12px"></div>
-</div>
-
-<div class="panel" id="p3"><h3>3. जाहिरात &amp; ग्राहक संदेश</h3>
-  <div class="two"><div><label>प्रसंग</label><select id="occ"><option>नवीन ऑफर</option><option>दिवाळी</option><option>गुढीपाडवा</option><option>गणेशोत्सव</option><option>नवीन दुकान उद्घाटन</option><option>धन्यवाद ग्राहक</option></select></div>
-  <div><label>ऑफर (पर्यायी)</label><input id="offer" placeholder="उदा. 10% सूट / 2 घ्या 1 फ्री"></div></div>
-  <div class="row"><button class="btn" data-a="gen3">संदेश तयार करा</button></div>
-  <div id="variants"></div>
-  <div class="row"><button class="btn alt" data-a="poster">पोस्टर तयार करा</button><button class="btn alt hide" id="dlPoster" data-a="dlPoster">पोस्टर Download</button></div>
-  <canvas id="cv" width="1080" height="1350" class="hide" style="width:100%;max-width:380px"></canvas>
-</div>
-
-<section class="sec"><h2>🪪 माझा Digital ID व Refer Link</h2>
-  <div class="glass" id="loginBox">
-    <label>फोन नंबर</label><input id="lPhone" type="tel" inputmode="numeric" maxlength="10">
-    <div id="lOtp" class="hide"><label>OTP (डेमो: 1234)</label><input id="lOtpV" inputmode="numeric" maxlength="4"></div>
-    <div id="lProf" class="hide"><label>तुमचे नाव</label><input id="lName"><label>जिल्हा</label><input id="lDist" value="पुणे"></div>
-    <div class="row"><button class="btn" id="lBtn">OTP पाठवा</button></div>
-  </div>
-  <div id="idBox" class="hide">
-    <div class="id"><span class="pr">PREMIUM</span><b style="font-size:13px;color:var(--gold)">Digital Aarambh AI · सदस्य</b>
-      <h3 id="idName" style="margin-top:6px"></h3><div id="idMeta" style="color:var(--mut);font-size:14px"></div>
-      <div class="q" id="idQr"></div><b id="idNo"></b></div>
-    <div class="glass" style="margin-top:12px"><span style="color:var(--mut);font-size:14px">प्रत्येक यशस्वी Refer साठी ₹51 कमिशन</span>
-      <div class="stats"><div><b id="stC">0</b>Referrals</div><div><b id="stA">₹0</b>कमिशन</div><div><b id="stK">—</b>Code</div></div>
-      <input id="refLink" readonly>
-      <div class="row"><button class="btn wa" data-a="waRef">WhatsApp वर Refer करा</button><button class="btn alt" data-a="cpRef">Link कॉपी</button><button class="btn alt" data-a="out">बाहेर पडा</button></div>
-      <p style="font-size:12px;color:var(--mut);margin-top:8px">टीप: सध्या ही आवृत्ती Demo आहे. खरी Referral मोजणी व कमिशन Payout साठी Database जोडला जाईल.</p></div>
-  </div>
-</section>
-
-<section class="sec"><h2>🤖 येत आहेत: 12 AI असिस्टंट</h2><div class="agents" id="agents"></div></section>
-
-<div class="foot">Made with love in Pune for Alandi, Charholi, Moshi, Pimpri<br><b>डिजिटल भारत ❤ स्थानिक व्यवसाय वाढ</b><br>
-<a href="https://santoshujgare555-a11y.github.io/digital-aarambh-ai-prarambh-pune/">santoshujgare555-a11y.github.io/digital-aarambh-ai-prarambh-pune</a></div>
-</main>
-<div id="pub" class="hide" style="padding:0 14px"></div>
-<div id="toast"></div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<div id="toast" role="status" aria-live="polite"></div>
 <script>
+
+/* ===== Opening splash: welcome video → rainbow + Diwali rockets & anaar fountains ===== */
+(function(){
+var sp=document.getElementById('splash');if(!sp)return;
+var RM=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+var done=false,raf=0,timers=[];
+function finish(){if(done)return;done=true;try{sessionStorage.setItem('da_splash','1')}catch(e){}
+ timers.forEach(clearTimeout);sp.classList.add('out');var v=document.getElementById('wvid');if(v)try{v.pause()}catch(e){}
+ setTimeout(function(){cancelAnimationFrame(raf);if(sp.parentNode)sp.parentNode.removeChild(sp)},RM?0:650)}
+var heard=false,novid=false,P1=13300,L1AT=1.3,L2AT=4.5,LOFF=10.1,p1t0=performance.now(),tick=0;
+var cap=document.getElementById('cap'),snd=document.getElementById('snd');
+var wv=document.getElementById('wv'),vid=document.getElementById('wvid'),p2at=RM?0:P1,phase2=false;
+function capAt(t){if(cap)cap.className='cap'+(t>=LOFF||t<L1AT?'':t>=L2AT?' l2':' l1')}
+function capTick(){if(phase2||done)return;var t=(vid&&!novid&&vid.currentTime>0)?vid.currentTime:(performance.now()-p1t0)/1000;capAt(t)}
+function startTick(){clearInterval(tick);capAt(0);tick=setInterval(capTick,120);timers.push(tick)}
+function goP2(){if(phase2)return;phase2=true;clearInterval(tick);sp.classList.add('p2');rocketsFrom=now();timers.push(setTimeout(finish,2600))}
+function noMedia(){novid=true;sp.classList.add('nov');sp.classList.add('novid');if(!phase2){timers.push(setTimeout(goP2,250))}}
+function toImg(){novid=true;sp.classList.add('novid');if(!wv)return noMedia();wv.innerHTML='';var im=new Image();im.alt='';im.onerror=noMedia;im.src='welcome.jpg?v=fw13';wv.appendChild(im)}
+/* tap 🔊 (or the first tap anywhere) → unmute and replay her greeting from the start */
+function playSound(){if(heard||novid||!vid||done)return false;heard=true;sp.classList.add('heard');
+ timers.forEach(clearTimeout);timers=[];
+ if(phase2){phase2=false;sp.classList.remove('p2');rocketsFrom=1e9;pi=0;R.length=0}
+ p1t0=performance.now();startTick();
+ try{vid.muted=false;vid.currentTime=0}catch(e){}
+ var pr=vid.play&&vid.play();if(pr&&pr.catch)pr.catch(function(){try{vid.muted=true;vid.play()}catch(e){}});
+ timers.push(setTimeout(goP2,P1+2500)); /* safety if the video stalls; normally 'ended' moves on */
+ return true}
+sp.addEventListener('click',function(){if(!playSound())finish()});
+document.getElementById('skip').addEventListener('click',function(e){e.stopPropagation();finish()});
+if(snd)snd.addEventListener('click',function(e){e.stopPropagation();if(!playSound())finish()});
+if(vid){vid.addEventListener('error',toImg);vid.poster=vid.getAttribute('data-poster');
+ vid.addEventListener('ended',function(){if(!phase2&&!done)goP2()});
+ if(RM){toImg()}
+ else{vid.muted=true;vid.src=vid.getAttribute('data-src');var pr=vid.play&&vid.play();if(pr&&pr.catch)pr.catch(function(){})}}
+startTick();
+timers.push(setTimeout(goP2,p2at));
+if(RM)return;
+/* fireworks canvas */
+var cv=document.getElementById('fx'),ctx=cv.getContext('2d'),W=0,H=0,D=Math.min(window.devicePixelRatio||1,2);
+function size(){W=sp.clientWidth;H=sp.clientHeight;cv.width=W*D|0;cv.height=H*D|0;ctx.setTransform(D,0,0,D,0,0)}
+size();window.addEventListener('resize',size);
+function now(){return performance.now()/1000}
+var t0=now(),last=t0,rocketsFrom=1e9,P=[],R=[],MAXP=W<500?900:1300,G=H*0.55;
+var PAL=[['#ff4d6d','#ffd166'],['#4cc9f0','#ffffff'],['#b5179e','#f72585'],['#80ffdb','#48bfe3'],['#ffbe0b','#fb5607'],['#9b5de5','#f15bb5'],['#06d6a0','#ffd166'],['#ff006e','#3a86ff']];
+var plan=[0,0.3,0.6,0.9,1.2,1.5,1.8,2.1,2.4,2.7,3.0],pi=0;
+function launch(){var x=W*(0.15+Math.random()*0.7);R.push({x:x,y:H*0.86,vx:(Math.random()-.5)*W*0.08,vy:-Math.sqrt(2*G*H*(0.42+Math.random()*0.28)),c:PAL[Math.random()*PAL.length|0]})}
+function burst(r){var n=Math.min(95+(Math.random()*45|0),MAXP-P.length);if(n<=0)return;var ring=Math.random()<0.3,sp0=Math.min(W,H)*(0.42+Math.random()*0.2);
+ for(var i=0;i<n;i++){var a=Math.PI*2*i/n+Math.random()*0.2,s=ring?sp0:sp0*(0.25+Math.random()*0.75);
+  P.push({x:r.x,y:r.y,vx:Math.cos(a)*s,vy:Math.sin(a)*s,l:1.3+Math.random()*0.8,m:1.8,c:r.c[i%2],z:3+Math.random()*2,d:0.965})}
+ P.push({x:r.x,y:r.y,vx:0,vy:0,l:0.14,m:0.14,c:'#fff3c4',z:12,d:1,f:1})}
+var FX=[0.18,0.5,0.82],FC=['#ffd166','#fff3b0','#ff9f1c','#ffffff'];
+function fountains(dt){var k=Math.max(1,Math.round(dt*120));for(var j=0;j<FX.length;j++){for(var i=0;i<k&&P.length<MAXP;i++){var a=-Math.PI/2+(Math.random()-.5)*0.55,s=H*(0.42+Math.random()*0.32);
+  P.push({x:W*FX[j]+(Math.random()-.5)*6,y:H-6,vx:Math.cos(a)*s,vy:Math.sin(a)*s,l:0.6+Math.random()*0.6,m:1.2,c:FC[Math.random()*4|0],z:1.6+Math.random()*1.4,d:0.99,g:1})}}}
+function frame(){var t=now(),dt=Math.min(0.05,t-last);last=t;
+ ctx.globalCompositeOperation='destination-out';ctx.fillStyle='rgba(0,0,0,0.3)';ctx.fillRect(0,0,W,H);
+ ctx.globalCompositeOperation='lighter';
+ var el=t-rocketsFrom;while(pi<plan.length&&el>=plan[pi]){launch();if(pi%4==2)launch();pi++}
+ fountains(dt);
+ for(var i=R.length-1;i>=0;i--){var r=R[i];r.x+=r.vx*dt;r.y+=r.vy*dt;r.vy+=G*dt;
+  ctx.fillStyle='#fff6d5';ctx.fillRect(r.x-1.5,r.y-1.5,3,3);
+  if(P.length<MAXP)P.push({x:r.x,y:r.y+3,vx:(Math.random()-.5)*20,vy:20+Math.random()*30,l:0.35,m:0.5,c:'#ffb347',z:1.8,d:0.97});
+  if(r.vy>-H*0.05){burst(r);R.splice(i,1)}}
+ for(i=P.length-1;i>=0;i--){var p=P[i];p.l-=dt;if(p.l<=0){P.splice(i,1);continue}
+  var dd=Math.pow(p.d,dt*60);p.vx*=dd;p.vy=p.vy*dd+G*(p.g?1:0.38)*dt;p.x+=p.vx*dt;p.y+=p.vy*dt;var a=Math.min(1,p.l/p.m*1.6);
+  ctx.globalAlpha=a;ctx.fillStyle=p.c;
+  if(p.f){ctx.globalAlpha=a*0.45;ctx.beginPath();ctx.arc(p.x,p.y,p.z*(1-p.l/p.m)+4,0,6.283);ctx.fill()}
+  else if(Math.random()>0.06){var z=p.z*(0.5+a*0.5);ctx.fillRect(p.x-z/2,p.y-z/2,z,z)}}
+ ctx.globalAlpha=1;
+ if(!done||sp.parentNode)raf=requestAnimationFrame(frame)}
+raf=requestAnimationFrame(frame);
+})();
+</script>
+<script>
+/*! qrcode-generator v2.0.4 | (c) 2009 Kazuhiko Arase | MIT License | https://github.com/kazuhikoarase/qrcode-generator */
+var qrcode=function(){var t=function(t,r){var e=t,n=g[r],o=null,i=0,a=null,u=[],f={},c=function(t,r){o=function(t){for(var r=new Array(t),e=0;e<t;e+=1){r[e]=new Array(t);for(var n=0;n<t;n+=1)r[e][n]=null}return r}(i=4*e+17),l(0,0),l(i-7,0),l(0,i-7),s(),h(),d(t,r),e>=7&&v(t),null==a&&(a=p(e,n,u)),w(a,r)},l=function(t,r){for(var e=-1;e<=7;e+=1)if(!(t+e<=-1||i<=t+e))for(var n=-1;n<=7;n+=1)r+n<=-1||i<=r+n||(o[t+e][r+n]=0<=e&&e<=6&&(0==n||6==n)||0<=n&&n<=6&&(0==e||6==e)||2<=e&&e<=4&&2<=n&&n<=4)},h=function(){for(var t=8;t<i-8;t+=1)null==o[t][6]&&(o[t][6]=t%2==0);for(var r=8;r<i-8;r+=1)null==o[6][r]&&(o[6][r]=r%2==0)},s=function(){for(var t=B.getPatternPosition(e),r=0;r<t.length;r+=1)for(var n=0;n<t.length;n+=1){var i=t[r],a=t[n];if(null==o[i][a])for(var u=-2;u<=2;u+=1)for(var f=-2;f<=2;f+=1)o[i+u][a+f]=-2==u||2==u||-2==f||2==f||0==u&&0==f}},v=function(t){for(var r=B.getBCHTypeNumber(e),n=0;n<18;n+=1){var a=!t&&1==(r>>n&1);o[Math.floor(n/3)][n%3+i-8-3]=a}for(n=0;n<18;n+=1){a=!t&&1==(r>>n&1);o[n%3+i-8-3][Math.floor(n/3)]=a}},d=function(t,r){for(var e=n<<3|r,a=B.getBCHTypeInfo(e),u=0;u<15;u+=1){var f=!t&&1==(a>>u&1);u<6?o[u][8]=f:u<8?o[u+1][8]=f:o[i-15+u][8]=f}for(u=0;u<15;u+=1){f=!t&&1==(a>>u&1);u<8?o[8][i-u-1]=f:u<9?o[8][15-u-1+1]=f:o[8][15-u-1]=f}o[i-8][8]=!t},w=function(t,r){for(var e=-1,n=i-1,a=7,u=0,f=B.getMaskFunction(r),c=i-1;c>0;c-=2)for(6==c&&(c-=1);;){for(var g=0;g<2;g+=1)if(null==o[n][c-g]){var l=!1;u<t.length&&(l=1==(t[u]>>>a&1)),f(n,c-g)&&(l=!l),o[n][c-g]=l,-1==(a-=1)&&(u+=1,a=7)}if((n+=e)<0||i<=n){n-=e,e=-e;break}}},p=function(t,r,e){for(var n=A.getRSBlocks(t,r),o=b(),i=0;i<e.length;i+=1){var a=e[i];o.put(a.getMode(),4),o.put(a.getLength(),B.getLengthInBits(a.getMode(),t)),a.write(o)}var u=0;for(i=0;i<n.length;i+=1)u+=n[i].dataCount;if(o.getLengthInBits()>8*u)throw"code length overflow. ("+o.getLengthInBits()+">"+8*u+")";for(o.getLengthInBits()+4<=8*u&&o.put(0,4);o.getLengthInBits()%8!=0;)o.putBit(!1);for(;!(o.getLengthInBits()>=8*u||(o.put(236,8),o.getLengthInBits()>=8*u));)o.put(17,8);return function(t,r){for(var e=0,n=0,o=0,i=new Array(r.length),a=new Array(r.length),u=0;u<r.length;u+=1){var f=r[u].dataCount,c=r[u].totalCount-f;n=Math.max(n,f),o=Math.max(o,c),i[u]=new Array(f);for(var g=0;g<i[u].length;g+=1)i[u][g]=255&t.getBuffer()[g+e];e+=f;var l=B.getErrorCorrectPolynomial(c),h=k(i[u],l.getLength()-1).mod(l);for(a[u]=new Array(l.getLength()-1),g=0;g<a[u].length;g+=1){var s=g+h.getLength()-a[u].length;a[u][g]=s>=0?h.getAt(s):0}}var v=0;for(g=0;g<r.length;g+=1)v+=r[g].totalCount;var d=new Array(v),w=0;for(g=0;g<n;g+=1)for(u=0;u<r.length;u+=1)g<i[u].length&&(d[w]=i[u][g],w+=1);for(g=0;g<o;g+=1)for(u=0;u<r.length;u+=1)g<a[u].length&&(d[w]=a[u][g],w+=1);return d}(o,n)};f.addData=function(t,r){var e=null;switch(r=r||"Byte"){case"Numeric":e=M(t);break;case"Alphanumeric":e=x(t);break;case"Byte":e=m(t);break;case"Kanji":e=L(t);break;default:throw"mode:"+r}u.push(e),a=null},f.isDark=function(t,r){if(t<0||i<=t||r<0||i<=r)throw t+","+r;return o[t][r]},f.getModuleCount=function(){return i},f.make=function(){if(e<1){for(var t=1;t<40;t++){for(var r=A.getRSBlocks(t,n),o=b(),i=0;i<u.length;i++){var a=u[i];o.put(a.getMode(),4),o.put(a.getLength(),B.getLengthInBits(a.getMode(),t)),a.write(o)}var g=0;for(i=0;i<r.length;i++)g+=r[i].dataCount;if(o.getLengthInBits()<=8*g)break}e=t}c(!1,function(){for(var t=0,r=0,e=0;e<8;e+=1){c(!0,e);var n=B.getLostPoint(f);(0==e||t>n)&&(t=n,r=e)}return r}())},f.createTableTag=function(t,r){t=t||2;var e="";e+='<table style="',e+=" border-width: 0px; border-style: none;",e+=" border-collapse: collapse;",e+=" padding: 0px; margin: "+(r=void 0===r?4*t:r)+"px;",e+='">',e+="<tbody>";for(var n=0;n<f.getModuleCount();n+=1){e+="<tr>";for(var o=0;o<f.getModuleCount();o+=1)e+='<td style="',e+=" border-width: 0px; border-style: none;",e+=" border-collapse: collapse;",e+=" padding: 0px; margin: 0px;",e+=" width: "+t+"px;",e+=" height: "+t+"px;",e+=" background-color: ",e+=f.isDark(n,o)?"#000000":"#ffffff",e+=";",e+='"/>';e+="</tr>"}return e+="</tbody>",e+="</table>"},f.createSvgTag=function(t,r,e,n){var o={};"object"==typeof arguments[0]&&(t=(o=arguments[0]).cellSize,r=o.margin,e=o.alt,n=o.title),t=t||2,r=void 0===r?4*t:r,(e="string"==typeof e?{text:e}:e||{}).text=e.text||null,e.id=e.text?e.id||"qrcode-description":null,(n="string"==typeof n?{text:n}:n||{}).text=n.text||null,n.id=n.text?n.id||"qrcode-title":null;var i,a,u,c,g=f.getModuleCount()*t+2*r,l="";for(c="l"+t+",0 0,"+t+" -"+t+",0 0,-"+t+"z ",l+='<svg version="1.1" xmlns="http://www.w3.org/2000/svg"',l+=o.scalable?"":' width="'+g+'px" height="'+g+'px"',l+=' viewBox="0 0 '+g+" "+g+'" ',l+=' preserveAspectRatio="xMinYMin meet"',l+=n.text||e.text?' role="img" aria-labelledby="'+y([n.id,e.id].join(" ").trim())+'"':"",l+=">",l+=n.text?'<title id="'+y(n.id)+'">'+y(n.text)+"</title>":"",l+=e.text?'<description id="'+y(e.id)+'">'+y(e.text)+"</description>":"",l+='<rect width="100%" height="100%" fill="white" cx="0" cy="0"/>',l+='<path d="',a=0;a<f.getModuleCount();a+=1)for(u=a*t+r,i=0;i<f.getModuleCount();i+=1)f.isDark(a,i)&&(l+="M"+(i*t+r)+","+u+c);return l+='" stroke="transparent" fill="black"/>',l+="</svg>"},f.createDataURL=function(t,r){t=t||2,r=void 0===r?4*t:r;var e=f.getModuleCount()*t+2*r,n=r,o=e-r;return I(e,e,function(r,e){if(n<=r&&r<o&&n<=e&&e<o){var i=Math.floor((r-n)/t),a=Math.floor((e-n)/t);return f.isDark(a,i)?0:1}return 1})},f.createImgTag=function(t,r,e){t=t||2,r=void 0===r?4*t:r;var n=f.getModuleCount()*t+2*r,o="";return o+="<img",o+=' src="',o+=f.createDataURL(t,r),o+='"',o+=' width="',o+=n,o+='"',o+=' height="',o+=n,o+='"',e&&(o+=' alt="',o+=y(e),o+='"'),o+="/>"};var y=function(t){for(var r="",e=0;e<t.length;e+=1){var n=t.charAt(e);switch(n){case"<":r+="&lt;";break;case">":r+="&gt;";break;case"&":r+="&amp;";break;case'"':r+="&quot;";break;default:r+=n}}return r};return f.createASCII=function(t,r){if((t=t||1)<2)return function(t){t=void 0===t?2:t;var r,e,n,o,i,a=1*f.getModuleCount()+2*t,u=t,c=a-t,g={"██":"█","█ ":"▀"," █":"▄","  ":" "},l={"██":"▀","█ ":"▀"," █":" ","  ":" "},h="";for(r=0;r<a;r+=2){for(n=Math.floor((r-u)/1),o=Math.floor((r+1-u)/1),e=0;e<a;e+=1)i="█",u<=e&&e<c&&u<=r&&r<c&&f.isDark(n,Math.floor((e-u)/1))&&(i=" "),u<=e&&e<c&&u<=r+1&&r+1<c&&f.isDark(o,Math.floor((e-u)/1))?i+=" ":i+="█",h+=t<1&&r+1>=c?l[i]:g[i];h+="\n"}return a%2&&t>0?h.substring(0,h.length-a-1)+Array(a+1).join("▀"):h.substring(0,h.length-1)}(r);t-=1,r=void 0===r?2*t:r;var e,n,o,i,a=f.getModuleCount()*t+2*r,u=r,c=a-r,g=Array(t+1).join("██"),l=Array(t+1).join("  "),h="",s="";for(e=0;e<a;e+=1){for(o=Math.floor((e-u)/t),s="",n=0;n<a;n+=1)i=1,u<=n&&n<c&&u<=e&&e<c&&f.isDark(o,Math.floor((n-u)/t))&&(i=0),s+=i?g:l;for(o=0;o<t;o+=1)h+=s+"\n"}return h.substring(0,h.length-1)},f.renderTo2dContext=function(t,r){r=r||2;for(var e=f.getModuleCount(),n=0;n<e;n++)for(var o=0;o<e;o++)t.fillStyle=f.isDark(n,o)?"black":"white",t.fillRect(o*r,n*r,r,r)},f};t.stringToBytes=(t.stringToBytesFuncs={default:function(t){for(var r=[],e=0;e<t.length;e+=1){var n=t.charCodeAt(e);r.push(255&n)}return r}}).default,t.createStringToBytes=function(t,r){var e=function(){for(var e=S(t),n=function(){var t=e.read();if(-1==t)throw"eof";return t},o=0,i={};;){var a=e.read();if(-1==a)break;var u=n(),f=n()<<8|n();i[String.fromCharCode(a<<8|u)]=f,o+=1}if(o!=r)throw o+" != "+r;return i}(),n="?".charCodeAt(0);return function(t){for(var r=[],o=0;o<t.length;o+=1){var i=t.charCodeAt(o);if(i<128)r.push(i);else{var a=e[t.charAt(o)];"number"==typeof a?(255&a)==a?r.push(a):(r.push(a>>>8),r.push(255&a)):r.push(n)}}return r}};var r,e,n,o,i,a=1,u=2,f=4,c=8,g={L:1,M:0,Q:3,H:2},l=0,h=1,s=2,v=3,d=4,w=5,p=6,y=7,B=(r=[[],[6,18],[6,22],[6,26],[6,30],[6,34],[6,22,38],[6,24,42],[6,26,46],[6,28,50],[6,30,54],[6,32,58],[6,34,62],[6,26,46,66],[6,26,48,70],[6,26,50,74],[6,30,54,78],[6,30,56,82],[6,30,58,86],[6,34,62,90],[6,28,50,72,94],[6,26,50,74,98],[6,30,54,78,102],[6,28,54,80,106],[6,32,58,84,110],[6,30,58,86,114],[6,34,62,90,118],[6,26,50,74,98,122],[6,30,54,78,102,126],[6,26,52,78,104,130],[6,30,56,82,108,134],[6,34,60,86,112,138],[6,30,58,86,114,142],[6,34,62,90,118,146],[6,30,54,78,102,126,150],[6,24,50,76,102,128,154],[6,28,54,80,106,132,158],[6,32,58,84,110,136,162],[6,26,54,82,110,138,166],[6,30,58,86,114,142,170]],e=1335,n=7973,i=function(t){for(var r=0;0!=t;)r+=1,t>>>=1;return r},(o={}).getBCHTypeInfo=function(t){for(var r=t<<10;i(r)-i(e)>=0;)r^=e<<i(r)-i(e);return 21522^(t<<10|r)},o.getBCHTypeNumber=function(t){for(var r=t<<12;i(r)-i(n)>=0;)r^=n<<i(r)-i(n);return t<<12|r},o.getPatternPosition=function(t){return r[t-1]},o.getMaskFunction=function(t){switch(t){case l:return function(t,r){return(t+r)%2==0};case h:return function(t,r){return t%2==0};case s:return function(t,r){return r%3==0};case v:return function(t,r){return(t+r)%3==0};case d:return function(t,r){return(Math.floor(t/2)+Math.floor(r/3))%2==0};case w:return function(t,r){return t*r%2+t*r%3==0};case p:return function(t,r){return(t*r%2+t*r%3)%2==0};case y:return function(t,r){return(t*r%3+(t+r)%2)%2==0};default:throw"bad maskPattern:"+t}},o.getErrorCorrectPolynomial=function(t){for(var r=k([1],0),e=0;e<t;e+=1)r=r.multiply(k([1,C.gexp(e)],0));return r},o.getLengthInBits=function(t,r){if(1<=r&&r<10)switch(t){case a:return 10;case u:return 9;case f:case c:return 8;default:throw"mode:"+t}else if(r<27)switch(t){case a:return 12;case u:return 11;case f:return 16;case c:return 10;default:throw"mode:"+t}else{if(!(r<41))throw"type:"+r;switch(t){case a:return 14;case u:return 13;case f:return 16;case c:return 12;default:throw"mode:"+t}}},o.getLostPoint=function(t){for(var r=t.getModuleCount(),e=0,n=0;n<r;n+=1)for(var o=0;o<r;o+=1){for(var i=0,a=t.isDark(n,o),u=-1;u<=1;u+=1)if(!(n+u<0||r<=n+u))for(var f=-1;f<=1;f+=1)o+f<0||r<=o+f||0==u&&0==f||a==t.isDark(n+u,o+f)&&(i+=1);i>5&&(e+=3+i-5)}for(n=0;n<r-1;n+=1)for(o=0;o<r-1;o+=1){var c=0;t.isDark(n,o)&&(c+=1),t.isDark(n+1,o)&&(c+=1),t.isDark(n,o+1)&&(c+=1),t.isDark(n+1,o+1)&&(c+=1),0!=c&&4!=c||(e+=3)}for(n=0;n<r;n+=1)for(o=0;o<r-6;o+=1)t.isDark(n,o)&&!t.isDark(n,o+1)&&t.isDark(n,o+2)&&t.isDark(n,o+3)&&t.isDark(n,o+4)&&!t.isDark(n,o+5)&&t.isDark(n,o+6)&&(e+=40);for(o=0;o<r;o+=1)for(n=0;n<r-6;n+=1)t.isDark(n,o)&&!t.isDark(n+1,o)&&t.isDark(n+2,o)&&t.isDark(n+3,o)&&t.isDark(n+4,o)&&!t.isDark(n+5,o)&&t.isDark(n+6,o)&&(e+=40);var g=0;for(o=0;o<r;o+=1)for(n=0;n<r;n+=1)t.isDark(n,o)&&(g+=1);return e+=Math.abs(100*g/r/r-50)/5*10},o),C=function(){for(var t=new Array(256),r=new Array(256),e=0;e<8;e+=1)t[e]=1<<e;for(e=8;e<256;e+=1)t[e]=t[e-4]^t[e-5]^t[e-6]^t[e-8];for(e=0;e<255;e+=1)r[t[e]]=e;var n={glog:function(t){if(t<1)throw"glog("+t+")";return r[t]},gexp:function(r){for(;r<0;)r+=255;for(;r>=256;)r-=255;return t[r]}};return n}();function k(t,r){if(void 0===t.length)throw t.length+"/"+r;var e=function(){for(var e=0;e<t.length&&0==t[e];)e+=1;for(var n=new Array(t.length-e+r),o=0;o<t.length-e;o+=1)n[o]=t[o+e];return n}(),n={getAt:function(t){return e[t]},getLength:function(){return e.length},multiply:function(t){for(var r=new Array(n.getLength()+t.getLength()-1),e=0;e<n.getLength();e+=1)for(var o=0;o<t.getLength();o+=1)r[e+o]^=C.gexp(C.glog(n.getAt(e))+C.glog(t.getAt(o)));return k(r,0)},mod:function(t){if(n.getLength()-t.getLength()<0)return n;for(var r=C.glog(n.getAt(0))-C.glog(t.getAt(0)),e=new Array(n.getLength()),o=0;o<n.getLength();o+=1)e[o]=n.getAt(o);for(o=0;o<t.getLength();o+=1)e[o]^=C.gexp(C.glog(t.getAt(o))+r);return k(e,0).mod(t)}};return n}var A=function(){var t=[[1,26,19],[1,26,16],[1,26,13],[1,26,9],[1,44,34],[1,44,28],[1,44,22],[1,44,16],[1,70,55],[1,70,44],[2,35,17],[2,35,13],[1,100,80],[2,50,32],[2,50,24],[4,25,9],[1,134,108],[2,67,43],[2,33,15,2,34,16],[2,33,11,2,34,12],[2,86,68],[4,43,27],[4,43,19],[4,43,15],[2,98,78],[4,49,31],[2,32,14,4,33,15],[4,39,13,1,40,14],[2,121,97],[2,60,38,2,61,39],[4,40,18,2,41,19],[4,40,14,2,41,15],[2,146,116],[3,58,36,2,59,37],[4,36,16,4,37,17],[4,36,12,4,37,13],[2,86,68,2,87,69],[4,69,43,1,70,44],[6,43,19,2,44,20],[6,43,15,2,44,16],[4,101,81],[1,80,50,4,81,51],[4,50,22,4,51,23],[3,36,12,8,37,13],[2,116,92,2,117,93],[6,58,36,2,59,37],[4,46,20,6,47,21],[7,42,14,4,43,15],[4,133,107],[8,59,37,1,60,38],[8,44,20,4,45,21],[12,33,11,4,34,12],[3,145,115,1,146,116],[4,64,40,5,65,41],[11,36,16,5,37,17],[11,36,12,5,37,13],[5,109,87,1,110,88],[5,65,41,5,66,42],[5,54,24,7,55,25],[11,36,12,7,37,13],[5,122,98,1,123,99],[7,73,45,3,74,46],[15,43,19,2,44,20],[3,45,15,13,46,16],[1,135,107,5,136,108],[10,74,46,1,75,47],[1,50,22,15,51,23],[2,42,14,17,43,15],[5,150,120,1,151,121],[9,69,43,4,70,44],[17,50,22,1,51,23],[2,42,14,19,43,15],[3,141,113,4,142,114],[3,70,44,11,71,45],[17,47,21,4,48,22],[9,39,13,16,40,14],[3,135,107,5,136,108],[3,67,41,13,68,42],[15,54,24,5,55,25],[15,43,15,10,44,16],[4,144,116,4,145,117],[17,68,42],[17,50,22,6,51,23],[19,46,16,6,47,17],[2,139,111,7,140,112],[17,74,46],[7,54,24,16,55,25],[34,37,13],[4,151,121,5,152,122],[4,75,47,14,76,48],[11,54,24,14,55,25],[16,45,15,14,46,16],[6,147,117,4,148,118],[6,73,45,14,74,46],[11,54,24,16,55,25],[30,46,16,2,47,17],[8,132,106,4,133,107],[8,75,47,13,76,48],[7,54,24,22,55,25],[22,45,15,13,46,16],[10,142,114,2,143,115],[19,74,46,4,75,47],[28,50,22,6,51,23],[33,46,16,4,47,17],[8,152,122,4,153,123],[22,73,45,3,74,46],[8,53,23,26,54,24],[12,45,15,28,46,16],[3,147,117,10,148,118],[3,73,45,23,74,46],[4,54,24,31,55,25],[11,45,15,31,46,16],[7,146,116,7,147,117],[21,73,45,7,74,46],[1,53,23,37,54,24],[19,45,15,26,46,16],[5,145,115,10,146,116],[19,75,47,10,76,48],[15,54,24,25,55,25],[23,45,15,25,46,16],[13,145,115,3,146,116],[2,74,46,29,75,47],[42,54,24,1,55,25],[23,45,15,28,46,16],[17,145,115],[10,74,46,23,75,47],[10,54,24,35,55,25],[19,45,15,35,46,16],[17,145,115,1,146,116],[14,74,46,21,75,47],[29,54,24,19,55,25],[11,45,15,46,46,16],[13,145,115,6,146,116],[14,74,46,23,75,47],[44,54,24,7,55,25],[59,46,16,1,47,17],[12,151,121,7,152,122],[12,75,47,26,76,48],[39,54,24,14,55,25],[22,45,15,41,46,16],[6,151,121,14,152,122],[6,75,47,34,76,48],[46,54,24,10,55,25],[2,45,15,64,46,16],[17,152,122,4,153,123],[29,74,46,14,75,47],[49,54,24,10,55,25],[24,45,15,46,46,16],[4,152,122,18,153,123],[13,74,46,32,75,47],[48,54,24,14,55,25],[42,45,15,32,46,16],[20,147,117,4,148,118],[40,75,47,7,76,48],[43,54,24,22,55,25],[10,45,15,67,46,16],[19,148,118,6,149,119],[18,75,47,31,76,48],[34,54,24,34,55,25],[20,45,15,61,46,16]],r=function(t,r){var e={};return e.totalCount=t,e.dataCount=r,e},e={};return e.getRSBlocks=function(e,n){var o=function(r,e){switch(e){case g.L:return t[4*(r-1)+0];case g.M:return t[4*(r-1)+1];case g.Q:return t[4*(r-1)+2];case g.H:return t[4*(r-1)+3];default:return}}(e,n);if(void 0===o)throw"bad rs block @ typeNumber:"+e+"/errorCorrectionLevel:"+n;for(var i=o.length/3,a=[],u=0;u<i;u+=1)for(var f=o[3*u+0],c=o[3*u+1],l=o[3*u+2],h=0;h<f;h+=1)a.push(r(c,l));return a},e}(),b=function(){var t=[],r=0,e={getBuffer:function(){return t},getAt:function(r){var e=Math.floor(r/8);return 1==(t[e]>>>7-r%8&1)},put:function(t,r){for(var n=0;n<r;n+=1)e.putBit(1==(t>>>r-n-1&1))},getLengthInBits:function(){return r},putBit:function(e){var n=Math.floor(r/8);t.length<=n&&t.push(0),e&&(t[n]|=128>>>r%8),r+=1}};return e},M=function(t){var r=a,e=t,n={getMode:function(){return r},getLength:function(t){return e.length},write:function(t){for(var r=e,n=0;n+2<r.length;)t.put(o(r.substring(n,n+3)),10),n+=3;n<r.length&&(r.length-n==1?t.put(o(r.substring(n,n+1)),4):r.length-n==2&&t.put(o(r.substring(n,n+2)),7))}},o=function(t){for(var r=0,e=0;e<t.length;e+=1)r=10*r+i(t.charAt(e));return r},i=function(t){if("0"<=t&&t<="9")return t.charCodeAt(0)-"0".charCodeAt(0);throw"illegal char :"+t};return n},x=function(t){var r=u,e=t,n={getMode:function(){return r},getLength:function(t){return e.length},write:function(t){for(var r=e,n=0;n+1<r.length;)t.put(45*o(r.charAt(n))+o(r.charAt(n+1)),11),n+=2;n<r.length&&t.put(o(r.charAt(n)),6)}},o=function(t){if("0"<=t&&t<="9")return t.charCodeAt(0)-"0".charCodeAt(0);if("A"<=t&&t<="Z")return t.charCodeAt(0)-"A".charCodeAt(0)+10;switch(t){case" ":return 36;case"$":return 37;case"%":return 38;case"*":return 39;case"+":return 40;case"-":return 41;case".":return 42;case"/":return 43;case":":return 44;default:throw"illegal char :"+t}};return n},m=function(r){var e=f,n=t.stringToBytes(r),o={getMode:function(){return e},getLength:function(t){return n.length},write:function(t){for(var r=0;r<n.length;r+=1)t.put(n[r],8)}};return o},L=function(r){var e=c,n=t.stringToBytesFuncs.SJIS;if(!n)throw"sjis not supported.";!function(){var t=n("友");if(2!=t.length||38726!=(t[0]<<8|t[1]))throw"sjis not supported."}();var o=n(r),i={getMode:function(){return e},getLength:function(t){return~~(o.length/2)},write:function(t){for(var r=o,e=0;e+1<r.length;){var n=(255&r[e])<<8|255&r[e+1];if(33088<=n&&n<=40956)n-=33088;else{if(!(57408<=n&&n<=60351))throw"illegal char at "+(e+1)+"/"+n;n-=49472}n=192*(n>>>8&255)+(255&n),t.put(n,13),e+=2}if(e<r.length)throw"illegal char at "+(e+1)}};return i},D=function(){var t=[],r={writeByte:function(r){t.push(255&r)},writeShort:function(t){r.writeByte(t),r.writeByte(t>>>8)},writeBytes:function(t,e,n){e=e||0,n=n||t.length;for(var o=0;o<n;o+=1)r.writeByte(t[o+e])},writeString:function(t){for(var e=0;e<t.length;e+=1)r.writeByte(t.charCodeAt(e))},toByteArray:function(){return t},toString:function(){var r="";r+="[";for(var e=0;e<t.length;e+=1)e>0&&(r+=","),r+=t[e];return r+="]"}};return r},S=function(t){var r=t,e=0,n=0,o=0,i={read:function(){for(;o<8;){if(e>=r.length){if(0==o)return-1;throw"unexpected end of file./"+o}var t=r.charAt(e);if(e+=1,"="==t)return o=0,-1;t.match(/^\s$/)||(n=n<<6|a(t.charCodeAt(0)),o+=6)}var i=n>>>o-8&255;return o-=8,i}},a=function(t){if(65<=t&&t<=90)return t-65;if(97<=t&&t<=122)return t-97+26;if(48<=t&&t<=57)return t-48+52;if(43==t)return 62;if(47==t)return 63;throw"c:"+t};return i},I=function(t,r,e){for(var n=function(t,r){var e=t,n=r,o=new Array(t*r),i={setPixel:function(t,r,n){o[r*e+t]=n},write:function(t){t.writeString("GIF87a"),t.writeShort(e),t.writeShort(n),t.writeByte(128),t.writeByte(0),t.writeByte(0),t.writeByte(0),t.writeByte(0),t.writeByte(0),t.writeByte(255),t.writeByte(255),t.writeByte(255),t.writeString(","),t.writeShort(0),t.writeShort(0),t.writeShort(e),t.writeShort(n),t.writeByte(0);var r=a(2);t.writeByte(2);for(var o=0;r.length-o>255;)t.writeByte(255),t.writeBytes(r,o,255),o+=255;t.writeByte(r.length-o),t.writeBytes(r,o,r.length-o),t.writeByte(0),t.writeString(";")}},a=function(t){for(var r=1<<t,e=1+(1<<t),n=t+1,i=u(),a=0;a<r;a+=1)i.add(String.fromCharCode(a));i.add(String.fromCharCode(r)),i.add(String.fromCharCode(e));var f,c,g,l=D(),h=(f=l,c=0,g=0,{write:function(t,r){if(t>>>r!=0)throw"length over";for(;c+r>=8;)f.writeByte(255&(t<<c|g)),r-=8-c,t>>>=8-c,g=0,c=0;g|=t<<c,c+=r},flush:function(){c>0&&f.writeByte(g)}});h.write(r,n);var s=0,v=String.fromCharCode(o[s]);for(s+=1;s<o.length;){var d=String.fromCharCode(o[s]);s+=1,i.contains(v+d)?v+=d:(h.write(i.indexOf(v),n),i.size()<4095&&(i.size()==1<<n&&(n+=1),i.add(v+d)),v=d)}return h.write(i.indexOf(v),n),h.write(e,n),h.flush(),l.toByteArray()},u=function(){var t={},r=0,e={add:function(n){if(e.contains(n))throw"dup key:"+n;t[n]=r,r+=1},size:function(){return r},indexOf:function(r){return t[r]},contains:function(r){return void 0!==t[r]}};return e};return i}(t,r),o=0;o<r;o+=1)for(var i=0;i<t;i+=1)n.setPixel(i,o,e(i,o));var a=D();n.write(a);for(var u=function(){var t=0,r=0,e=0,n="",o={},i=function(t){n+=String.fromCharCode(a(63&t))},a=function(t){if(t<0);else{if(t<26)return 65+t;if(t<52)return t-26+97;if(t<62)return t-52+48;if(62==t)return 43;if(63==t)return 47}throw"n:"+t};return o.writeByte=function(n){for(t=t<<8|255&n,r+=8,e+=1;r>=6;)i(t>>>r-6),r-=6},o.flush=function(){if(r>0&&(i(t<<6-r),t=0,r=0),e%3!=0)for(var o=3-e%3,a=0;a<o;a+=1)n+="="},o.toString=function(){return n},o}(),f=a.toByteArray(),c=0;c<f.length;c+=1)u.writeByte(f[c]);return u.flush(),"data:image/gif;base64,"+u};return t}();qrcode.stringToBytesFuncs["UTF-8"]=function(t){return function(t){for(var r=[],e=0;e<t.length;e++){var n=t.charCodeAt(e);n<128?r.push(n):n<2048?r.push(192|n>>6,128|63&n):n<55296||n>=57344?r.push(224|n>>12,128|n>>6&63,128|63&n):(e++,n=65536+((1023&n)<<10|1023&t.charCodeAt(e)),r.push(240|n>>18,128|n>>12&63,128|n>>6&63,128|63&n))}return r}(t)},function(t){"function"==typeof define&&define.amd?define([],t):"object"==typeof exports&&(module.exports=t())}(function(){return qrcode});
+</script>
+<script>
+
+/* ===================== सेटिंग – इथे तुमचा नंबर टाका ===================== */
+/* संपर्कासाठी तुमचा WhatsApp नंबर: 91 + 10 अंकी नंबर (उदा. "919876543210").
+   "91XXXXXXXXXX" असेच ठेवले तर संपर्क बटण "नंबर लवकरच" असा मेसेज दाखवेल. */
+var CONTACT_WHATSAPP = "917775057917";
+/* ======================================================================== */
 (function(){
 'use strict';
-const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
-const st={get(k,d){try{const v=localStorage.getItem(k);return v?JSON.parse(v):d}catch(e){return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
-const toast=m=>{const e=$('#toast');e.textContent=m;e.classList.add('s');setTimeout(()=>e.classList.remove('s'),2200)};
-const AG=[["🌐","Website Builder AI","live"],["▦","QR Master AI","live"],["📢","Poster Ad AI","live"],["💬","Customer Reply AI","soon"],["📒","Hisab / Udhaari AI","soon"],["⭐","Review Mangao AI","soon"],["📍","Map Direction AI","soon"],["💳","UPI Payment AI (UPI QR आहे, पूर्ण AI लवकरच)","part"],["📞","Missed Call AI","soon"],["🎉","Festival Post AI","soon"],["🤝","Referral & Commission AI (Demo – Database नंतर)","demo"],["🪪","Digital Card AI","soon"]];
-const LB={live:"✅ Live",part:"🟡 अंशतः",demo:"🧪 Demo",soon:"🔜 लवकरच"};
-$('#agents').innerHTML=AG.map((a,i)=>`<div class="ag ${a[2]=='live'?'si':''}">${a[0]} <b>${i+1}. ${a[1]}</b><em>${LB[a[2]]}</em></div>`).join('');
+var $=function(s,r){return (r||document).querySelector(s)},$$=function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))};
+var FONT="'Mukta','Noto Sans Devanagari','Nirmala UI',sans-serif";
+var st={get:function(k,d){try{var v=localStorage.getItem(k);return v?JSON.parse(v):d}catch(e){return d}},set:function(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){toast('सेव्ह झाले नाही (storage भरले?)')}}};
+var tt;function toast(m){var e=$('#toast');e.textContent=m;e.classList.add('s');clearTimeout(tt);tt=setTimeout(function(){e.classList.remove('s')},2600)}
+function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
+/* phone: accepts +91, spaces, dashes, leading 0 → 10 digits */
+function normPhone(p){var d=String(p||'').replace(/\D/g,'');if(d.length===12&&d.indexOf('91')===0)d=d.slice(2);else if(d.length===11&&d[0]==='0')d=d.slice(1);else if(d.length===13&&d.indexOf('091')===0)d=d.slice(3);return d}
+function phoneOk(p){return /^[6-9]\d{9}$/.test(p)}
+function upiOk(u){return /^[A-Za-z0-9.\-_]{2,256}@[A-Za-z][A-Za-z0-9.\-]{1,63}$/.test(u)}
+function urlOk(u){return /^https?:\/\/[^\s]+\.[^\s]+/i.test(u)}
+function waShare(text,phone){var p=normPhone(phone);var u='https://api.whatsapp.com/send?'+(phoneOk(p)?'phone=91'+p+'&':'')+'text='+encodeURIComponent(text);window.open(u,'_blank','noopener')}
+function copy(t){function ok(){toast('✅ कॉपी झाले')}function fb(){var a=document.createElement('textarea');a.value=t;a.style.position='fixed';a.style.opacity='0';document.body.appendChild(a);a.select();try{document.execCommand('copy');ok()}catch(e){toast('कॉपी झाले नाही – हाताने निवडा')}a.remove()}
+ if(navigator.clipboard&&window.isSecureContext)navigator.clipboard.writeText(t).then(ok,fb);else fb()}
+function dlBlob(name,blob){var a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=name;document.body.appendChild(a);a.click();setTimeout(function(){URL.revokeObjectURL(a.href);a.remove()},1500)}
+function dlCanvas(cv,name){if(cv.toBlob)cv.toBlob(function(b){dlBlob(name,b);toast('⬇️ '+name+' Download झाले')},'image/png');else{var a=document.createElement('a');a.href=cv.toDataURL('image/png');a.download=name;a.click()}}
+function shareCanvas(cv,name,text){if(!cv.toBlob)return waShare(text);cv.toBlob(function(b){var f;try{f=new File([b],name,{type:'image/png'})}catch(e){}
+ if(f&&navigator.canShare&&navigator.canShare({files:[f]})){navigator.share({files:[f],text:text}).catch(function(){})}else{dlBlob(name,b);toast('फोटो Download झाला – WhatsApp मध्ये तो फोटो जोडा');setTimeout(function(){waShare(text)},900)}},'image/png')}
+function slug(s){return (String(s||'').replace(/[^\w\u0900-\u097F]+/g,'-').replace(/^-+|-+$/g,'').slice(0,30)||'digital-aarambh')}
+function today(){var d=new Date();return d.getFullYear()+'-'+('0'+(d.getMonth()+1)).slice(-2)+'-'+('0'+d.getDate()).slice(-2)}
+function rs(n){n=Math.round(Number(n)||0);return '₹'+n.toLocaleString('en-IN')}
+var fontP=null;function fontsReady(){if(!fontP){fontP=(document.fonts&&document.fonts.load)?Promise.race([Promise.all([document.fonts.load('800 40px Mukta','अ'),document.fonts.load('600 40px Mukta','अ'),document.fonts.load('400 40px Mukta','अ')]),new Promise(function(r){setTimeout(r,2500)})]).catch(function(){}):Promise.resolve()}return fontP}
 
-const b64e=o=>btoa(unescape(encodeURIComponent(JSON.stringify(o)))).replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,'');
-const b64d=t=>JSON.parse(decodeURIComponent(escape(atob(t.replace(/-/g,'+').replace(/_/g,'/')))));
-const upiOk=u=>/^[A-Za-z0-9.\-_]{2,}@[A-Za-z]{2,}$/.test(u);
-function shopLink(s){const o={n:s.sName,t:s.sType,a:s.sAddr,p:s.sPhone,h:s.sTime,u:s.sUpi};Object.keys(o).forEach(k=>{if(!o[k])delete o[k]});return location.origin+location.pathname+'#shop='+b64e(o)}
-// shop data (persisted)
-const F=['sName','sType','sAddr','sPhone','sTime','sUpi'];
-const shop=()=>Object.fromEntries(F.map(f=>[f,$('#'+f).value.trim()]));
-const saved=st.get('shop',{});F.forEach(f=>{if(saved[f])$('#'+f).value=saved[f];$('#'+f).addEventListener('input',()=>st.set('shop',shop()))});
-const need=()=>{const s=shop();if(!s.sName){toast('दुकानाचे नाव भरा');$('#sName').focus();return null}return s};
-const phoneOk=p=>/^[6-9]\d{9}$/.test(p);
+/* ===== QR (bundled qrcode-generator, MIT) ===== */
+qrcode.stringToBytes=qrcode.stringToBytesFuncs['UTF-8'];
+function qrMake(text){var n=unescape(encodeURIComponent(text)).length;var q=qrcode(0,n>180?'L':'M');q.addData(text,'Byte');q.make();return q}
+function qrCanvas(text,opt){opt=opt||{};var q;try{q=qrMake(text)}catch(e){throw new Error('LONG')}
+ var n=q.getModuleCount(),cell=Math.max(4,Math.floor((opt.px||640)/(n+8))),qs=cell*(n+8);
+ var lab=opt.label||'',sub=opt.sub||'',lh=lab?Math.round(qs*0.11):0,sh=sub?Math.round(qs*0.075):0,pad=(lab||sub)?Math.round(qs*0.05):0;
+ var cv=document.createElement('canvas');cv.width=qs;cv.height=qs+lh+sh+pad;var c=cv.getContext('2d');
+ c.fillStyle='#fff';c.fillRect(0,0,cv.width,cv.height);c.fillStyle='#000';
+ for(var r=0;r<n;r++)for(var k=0;k<n;k++)if(q.isDark(r,k))c.fillRect((k+4)*cell,(r+4)*cell,cell,cell);
+ if(lab)fitText(c,lab,{x:cell*2,y:qs-cell,w:qs-cell*4,h:lh,max:Math.round(lh*0.8),min:14,weight:800,color:'#111'});
+ if(sub)fitText(c,sub,{x:cell*2,y:qs-cell+lh,w:qs-cell*4,h:sh,max:Math.round(sh*0.75),min:12,weight:600,color:'#444'});
+ cv.className='qrv';return cv}
+function qrErr(e){return e&&e.message==='LONG'?'❌ मजकूर QR साठी खूप मोठा आहे. कृपया लिंक/मजकूर कमी करा.':'❌ QR तयार झाला नाही. माहिती तपासा.'}
+function upiLink(pa,pn,am,tn){var s='upi://pay?pa='+pa.trim()+'&pn='+encodeURIComponent(String(pn||'Shop').slice(0,40));if(am&&Number(am)>0)s+='&am='+Number(am).toFixed(2);s+='&cu=INR';if(tn)s+='&tn='+encodeURIComponent(tn);return s}
+function drawQrOn(c,text,x,y,size){var q=qrMake(text),n=q.getModuleCount(),cell=size/(n+8);c.fillStyle='#fff';c.fillRect(x,y,size,size);c.fillStyle='#000';
+ for(var r=0;r<n;r++)for(var k=0;k<n;k++)if(q.isDark(r,k))c.fillRect(Math.floor(x+(k+4)*cell),Math.floor(y+(r+4)*cell),Math.ceil(cell),Math.ceil(cell))}
 
-// tool tabs
-$$('.tool').forEach(b=>b.onclick=()=>{$$('.tool').forEach(x=>x.classList.toggle('on',x===b));$$('.panel:not(#shop)').forEach(p=>p.classList.toggle('on',p.id===b.dataset.p));document.getElementById(b.dataset.p).scrollIntoView({behavior:'smooth',block:'nearest'})});
+/* ===== Canvas text: wrap + shrink to fit (Marathi-safe) ===== */
+var SEG=null;try{SEG=new Intl.Segmenter('mr',{granularity:'grapheme'})}catch(e){}
+function graphemes(w){if(SEG){var a=[],it=SEG.segment(w)[Symbol.iterator](),s;while(!(s=it.next()).done)a.push(s.value.segment);return a}return Array.from(w)}
+function wrap(c,text,maxW){var out=[];String(text).split('\n').forEach(function(par){var words=par.split(/\s+/).filter(Boolean),line='';
+ words.forEach(function(w){if(c.measureText(w).width>maxW){if(line){out.push(line);line=''}var cur='';graphemes(w).forEach(function(g){if(cur&&c.measureText(cur+g).width>maxW){out.push(cur);cur=g}else cur+=g});line=cur;return}
+  var t=line?line+' '+w:w;if(line&&c.measureText(t).width>maxW){out.push(line);line=w}else line=t});if(line)out.push(line)});return out}
+function fitText(c,text,b){text=String(text||'').trim();if(!text)return{h:0};var lh=b.lh||1.28,size=b.max,lines=[];
+ for(;size>=b.min;size-=2){c.font=(b.weight||700)+' '+size+'px '+FONT;lines=wrap(c,text,b.w);if(lines.length*size*lh<=b.h&&(!b.maxLines||lines.length<=b.maxLines))break}
+ if(size<b.min){size=b.min;c.font=(b.weight||700)+' '+size+'px '+FONT;lines=wrap(c,text,b.w);var ml=Math.max(1,Math.min(b.maxLines||99,Math.floor(b.h/(size*lh))));
+  if(lines.length>ml){lines=lines.slice(0,ml);var l=lines[ml-1];while(l&&c.measureText(l+'…').width>b.w){var g=graphemes(l);g.pop();l=g.join('')}lines[ml-1]=l+'…'}}
+ var tot=lines.length*size*lh,y0=b.top?b.y:b.y+(b.h-tot)/2,al=b.align||'center',x=al==='left'?b.x:al==='right'?b.x+b.w:b.x+b.w/2;
+ c.textAlign=al;c.textBaseline='middle';c.fillStyle=b.color||'#fff';
+ if(b.glow){c.shadowColor=b.glow;c.shadowBlur=b.blur||24}
+ lines.forEach(function(l,i){c.fillText(l,x,y0+size*lh*(i+0.5))});c.shadowBlur=0;c.shadowColor='transparent';return{h:tot,size:size,lines:lines.length}}
+function rrect(c,x,y,w,h,r){c.beginPath();c.moveTo(x+r,y);c.arcTo(x+w,y,x+w,y+h,r);c.arcTo(x+w,y+h,x,y+h,r);c.arcTo(x,y+h,x,y,r);c.arcTo(x,y,x+w,y,r);c.closePath()}
+function sparkles(c,W,H,col,n,seed){var s=seed||7;function rnd(){s=(s*9301+49297)%233280;return s/233280}c.save();for(var i=0;i<n;i++){var x=rnd()*W,y=rnd()*H*0.9,r=1+rnd()*3.2;c.globalAlpha=0.35+rnd()*0.6;c.fillStyle=i%3?'#fff':col;c.beginPath();c.arc(x,y,r,0,6.283);c.fill()}c.restore()}
+function mandala(c,x,y,R,col){c.save();c.translate(x,y);c.strokeStyle=col;c.globalAlpha=0.22;c.lineWidth=3;for(var k=0;k<3;k++){var r=R*(1-k*0.25);c.beginPath();c.arc(0,0,r,0,6.283);c.stroke();for(var i=0;i<16;i++){c.rotate(Math.PI/8);c.beginPath();c.ellipse(r*0.82,0,r*0.16,r*0.06,0,0,6.283);c.stroke()}}c.restore()}
 
-// QR helper
-function makeQr(el,text,size){el.innerHTML='';try{new QRCode(el,{text,width:size,height:size,correctLevel:QRCode.CorrectLevel.M})}catch(e){el.textContent='QR लोड झाला नाही (इंटरनेट तपासा)'}}
-makeQr($('#heroQr'),location.href,108);
+/* ===== Poster engine (offers & festivals) ===== */
+function poster(cv,o){var W=1080,H=1350;cv.width=W;cv.height=H;var c=cv.getContext('2d');
+ var g=c.createLinearGradient(0,0,W,H);g.addColorStop(0,o.bg1);g.addColorStop(1,o.bg2);c.fillStyle=g;c.fillRect(0,0,W,H);
+ var rg=c.createRadialGradient(W/2,380,40,W/2,380,620);rg.addColorStop(0,'rgba(255,255,255,0.20)');rg.addColorStop(1,'rgba(255,255,255,0)');c.fillStyle=rg;c.fillRect(0,0,W,H);
+ mandala(c,W/2,330,300,o.accent);sparkles(c,W,H,o.accent,70,o.seed||11);
+ if(o.tricolor){c.fillStyle='#ff9933';c.fillRect(0,0,W,22);c.fillStyle='#ffffff';c.fillRect(0,22,W,10);c.fillStyle='#138808';c.fillRect(0,32,W,22)}
+ c.strokeStyle=o.accent;c.lineWidth=6;c.globalAlpha=0.85;rrect(c,26,26,W-52,H-52,34);c.stroke();c.globalAlpha=1;
+ if(o.top)fitText(c,o.top,{x:90,y:70,w:W-180,h:70,max:44,min:26,weight:600,color:o.accent,maxLines:1});
+ if(o.emoji){c.font='150px "Noto Color Emoji","Apple Color Emoji","Segoe UI Emoji",sans-serif';c.textAlign='center';c.textBaseline='middle';c.fillStyle='#fff';c.fillText(o.emoji,W/2,245)}
+ fitText(c,o.title,{x:80,y:350,w:W-160,h:260,max:112,min:46,weight:800,color:'#fff',glow:o.accent,blur:30,maxLines:4});
+ if(o.body)fitText(c,o.body,{x:90,y:620,w:W-180,h:o.offer?250:420,max:60,min:30,weight:600,color:'#f8f6ff',lh:1.32});
+ if(o.offer){c.fillStyle=o.accent;rrect(c,110,895,W-220,170,30);c.fill();fitText(c,o.offer,{x:140,y:905,w:W-280,h:150,max:74,min:30,weight:800,color:'#1d1400',maxLines:3})}
+ c.fillStyle='rgba(0,0,0,0.38)';rrect(c,60,1095,W-120,215,28);c.fill();
+ fitText(c,o.shop||'',{x:90,y:1105,w:W-180,h:100,max:66,min:32,weight:800,color:o.accent,maxLines:2});
+ var line=[o.phone?'📞 '+o.phone:'',o.addr?'📍 '+o.addr:''].filter(Boolean).join('   ');
+ if(line)fitText(c,line,{x:90,y:1205,w:W-180,h:95,max:38,min:22,weight:600,color:'#fff',maxLines:2});
+ c.font='500 20px '+FONT;c.textAlign='right';c.textBaseline='alphabetic';c.fillStyle='rgba(255,255,255,0.45)';c.fillText('Digital Aarambh AI',W-44,H-34);
+ cv.className='cv';return cv}
 
-// 1. majkur
-function majkur(s){return `🏪 ${s.sName}${s.sType?' – '+s.sType:''}\n\n${s.sName} मध्ये आपले हार्दिक स्वागत! ${s.sType?'आमच्याकडे उत्तम दर्जाचे '+s.sType+' सेवा/वस्तू':'आमच्याकडे उत्तम दर्जाच्या वस्तू व सेवा'} योग्य दरात उपलब्ध आहेत.\n\n`+(s.sAddr?`📍 पत्ता: ${s.sAddr}\n`:'')+(s.sPhone?`📞 फोन / WhatsApp: ${s.sPhone}\n`:'')+(s.sTime?`🕒 वेळ: ${s.sTime}\n`:'')+`\nआजच भेट द्या किंवा WhatsApp वर संपर्क करा. आपला विश्वास – आमची जबाबदारी! 🙏`}
-const wa=t=>window.open('https://wa.me/?text='+encodeURIComponent(t));
-const copy=async t=>{try{await navigator.clipboard.writeText(t);toast('कॉपी झाले!')}catch(e){toast('कॉपी करता आले नाही – मजकूर निवडून कॉपी करा')}};
-function dl(name,href){const a=document.createElement('a');a.download=name;a.href=href;a.click()}
-const esc=s=>s.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+/* ===== Shop details (shared by all agents) ===== */
+var SF=[['sName','दुकानाचे / व्यवसायाचे नाव *','उदा. श्री साई किराणा स्टोअर'],['sType','व्यवसायाचा प्रकार','किराणा / मोबाईल शॉप / हॉटेल / ब्युटी पार्लर'],['sOwner','मालकाचे नाव','उदा. संतोष उजगरे'],['sPhone','फोन / WhatsApp नंबर','98765 43210 (+91 चालेल)'],['sAddr','पत्ता','उदा. मोशी प्राधिकरण, पुणे'],['sTime','वेळ','सकाळी 8 ते रात्री 9 (रविवार बंद)'],['sUpi','UPI ID','name@okaxis'],['sAbout','दुकानाबद्दल / खास गोष्टी','उदा. ताजा माल, घरपोच सेवा, योग्य दर'],['sMap','Google Maps लिंक','https://maps.app.goo.gl/...'],['sReview','Google Review लिंक','https://g.page/r/.../review']];
+var shop=st.get('shop',{})||{};if(shop.sPhone)shop.sPhone=normPhone(shop.sPhone);
+function saveShop(){st.set('shop',shop);renderBar()}
+function renderBar(){var b=$('#shopbar');if(shop.sName){b.classList.remove('warn');b.innerHTML='<span style="font-size:26px">🏪</span><span class="t"><b>'+esc(shop.sName)+'</b><small>'+esc([shop.sType,phoneOk(shop.sPhone)?shop.sPhone:'',shop.sAddr].filter(Boolean).join(' · ')||'माहिती पूर्ण करा')+'</small></span><span class="pill">✏️ बदला</span>'}
+ else{b.classList.add('warn');b.innerHTML='<span style="font-size:26px">🏪</span><span class="t"><b>आधी दुकानाची माहिती भरा</b><small>एकदाच भरा – सगळे 12 एजंट्स वापरतील</small></span><span class="pill">भरा ›</span>'}}
+var OPT={sMap:1,sReview:1,sUpi:1};
+function shopForm(body,after){var h='<p class="note">ही माहिती फक्त या फोनमध्ये सेव्ह होते. एकदा भरली की सगळे एजंट्स वापरतात.</p><div class="two">';
+ SF.forEach(function(f){var k=f[0],ta=k==='sAbout',ex=k==='sPhone'?' type="tel" inputmode="tel"':k==='sUpi'?' autocapitalize="none" autocomplete="off"':(k==='sMap'||k==='sReview')?' type="url" inputmode="url" autocapitalize="none"':'';
+  h+='<div'+(ta?' style="grid-column:1/-1"':'')+'><label for="f_'+k+'">'+f[1]+(OPT[k]?' <em>(पर्यायी)</em>':'')+'</label>'+(ta?'<textarea id="f_'+k+'" style="min-height:70px" placeholder="'+esc(f[2])+'"></textarea>':'<input id="f_'+k+'"'+ex+' placeholder="'+esc(f[2])+'">')+'<div class="err" id="e_'+k+'"></div></div>'});
+ h+='</div><div class="row"><button class="btn" type="button" id="fSave">✅ सेव्ह करा</button></div>';body.innerHTML=h;
+ SF.forEach(function(f){$('#f_'+f[0],body).value=shop[f[0]]||''});
+ var ph=$('#f_sPhone',body);ph.addEventListener('blur',function(){var v=ph.value.trim();if(!v)return;var n=normPhone(v);if(phoneOk(n)){ph.value=n;ph.classList.remove('bad');$('#e_sPhone',body).textContent=''}else{ph.classList.add('bad');$('#e_sPhone',body).textContent='10 अंकी मोबाइल नंबर टाका (6/7/8/9 ने सुरू)'}});
+ $('#fSave',body).onclick=function(){var nv={},bad=false;SF.forEach(function(f){nv[f[0]]=$('#f_'+f[0],body).value.trim()});
+  ['sName','sPhone','sUpi','sMap','sReview'].forEach(function(k){$('#e_'+k,body).textContent='';$('#f_'+k,body).classList.remove('bad')});
+  function er(k,m){bad=true;$('#e_'+k,body).textContent=m;$('#f_'+k,body).classList.add('bad')}
+  if(!nv.sName)er('sName','नाव आवश्यक आहे');
+  if(nv.sPhone){nv.sPhone=normPhone(nv.sPhone);if(!phoneOk(nv.sPhone))er('sPhone','10 अंकी मोबाइल नंबर टाका (उदा. 9876543210)');else $('#f_sPhone',body).value=nv.sPhone}
+  if(nv.sUpi&&!upiOk(nv.sUpi))er('sUpi','UPI ID चुकीचा वाटतो (उदा. name@okaxis)');
+  if(nv.sMap&&!urlOk(nv.sMap))er('sMap','https:// ने सुरू होणारी लिंक टाका');
+  if(nv.sReview&&!urlOk(nv.sReview))er('sReview','https:// ने सुरू होणारी लिंक टाका');
+  if(bad){toast('लाल रंगातील माहिती दुरुस्त करा');return}
+  shop=nv;saveShop();toast('✅ दुकानाची माहिती सेव्ह झाली');if(after)after();else closeSheet()}}
+function needShop(i){if(shop.sName)return true;openSheet('🏪 दुकानाची माहिती',function(b){shopForm(b,function(){openAgent(i,true)})});toast('आधी दुकानाचे नाव भरा');return false}
 
-// 3. messages
-function variants(s){const o=$('#offer').value.trim(),oc=$('#occ').value,n=s.sName,c=s.sPhone?`\n📞 ${s.sPhone}`:'',ad=s.sAddr?`\n📍 ${s.sAddr}`:'';
- const of=o?`\n🎁 ${o}`:'';
- const head={ 'नवीन ऑफर':'खास ऑफर!','दिवाळी':'दिवाळीच्या हार्दिक शुभेच्छा! 🪔','गुढीपाडवा':'गुढीपाडव्याच्या हार्दिक शुभेच्छा! 🚩','गणेशोत्सव':'गणपती बाप्पा मोरया! 🙏','नवीन दुकान उद्घाटन':'नवीन दुकानाचे उद्घाटन!','धन्यवाद ग्राहक':'आपले मनापासून आभार! 🙏'}[oc];
- return [`${head}\n${n} कडून आपल्यासाठी खास संदेश.${of}${ad}${c}`,
- `${head}\n${n} – आपल्या विश्वासाचे ठिकाण. आजच भेट द्या!${of}${c}`,
- `📢 ${n}\n${head}${of}\nमर्यादित कालावधीसाठी – लवकर या!${ad}${c}`]}
-let vs=[],pick=0;
-function showVs(){ $('#variants').innerHTML=vs.map((v,i)=>`<div class="glass" style="margin-top:10px;${i==pick?'border-color:#22e0ff':''}"><pre style="white-space:pre-wrap;font:inherit">${esc(v)}</pre><div class="row"><button class="btn alt" data-pick="${i}">हा निवडा</button><button class="btn wa" data-wa="${i}">WhatsApp</button><button class="btn alt" data-cp="${i}">कॉपी</button></div></div>`).join('')}
+/* mini-site link (shop details are encoded in the link itself) */
+function b64e(o){return btoa(unescape(encodeURIComponent(JSON.stringify(o)))).replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,'')}
+function b64d(t){t=t.replace(/-/g,'+').replace(/_/g,'/');while(t.length%4)t+='=';return JSON.parse(decodeURIComponent(escape(atob(t))))}
+function base(){return location.origin+location.pathname}
+function shopLink(){var s=shop,o={n:s.sName,t:s.sType,o:s.sOwner,a:s.sAddr,p:phoneOk(s.sPhone)?s.sPhone:'',h:s.sTime,u:upiOk(s.sUpi||'')?s.sUpi:'',d:s.sAbout,m:urlOk(s.sMap||'')?s.sMap:'',r:urlOk(s.sReview||'')?s.sReview:''};Object.keys(o).forEach(function(k){if(!o[k])delete o[k]});return base()+'#shop='+b64e(o)}
+function mapsUrl(s){return urlOk(s.sMap||'')?s.sMap:'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent([s.sName,s.sAddr].filter(Boolean).join(' '))}
+function vcard(s,link){function e(v){return String(v||'').replace(/([,;\\])/g,'\\$1').replace(/\n/g,'\\n')}var L=['BEGIN:VCARD','VERSION:3.0','N:'+e(s.sOwner||s.sName)+';;;;','FN:'+e(s.sOwner||s.sName),'ORG:'+e(s.sName)];if(s.sType)L.push('TITLE:'+e(s.sType));if(phoneOk(s.sPhone))L.push('TEL;TYPE=CELL:+91'+s.sPhone);if(s.sAddr)L.push('ADR;TYPE=WORK:;;'+e(s.sAddr)+';;;;India');if(link)L.push('URL:'+link);if(s.sAbout)L.push('NOTE:'+e(s.sAbout));L.push('END:VCARD');return L.join('\r\n')+'\r\n'}
 
-// poster
-function poster(s){const c=$('#cv'),x=c.getContext('2d'),W=1080,H=1350;
- const g=x.createLinearGradient(0,0,W,H);g.addColorStop(0,'#0a0b3a');g.addColorStop(.55,'#2a1f8f');g.addColorStop(1,'#5b2fd8');x.fillStyle=g;x.fillRect(0,0,W,H);
- const r=x.createRadialGradient(W*.8,200,0,W*.8,200,500);r.addColorStop(0,'#22e0ff55');r.addColorStop(1,'transparent');x.fillStyle=r;x.fillRect(0,0,W,H);
- x.textAlign='center';x.fillStyle='#ffc23d';x.font='800 64px Mukta,sans-serif';x.fillText($('#occ').value,W/2,200);
- x.fillStyle='#fff';x.font='800 110px Mukta,sans-serif';wrap(x,s.sName,W/2,420,900,128);
- const o=$('#offer').value.trim();if(o){x.fillStyle='#ffc23d';x.fillRect(120,700,840,170);x.fillStyle='#241a00';x.font='800 72px Mukta,sans-serif';wrap(x,o,W/2,810,780,80)}
- x.fillStyle='#e9ecff';x.font='600 46px Mukta,sans-serif';let y=1000;
- [s.sAddr&&'📍 '+s.sAddr,s.sPhone&&'📞 '+s.sPhone,s.sTime&&'🕒 '+s.sTime].filter(Boolean).forEach(l=>{wrap(x,l,W/2,y,900,56);y+=70});
- x.fillStyle='#22e0ff';x.font='600 30px Mukta,sans-serif';x.fillText('Digital Aarambh AI',W/2,H-50)}
-function wrap(x,t,cx,y,max,lh){const w=t.split(' ');let l='',ls=[];w.forEach(k=>{const tt=l?l+' '+k:k;if(x.measureText(tt).width>max&&l){ls.push(l);l=k}else l=tt});ls.push(l);ls.forEach((q,i)=>x.fillText(q,cx,y+i*lh))}
+/* ===== Sheet (agent panel) ===== */
+var sheet=$('#sheet'),sheetOpen=false;
+function openSheet(title,render){$('#sheetT').textContent=title;var b=$('#sheetB');b.innerHTML='';render(b);sheet.classList.add('on');sheet.scrollTop=0;document.body.style.overflow='hidden';
+ if(!sheetOpen){sheetOpen=true;try{history.pushState({sheet:1},'')}catch(e){}}}
+function hideSheet(){sheet.classList.remove('on');document.body.style.overflow='';sheetOpen=false}
+function closeSheet(){if(sheetOpen&&history.state&&history.state.sheet){history.back()}else hideSheet()}
+window.addEventListener('popstate',function(){if(sheetOpen)hideSheet()});
+$('#sheetBack').onclick=closeSheet;
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&sheetOpen)closeSheet()});
 
-// mini website
-function site(s){const p=s.sPhone;return `<!DOCTYPE html><html lang="mr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(s.sName)}</title><style>body{font-family:system-ui,sans-serif;margin:0;background:#0a0b3a;color:#fff;text-align:center;padding:30px 16px}h1{color:#ffc23d}.c{max-width:480px;margin:20px auto;background:#14165c;border-radius:16px;padding:18px;text-align:left;line-height:1.7}a.b{display:inline-block;margin:6px;padding:12px 22px;border-radius:12px;font-weight:700;text-decoration:none;color:#04210f;background:#22c55e}a.b.t{background:#ffc23d;color:#241a00}</style></head><body><h1>${esc(s.sName)}</h1><p>${esc(s.sType||'')}</p><div class="c">${esc(majkur(s)).replace(/\n/g,'<br>')}</div>${p?`<a class="b" href="https://wa.me/91${p}">WhatsApp</a><a class="b t" href="tel:${p}">कॉल करा</a>`:''}<p style="opacity:.6;font-size:12px;margin-top:30px">Made with Digital Aarambh AI</p></body></html>`}
+function msgCards(box,arr,phoneFn){box.innerHTML=arr.map(function(t,i){return '<div class="var"><b class="pill">पर्याय '+(i+1)+'</b>\n'+esc(t)+'<div class="row"><button class="btn sm alt" type="button" data-c="'+i+'">📋 कॉपी</button><button class="btn sm wa" type="button" data-w="'+i+'">WhatsApp</button></div></div>'}).join('');
+ $$('[data-c]',box).forEach(function(b){b.onclick=function(){copy(arr[+b.dataset.c])}});$$('[data-w]',box).forEach(function(b){b.onclick=function(){waShare(arr[+b.dataset.w],phoneFn?phoneFn():'')}})}
+function sig(){var s=shop,l=['🏪 '+s.sName];if(phoneOk(s.sPhone))l.push('📞 '+s.sPhone);if(s.sAddr)l.push('📍 '+s.sAddr);return l.join('\n')}
+function qrBlock(box,text,opt,fname){box.innerHTML='';try{var cv=qrCanvas(text,opt);box.appendChild(cv);var r=document.createElement('div');r.className='row';r.style.justifyContent='center';
+  r.innerHTML='<button class="btn sm" type="button">⬇️ QR Download (PNG)</button><button class="btn sm wa" type="button">📤 शेअर</button>';box.appendChild(r);
+  r.children[0].onclick=function(){dlCanvas(cv,fname||'qr.png')};r.children[1].onclick=function(){shareCanvas(cv,fname||'qr.png',(opt&&opt.share)||'')};return cv}catch(e){box.innerHTML='<p class="err" style="font-size:15px">'+qrErr(e)+'</p>';return null}}
 
-// referral / account
-let user=st.get('user',null),step=0,pend='';
-const rl=()=>location.origin+location.pathname+'?ref='+user.code;
-function renderU(){const on=!!user;$('#loginBox').classList.toggle('hide',on);$('#idBox').classList.toggle('hide',!on);if(!on)return;
- $('#idName').textContent=user.name;$('#idMeta').textContent=user.dist+' · '+user.phone;$('#idNo').textContent=user.id;makeQr($('#idQr'),rl(),96);
- const c=st.get('refCount',0);$('#stC').textContent=c;$('#stA').textContent='₹'+c*51;$('#stK').textContent=user.code;$('#refLink').value=rl()}
-function setStep(n){step=n;$('#lOtp').classList.toggle('hide',n<1);$('#lProf').classList.toggle('hide',n<2);$('#lBtn').textContent=['OTP पाठवा','Verify करा','ID तयार करा'][n]}
-$('#lBtn').onclick=()=>{
- if(step===0){const p=$('#lPhone').value.trim();if(!phoneOk(p))return toast('10 अंकी फोन नंबर टाका');pend=p;setStep(1);toast('OTP पाठवला (डेमो: 1234)')}
- else if(step===1){if($('#lOtpV').value.trim()!=='1234')return toast('चुकीचा OTP');setStep(2)}
- else{const name=$('#lName').value.trim();if(!name)return toast('नाव भरा');
-  const code='DA'+Math.random().toString(36).slice(2,6).toUpperCase()+Math.floor(10+Math.random()*90);
-  user={name,dist:$('#lDist').value.trim(),phone:pend,code,id:'DA-MH-'+Math.floor(1000+Math.random()*9000)};st.set('user',user);renderU();toast('✅ '+user.id)}};
-try{const r=new URLSearchParams(location.search).get('ref');if(r)st.set('refFrom',r)}catch(e){}
+/* ===== 12 Agents ===== */
+var AG=[
+['🌐','Business Website','दुकानाची माहिती व मिनी वेबसाइट लिंक','c1',aWebsite],
+['▦','QR Code','WhatsApp, कॉल, UPI, लिंक QR','c2',aQr],
+['📢','Poster / जाहिरात','ऑफर पोस्टर व जाहिरात मजकूर','c3',aPoster],
+['💬','Customer WhatsApp Message','ऑर्डर, पेमेंट, नवीन माल – तयार मेसेज','c1',aMsg],
+['🗨️','Customer Reply','ग्राहकांच्या प्रश्नांची तयार उत्तरे','c2',aReply],
+['📒','हिशोब वही','रोजचा जमा-खर्च व उधारी यादी','c3',aHisab],
+['⭐','Review मागवा','Google Review साठी मेसेज + QR','c1',aReview],
+['📍','Map Direction','दुकानाचा पत्ता, नकाशा लिंक व QR','c2',aMap],
+['💳','UPI Payment','रकमेसह UPI QR व पेमेंट मेसेज','c3',aUpi],
+['🪔','Festival Poster','दिवाळी, गणपती, पाडवा… शुभेच्छा पोस्टर','c1',aFest],
+['🪪','Digital Visiting Card','कार्ड फोटो, Contact (.vcf), लिंक','c2',aCard],
+['🤝','Member ID & Referral','सदस्य ओळखपत्र व Refer लिंक','c3',aMember]];
+$('#grid').innerHTML=AG.map(function(a,i){return '<button type="button" class="ag '+a[3]+'" data-i="'+i+'"><span class="no">'+(i+1)+'</span><span class="ic">'+a[0]+'</span><b>'+esc(a[1])+'</b><small>'+esc(a[2])+'</small></button>'}).join('');
+$$('#grid .ag').forEach(function(b){b.onclick=function(){openAgent(+b.dataset.i)}});
+function openAgent(i,replace){var a=AG[i];if(i!==11&&i!==5&&!needShop(i))return;
+ if(replace&&sheetOpen){$('#sheetT').textContent=(i+1)+'. '+a[1];var b=$('#sheetB');b.innerHTML='';a[4](b);sheet.scrollTop=0}else openSheet((i+1)+'. '+a[1],a[4])}
+$('#shopbar').onclick=function(){openSheet('🏪 दुकानाची माहिती',function(b){shopForm(b)})};
 
-$('#qType').onchange=()=>$('#qUrlRow').classList.toggle('hide',$('#qType').value!=='url');
+/* 1. Business Website */
+function aWebsite(b){var s=shop;
+ b.innerHTML='<p class="note">तुमच्या दुकानाचा परिचय (3 प्रकार) आणि ग्राहकांना पाठवता येणारी <b>मिनी वेबसाइट लिंक</b> – WhatsApp, कॉल, नकाशा, UPI बटणांसह.</p><div id="w1"></div><div class="glass"><b>🔗 तुमची मिनी वेबसाइट</b><input id="wl" readonly aria-label="मिनी वेबसाइट लिंक"><div class="row"><a class="btn" id="wOpen" target="_blank" rel="noopener">👀 उघडून पहा</a><button class="btn alt" type="button" id="wCp">📋 लिंक कॉपी</button><button class="btn wa" type="button" id="wWa">WhatsApp वर पाठवा</button></div><div id="wq"></div><p class="note">टीप: लिंकमध्येच तुमची माहिती असते. माहिती बदलली तर नवीन लिंक पाठवा.</p></div>';
+ var ty=s.sType?' ('+s.sType+')':'',ph=phoneOk(s.sPhone)?s.sPhone:'';
+ var A=['🏪 '+s.sName+ty+'\n\nनमस्कार! '+(s.sAddr?s.sAddr+' येथे ':'')+'आमचे '+(s.sType||'दुकान')+' आपल्या सेवेत आहे. '+(s.sAbout?s.sAbout+'. ':'')+'योग्य दर, चांगला माल आणि आपुलकीची सेवा हीच आमची ओळख.\n\n'+(s.sTime?'🕒 वेळ: '+s.sTime+'\n':'')+(ph?'📞 फोन/WhatsApp: '+ph+'\n':'')+(s.sAddr?'📍 पत्ता: '+s.sAddr:''),
+ '✨ '+s.sName+' – आपल्या परिसरातील विश्वासू '+(s.sType||'दुकान')+'!\n'+(s.sAbout?'✔️ '+s.sAbout+'\n':'')+'✔️ योग्य किंमत\n✔️ वेळेवर सेवा\n'+(ph?'📲 ऑर्डरसाठी WhatsApp करा: '+ph+'\n':'')+(s.sTime?'🕒 '+s.sTime:''),
+ s.sName+(s.sType?' | '+s.sType:'')+(s.sAddr?' | '+s.sAddr:'')+(ph?' | '+ph:'')+'\nस्थानिक ग्राहकांसाठी विश्वासाची सेवा. आजच भेट द्या! 🙏'];
+ msgCards($('#w1',b),A);var link=shopLink();$('#wl',b).value=link;$('#wOpen',b).href=link;
+ $('#wCp',b).onclick=function(){copy(link)};$('#wWa',b).onclick=function(){waShare('🏪 '+s.sName+' – आमची माहिती, फोन, नकाशा व पेमेंट एका क्लिकवर:\n'+link)};
+ qrBlock($('#wq',b),link,{label:s.sName,sub:'Scan करा – दुकानाची माहिती',share:link},slug(s.sName)+'-website-qr.png')}
 
-// actions
-document.addEventListener('click',e=>{
- const pk=e.target.closest('[data-pick]'),w=e.target.closest('[data-wa]'),cp=e.target.closest('[data-cp]');
- if(pk){pick=+pk.dataset.pick;showVs();return}if(w)return wa(vs[+w.dataset.wa]);if(cp)return copy(vs[+cp.dataset.cp]);
- const a=e.target.closest('[data-a]');if(!a)return;const k=a.dataset.a;let s;
- if(k==='gen1'){if(!(s=need()))return;$('#o1').value=majkur(s);}
- else if(k==='link'){if(!(s=need()))return;if(s.sPhone&&!phoneOk(s.sPhone))return toast('फोन नंबर 10 अंकी बरोबर टाका');if(s.sUpi&&!upiOk(s.sUpi))return toast('UPI ID बरोबर टाका (उदा. name@upi)');const l=shopLink(s);$('#shopLink').value=l;$('#linkBox').classList.remove('hide');copy(l)}
- else if(k==='waLink'){if(!$('#shopLink').value)return toast('आधी लिंक तयार करा');wa((shop().sName)+' – आमची दुकान-लिंक: '+$('#shopLink').value)}
- else if(k==='cpLink'){if($('#shopLink').value)copy($('#shopLink').value);else toast('आधी लिंक तयार करा')}
- else if(k==='copy1'){if($('#o1').value)copy($('#o1').value);else toast('आधी मजकूर तयार करा')}
- else if(k==='wa1'){if($('#o1').value)wa($('#o1').value);else toast('आधी मजकूर तयार करा')}
- else if(k==='site'){if(!(s=need()))return;dl((s.sName.replace(/\s+/g,'-')||'shop')+'.html','data:text/html;charset=utf-8,'+encodeURIComponent(site(s)))}
- else if(k==='genQr'){if(!(s=need()))return;const t=$('#qType').value;let v;
-  if(t==='url'){v=$('#qUrl').value.trim();if(!/^https?:\/\//.test(v))return toast('https:// ने सुरू होणारी लिंक टाका')}
-  else if(t==='upi'){if(!upiOk(s.sUpi))return toast('वर UPI ID भरा (उदा. name@upi)');v='upi://pay?pa='+encodeURIComponent(s.sUpi)+'&pn='+encodeURIComponent(s.sName)+'&cu=INR'}
-  else{if(!phoneOk(s.sPhone))return toast('वर 10 अंकी फोन नंबर भरा');v=t==='wa'?'https://wa.me/91'+s.sPhone:'tel:+91'+s.sPhone}
-  makeQr($('#qrOut'),v,220)}
- else if(k==='dlQr'){const cv=$('#qrOut canvas'),im=$('#qrOut img');const h=cv?cv.toDataURL('image/png'):(im&&im.src);if(!h)return toast('आधी QR तयार करा');dl('qr-code.png',h)}
- else if(k==='gen3'){if(!(s=need()))return;vs=variants(s);pick=0;showVs()}
- else if(k==='poster'){if(!(s=need()))return;const go=()=>{poster(s);$('#cv').classList.remove('hide');$('#dlPoster').classList.remove('hide')};(document.fonts&&document.fonts.load)?document.fonts.load('800 60px Mukta','अ').then(go,go):go()}
- else if(k==='dlPoster')dl('poster.png',$('#cv').toDataURL('image/png'));
- else if(k==='waRef')wa('Digital Aarambh AI – दुकानाची माहिती, QR व जाहिरात मोफत बनवा! '+rl());
- else if(k==='cpRef')copy(rl());
- else if(k==='out'){user=null;st.set('user',null);setStep(0);renderU()}
-});
-renderU();
-function showPub(){const m=location.hash.match(/^#shop=([\w-]+)/);if(!m)return;let o;
- try{o=b64d(m[1])}catch(e){return}
- if(!o||typeof o.n!=='string'||!o.n)return;
- const g=k=>typeof o[k]==='string'?o[k].slice(0,200):'';
- const n=g('n'),t=g('t'),a=g('a'),p=g('p'),h=g('h'),u=g('u');const ph=phoneOk(p),up=upiOk(u);
- document.title=n;$('main').classList.add('hide');const el=$('#pub');el.classList.remove('hide');
- el.innerHTML=`<div class="glass" style="max-width:480px;margin:24px auto;text-align:center"><div class="da" style="font-size:44px">DA</div><h1 style="font-size:30px">${esc(n)}</h1><p class="sub">${esc(t)}</p>
- <div style="text-align:left;line-height:1.9;margin:10px 0">${a?'📍 '+esc(a)+'<br>':''}${ph?'📞 '+esc(p)+'<br>':''}${h?'🕒 '+esc(h):''}</div>
- <div class="row" style="justify-content:center">${ph?`<a class="btn wa" style="text-decoration:none" href="https://wa.me/91${p}">WhatsApp</a><a class="btn" style="text-decoration:none" href="tel:+91${p}">कॉल करा</a>`:''}${a?`<a class="btn alt" style="text-decoration:none" href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(n+' '+a)}" target="_blank" rel="noopener">नकाशा</a>`:''}</div>
- ${up?`<p style="margin-top:16px;color:var(--mut)">UPI ने पेमेंट करा</p><div id="pubQr" style="background:#fff;padding:10px;border-radius:12px;width:fit-content;margin:8px auto"></div><div style="font-size:13px;color:var(--mut)">${esc(u)}</div>`:''}
- <p style="margin-top:20px;font-size:12px;color:var(--mut)">Made with <a style="color:var(--cyan)" href="${location.pathname}">Digital Aarambh AI</a> – तुमचीही साईट मोफत बनवा</p></div>`;
- if(up)makeQr($('#pubQr'),'upi://pay?pa='+encodeURIComponent(u)+'&pn='+encodeURIComponent(n)+'&cu=INR',200)}
-showPub();
-window.addEventListener('hashchange',()=>location.reload());
+/* 2. QR */
+function aQr(b){b.innerHTML='<label for="qt">QR मध्ये काय हवं?</label><select id="qt"><option value="wa">WhatsApp वर मेसेज (फोन नंबरवरून)</option><option value="tel">थेट कॉल</option><option value="upi">UPI पेमेंट</option><option value="site">माझी मिनी वेबसाइट</option><option value="url">कोणतीही लिंक</option><option value="txt">साधा मजकूर</option></select><div id="qx"></div><label for="ql">QR खाली नाव <em>(पर्यायी)</em></label><input id="ql"><div class="row"><button class="btn" type="button" id="qg">QR तयार करा</button></div><div id="qo"></div><p class="note">Download केलेल्या QR ला पांढरी कडा (quiet zone) असते – प्रिंटसाठी योग्य.</p>';
+ var qt=$('#qt',b),qx=$('#qx',b);$('#ql',b).value=shop.sName||'';
+ function ex(){var v=qt.value;qx.innerHTML=v==='url'?'<label for="qu">लिंक</label><input id="qu" type="url" inputmode="url" autocapitalize="none" placeholder="https://...">':v==='txt'?'<label for="qu">मजकूर</label><textarea id="qu" style="min-height:70px"></textarea>':(v==='wa'||v==='tel')?'<label for="qu">फोन नंबर</label><input id="qu" type="tel" inputmode="tel">':v==='upi'?'<label for="qu">UPI ID</label><input id="qu" autocapitalize="none"><label for="qa">रक्कम ₹ <em>(पर्यायी)</em></label><input id="qa" type="number" inputmode="decimal" min="0">':'';
+  var qu=$('#qu',b);if(qu){if(v==='wa'||v==='tel')qu.value=shop.sPhone||'';if(v==='upi')qu.value=shop.sUpi||''}}
+ qt.onchange=ex;ex();
+ $('#qg',b).onclick=function(){var v=qt.value,qu=$('#qu',b),val=qu?qu.value.trim():'',t='',sub='';
+  if(v==='wa'||v==='tel'){var p=normPhone(val);if(!phoneOk(p)){toast('10 अंकी मोबाइल नंबर टाका');qu.classList.add('bad');return}qu.value=p;qu.classList.remove('bad');t=v==='wa'?'https://wa.me/91'+p:'tel:+91'+p;sub=v==='wa'?'Scan करा – WhatsApp करा':'Scan करा – कॉल करा'}
+  else if(v==='upi'){if(!upiOk(val)){toast('योग्य UPI ID टाका (उदा. name@okaxis)');return}t=upiLink(val,shop.sName,($('#qa',b)||{}).value);sub='Scan करा – UPI ने पेमेंट करा'}
+  else if(v==='site'){t=shopLink();sub='Scan करा – दुकानाची माहिती'}
+  else if(v==='url'){if(!urlOk(val)){toast('https:// ने सुरू होणारी लिंक टाका');return}t=val}
+  else{if(!val){toast('मजकूर टाका');return}t=val}
+  qrBlock($('#qo',b),t,{label:$('#ql',b).value.trim(),sub:sub,share:shop.sName||''},slug(shop.sName)+'-'+v+'-qr.png')}}
+
+/* 3. Poster */
+var THEMES={blue:['#0b1e6b','#5b21b6','#ffc23d'],orange:['#7c2d12','#ea580c','#fde047'],green:['#064e3b','#0d9488','#fde68a'],pink:['#701a75','#db2777','#fde68a'],red:['#7f1d1d','#dc2626','#ffd166']};
+function aPoster(b){b.innerHTML='<div class="two"><div><label for="po">प्रसंग</label><select id="po"><option value="offer">🎁 खास ऑफर</option><option value="new">🆕 नवीन माल आला</option><option value="open">🎉 नवीन दुकान उद्घाटन</option><option value="sale">🔥 सेल / सूट</option><option value="thanks">🙏 धन्यवाद ग्राहक</option></select></div><div><label for="pt">रंग</label><select id="pt"><option value="blue">निळा-जांभळा</option><option value="orange">केशरी</option><option value="green">हिरवा</option><option value="pink">गुलाबी</option><option value="red">लाल</option></select></div></div><label for="ph">मुख्य ओळ <em>(रिकामे ठेवल्यास आपोआप)</em></label><input id="ph" placeholder="उदा. दिवाळी धमाका ऑफर"><label for="pf">ऑफर</label><input id="pf" placeholder="उदा. 500 च्या खरेदीवर 10% सूट"><label for="pd">आणखी माहिती <em>(पर्यायी)</em></label><input id="pd" placeholder="उदा. ऑफर 31 ऑक्टोबरपर्यंत"><div class="row"><button class="btn" type="button" id="pg">पोस्टर व मजकूर तयार करा</button></div><div id="pc"></div><div class="row hide" id="pb" style="justify-content:center"><button class="btn" type="button" id="pdl">⬇️ पोस्टर Download</button><button class="btn wa" type="button" id="psh">📤 WhatsApp / शेअर</button></div><div id="pm"></div>';
+ var HD={offer:['🎁','खास ऑफर!','आमच्या दुकानात खास ऑफर सुरू आहे.'],new:['🆕','नवीन माल आला!','ताजा व नवीन स्टॉक आता उपलब्ध.'],open:['🎉','भव्य उद्घाटन!','आमच्या नवीन दुकानात आपले हार्दिक स्वागत.'],sale:['🔥','महा सेल!','मर्यादित काळासाठी जबरदस्त सूट.'],thanks:['🙏','धन्यवाद!','आपल्या विश्वासाबद्दल मनःपूर्वक आभार.']};
+ var cv=document.createElement('canvas');
+ $('#pg',b).onclick=function(){var k=$('#po',b).value,h=HD[k],th=THEMES[$('#pt',b).value],title=$('#ph',b).value.trim()||h[1],off=$('#pf',b).value.trim(),more=$('#pd',b).value.trim();
+  fontsReady().then(function(){poster(cv,{bg1:th[0],bg2:th[1],accent:th[2],top:shop.sType||'',emoji:h[0],title:title,body:(more?h[2]+' '+more:h[2]),offer:off,shop:shop.sName,phone:phoneOk(shop.sPhone)?shop.sPhone:'',addr:shop.sAddr,seed:title.length+3});
+   $('#pc',b).appendChild(cv);$('#pb',b).classList.remove('hide');
+   var s=shop,ph=phoneOk(s.sPhone)?s.sPhone:'',M=[h[0]+' '+title+'\n'+(off?'👉 '+off+'\n':'')+h[2]+(more?' '+more:'')+'\n\n'+sig(),
+    '📣 '+s.sName+' कडून '+title+'\n'+(off?'✅ '+off+'\n':'')+(more?'🗓️ '+more+'\n':'')+(ph?'📲 ऑर्डरसाठी WhatsApp: '+ph:''),
+    title+(off?' – '+off:'')+'! आजच भेट द्या: '+s.sName+(s.sAddr?', '+s.sAddr:'')+' 🙏'];
+   $('#pm',b).innerHTML='<h4 style="margin-top:14px">पोस्टरसोबत पाठवायचा मजकूर</h4><div id="pmc"></div>';msgCards($('#pmc',b),M);cv.scrollIntoView({behavior:'smooth',block:'start'})})};
+ $('#pdl',b).onclick=function(){dlCanvas(cv,slug(shop.sName)+'-poster.png')};$('#psh',b).onclick=function(){shareCanvas(cv,slug(shop.sName)+'-poster.png',shop.sName)}}
+
+/* 4. Customer WhatsApp Message */
+function aMsg(b){b.innerHTML='<label for="mt">मेसेज प्रकार</label><select id="mt"><option value="order">✅ ऑर्डर मिळाली</option><option value="ready">📦 ऑर्डर तयार / पाठवली</option><option value="pay">💰 पेमेंट आठवण</option><option value="stock">🆕 नवीन माल आला</option><option value="offer">🎁 ऑफर</option><option value="closed">🔒 आज दुकान बंद</option><option value="thanks">🙏 धन्यवाद</option></select><div class="two"><div><label for="mn">ग्राहकाचे नाव <em>(पर्यायी)</em></label><input id="mn"></div><div><label for="mp">ग्राहकाचा फोन <em>(पर्यायी – थेट पाठवण्यासाठी)</em></label><input id="mp" type="tel" inputmode="tel"></div><div><label for="mi">वस्तू / तपशील</label><input id="mi" placeholder="उदा. 5 किलो तांदूळ, 1 लि. तेल"></div><div><label for="ma">रक्कम ₹ <em>(पर्यायी)</em></label><input id="ma" type="number" inputmode="decimal" min="0"></div></div><div class="err" id="mpe"></div><div class="row"><button class="btn" type="button" id="mg">मेसेज तयार करा</button></div><div id="mo"></div>';
+ $('#mg',b).onclick=function(){var t=$('#mt',b).value,n=$('#mn',b).value.trim(),it=$('#mi',b).value.trim(),am=Number($('#ma',b).value)||0,pr=$('#mp',b).value.trim(),s=shop;
+  if(pr&&!phoneOk(normPhone(pr))){$('#mpe',b).textContent='ग्राहकाचा फोन 10 अंकी टाका, किंवा रिकामा ठेवा';$('#mp',b).classList.add('bad');return}$('#mpe',b).textContent='';$('#mp',b).classList.remove('bad');if(pr)$('#mp',b).value=normPhone(pr);
+  var hi='नमस्कार'+(n?' '+n+' जी':'')+' 🙏',A=am?' (एकूण '+rs(am)+')':'',U=upiOk(s.sUpi||'')?'\nUPI: '+s.sUpi:'',X;
+  if(t==='order')X=[hi+'\nआपली ऑर्डर'+(it?' – '+it:'')+A+' आम्हाला मिळाली आहे. लवकरच तयार करून कळवतो.\n– '+s.sName,hi+'\nऑर्डरसाठी धन्यवाद! ✅'+(it?'\n🛒 '+it:'')+(A?'\n💰'+A:'')+'\nतयार झाल्यावर लगेच मेसेज करू.\n'+sig(),'✅ ऑर्डर कन्फर्म'+(it?': '+it:'')+A+'. धन्यवाद! – '+s.sName];
+  else if(t==='ready')X=[hi+'\nआपली ऑर्डर'+(it?' ('+it+')':'')+' तयार आहे 📦'+A+'. सोयीनुसार घेऊन जा किंवा घरपोच पाठवतो.\n– '+s.sName,hi+'\nआपली ऑर्डर पाठवली आहे 🚚'+(it?'\n🛒 '+it:'')+(A?'\n💰'+A:'')+U+'\n'+sig(),'📦 ऑर्डर तयार'+A+'! – '+s.sName];
+  else if(t==='pay')X=[hi+'\n'+s.sName+' कडे आपले'+(am?' '+rs(am):'')+' पेमेंट बाकी आहे'+(it?' ('+it+')':'')+'. सवडीने भरावे ही विनंती.'+U+'\nधन्यवाद!',hi+'\nएक छोटीशी आठवण: बाकी रक्कम'+(am?' '+rs(am):'')+'. UPI/रोख कसेही चालेल.'+U+'\n– '+s.sName,'🙏 बाकी पेमेंट'+(am?' '+rs(am):'')+' – कृपया जमेल तेव्हा भरा. – '+s.sName+U];
+  else if(t==='stock')X=[hi+'\n'+s.sName+' मध्ये नवीन माल आला आहे 🆕'+(it?'\n👉 '+it:'')+'\nआजच भेट द्या किंवा WhatsApp वर ऑर्डर करा.\n'+sig(),'🆕 नवीन स्टॉक'+(it?': '+it:'')+'! लवकर या, मर्यादित माल. – '+s.sName,hi+'\nआपल्यासाठी ताजा व नवीन माल'+(it?' – '+it:'')+'. ऑर्डरसाठी हा मेसेज रिप्लाय करा.\n– '+s.sName];
+  else if(t==='offer')X=[hi+'\n🎁 खास ऑफर'+(it?': '+it:'')+(am?' फक्त '+rs(am):'')+'!\nऑफर मर्यादित काळासाठी.\n'+sig(),'🎁 '+s.sName+' ची ऑफर'+(it?' – '+it:'')+(am?' – '+rs(am):'')+'. आजच लाभ घ्या!',hi+'\nआमच्या नियमित ग्राहकांसाठी खास ऑफर'+(it?' – '+it:'')+'. ऑर्डरसाठी रिप्लाय करा 🙏\n– '+s.sName];
+  else if(t==='closed')X=[hi+'\nकळवण्यास दिलगीर आहोत, आज'+(it?' ('+it+')':'')+' '+s.sName+' बंद राहील. उद्या नेहमीच्या वेळेत सुरू. 🙏','🔒 आज दुकान बंद'+(it?' – '+it:'')+'. उद्या भेटूया! – '+s.sName,hi+'\nआज सुट्टी आहे. तातडीची ऑर्डर असल्यास मेसेज करा, उद्या पहिली डिलिव्हरी तुमची.\n– '+s.sName];
+  else X=[hi+'\n'+s.sName+' मधून खरेदी केल्याबद्दल मनःपूर्वक धन्यवाद! पुन्हा नक्की या. 😊','धन्यवाद'+(n?' '+n+' जी':'')+'! आपला विश्वास हीच आमची कमाई 🙏 – '+s.sName,hi+'\nआपल्या खरेदीबद्दल आभार. काही अडचण/सूचना असल्यास नक्की कळवा.\n'+sig()];
+  msgCards($('#mo',b),X,function(){return $('#mp',b).value})}}
+
+/* 5. Customer Reply */
+function aReply(b){b.innerHTML='<p class="note">ग्राहकाने विचारलेला प्रश्न निवडा – तयार मराठी उत्तर कॉपी करून पाठवा.</p><label for="rq">ग्राहकाचा प्रश्न</label><select id="rq"><option value="price">💰 “किंमत काय आहे?”</option><option value="time">🕒 “दुकान कधी उघडं असतं?”</option><option value="del">🚚 “घरपोच डिलिव्हरी आहे का?”</option><option value="avail">📦 “हा माल आहे का?”</option><option value="addr">📍 “दुकान कुठे आहे?”</option><option value="pay">💳 “ऑनलाइन पेमेंट चालेल का?”</option><option value="ret">🔄 “माल बदलून मिळेल का?”</option></select><div id="rx"></div><div class="row"><button class="btn" type="button" id="rg">उत्तर तयार करा</button></div><div id="ro"></div>';
+ var rq=$('#rq',b),rx=$('#rx',b);
+ function ex(){var v=rq.value;$('#ro',b).innerHTML='';rx.innerHTML=v==='price'?'<div class="two"><div><label for="r1">वस्तू</label><input id="r1" placeholder="उदा. बासमती तांदूळ"></div><div><label for="r2">किंमत</label><input id="r2" placeholder="उदा. ₹90/किलो"></div></div>':v==='del'?'<div class="two"><div><label for="r1">डिलिव्हरी परिसर</label><input id="r1" placeholder="उदा. मोशी, चऱ्होली"></div><div><label for="r2">डिलिव्हरी चार्ज / अट</label><input id="r2" placeholder="उदा. ₹300 वरील ऑर्डर मोफत"></div></div>':v==='avail'?'<div class="two"><div><label for="r1">वस्तू</label><input id="r1"></div><div><label for="r2">उपलब्ध?</label><select id="r2"><option value="y">हो, आहे</option><option value="n">सध्या नाही</option></select></div></div>':v==='ret'?'<label for="r1">अट <em>(पर्यायी)</em></label><input id="r1" placeholder="उदा. 3 दिवसांत, बिलासह">':''}
+ rq.onchange=ex;ex();
+ $('#rg',b).onclick=function(){var v=rq.value,s=shop,a=(($('#r1',b)||{}).value||'').trim(),c=(($('#r2',b)||{}).value||'').trim(),ph=phoneOk(s.sPhone)?s.sPhone:'',up=upiOk(s.sUpi||''),X;
+  if(v==='price')X=['नमस्कार 🙏 '+(a||'या वस्तू')+'ची किंमत '+(c||'[किंमत]')+' आहे. ऑर्डर करायची असल्यास कळवा, लगेच तयार ठेवतो.\n– '+s.sName,(a||'वस्तू')+': '+(c||'[किंमत]')+' ✅\nताजा माल उपलब्ध. घरपोच हवं असल्यास पत्ता पाठवा.\n– '+s.sName];
+  else if(v==='time')X=['नमस्कार 🙏 आमचे दुकान '+(s.sTime||'[वेळ]')+' उघडे असते. आपले स्वागत आहे!\n– '+s.sName,'🕒 वेळ: '+(s.sTime||'[वेळ]')+(s.sAddr?'\n📍 '+s.sAddr:'')+(ph?'\nतातडीसाठी कॉल करा: '+ph:'')];
+  else if(v==='del')X=['हो, घरपोच डिलिव्हरी आहे 🚚'+(a?' ('+a+' परिसरात)':'')+'.'+(c?' '+c+'.':'')+' यादी व पत्ता WhatsApp करा.\n– '+s.sName,'नमस्कार 🙏 आम्ही '+(a||'जवळच्या परिसरात')+' डिलिव्हरी करतो.'+(c?'\n👉 '+c:'')+'\nऑर्डरची यादी पाठवा, वेळ कळवतो.'];
+  else if(v==='avail')X=c==='n'?['नमस्कार 🙏 सध्या '+(a||'हा माल')+' उपलब्ध नाही. आल्यावर लगेच तुम्हाला कळवतो.\n– '+s.sName,'माफ करा, '+(a||'ही वस्तू')+' संपली आहे. पुढच्या 1-2 दिवसांत येईल. तुमच्यासाठी राखून ठेवू का?']:['हो, '+(a||'हा माल')+' उपलब्ध आहे ✅ किती हवा ते कळवा, तयार ठेवतो.\n– '+s.sName,'नमस्कार 🙏 '+(a||'माल')+' स्टॉकमध्ये आहे. दुकानात या किंवा घरपोच मागवा'+(ph?' – '+ph:'')+'.'];
+  else if(v==='addr')X=['नमस्कार 🙏 आमचा पत्ता: '+(s.sAddr||'[पत्ता]')+'\nनकाशा: '+mapsUrl(s)+'\n– '+s.sName,'📍 '+s.sName+'\n'+(s.sAddr||'')+'\n🗺️ '+mapsUrl(s)+(ph?'\nरस्ता सापडला नाही तर कॉल करा: '+ph:'')];
+  else if(v==='pay')X=['हो, ऑनलाइन पेमेंट चालेल ✅ '+(up?'UPI ID: '+s.sUpi:'Google Pay / PhonePe / Paytm सगळे चालतात')+'. पेमेंट झाल्यावर स्क्रीनशॉट पाठवा.\n– '+s.sName,'UPI, रोख – दोन्ही चालतात 🙏'+(up?'\nUPI: '+s.sUpi:'')];
+  else X=['नमस्कार 🙏 माल बदलून मिळेल'+(a?' ('+a+')':'')+'. कृपया बिल व माल घेऊन या.\n– '+s.sName,'हो, काही अडचण असल्यास नक्की बदलून देऊ'+(a?' – अट: '+a:'')+'. आपले समाधान महत्त्वाचे 🙏'];
+  msgCards($('#ro',b),X)}}
+
+/* 6. Hisab Book */
+function aHisab(b){var H=st.get('hisab',[])||[],U=st.get('udhari',[])||[],tab='day';
+ function save(){st.set('hisab',H);st.set('udhari',U)}
+ function bal(c){return c.tx.reduce(function(s,t){return s+t.a},0)}
+ function draw(){var h='<div class="tabs"><button type="button" data-t="day" class="'+(tab==='day'?'on':'')+'">📒 रोजचा हिशोब</button><button type="button" data-t="ud" class="'+(tab==='ud'?'on':'')+'">🧾 उधारी</button></div>';
+  if(tab==='day'){var td=today(),mo=td.slice(0,7),ti=0,to=0,mi=0,mx=0;H.forEach(function(e){if(e.d===td){if(e.t==='in')ti+=e.a;else to+=e.a}if(e.d.slice(0,7)===mo){if(e.t==='in')mi+=e.a;else mx+=e.a}});
+   h+='<div class="glass" style="margin-top:6px"><b>आज</b><div class="stats"><div><b class="in">'+rs(ti)+'</b>जमा</div><div><b class="out">'+rs(to)+'</b>खर्च</div><div><b>'+rs(ti-to)+'</b>शिल्लक</div></div><b>या महिन्यात</b><div class="stats"><div><b class="in">'+rs(mi)+'</b>जमा</div><div><b class="out">'+rs(mx)+'</b>खर्च</div><div><b>'+rs(mi-mx)+'</b>शिल्लक</div></div></div>'+
+   '<div class="glass"><div class="two"><div><label for="hd">तारीख</label><input id="hd" type="date" value="'+td+'"></div><div><label for="ht">प्रकार</label><select id="ht"><option value="in">➕ जमा (विक्री/आवक)</option><option value="out">➖ खर्च</option></select></div><div><label for="ha">रक्कम ₹</label><input id="ha" type="number" inputmode="decimal" min="0"></div><div><label for="hn">तपशील</label><input id="hn" placeholder="उदा. दिवसभराची विक्री / माल खरेदी"></div></div><div class="row"><button class="btn" type="button" id="hAdd">नोंद करा</button><button class="btn alt" type="button" id="hCsv">⬇️ CSV (Excel)</button></div></div><div class="list">'+
+   (H.length?H.slice().sort(function(a,c){return c.d<a.d?-1:c.d>a.d?1:c.id-a.id}).slice(0,60).map(function(e){return '<div class="li"><div class="m">'+esc(e.n||(e.t==='in'?'जमा':'खर्च'))+'<small>'+esc(e.d)+'</small></div><span class="a '+e.t+'">'+(e.t==='in'?'+':'−')+rs(e.a)+'</span><button type="button" class="x" data-del="'+e.id+'" aria-label="काढा">✕</button></div>'}).join(''):'<p class="note">अजून नोंद नाही.</p>')+'</div>'}
+  else{var tot=U.reduce(function(s,c){return s+Math.max(0,bal(c))},0);
+   h+='<div class="glass" style="margin-top:6px"><div class="stats" style="grid-template-columns:1fr 1fr"><div><b>'+U.length+'</b>ग्राहक</div><div><b class="out">'+rs(tot)+'</b>एकूण येणे बाकी</div></div><div class="two"><div><label for="un">ग्राहकाचे नाव</label><input id="un"></div><div><label for="up">फोन <em>(पर्यायी)</em></label><input id="up" type="tel" inputmode="tel"></div></div><div class="err" id="upe"></div><div class="row"><button class="btn" type="button" id="uAdd">➕ ग्राहक जोडा</button><button class="btn alt" type="button" id="uCsv">⬇️ CSV</button></div></div><div class="list">'+
+   (U.length?U.map(function(c){var v=bal(c);return '<div class="li" role="button" tabindex="0" style="cursor:pointer" data-cu="'+c.id+'"><div class="m"><b>'+esc(c.name)+'</b><small>'+(c.phone?esc(c.phone)+' · ':'')+c.tx.length+' नोंदी</small></div><span class="a '+(v>0?'out':'in')+'">'+rs(v)+'</span><span>›</span></div>'}).join(''):'<p class="note">उधारी असलेले ग्राहक इथे जोडा.</p>')+'</div>'}
+  b.innerHTML=h+'<p class="note">ही वही फक्त या फोनमध्ये सेव्ह होते. वेळोवेळी CSV / बॅकअप घ्या.</p>';
+  $$('[data-t]',b).forEach(function(x){x.onclick=function(){tab=x.dataset.t;draw()}});
+  if(tab==='day'){$('#hAdd',b).onclick=function(){var a=Number($('#ha',b).value);if(!(a>0)){toast('रक्कम टाका');return}H.push({id:Date.now(),d:$('#hd',b).value||today(),t:$('#ht',b).value,a:a,n:$('#hn',b).value.trim()});save();toast('✅ नोंद झाली');draw()};
+   $('#hCsv',b).onclick=function(){csv('hisab-'+today()+'.csv',[['तारीख','प्रकार','रक्कम','तपशील']].concat(H.map(function(e){return[e.d,e.t==='in'?'जमा':'खर्च',e.a,e.n]})))};
+   $$('[data-del]',b).forEach(function(x){x.onclick=function(){if(confirm('ही नोंद काढून टाकायची?')){H=H.filter(function(e){return String(e.id)!==x.dataset.del});save();draw()}}})}
+  else{$('#uAdd',b).onclick=function(){var n=$('#un',b).value.trim(),p=$('#up',b).value.trim();if(!n){toast('नाव टाका');return}if(p){p=normPhone(p);if(!phoneOk(p)){$('#upe',b).textContent='फोन 10 अंकी टाका किंवा रिकामा ठेवा';return}}U.push({id:Date.now(),name:n,phone:p,tx:[]});save();draw()};
+   $('#uCsv',b).onclick=function(){var rows=[['ग्राहक','फोन','तारीख','प्रकार','रक्कम','तपशील']];U.forEach(function(c){c.tx.forEach(function(t){rows.push([c.name,c.phone,t.d,t.a>0?'उधारी दिली':'पैसे मिळाले',Math.abs(t.a),t.n])});rows.push([c.name,c.phone,'','बाकी',bal(c),''])});csv('udhari-'+today()+'.csv',rows)};
+   $$('[data-cu]',b).forEach(function(x){x.onclick=function(){cust(+x.dataset.cu)};x.onkeydown=function(e){if(e.key==='Enter')cust(+x.dataset.cu)}})}}
+ function cust(id){var c=U.filter(function(x){return x.id===id})[0];if(!c)return draw();var v=bal(c);
+  b.innerHTML='<button class="btn sm alt" type="button" id="cb">← सर्व ग्राहक</button><div class="glass"><h3 style="word-break:break-word">'+esc(c.name)+'</h3><div class="note">'+(c.phone?'📞 '+esc(c.phone):'फोन नाही')+'</div><div class="stats" style="grid-template-columns:1fr"><div><b class="'+(v>0?'out':'in')+'">'+rs(v)+'</b>'+(v>0?'येणे बाकी':v<0?'आगाऊ जमा':'हिशोब पूर्ण ✅')+'</div></div>'+
+   '<div class="two"><div><label for="ca">रक्कम ₹</label><input id="ca" type="number" inputmode="decimal" min="0"></div><div><label for="cn">तपशील</label><input id="cn" placeholder="उदा. किराणा माल"></div></div><div class="row"><button class="btn" type="button" id="cGive">➕ उधारी दिली</button><button class="btn alt" type="button" id="cGot">➖ पैसे मिळाले</button></div>'+
+   '<div class="row"><button class="btn wa" type="button" id="cRem">💬 WhatsApp आठवण</button><button class="btn red" type="button" id="cDel">ग्राहक काढा</button></div></div><div class="list">'+
+   (c.tx.length?c.tx.slice().reverse().map(function(t,i){return '<div class="li"><div class="m">'+esc(t.n||(t.a>0?'उधारी':'जमा'))+'<small>'+esc(t.d)+'</small></div><span class="a '+(t.a>0?'out':'in')+'">'+(t.a>0?'+':'−')+rs(Math.abs(t.a))+'</span><button type="button" class="x" data-tx="'+(c.tx.length-1-i)+'" aria-label="काढा">✕</button></div>'}).join(''):'<p class="note">अजून नोंद नाही.</p>')+'</div>';
+  $('#cb',b).onclick=draw;
+  function add(sign){var a=Number($('#ca',b).value);if(!(a>0)){toast('रक्कम टाका');return}c.tx.push({d:today(),a:sign*a,n:$('#cn',b).value.trim()});save();cust(id)}
+  $('#cGive',b).onclick=function(){add(1)};$('#cGot',b).onclick=function(){add(-1)};
+  $('#cRem',b).onclick=function(){var s=shop,v=bal(c);if(v<=0){toast('या ग्राहकाकडे बाकी नाही');return}waShare('नमस्कार '+c.name+' जी 🙏\n'+(s.sName||'आमच्या दुकाना')+' कडे आपली '+rs(v)+' उधारी बाकी आहे. सवडीने भरावी ही विनंती.'+(upiOk(s.sUpi||'')?'\nUPI: '+s.sUpi:'')+'\nधन्यवाद!',c.phone)};
+  $('#cDel',b).onclick=function(){if(confirm(c.name+' आणि त्यांच्या सगळ्या नोंदी काढून टाकायच्या?')){U=U.filter(function(x){return x.id!==id});save();draw()}};
+  $$('[data-tx]',b).forEach(function(x){x.onclick=function(){if(confirm('ही नोंद काढायची?')){c.tx.splice(+x.dataset.tx,1);save();cust(id)}}})}
+ draw()}
+function csv(name,rows){var t='\ufeff'+rows.map(function(r){return r.map(function(v){v=String(v==null?'':v);return /[",\n]/.test(v)?'"'+v.replace(/"/g,'""')+'"':v}).join(',')}).join('\r\n');dlBlob(name,new Blob([t],{type:'text/csv;charset=utf-8'}));toast('⬇️ '+name)}
+
+/* 7. Review */
+function aReview(b){b.innerHTML='<label for="rv">Google Review लिंक</label><input id="rv" type="url" inputmode="url" autocapitalize="none" placeholder="https://g.page/r/.../review"><p class="note">लिंक कुठे मिळेल? Google Maps / Google Business Profile → तुमचं दुकान → <b>“Ask for reviews” / “रिव्ह्यू मागवा”</b> → लिंक कॉपी करा.</p><div class="row"><button class="btn" type="button" id="rg2">मेसेज व QR तयार करा</button></div><div id="rq2"></div><div id="rm"></div>';
+ $('#rv',b).value=shop.sReview||'';
+ $('#rg2',b).onclick=function(){var l=$('#rv',b).value.trim();if(!urlOk(l)){toast('https:// ने सुरू होणारी Review लिंक टाका');return}if(l!==shop.sReview){shop.sReview=l;saveShop()}var s=shop;
+  qrBlock($('#rq2',b),l,{label:'⭐ आम्हाला Review द्या',sub:s.sName,share:'⭐ '+s.sName+' – Review: '+l},slug(s.sName)+'-review-qr.png');
+  $('#rm',b).innerHTML='<div id="rmc"></div>';msgCards($('#rmc',b),['नमस्कार 🙏\n'+s.sName+' ची सेवा आवडली असेल तर Google वर 1 मिनिटात Review द्याल का? ⭐⭐⭐⭐⭐\n👉 '+l+'\nआपला एक Review आम्हाला खूप मदत करतो. धन्यवाद!','⭐ आपला अनुभव कसा होता? कृपया इथे Review द्या: '+l+'\n– '+s.sName,'धन्यवाद! 😊 आपल्याला आमची सेवा आवडली असेल तर हा छोटासा Review नक्की द्या:\n'+l+'\n– '+s.sName])}}
+
+/* 8. Map Direction */
+function aMap(b){b.innerHTML='<label for="mm">Google Maps लिंक <em>(नसेल तर पत्त्यावरून आपोआप)</em></label><input id="mm" type="url" inputmode="url" autocapitalize="none" placeholder="https://maps.app.goo.gl/..."><label for="mad">पत्ता</label><input id="mad"><label for="mlm">जवळची खूण (Landmark) <em>(पर्यायी)</em></label><input id="mlm" placeholder="उदा. स्वामी समर्थ मंदिराजवळ"><p class="note">स्वतःची लिंक: Google Maps मध्ये दुकानावर टॅप करा → Share → लिंक कॉपी करा.</p><div class="row"><button class="btn" type="button" id="mg2">लिंक, मेसेज व QR</button></div><div id="mo2"></div><div id="mq2"></div>';
+ $('#mm',b).value=shop.sMap||'';$('#mad',b).value=shop.sAddr||'';
+ $('#mg2',b).onclick=function(){var l=$('#mm',b).value.trim(),ad=$('#mad',b).value.trim(),lm=$('#mlm',b).value.trim();if(l&&!urlOk(l)){toast('Maps लिंक https:// ने सुरू हवी');return}if(!l&&!ad){toast('लिंक किंवा पत्ता टाका');return}
+  if(l!==(shop.sMap||'')||ad!==(shop.sAddr||'')){shop.sMap=l;shop.sAddr=ad;saveShop()}var u=l||mapsUrl({sName:shop.sName,sAddr:ad}),s=shop;
+  $('#mo2',b).innerHTML='<div class="row"><a class="btn alt" target="_blank" rel="noopener" href="'+esc(u)+'">🗺️ नकाशा उघडून तपासा</a></div><div id="moc"></div>';
+  msgCards($('#moc',b),['📍 '+s.sName+' चा पत्ता:\n'+(ad||'')+(lm?'\n(खूण: '+lm+')':'')+'\n🗺️ नकाशा: '+u+(phoneOk(s.sPhone)?'\nरस्ता सापडला नाही तर कॉल करा: '+s.sPhone:''),'नमस्कार 🙏 आमच्याकडे येण्यासाठी हा नकाशा उघडा 👉 '+u+(lm?'\n'+lm+'.':'')+'\n– '+s.sName]);
+  qrBlock($('#mq2',b),u,{label:'📍 Scan करा – रस्ता दाखवेल',sub:s.sName,share:u},slug(s.sName)+'-map-qr.png')}}
+
+/* 9. UPI */
+function aUpi(b){b.innerHTML='<div class="two"><div><label for="uu">UPI ID</label><input id="uu" autocapitalize="none" autocomplete="off" placeholder="name@okaxis"></div><div><label for="un2">नाव (Payee)</label><input id="un2"></div><div><label for="ua">रक्कम ₹ <em>(पर्यायी)</em></label><input id="ua" type="number" inputmode="decimal" min="0"></div><div><label for="ut">कशासाठी <em>(पर्यायी)</em></label><input id="ut" placeholder="उदा. किराणा बिल"></div></div><div class="row"><button class="btn" type="button" id="ug">UPI QR तयार करा</button></div><div id="uq"></div><div id="um"></div><p class="note">QR प्रिंट करण्याआधी दुसऱ्या फोनवरून ₹1 पाठवून तपासा. पैसे थेट तुमच्या बँक खात्यात जातात – हे ॲप पैसे हाताळत नाही.</p>';
+ $('#uu',b).value=shop.sUpi||'';$('#un2',b).value=shop.sName||'';
+ $('#ug',b).onclick=function(){var u=$('#uu',b).value.trim(),n=$('#un2',b).value.trim()||shop.sName,a=Number($('#ua',b).value)||0,t=$('#ut',b).value.trim();
+  if(!upiOk(u)){toast('योग्य UPI ID टाका (उदा. name@okaxis)');$('#uu',b).classList.add('bad');return}$('#uu',b).classList.remove('bad');if(u!==shop.sUpi){shop.sUpi=u;saveShop()}
+  var link=upiLink(u,n,a,t);qrBlock($('#uq',b),link,{label:a?'Scan & Pay '+rs(a):'Scan & Pay – UPI',sub:n+' · '+u,share:'UPI: '+u},slug(n)+'-upi-qr.png');
+  var M=['नमस्कार 🙏\n'+(a?'एकूण रक्कम: '+rs(a)+'\n':'')+(t?'तपशील: '+t+'\n':'')+'UPI ID: '+u+'\n(Google Pay / PhonePe / Paytm / BHIM – कोणतेही ॲप)\nपेमेंट झाल्यावर स्क्रीनशॉट पाठवा. धन्यवाद!\n– '+n,'💳 '+n+' – UPI: '+u+(a?' | रक्कम '+rs(a):'')];
+  $('#um',b).innerHTML='<div class="row" style="justify-content:center"><a class="btn alt" href="'+esc(link)+'">📲 UPI ॲपमध्ये उघडा</a></div><div id="umc"></div>';msgCards($('#umc',b),M)}}
+
+/* 10. Festival Poster */
+var FEST=[
+['diwali','🪔 दिवाळी','🪔','दीपावलीच्या हार्दिक शुभेच्छा!','दिव्यांच्या प्रकाशाने आपले जीवन आनंद, आरोग्य आणि समृद्धीने उजळून निघो.','#2a0845','#7b1fa2','#ffc23d','॥ शुभ दीपावली ॥'],
+['padwa','🎊 दिवाळी पाडवा / भाऊबीज','🪔','दिवाळी पाडवा व भाऊबीजेच्या हार्दिक शुभेच्छा!','नाती अधिक घट्ट होवोत, घरात सुख-समृद्धी नांदो.','#4a044e','#be185d','#fde68a'],
+['ganesh','🌺 गणेश चतुर्थी','🌺','गणेश चतुर्थीच्या हार्दिक शुभेच्छा!','गणपती बाप्पा मोरया! बाप्पा सर्वांचे विघ्न दूर करो.','#7a1e00','#d9480f','#ffd43b','॥ श्री गणेशाय नमः ॥'],
+['gudi','🚩 गुढीपाडवा','🚩','गुढीपाडवा व नववर्षाच्या हार्दिक शुभेच्छा!','नवे वर्ष सुख, समृद्धी आणि यश घेऊन येवो.','#831843','#f76707','#ffe066'],
+['navratri','🌸 नवरात्री','🌸','नवरात्रोत्सवाच्या हार्दिक शुभेच्छा!','आई जगदंबा सर्वांना सुख, शांती व शक्ती देवो.','#9d0b3a','#ff6b00','#ffe066','॥ उदे गं अंबे उदे ॥'],
+['dasara','🏹 दसरा','🏹','विजयादशमीच्या हार्दिक शुभेच्छा!','सोनं घ्या, सोन्यासारखं राहा! वाईटावर चांगल्याचा विजय होवो.','#5c3d00','#e67700','#fff3bf'],
+['sankrant','🪁 मकर संक्रांत','🪁','मकर संक्रांतीच्या हार्दिक शुभेच्छा!','तिळगुळ घ्या, गोड गोड बोला!','#0b4f8a','#1c7ed6','#ffd43b'],
+['holi','🎨 होळी / रंगपंचमी','🎨','होळी व रंगपंचमीच्या हार्दिक शुभेच्छा!','रंगांचा हा सण आपल्या आयुष्यात आनंदाचे रंग भरो.','#5f3dc4','#e64980','#ffe066'],
+['shiv','🚩 शिवजयंती','🚩','शिवजयंतीच्या हार्दिक शुभेच्छा!','जय भवानी, जय शिवाजी! छत्रपती शिवाजी महाराजांना मानाचा मुजरा.','#7c2d12','#ea580c','#fde68a','॥ जय शिवराय ॥'],
+['ambedkar','📘 आंबेडकर जयंती','📘','डॉ. बाबासाहेब आंबेडकर जयंतीच्या हार्दिक शुभेच्छा!','शिका, संघटित व्हा, संघर्ष करा. विनम्र अभिवादन!','#0c2d6b','#1d4ed8','#bfdbfe'],
+['mahdin','🚩 महाराष्ट्र दिन','🚩','महाराष्ट्र दिनाच्या हार्दिक शुभेच्छा!','जय महाराष्ट्र! गर्जा महाराष्ट्र माझा.','#7c2d12','#c2410c','#fde68a'],
+['ashadhi','🙏 आषाढी एकादशी','🙏','आषाढी एकादशीच्या हार्दिक शुभेच्छा!','विठ्ठल विठ्ठल जय हरी विठ्ठल! पांडुरंग सर्वांचे कल्याण करो.','#3b0764','#2563eb','#fde68a','॥ राम कृष्ण हरी ॥'],
+['raksha','🧵 रक्षाबंधन','🧵','रक्षाबंधनाच्या हार्दिक शुभेच्छा!','भाऊ-बहिणीचे प्रेम असेच अतूट राहो.','#831843','#db2777','#fde68a'],
+['indep','🇮🇳 स्वातंत्र्य दिन','🇮🇳','स्वातंत्र्य दिनाच्या हार्दिक शुभेच्छा!','जय हिंद! देशाचा अभिमान, आपली जबाबदारी.','#0b1e4d','#1e3a8a','#ffb347'],
+['republic','🇮🇳 प्रजासत्ताक दिन','🇮🇳','प्रजासत्ताक दिनाच्या हार्दिक शुभेच्छा!','संविधानाचा सन्मान, देशाची शान. जय हिंद!','#0b1e4d','#1e3a8a','#ffb347'],
+['newyear','🎆 नवीन वर्ष','🎆','नवीन वर्षाच्या हार्दिक शुभेच्छा!','नवे वर्ष आपणास आनंदाचे, आरोग्याचे आणि भरभराटीचे जावो.','#0f172a','#4c1d95','#fbbf24'],
+['eid','🌙 ईद','🌙','ईद मुबारक!','आपल्या घरी सुख, शांती आणि बरकत नांदो.','#064e3b','#047857','#fde68a'],
+['xmas','🎄 नाताळ (Christmas)','🎄','नाताळच्या हार्दिक शुभेच्छा!','Merry Christmas! आनंद आणि प्रेम सर्वत्र पसरो.','#7f1d1d','#166534','#fde68a']];
+function aFest(b){b.innerHTML='<label for="fs">सण निवडा</label><select id="fs">'+FEST.map(function(f,i){return '<option value="'+i+'">'+f[1]+'</option>'}).join('')+'</select><label for="fm">स्वतःचा मेसेज <em>(पर्यायी – रिकामा ठेवल्यास तयार शुभेच्छा)</em></label><textarea id="fm" style="min-height:70px"></textarea><label for="fo">ऑफर <em>(पर्यायी)</em></label><input id="fo" placeholder="उदा. सणानिमित्त 10% सूट"><div class="row"><button class="btn" type="button" id="fg">पोस्टर तयार करा</button></div><div id="fc"></div><div class="row hide" id="fb" style="justify-content:center"><button class="btn" type="button" id="fdl">⬇️ Download</button><button class="btn wa" type="button" id="fsh">📤 WhatsApp / शेअर</button></div><div id="fmo"></div>';
+ var cv=document.createElement('canvas');
+ $('#fg',b).onclick=function(){var i=+$('#fs',b).value,f=FEST[i],m=$('#fm',b).value.trim(),o=$('#fo',b).value.trim(),s=shop;
+  fontsReady().then(function(){poster(cv,{bg1:f[5],bg2:f[6],accent:f[7],top:f[8]||'',emoji:f[2],title:f[3],body:m||f[4],offer:o,shop:s.sName,phone:phoneOk(s.sPhone)?s.sPhone:'',addr:s.sAddr,tricolor:f[0]==='indep'||f[0]==='republic',seed:i*13+5});
+   $('#fc',b).appendChild(cv);$('#fb',b).classList.remove('hide');
+   $('#fmo',b).innerHTML='<div id="fmc"></div>';msgCards($('#fmc',b),[f[2]+' '+f[3]+'\n'+(m||f[4])+(o?'\n🎁 '+o:'')+'\n\nशुभेच्छुक:\n'+sig()]);cv.scrollIntoView({behavior:'smooth',block:'start'})})};
+ $('#fdl',b).onclick=function(){dlCanvas(cv,slug(shop.sName)+'-festival.png')};$('#fsh',b).onclick=function(){var f=FEST[+$('#fs',b).value];shareCanvas(cv,slug(shop.sName)+'-festival.png',f[3]+' – '+shop.sName)}}
+
+/* 11. Digital Visiting Card */
+function cardImg(cv,s,link){var W=1050,H=600;cv.width=W;cv.height=H;var c=cv.getContext('2d');var g=c.createLinearGradient(0,0,W,H);g.addColorStop(0,'#0b0d3d');g.addColorStop(.6,'#2a1a7a');g.addColorStop(1,'#4c1d95');c.fillStyle=g;c.fillRect(0,0,W,H);
+ sparkles(c,W,H,'#38e1ff',40,5);c.strokeStyle='#ffc23d';c.lineWidth=4;rrect(c,16,16,W-32,H-32,26);c.stroke();
+ c.fillStyle='#38e1ff';c.fillRect(56,62,8,110);
+ fitText(c,s.sName,{x:80,y:52,w:570,h:124,max:62,min:30,weight:800,color:'#fff',align:'left',maxLines:2,glow:'#3b82f6',blur:16});
+ fitText(c,[s.sType,s.sOwner].filter(Boolean).join(' · '),{x:80,y:180,w:570,h:50,max:34,min:20,weight:600,color:'#ffc23d',align:'left',maxLines:1});
+ var y=250;[[phoneOk(s.sPhone)?'📞 +91 '+s.sPhone:'',46],[s.sAddr?'📍 '+s.sAddr:'',84],[s.sTime?'🕒 '+s.sTime:'',46],[upiOk(s.sUpi||'')?'💳 UPI: '+s.sUpi:'',46]].forEach(function(r){if(!r[0]||y>H-80)return;var o=fitText(c,r[0],{x:60,y:y,w:600,h:r[1],max:30,min:18,weight:600,color:'#eef',align:'left',top:true,maxLines:r[1]>50?2:1});y+=Math.max(o.h,30)+14});
+ c.fillStyle='#fff';rrect(c,700,96,300,300,18);c.fill();try{drawQrOn(c,link,712,108,276)}catch(e){}
+ fitText(c,'Scan करा – दुकानाची माहिती',{x:690,y:404,w:320,h:44,max:24,min:16,weight:600,color:'#fff'});
+ c.font='500 20px '+FONT;c.textAlign='right';c.textBaseline='alphabetic';c.fillStyle='rgba(255,255,255,.5)';c.fillText('Digital Aarambh AI',W-40,H-36);cv.className='cv';return cv}
+function aCard(b){var s=shop,link=shopLink();b.innerHTML='<p class="note">कार्डवरचा QR स्कॅन केल्यावर तुमची मिनी वेबसाइट उघडते. माहिती बदलायची असल्यास वर “दुकानाची माहिती” बदला.</p><div id="cc"></div><div class="row" style="justify-content:center"><button class="btn" type="button" id="cdl">⬇️ कार्ड फोटो</button><button class="btn alt" type="button" id="cvf">👤 Contact (.vcf)</button><button class="btn wa" type="button" id="csh">📤 शेअर</button><button class="btn alt" type="button" id="cln">🔗 लिंक कॉपी</button></div><p class="note">.vcf फाइल ग्राहकाच्या फोनमध्ये उघडली की तुमचा नंबर थेट Contacts मध्ये सेव्ह होतो.</p>';
+ var cv=document.createElement('canvas');fontsReady().then(function(){cardImg(cv,s,link);$('#cc',b).appendChild(cv)});
+ $('#cdl',b).onclick=function(){dlCanvas(cv,slug(s.sName)+'-visiting-card.png')};
+ $('#cvf',b).onclick=function(){dlBlob(slug(s.sName)+'.vcf',new Blob([vcard(s,link)],{type:'text/vcard;charset=utf-8'}));toast('⬇️ Contact फाइल Download झाली')};
+ $('#csh',b).onclick=function(){shareCanvas(cv,slug(s.sName)+'-visiting-card.png','🪪 '+s.sName+(phoneOk(s.sPhone)?' – '+s.sPhone:'')+'\n'+link)};$('#cln',b).onclick=function(){copy(link)}}
+
+/* 12. Member ID & Referral (honest – no money promises, no fake OTP) */
+function refLink(u){return base()+'?ref='+encodeURIComponent(u.code)}
+function memberImg(cv,u){var W=1000,H=600;cv.width=W;cv.height=H;var c=cv.getContext('2d');var g=c.createLinearGradient(0,0,W,H);g.addColorStop(0,'#2a1f8f');g.addColorStop(1,'#5b2fd8');c.fillStyle=g;c.fillRect(0,0,W,H);
+ sparkles(c,W,H,'#ffc23d',36,9);c.strokeStyle='#ffc23d';c.lineWidth=5;rrect(c,14,14,W-28,H-28,28);c.stroke();
+ fitText(c,'Digital Aarambh AI · सदस्य',{x:50,y:44,w:560,h:50,max:30,min:20,weight:800,color:'#ffc23d',align:'left',maxLines:1});
+ fitText(c,u.name,{x:50,y:110,w:580,h:130,max:64,min:30,weight:800,color:'#fff',align:'left',maxLines:2});
+ fitText(c,[u.dist,'+91 '+u.phone].filter(Boolean).join(' · '),{x:50,y:250,w:580,h:50,max:30,min:18,weight:600,color:'#dcd6ff',align:'left',maxLines:1});
+ c.fillStyle='rgba(0,0,0,.3)';rrect(c,50,330,560,110,20);c.fill();
+ fitText(c,u.id,{x:70,y:340,w:520,h:56,max:50,min:24,weight:800,color:'#fff',align:'left',maxLines:1});
+ fitText(c,'Refer कोड: '+u.code,{x:70,y:392,w:520,h:40,max:28,min:16,weight:600,color:'#ffc23d',align:'left',maxLines:1});
+ c.fillStyle='#fff';rrect(c,660,120,290,290,18);c.fill();try{drawQrOn(c,refLink(u),670,130,270)}catch(e){}
+ fitText(c,'Scan करा – Digital Aarambh AI',{x:640,y:420,w:330,h:40,max:24,min:14,weight:600,color:'#fff'});
+ fitText(c,'हा ओळख क्रमांक फक्त या फोनवर तयार झाला आहे (पडताळणी नाही).',{x:50,y:490,w:900,h:60,max:22,min:14,weight:400,color:'#cfc8ff',align:'left',maxLines:2});cv.className='cv';return cv}
+function aMember(b){var u=st.get('user',null),bk=st.get('user_backup',null),rf=st.get('refFrom','');
+ if(!u){b.innerHTML='<p class="note">तुमचा Digital Aarambh सदस्य ID बनवा आणि इतर व्यावसायिकांना Refer लिंक पाठवा. <b>OTP/पडताळणी नाही</b> – ID फक्त या फोनवर सेव्ह होतो.</p>'+(bk&&bk.id?'<div class="glass"><b>आधीचा ID सापडला: '+esc(bk.id)+'</b> ('+esc(bk.name)+')<div class="row"><button class="btn" type="button" id="mRes">♻️ तोच ID परत आणा</button></div></div>':'')+
+  '<div class="glass"><label for="m1">तुमचे नाव</label><input id="m1"><label for="m2">फोन नंबर</label><input id="m2" type="tel" inputmode="tel"><div class="err" id="m2e"></div><label for="m3">जिल्हा / गाव</label><input id="m3" value="पुणे">'+(rf?'<p class="note">तुम्हाला Refer करणारा कोड: <b>'+esc(rf)+'</b></p>':'')+'<div class="row"><button class="btn" type="button" id="mMk">🪪 सदस्य ID बनवा</button></div></div>';
+  $('#m1',b).value=shop.sOwner||'';$('#m2',b).value=shop.sPhone||'';
+  if(bk&&bk.id)$('#mRes',b).onclick=function(){st.set('user',bk);aMember(b);toast('✅ ID परत आला')};
+  $('#mMk',b).onclick=function(){var n=$('#m1',b).value.trim(),p=normPhone($('#m2',b).value);if(!n){toast('नाव टाका');return}if(!phoneOk(p)){$('#m2e',b).textContent='10 अंकी मोबाइल नंबर टाका';$('#m2',b).classList.add('bad');return}
+   var code='DA'+Math.random().toString(36).slice(2,6).toUpperCase()+p.slice(-2);u={name:n,phone:p,dist:$('#m3',b).value.trim(),code:code,id:'DA-MH-'+Math.floor(1000+Math.random()*9000),ref:rf||'',at:today()};st.set('user',u);st.set('user_backup',u);aMember(b);toast('✅ '+u.id)};return}
+ var link=refLink(u);b.innerHTML='<div id="mc"></div><div class="row" style="justify-content:center"><button class="btn" type="button" id="mdl">⬇️ ID कार्ड</button><button class="btn wa" type="button" id="mwa">💬 WhatsApp वर Refer करा</button><button class="btn alt" type="button" id="mcp">🔗 लिंक कॉपी</button></div>'+
+  '<div class="glass"><label for="mrl">तुमची Refer लिंक</label><input id="mrl" readonly><p class="note gold">🎁 Referral रिवॉर्ड्स – <b>लवकरच</b>. नियम व पात्रता जाहीर झाल्यावरच योजना सुरू होईल. सध्या कोणतेही पैसे/कमिशन दिले जात नाहीत आणि Refer ची मोजणी होत नाही.</p></div>'+
+  '<div class="row"><button class="btn red sm" type="button" id="mout">ID या फोनवरून काढा</button></div>';
+ $('#mrl',b).value=link;var cv=document.createElement('canvas');fontsReady().then(function(){memberImg(cv,u);$('#mc',b).appendChild(cv)});
+ $('#mdl',b).onclick=function(){dlCanvas(cv,(u.id||'member')+'.png')};$('#mcp',b).onclick=function(){copy(link)};
+ $('#mwa',b).onclick=function(){waShare('🙏 नमस्कार! दुकानासाठी मोफत डिजिटल साधने – मिनी वेबसाइट, QR, पोस्टर, सणाचे पोस्टर, हिशोब वही, UPI QR – सगळं मराठीत.\nDigital Aarambh AI वापरून पहा 👇\n'+link)};
+ $('#mout',b).onclick=function(){if(confirm('तुमचा ID ('+u.id+') या फोनवरून काढायचा?\nएक बॅकअप ठेवला जाईल – नंतर “तोच ID परत आणा” दाबून परत मिळवता येईल.')){st.set('user_backup',u);st.set('user',null);aMember(b);toast('ID काढला – बॅकअप सुरक्षित आहे')}}}
+
+/* ===== Public mini-site view (#shop=...) ===== */
+function showPub(){var m=location.hash.match(/^#shop=([\w-]+)/);if(!m)return false;var o;try{o=b64d(m[1])}catch(e){return false}
+ if(!o||typeof o.n!=='string'||!o.n)return false;
+ function g(k){return typeof o[k]==='string'?o[k].slice(0,300):''}
+ var n=g('n'),t=g('t'),ow=g('o'),a=g('a'),p=normPhone(g('p')),h=g('h'),u=g('u'),d=g('d'),mp=g('m'),rv=g('r'),ph=phoneOk(p),up=upiOk(u),map=urlOk(mp)?mp:(a?'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(n+' '+a):'');
+ document.title=n+(t?' – '+t:'');$('#app').classList.add('hide');var el=$('#pub');el.classList.remove('hide');
+ el.innerHTML='<div class="pub"><div class="card"><div style="font-size:44px">🏪</div><h1>'+esc(n)+'</h1>'+(t?'<div class="ty">'+esc(t)+'</div>':'')+(d?'<p class="ab">'+esc(d)+'</p>':'')+
+  '<div class="inf">'+(ow?'👤 '+esc(ow)+'<br>':'')+(a?'📍 '+esc(a)+'<br>':'')+(ph?'📞 '+esc(p)+'<br>':'')+(h?'🕒 '+esc(h):'')+'</div><div class="btns">'+
+  (ph?'<a class="btn wa" href="https://api.whatsapp.com/send?phone=91'+p+'&text='+encodeURIComponent('नमस्कार '+n+' 🙏')+'">💬 WhatsApp</a><a class="btn" href="tel:+91'+p+'">📞 कॉल करा</a>':'')+
+  (map?'<a class="btn alt" target="_blank" rel="noopener" href="'+esc(map)+'">🗺️ नकाशा</a>':'')+(rv&&urlOk(rv)?'<a class="btn alt" target="_blank" rel="noopener" href="'+esc(rv)+'">⭐ Review द्या</a>':'')+
+  '<button class="btn alt" type="button" id="pubSave">👤 नंबर सेव्ह</button><button class="btn alt" type="button" id="pubShare">📤 शेअर करा</button></div>'+
+  (up?'<p style="margin-top:18px;color:var(--mut)">💳 UPI ने पेमेंट करा</p><div id="pubQr"></div><div style="font-size:14px;color:var(--mut);word-break:break-all">'+esc(u)+'</div><div class="row" style="justify-content:center"><a class="btn sm" href="'+esc(upiLink(u,n))+'">📲 UPI ॲपमध्ये उघडा</a></div>':'')+
+  '</div><p style="margin-top:18px;font-size:13px;color:var(--mut)">Made with <a href="'+esc(base())+'">Digital Aarambh AI</a> – तुमच्या दुकानाचीही मोफत वेबसाइट बनवा</p></div>';
+ if(up){try{var cv=qrCanvas(upiLink(u,n),{px:420});cv.style.width='210px';$('#pubQr').appendChild(cv)}catch(e){}}
+ var sh={sName:n,sType:t,sOwner:ow,sPhone:p,sAddr:a,sAbout:d};
+ $('#pubSave').onclick=function(){dlBlob(slug(n)+'.vcf',new Blob([vcard(sh,location.href)],{type:'text/vcard;charset=utf-8'}))};
+ $('#pubShare').onclick=function(){if(navigator.share)navigator.share({title:n,url:location.href}).catch(function(){});else waShare(n+'\n'+location.href)};
+ return true}
+
+/* ===== Backup / Restore ===== */
+var KEYS=['shop','user','user_backup','hisab','udhari','refFrom'];
+function backupObj(){var o={app:'digital-aarambh',v:2,at:new Date().toISOString()};KEYS.forEach(function(k){o[k]=st.get(k,null)});return o}
+$('#bkDl').onclick=function(){dlBlob('digital-aarambh-backup-'+today()+'.json',new Blob([JSON.stringify(backupObj(),null,1)],{type:'application/json'}));toast('⬇️ बॅकअप फाइल Download झाली')};
+$('#bkCopy').onclick=function(){copy('DA1:'+b64e(backupObj()))};
+$('#bkFile').onchange=function(){var f=this.files&&this.files[0];if(!f)return;var r=new FileReader();r.onload=function(){$('#bkIn').value=String(r.result)};r.readAsText(f)};
+$('#bkRestore').onclick=function(){var t=$('#bkIn').value.trim(),o;if(!t){toast('आधी बॅकअप कोड paste करा किंवा फाइल निवडा');return}
+ try{o=t.indexOf('DA1:')===0?b64d(t.slice(4)):JSON.parse(t)}catch(e){toast('❌ बॅकअप कोड चुकीचा आहे');return}
+ if(!o||o.app!=='digital-aarambh'){toast('❌ हा Digital Aarambh चा बॅकअप नाही');return}
+ if(!confirm('या फोनवरची सध्याची माहिती बॅकअपने बदलली जाईल. पुढे जायचे?'))return;
+ KEYS.forEach(function(k){if(o[k]!=null)st.set(k,o[k])});toast('✅ Restore झाले');setTimeout(function(){location.reload()},700)};
+
+/* ===== Contact & founder ===== */
+function contactOk(){return /^91[6-9]\d{9}$/.test(String(CONTACT_WHATSAPP).replace(/\D/g,''))}
+function contact(){if(!contactOk()){toast('संपर्क नंबर लवकरच उपलब्ध होईल');return}window.open('https://api.whatsapp.com/send?phone='+String(CONTACT_WHATSAPP).replace(/\D/g,'')+'&text='+encodeURIComponent('नमस्कार 🙏 मला Digital Aarambh AI बद्दल माहिती हवी आहे.'),'_blank','noopener')}
+$('#contactBtn').onclick=contact;var fb=$('#founderBtn');if(fb)fb.onclick=contact;
+var fi=$('#founderImg');function noFounder(){var s=$('#founder');if(s)s.classList.add('hide');var c=$('#contactBox');if(c)c.classList.remove('hide')}
+if(fi){fi.addEventListener('error',noFounder);if(fi.complete&&fi.naturalWidth===0&&fi.getAttribute('src'))noFounder()}
+
+/* ===== Init ===== */
+try{var rp=new URLSearchParams(location.search).get('ref');if(rp&&/^[\w-]{3,20}$/.test(rp)){var me=st.get('user',null);if(!me||me.code!==rp)st.set('refFrom',rp)}}catch(e){}
+renderBar();
+if(!showPub()){if(!shop.sName){}}
+window.addEventListener('hashchange',function(){if(/^#shop=/.test(location.hash))location.reload()});
+window.__DA={qrCanvas:qrCanvas,normPhone:normPhone,upiLink:upiLink,shopLink:shopLink,poster:poster,fontsReady:fontsReady};
 })();
 </script>
 </body>
