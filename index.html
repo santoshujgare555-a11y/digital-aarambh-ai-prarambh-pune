@@ -216,7 +216,7 @@ footer b{color:var(--txt)}
  <div class="stars"></div>
  <svg class="rb" viewBox="0 0 400 210" aria-hidden="true"><path pathLength="1" stroke="#ff3b3b" style="animation-delay:0.00s" d="M10 206A190 190 0 0 1 390 206"/><path pathLength="1" stroke="#ff8c1a" style="animation-delay:0.08s" d="M20 206A180 180 0 0 1 380 206"/><path pathLength="1" stroke="#ffd60a" style="animation-delay:0.16s" d="M30 206A170 170 0 0 1 370 206"/><path pathLength="1" stroke="#2fd36b" style="animation-delay:0.24s" d="M40 206A160 160 0 0 1 360 206"/><path pathLength="1" stroke="#2fb6ff" style="animation-delay:0.32s" d="M50 206A150 150 0 0 1 350 206"/><path pathLength="1" stroke="#4b5bff" style="animation-delay:0.40s" d="M60 206A140 140 0 0 1 340 206"/><path pathLength="1" stroke="#a855f7" style="animation-delay:0.48s" d="M70 206A130 130 0 0 1 330 206"/></svg>
  <svg class="tm" viewBox="0 0 400 100" preserveAspectRatio="xMidYMax slice" aria-hidden="true"><path fill="#0a0820" d="M0 80H30V70H36V64C38 56 42 48 46 42C50 48 54 56 56 64V70H62V80H90V66H96V58C99 46 105 34 112 24V14H114L122 17L114 20V24C120 34 126 46 129 58V66H135V80H170V72H176C178 66 181 62 184 58C187 62 190 66 192 72H198V80H250V68H256V60C259 50 264 40 270 32C276 40 281 50 284 60V68H290V80H330V74H334C336 68 339 64 342 61C345 64 348 68 350 74H354V80H400V100H0Z"/><path fill="#1b1550" opacity=".7" d="M0 84H400V100H0Z"/><g fill="#ffc23d"><circle cx="70" cy="82" r="1.3"/><circle cx="150" cy="82" r="1.3"/><circle cx="215" cy="82" r="1.3"/><circle cx="310" cy="82" r="1.3"/><circle cx="375" cy="82" r="1.3"/></g><g stroke="#ffb54a" stroke-width=".8" opacity=".55"><path d="M64 88h12M144 91h12M208 88h14M304 92h12M368 88h12"/></g></svg>
- <div class="wv" id="wv"><video id="wvid" data-src="welcome.mp4?v=fw18" data-poster="welcome.jpg?v=fw18" autoplay muted playsinline preload="auto" aria-hidden="true"></video></div>
+ <div class="wv" id="wv"><video id="wvid" data-src="welcome.mp4?v=fw19" data-poster="welcome.jpg?v=fw19" autoplay muted playsinline preload="auto" aria-hidden="true"></video></div>
  <canvas id="fx"></canvas>
  <div class="cap" id="cap" aria-live="polite"><div class="c1">नमस्कार! सुस्वागतम! 🙏</div><div class="c2">Welcome to Digital Aarambh <b>AI</b><small>डिजिटल आरंभ AI मध्ये आपलं स्वागत आहे</small></div></div>
  <div class="tx"><div class="w">Welcome<small>🙏 नमस्कार, स्वागत आहे!</small></div><div class="n">Digital Aarambh <b>AI</b></div><div class="tg">डिजिटल साधने | स्मार्ट व्यवसाय | उज्ज्वल भविष्य</div></div>
@@ -231,6 +231,7 @@ footer b{color:var(--txt)}
  </header>
  <div class="dabanner"><img src="" id="daBan" alt="Digital Aarambh AI – डिजिटल साधने | स्मार्ट व्यवसाय | उज्ज्वल भविष्य" width="800" height="400"></div>
  <script>daFill();document.getElementById("daBan").src=DA_BANNER</script>
+ <div id="refStrip" class="hide" style="margin:10px 0;padding:12px 14px;border-radius:14px;background:linear-gradient(90deg,#0b1f4a,#123270);border:1px solid #d4a94a;color:#fff3c8;font-size:15px;line-height:1.45"></div>
  <button class="shopbar" id="shopbar" type="button" style="width:100%;text-align:left;color:inherit;font:inherit"></button>
  <h2 class="sec">🤖 12 स्मार्ट एजंट्स <small>– कोणतेही एक निवडा</small></h2>
  <nav class="grid" id="grid" aria-label="12 एजंट्स"></nav>
@@ -301,7 +302,7 @@ function capTick(){if(phase2||done)return;var t=(vid&&!novid&&vid.currentTime>0)
 function startTick(){clearInterval(tick);capAt(0);tick=setInterval(capTick,120);timers.push(tick)}
 function goP2(){if(phase2)return;phase2=true;clearInterval(tick);sp.classList.add('p2');rocketsFrom=now();timers.push(setTimeout(finish,2600))}
 function noMedia(){novid=true;sp.classList.add('nov');sp.classList.add('novid');if(!phase2){timers.push(setTimeout(goP2,250))}}
-function toImg(){novid=true;sp.classList.add('novid');if(!wv)return noMedia();wv.innerHTML='';var im=new Image();im.alt='';im.onerror=noMedia;im.src='welcome.jpg?v=fw18';wv.appendChild(im)}
+function toImg(){novid=true;sp.classList.add('novid');if(!wv)return noMedia();wv.innerHTML='';var im=new Image();im.alt='';im.onerror=noMedia;im.src='welcome.jpg?v=fw19';wv.appendChild(im)}
 /* tap 🔊 (or the first tap anywhere) → unmute and replay her greeting from the start */
 function playSound(){if(heard||novid||!vid||done)return false;heard=true;sp.classList.add('heard');
  timers.forEach(clearTimeout);timers=[];
@@ -747,7 +748,8 @@ function aCard(b){var s=shop,link=shopLink();b.innerHTML='<p class="note">का
  $('#csh',b).onclick=function(){shareCanvas(cv,slug(s.sName)+'-visiting-card.png','🪪 '+s.sName+(phoneOk(s.sPhone)?' – '+s.sPhone:'')+'\n'+link)};$('#cln',b).onclick=function(){copy(link)}}
 
 /* 12. Member ID & Referral (honest – no money promises, no fake OTP) */
-function refLink(u){return base()+'?ref='+encodeURIComponent(u.code)}
+function nameSlug(n){return cleanName(n).replace(/[^\w\u0900-\u097F ]+/g,'').trim().replace(/ +/g,'-').slice(0,40)}
+function refLink(u){var s=base()+'?ref='+encodeURIComponent(u.code),n=nameSlug(u.name);if(n)s+='&by='+encodeURIComponent(n);if(u.id)s+='&id='+encodeURIComponent(u.id);return s}
 function cleanName(s){s=String(s||'').replace(/[\s\u00a0]+/g,' ').trim();
  s=s.replace(/([^\s.,;:!?]{2,})([.,;:!?]+)(?=\s|$)/g,function(m,w,p){return (/^(dr|mr|mrs|ms|smt|shri|sh|prof|adv|er|सौ|श्री|डॉ)$/i.test(w)||/^[\u0900-\u097F]{1,3}$/.test(w))&&p==='.'?m:w});
  return s.replace(/^[\s.,;:!?·|\-–—_]+|[\s,;:!?·|\-–—_]+$/g,'').trim()}
@@ -820,7 +822,7 @@ function memberImg(cv,u,ph,bgi){var W=1200,H=756;cv.width=W;cv.height=H;var c=cv
  cv.className='cv';return cv}
 function aMember(b){var u=st.get('user',null),bk=st.get('user_backup',null),rf=st.get('refFrom','');
  if(!u){var pend='';b.innerHTML='<p class="note">तुमचा Digital Aarambh सदस्य ID बनवा आणि इतर व्यावसायिकांना Refer लिंक पाठवा. <b>OTP/पडताळणी नाही</b> – ID फक्त या फोनवर सेव्ह होतो.</p>'+(bk&&bk.id?'<div class="glass"><b>आधीचा ID सापडला: '+esc(bk.id)+'</b> ('+esc(cleanName(bk.name))+')<div class="row"><button class="btn" type="button" id="mRes">♻️ तोच ID परत आणा</button></div></div>':'')+
-  '<div class="glass"><label for="m1">तुमचे नाव</label><input id="m1"><label for="m2">फोन नंबर</label><input id="m2" type="tel" inputmode="tel"><div class="err" id="m2e"></div><label for="m3">जिल्हा / गाव</label><input id="m3" value="पुणे">'+(rf?'<p class="note">तुम्हाला Refer करणारा कोड: <b>'+esc(rf)+'</b></p>':'')+'<div id="mPh"></div><div class="row"><button class="btn" type="button" id="mMk">🪪 सदस्य ID बनवा</button></div></div>';
+  '<div class="glass"><label for="m1">तुमचे नाव</label><input id="m1"><label for="m2">फोन नंबर</label><input id="m2" type="tel" inputmode="tel"><div class="err" id="m2e"></div><label for="m3">जिल्हा / गाव</label><input id="m3" value="पुणे">'+(rf?'<p class="note">तुम्हाला Refer करणारे: <b>'+esc(st.get('refBy','')||rf)+'</b>'+(st.get('refBy','')?' ('+esc(rf)+')':'')+'</p>':'')+'<div id="mPh"></div><div class="row"><button class="btn" type="button" id="mMk">🪪 सदस्य ID बनवा</button></div></div>';
   $('#m1',b).value=shop.sOwner||'';$('#m2',b).value=shop.sPhone||'';
   function drawPend(){var h=$('#mPh',b);h.innerHTML=photoBox('mPhB',pend,'ऐच्छिक');var bx=$('#mPhB',h);bx.style.margin='12px 0 0';bx.style.padding='10px';
    wirePhoto(bx,function(d){pend=d;drawPend();toast('✅ फोटो जोडला')},function(){pend='';drawPend()})}
@@ -831,7 +833,7 @@ function aMember(b){var u=st.get('user',null),bk=st.get('user_backup',null),rf=s
    if(pend)u.photo=pend;if(!saveUser(u)){if(u.photo){delete u.photo;toast(PHOTO_FULL)}if(!saveUser(u)){toast('सेव्ह झाले नाही (storage भरले?)');return}}aMember(b);toast('✅ '+u.id)};return}
  var link=refLink(u);b.innerHTML='<div id="mc"></div><div class="row" style="justify-content:center"><button class="btn" type="button" id="mdl">⬇️ ID कार्ड</button><button class="btn wa" type="button" id="mwa">💬 WhatsApp वर Refer करा</button><button class="btn alt" type="button" id="mcp">🔗 लिंक कॉपी</button></div>'+
   '<div id="mPh"></div>'+
-  '<div class="glass"><label for="mrl">तुमची Refer लिंक</label><input id="mrl" readonly><p class="note gold">🎁 Referral रिवॉर्ड्स – <b>लवकरच</b>. नियम व पात्रता जाहीर झाल्यावरच योजना सुरू होईल. सध्या कोणतेही पैसे/कमिशन दिले जात नाहीत आणि Refer ची मोजणी होत नाही.</p></div>'+
+  '<div class="glass"><label for="mrl">तुमची Refer लिंक (तुमच्या नावाने)</label><input id="mrl" readonly><p class="note gold">🎁 Referral रिवॉर्ड्स – <b>लवकरच</b>. नियम व पात्रता जाहीर झाल्यावरच योजना सुरू होईल. सध्या कोणतेही पैसे/कमिशन दिले जात नाहीत आणि Refer ची मोजणी होत नाही.</p></div>'+
   '<div class="row"><button class="btn red sm" type="button" id="mout">ID या फोनवरून काढा</button></div>';
  $('#mrl',b).value=link;var cv=document.createElement('canvas');
  function draw(){return Promise.all([fontsReady(),loadImg(u.photo),loadImg(CARD_BG)]).then(function(r){memberImg(cv,u,r[1],r[2]);if(!cv.parentNode)$('#mc',b).appendChild(cv)})}
@@ -840,7 +842,7 @@ function aMember(b){var u=st.get('user',null),bk=st.get('user_backup',null),rf=s
    function(){if(!confirm('कार्डवरचा फोटो काढायचा?'))return;delete u.photo;saveUser(u);drawBox();draw();toast('फोटो काढला')})}
  draw();drawBox();
  $('#mdl',b).onclick=function(){dlCanvas(cv,(u.id||'member')+'.png')};$('#mcp',b).onclick=function(){copy(link)};
- $('#mwa',b).onclick=function(){waShare('🙏 नमस्कार! दुकानासाठी मोफत डिजिटल साधने – मिनी वेबसाइट, QR, पोस्टर, सणाचे पोस्टर, हिशोब वही, UPI QR – सगळं मराठीत.\nDigital Aarambh AI वापरून पहा 👇\n'+link)};
+ $('#mwa',b).onclick=function(){waShare('🙏 नमस्कार! मी '+cleanName(u.name)+' ('+u.id+'), Digital Aarambh AI चा सदस्य.\nदुकानासाठी मोफत डिजिटल साधने – मिनी वेबसाइट, QR, पोस्टर, सणाचे पोस्टर, हिशोब वही, UPI QR – सगळं मराठीत.\nमाझ्या लिंकने वापरून पहा 👇\n'+link+'\nमाझा Refer कोड: '+u.code)};
  $('#mout',b).onclick=function(){if(confirm('तुमचा ID ('+u.id+') या फोनवरून काढायचा?\nएक बॅकअप ठेवला जाईल – नंतर “तोच ID परत आणा” दाबून परत मिळवता येईल.')){st.set('user_backup',u);st.set('user',null);aMember(b);toast('ID काढला – बॅकअप सुरक्षित आहे')}}}
 
 /* ===== Public mini-site view (#shop=...) ===== */
@@ -882,7 +884,10 @@ var fi=$('#founderImg');function noFounder(){var s=$('#founder');if(s)s.classLis
 if(fi){fi.addEventListener('error',noFounder);if(fi.complete&&fi.naturalWidth===0&&fi.getAttribute('src'))noFounder()}
 
 /* ===== Init ===== */
-try{var rp=new URLSearchParams(location.search).get('ref');if(rp&&/^[\w-]{3,20}$/.test(rp)){var me=st.get('user',null);if(!me||me.code!==rp)st.set('refFrom',rp)}}catch(e){}
+try{var qp=new URLSearchParams(location.search),rp=qp.get('ref');if(rp&&/^[\w-]{3,20}$/.test(rp)){var me=st.get('user',null);if(!me||me.code!==rp){st.set('refFrom',rp);
+ var rb=String(qp.get('by')||'').replace(/-/g,' ').replace(/[<>"&]/g,'').trim().slice(0,40),ri=String(qp.get('id')||'');if(!/^DA-MH-\d{3,6}$/.test(ri))ri='';
+ if(rb)st.set('refBy',rb);if(ri)st.set('refId',ri);
+ var rs=document.getElementById('refStrip');if(rs){rs.innerHTML=rb?'🤝 <b>'+esc(rb)+'</b>'+(ri?' ('+esc(ri)+')':'')+' यांनी तुम्हाला <b>Digital Aarambh AI</b> वर आमंत्रित केलं आहे.<br><small>Refer कोड: '+esc(rp)+'</small>':'🤝 तुम्हाला Refer कोड <b>'+esc(rp)+'</b> ने आमंत्रित केलं आहे.';rs.classList.remove('hide')}}}}catch(e){}
 renderBar();
 if(!showPub()){if(location.hash==='#seva')openSeva()}
 window.addEventListener('hashchange',function(){if(/^#shop=/.test(location.hash))location.reload();else if(location.hash==='#seva')openSeva()});
