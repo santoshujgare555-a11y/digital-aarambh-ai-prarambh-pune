@@ -209,6 +209,39 @@ footer b{color:var(--txt)}
 @keyframes sndglow{0%,100%{box-shadow:0 0 14px #ffb703,0 0 30px #ff7ad988}50%{box-shadow:0 0 26px #ffd166,0 0 60px #ff7ad9}}
 #splash.heard .snd,#splash.novid .snd,#splash.nov .snd{display:none}
 @media (prefers-reduced-motion:reduce){#splash.p2 .w,#splash.nov .w{animation:none!important}#splash .snd{animation:none}#splash .cap>div{transition:none}}
+
+/* ===== 🎙️ आरंभ, माझं ऐक! (v10) ===== */
+.vhome{margin:2px 0 16px}
+.vmic{width:100%;display:flex;align-items:center;gap:14px;padding:14px 16px;border-radius:20px;border:2px solid var(--gold);background:radial-gradient(circle at 15% 50%,#ffb54a44,transparent 42%),linear-gradient(135deg,#0d6b57,#0b4f8a 58%,#3b1d8f);color:#fff;font:inherit;text-align:left;box-shadow:0 6px 22px #0007;cursor:pointer}
+.vmic .mi{flex:none;width:66px;height:66px;border-radius:50%;background:linear-gradient(135deg,#ffd35c,#f59e0b);display:grid;place-items:center;font-size:34px;box-shadow:0 4px 16px #0008}
+.vmic .vt{flex:1;min-width:0}
+.vmic b{display:block;font-size:22px;line-height:1.25}
+.vmic small{display:block;font-size:14.5px;color:#e3f6ff;margin-top:3px;line-height:1.35}
+.vmic.on .mi{animation:vpulse 1.1s infinite;background:linear-gradient(135deg,#ff6b6b,#f43f5e)}
+.vmic:focus-visible,.vchip:focus-visible,.vch button:focus-visible{outline:3px solid var(--cyan);outline-offset:2px}
+@keyframes vpulse{0%{box-shadow:0 0 0 0 #ffd35ccc}70%{box-shadow:0 0 0 20px #ffd35c00}100%{box-shadow:0 0 0 0 #ffd35c00}}
+.vtype{display:flex;gap:8px;margin-top:8px;align-items:stretch}
+.vtype input{flex:1;min-width:0;margin:0}
+.vtype .btn{flex:none}
+.vhint{font-size:12.5px;color:var(--mut);margin-top:6px}
+.vbar{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin:6px 0 2px}
+.vbar .sp{flex:1}
+.vchip{border:1px solid var(--line);background:#12155a;color:var(--txt);border-radius:999px;padding:6px 12px;font:inherit;font-size:14px;min-height:38px;cursor:pointer}
+.vchip.on{background:var(--gold);color:#241a00;border-color:var(--gold);font-weight:800}
+.vlog{display:flex;flex-direction:column;gap:8px;margin:12px 0 8px}
+.vb{max-width:90%;padding:10px 13px;border-radius:16px;font-size:16.5px;line-height:1.5;white-space:pre-line;word-break:break-word}
+.vb.da{align-self:flex-start;background:#1c2178;border:1px solid var(--line);border-bottom-left-radius:4px}
+.vb.me{align-self:flex-end;background:#0e5a4a;border:1px solid #22c55e88;border-bottom-right-radius:4px}
+.vb.me i,.vb.da i{display:block;font-style:normal;font-size:12px;color:#a7f3d0;margin-bottom:2px}
+.vb.da i{color:#fde68a}
+.vb.warn{background:#4a1d1d;border-color:#f8717188}
+.vch{display:flex;flex-wrap:wrap;gap:8px;margin:4px 0 12px}
+.vch button{flex:1 1 44%;min-height:54px;padding:10px 12px;border-radius:14px;border:1.5px solid var(--gold);background:#141a6e;color:#fff;font:inherit;font-size:16px;font-weight:700;text-align:center;cursor:pointer}
+.vch button.y{background:#16a34a;border-color:#22c55e}
+.vch button.s{flex:1 1 28%;min-height:46px;font-size:14.5px;font-weight:600;border-color:var(--line);background:#0f1450}
+.vint{min-height:24px;font-size:15px;color:#a7f3d0;text-align:center;margin-top:6px}
+.vpanel .vmic{justify-content:center;text-align:center}
+.vpanel .vmic .vt{flex:none}
 </style>
 </head>
 <body>
@@ -216,7 +249,7 @@ footer b{color:var(--txt)}
  <div class="stars"></div>
  <svg class="rb" viewBox="0 0 400 210" aria-hidden="true"><path pathLength="1" stroke="#ff3b3b" style="animation-delay:0.00s" d="M10 206A190 190 0 0 1 390 206"/><path pathLength="1" stroke="#ff8c1a" style="animation-delay:0.08s" d="M20 206A180 180 0 0 1 380 206"/><path pathLength="1" stroke="#ffd60a" style="animation-delay:0.16s" d="M30 206A170 170 0 0 1 370 206"/><path pathLength="1" stroke="#2fd36b" style="animation-delay:0.24s" d="M40 206A160 160 0 0 1 360 206"/><path pathLength="1" stroke="#2fb6ff" style="animation-delay:0.32s" d="M50 206A150 150 0 0 1 350 206"/><path pathLength="1" stroke="#4b5bff" style="animation-delay:0.40s" d="M60 206A140 140 0 0 1 340 206"/><path pathLength="1" stroke="#a855f7" style="animation-delay:0.48s" d="M70 206A130 130 0 0 1 330 206"/></svg>
  <svg class="tm" viewBox="0 0 400 100" preserveAspectRatio="xMidYMax slice" aria-hidden="true"><path fill="#0a0820" d="M0 80H30V70H36V64C38 56 42 48 46 42C50 48 54 56 56 64V70H62V80H90V66H96V58C99 46 105 34 112 24V14H114L122 17L114 20V24C120 34 126 46 129 58V66H135V80H170V72H176C178 66 181 62 184 58C187 62 190 66 192 72H198V80H250V68H256V60C259 50 264 40 270 32C276 40 281 50 284 60V68H290V80H330V74H334C336 68 339 64 342 61C345 64 348 68 350 74H354V80H400V100H0Z"/><path fill="#1b1550" opacity=".7" d="M0 84H400V100H0Z"/><g fill="#ffc23d"><circle cx="70" cy="82" r="1.3"/><circle cx="150" cy="82" r="1.3"/><circle cx="215" cy="82" r="1.3"/><circle cx="310" cy="82" r="1.3"/><circle cx="375" cy="82" r="1.3"/></g><g stroke="#ffb54a" stroke-width=".8" opacity=".55"><path d="M64 88h12M144 91h12M208 88h14M304 92h12M368 88h12"/></g></svg>
- <div class="wv" id="wv"><video id="wvid" data-src="welcome.mp4?v=fw19" data-poster="welcome.jpg?v=fw19" autoplay muted playsinline preload="auto" aria-hidden="true"></video></div>
+ <div class="wv" id="wv"><video id="wvid" data-src="welcome.mp4?v=fw20" data-poster="welcome.jpg?v=fw20" autoplay muted playsinline preload="auto" aria-hidden="true"></video></div>
  <canvas id="fx"></canvas>
  <div class="cap" id="cap" aria-live="polite"><div class="c1">नमस्कार! सुस्वागतम! 🙏</div><div class="c2">Welcome to Digital Aarambh <b>AI</b><small>डिजिटल आरंभ AI मध्ये आपलं स्वागत आहे</small></div></div>
  <div class="tx"><div class="w">Welcome<small>🙏 नमस्कार, स्वागत आहे!</small></div><div class="n">Digital Aarambh <b>AI</b></div><div class="tg">डिजिटल साधने | स्मार्ट व्यवसाय | उज्ज्वल भविष्य</div></div>
@@ -233,6 +266,12 @@ footer b{color:var(--txt)}
  <script>daFill();document.getElementById("daBan").src=DA_BANNER</script>
  <div id="refStrip" class="hide" style="margin:10px 0;padding:12px 14px;border-radius:14px;background:linear-gradient(90deg,#0b1f4a,#123270);border:1px solid #d4a94a;color:#fff3c8;font-size:15px;line-height:1.45"></div>
  <button class="shopbar" id="shopbar" type="button" style="width:100%;text-align:left;color:inherit;font:inherit"></button>
+
+ <div class="vhome" id="vHome">
+  <button type="button" class="vmic" id="vHomeMic" aria-label="आरंभ, माझं ऐक! – बोलण्यासाठी दाबा"><span class="mi" aria-hidden="true">🎙️</span><span class="vt"><b>आरंभ, माझं ऐक!</b><small>बोला – आरंभ योग्य एजंट उघडेल</small></span></button>
+  <form class="vtype" id="vHomeF" autocomplete="off"><input id="vHomeIn" placeholder="किंवा इथे लिहा – उदा. साखरेवर ऑफरचं पोस्टर" aria-label="किंवा इथे लिहा"><button class="btn" type="submit">जा ›</button></form>
+  <p class="vhint" id="vHomeHint">बोललेले शब्द ओळखून योग्य एजंट उघडते · इंटरनेट लागते</p>
+ </div>
  <h2 class="sec">🤖 12 स्मार्ट एजंट्स <small>– कोणतेही एक निवडा</small></h2>
  <nav class="grid" id="grid" aria-label="12 एजंट्स"></nav>
  <button type="button" class="seva" id="sevaBtn"><span class="sic">🚀</span><span class="st"><b>आमच्या सेवा</b><small>मोठी वेबसाइट · इबुक स्टोअर · Google Maps · जाहिरात विडिओ · पोस्टर</small></span><span class="go">पहा ›</span></button>
@@ -302,7 +341,7 @@ function capTick(){if(phase2||done)return;var t=(vid&&!novid&&vid.currentTime>0)
 function startTick(){clearInterval(tick);capAt(0);tick=setInterval(capTick,120);timers.push(tick)}
 function goP2(){if(phase2)return;phase2=true;clearInterval(tick);sp.classList.add('p2');rocketsFrom=now();timers.push(setTimeout(finish,2600))}
 function noMedia(){novid=true;sp.classList.add('nov');sp.classList.add('novid');if(!phase2){timers.push(setTimeout(goP2,250))}}
-function toImg(){novid=true;sp.classList.add('novid');if(!wv)return noMedia();wv.innerHTML='';var im=new Image();im.alt='';im.onerror=noMedia;im.src='welcome.jpg?v=fw19';wv.appendChild(im)}
+function toImg(){novid=true;sp.classList.add('novid');if(!wv)return noMedia();wv.innerHTML='';var im=new Image();im.alt='';im.onerror=noMedia;im.src='welcome.jpg?v=fw20';wv.appendChild(im)}
 /* tap 🔊 (or the first tap anywhere) → unmute and replay her greeting from the start */
 function playSound(){if(heard||novid||!vid||done)return false;heard=true;sp.classList.add('heard');
  timers.forEach(clearTimeout);timers=[];
@@ -888,10 +927,291 @@ try{var qp=new URLSearchParams(location.search),rp=qp.get('ref');if(rp&&/^[\w-]{
  var rb=String(qp.get('by')||'').replace(/-/g,' ').replace(/[<>"&]/g,'').trim().slice(0,40),ri=String(qp.get('id')||'');if(!/^DA-MH-\d{3,6}$/.test(ri))ri='';
  if(rb)st.set('refBy',rb);if(ri)st.set('refId',ri);
  var rs=document.getElementById('refStrip');if(rs){rs.innerHTML=rb?'🤝 <b>'+esc(rb)+'</b>'+(ri?' ('+esc(ri)+')':'')+' यांनी तुम्हाला <b>Digital Aarambh AI</b> वर आमंत्रित केलं आहे.<br><small>Refer कोड: '+esc(rp)+'</small>':'🤝 तुम्हाला Refer कोड <b>'+esc(rp)+'</b> ने आमंत्रित केलं आहे.';rs.classList.remove('hide')}}}}catch(e){}
+
+/* ===================== 🎙️ आरंभ, माझं ऐक! (v10) =====================
+   हे बोललेले शब्द ओळखून (keyword matching) योग्य एजंट उघडते. AI नाही.
+   आवाज → मजकूर: ब्राउझरचे Web Speech API (Chrome; इंटरनेट लागते).
+   मजकूर → आवाज: फोनचा speechSynthesis (मराठी, नसल्यास हिंदी आवाज). */
+var SR=window.SpeechRecognition||window.webkitSpeechRecognition||null;
+var V={rec:null,listening:false,flow:null,auto:false,lang:st.get('vlang','mr-IN'),tts:st.get('vtts',true)!==false,voice:null,err:'',fails:0,openT:0};
+if(['mr-IN','hi-IN','en-IN'].indexOf(V.lang)<0)V.lang='mr-IN';
+/* ---- text helpers ---- */
+var DEVD='०१२३४५६७८९';
+function vNorm(t){return String(t||'').replace(/[०-९]/g,function(d){return DEVD.indexOf(d)}).toLowerCase().replace(/[\u200c\u200d]/g,'').replace(/[“”"‘’'.,!?।॥:;()\[\]{}…\-–—]/g,' ').replace(/\s+/g,' ').trim()}
+/* fold: spelling variants (ई/इ, ऊ/उ, ॅ, nukta…) so that वेबसाईट = वेबसाइट */
+function vFold(t){return vNorm(t).replace(/\u093c/g,'').replace(/ी/g,'ि').replace(/ू/g,'ु').replace(/ई/g,'इ').replace(/ऊ/g,'उ').replace(/ँ/g,'ं').replace(/ॅ/g,'े').replace(/ॉ/g,'ो').replace(/ॲ|अॅ/g,'ए').replace(/ऑ/g,'ओ')}
+var NUMW={'शून्य':0,'झिरो':0,'एक':1,'दोन':2,'दो':2,'तीन':3,'चार':4,'पाच':5,'पांच':5,'पाँच':5,'सहा':6,'छह':6,'छः':6,'सात':7,'आठ':8,'नऊ':9,'नौ':9,'दहा':10,'दस':10,'अकरा':11,'बारा':12,'पंधरा':15,'पंद्रह':15,'वीस':20,'बीस':20,'पंचवीस':25,'पच्चीस':25,'तीस':30,'चाळीस':40,'चालीस':40,'पन्नास':50,'पचास':50,'साठ':60,'सत्तर':70,'ऐंशी':80,'नव्वद':90,'शंभर':100,'सौ':100,'दोनशे':200,'पाचशे':500,'हजार':1000,'zero':0,'one':1,'two':2,'three':3,'four':4,'five':5,'six':6,'seven':7,'eight':8,'nine':9,'ten':10,'twenty':20,'fifty':50,'hundred':100};
+function vNums(t){return vNorm(t).split(' ').map(function(w){return NUMW.hasOwnProperty(w)?String(NUMW[w]):w}).join(' ')}
+function vClean(t){var x=String(t||'').replace(/[०-९]/g,function(d){return DEVD.indexOf(d)}).trim().replace(/[।.!?,]+$/,'').trim();
+ x=x.replace(/^(माझ्या|माझे|माझं|माझा|आमच्या|आमचे|आमचं|मेरी|मेरे|मेरा|my)\s+/i,'').replace(/^(दुकानाचं|दुकानाचे|दुकानाचा|दुकानाची|दुकान का|दुकान की|shop)\s+/i,'').replace(/^(नाव|नांव|नाम|name|पत्ता|पता|address|वेळ|समय)\s+(आहे\s+|है\s+|is\s+)?/i,'');
+ x=x.replace(/\s+(आहे|आहेत|आहेत\.|है|हैं|असं|is)$/i,'').trim();return x}
+function hasW(n,list){var p=' '+n+' ';for(var i=0;i<list.length;i++){if(p.indexOf(' '+list[i]+' ')>=0)return true}return false}
+function startsW(n,list){for(var i=0;i<list.length;i++){var w=list[i];if(n===w||n.indexOf(w+' ')===0)return true}return false}
+var YES=['हो','होय','हो हो','हां','हाँ','हा','हं','बरोबर','ठीक','ठिक','चालेल','yes','ok','okay','ओके','ओक','येस','सही','बनव','बनवा','haan','han','ho','hoy','correct','right'];
+var NO=['नाही','नाहि','नको','नहीं','नही','ना','no','नो','nahi','nako','skip','स्किप','पुढे','पुढं','next','काही नाही','नाही नको'];
+var FIX=['दुरुस्ती','दुरुस्त','बदल','बदला','चूक','चुक','चुकीच','चुकीचं','चुकीचे','चुकीचा','change','edit','सुधार','गलत','wrong'];
+var RPT=['पुन्हा सांग','पुन्हा सांगा','परत सांग','परत सांगा','पुन्हा बोल','पुन्हा','repeat','फिर से','दोबारा','again','काय म्हणालात','समजलं नाही','समजले नाही'];
+var CAN=['रद्द','रद्द करा','थांब','थांबा','cancel','stop','रुको','सोडा','राहू दे','राहूदे'];
+function isYes(n){return n.split(' ').length<=5&&startsW(n,YES)&&!startsW(n,NO)}
+function isNo(n){return n.split(' ').length<=3&&startsW(n,NO)}
+function isRpt(n){return n.split(' ').length<=4&&RPT.some(function(w){return n===w||n.indexOf(w)===0})}
+function isCan(n){return n.split(' ').length<=3&&startsW(n,CAN)}
+function isFix(n){var f=vFold(n);return FIX.some(function(w){return hasW(f,[vFold(w)])||f.indexOf(vFold(w))===0})}
+
+/* ---- keyword router: each agent has words (Marathi/Hindi/English + spellings) with weights.
+   Devanagari/Latin word is matched at the start of a spoken word (साखरेवर, जाहिरातीचा…);
+   a word ending in "=" must match the whole word. Index 12 = "आमच्या सेवा". ---- */
+var VK=[
+/*0 वेबसाइट*/[['वेबसाइट',3],['वेबसाइड',3],['वेब साइट',3],['वेबसाईट',3],['साइट',2],['website',3],['web site',3],['site=',2],['webpage',3],['वेब पेज',3],['ऑनलाइन दुकान',3],['online shop',3],['मिनी वेब',3],['वेब',1],['web',1],['ओळख पेज',2]],
+/*1 QR*/[['qr',2],['क्युआर',2],['क्यूआर',2],['क्यु आर',2],['क्यू आर',2],['q r',2],['स्कॅन',2],['स्केन',2],['scan',2],['बारकोड',2],['कोड',1],['code',1]],
+/*2 पोस्टर*/[['जाहिरात',3],['जाहीरात',3],['जहिरात',3],['पोस्टर',2],['poster',2],['ऑफर',3],['ओफर',3],['offer',3],['सेल=',3],['सेलचं',3],['सेलचे',3],['sale',3],['सूट=',3],['सवलत',3],['डिस्काउंट',3],['डिस्काऊंट',3],['discount',3],['टक्के',2],['टक्का',2],['percent',2],['बॅनर',2],['banner',2],['advertisement',3],['advertise',3],['ad=',3],['ads=',3],['विज्ञापन',3],['इश्तिहार',3],['प्रचार',2],['नवीन माल',3],['नया माल',3],['उद्घाटन',3],['ओपनिंग',3],['opening',3],['पॅम्पलेट',2],['पेम्प्लेट',2],['पॅम्प्लेट',2],['पंपलेट',2],['pamphlet',2],['पत्रक',2],['फ्लायर',2],['flyer',2],['फ्री',1],['free',1]],
+/*3 WhatsApp मेसेज*/[['मेसेज',2],['मेसेज',2],['मॅसेज',2],['massage',2],['message',2],['msg',2],['संदेश',3],['ग्राहकांना',2],['ग्राहकाला',2],['ग्राहकों को',2],['कळवा',2],['कळव',2],['सूचना',1],['दुकान बंद',3],['बंद राहील',3],['बंद रहेगा',3],['ऑर्डर तयार',2],['माल आला',1],['व्हॉट्सअॅप',1],['व्हाट्सएप',1],['वॉट्सअप',1],['whatsapp',1],['पाठव',1],['भेजो',1]],
+/*4 ग्राहक उत्तर*/[['उत्तर',3],['उत्तरं',3],['उत्तरे',3],['जवाब',3],['reply',3],['answer',3],['रिप्लाय',3],['प्रश्न',2],['सवाल',2],['question',2],['विचारतात',3],['विचारलं',2],['विचारले',2],['पूछते',3],['चौकशी',2],['faq',3],['घरपोच',1],['डिलिव्हरी',1],['delivery',1]],
+/*5 हिशोब*/[['हिशोब',3],['हिशेब',3],['हिसाब',3],['खर्च',3],['खर्चा',3],['उधार',3],['उधारी',3],['जमा',2],['वही',2],['खाते',2],['खाता',2],['khata',3],['नोंद',2],['लिही',1],['लिहा',1],['लिख',1],['account',2],['accounts',2],['expense',3],['credit',2],['कमाई',2],['विक्री',2],['बाकी',2],['रुपये',1],['रुपए',1],['बिल',1],['कर्ज',1],['पैसे घेतले',2],['पैसे दिले',2]],
+/*6 Review*/[['review',3],['रिव्ह्यू',3],['रिव्यू',3],['रिव्ह्यु',3],['रिव्हू',3],['रिव्हु',3],['रिविव',3],['रिव्ह्य',3],['अभिप्राय',3],['फीडबॅक',3],['फिडबॅक',3],['feedback',3],['रेटिंग',3],['rating',3],['स्टार',2],['star',2],['समीक्षा',3],['प्रतिक्रिया',2]],
+/*7 नकाशा*/[['पत्त',3],['पत्ता',4],['पता=',2],['मॅप',3],['मेप',3],['map',3],['maps',3],['नकाशा',3],['नकाश',3],['नक्शा',3],['लोकेशन',3],['location',3],['दिशा',2],['direction',3],['रस्ता',2],['रास्ता',2],['address',3],['ऍड्रेस',3],['अॅड्रेस',3],['एड्रेस',3],['कुठे आहे',2],['कसं यायचं',3]],
+/*8 UPI*/[['upi',4],['यूपीआय',4],['युपीआय',4],['यूपीआई',4],['युपीआई',4],['यु पी आय',4],['पेमेंट',4],['पेमेन्ट',4],['payment',4],['pay=',2],['भुगतान',3],['फोनपे',3],['phonepe',3],['gpay',3],['जीपे',3],['google pay',3],['गूगल पे',3],['paytm',3],['पेटीएम',3],['पैसे घ्या',3],['पैसे घेण्या',3],['स्कॅनर',3],['scanner',3],['पैसे मागा',3],['रक्कम',1],['ऑनलाइन पैसे',3]],
+/*9 सण*/[['सण',3],['सणाच',3],['त्योहार',3],['त्यौहार',3],['festival',3],['दिवाळी',3],['दीपावली',3],['diwali',3],['पाडवा',3],['गुढी',3],['गणपती',3],['गणेश',3],['नवरात्र',3],['दसरा',3],['संक्रांत',3],['होळी',3],['होली',3],['रंगपंचमी',3],['शिवजयंती',3],['जयंती',2],['रक्षाबंधन',3],['राखी',2],['भाऊबीज',3],['ईद',3],['नाताळ',3],['ख्रिसमस',3],['christmas',3],['नवीन वर्ष',3],['नया साल',3],['new year',3],['स्वातंत्र्य दिन',3],['प्रजासत्ताक',3],['महाराष्ट्र दिन',3],['एकादशी',3],['शुभेच्छा',3],['शुभकामना',3],['बधाई',2],['wishes',3],['greeting',3],['वाढदिवस',3],['जन्मदिन',3],['बर्थडे',3],['birthday',3],['निमंत्रण',3],['आमंत्रण',3],['invitation',3],['पत्रिका',2],['लग्न',2]],
+/*10 विजिटिंग कार्ड*/[['व्हिजिटिंग',4],['विजिटिंग',4],['व्हिजीटिंग',4],['visiting',4],['बिझनेस कार्ड',4],['बिजनेस कार्ड',4],['business card',4],['कार्ड',2],['card',2],['कार्ड बनव',5],['card बनव',5],['vcf',3],['कॉन्टॅक्ट',2],['contact',2],['संपर्क',2],['बायोडाटा',2]],
+/*11 मेंबर*/[['मेंबर कार्ड',4],['member card',4],['मेंबर',3],['मेम्बर',3],['member',3],['membership',3],['सदस्य',3],['सभासद',3],['id=',2],['आयडी',2],['ओळखपत्र',3],['पहचान पत्र',3],['रेफर',3],['refer',3],['referral',3],['रेफरल',3],['invite',2],['आमंत्रित',2]],
+/*12 सेवा*/[['सेवा',2],['seva',2],['service',2],['services',2],['मोठी वेबसाइट',5],['मोठी वेबसाईट',5],['प्रोफेशनल वेबसाइट',5],['लोगो',3],['logo',3],['विडिओ',3],['व्हिडिओ',3],['व्हिडीओ',3],['video',3],['इबुक',3],['ई बुक',3],['ebook',3],['गूगल मॅप लिस्टिंग',5],['लिस्टिंग',3]]];
+var VKF=VK.map(function(a){return a.map(function(k){var ex=/=$/.test(k[0]),w=k[0].replace(/=$/,'');return [vFold(w),k[1],ex]}).sort(function(x,y){return y[0].length-x[0].length})});
+function vScore(text){var f=' '+vFold(text)+' ',sc=[],hits=[];
+ VKF.forEach(function(list,i){var s=0,h=[];list.forEach(function(k){if(h.some(function(x){return x.indexOf(k[0])===0||k[0].indexOf(x)===0}))return;var ok=k[2]?f.indexOf(' '+k[0]+' ')>=0:f.indexOf(' '+k[0])>=0;if(ok){s+=k[1];h.push(k[0])}});sc.push(s);hits.push(h)});
+ if(/\d\s*%|%/.test(f))sc[2]+=2;
+ return {sc:sc,hits:hits}}
+function vRoute(text){var r=vScore(text),sc=r.sc,ord=sc.map(function(v,i){return i}).filter(function(i){return sc[i]>0}).sort(function(a,b){return sc[b]-sc[a]||a-b});
+ if(!ord.length)return {kind:'none',scores:sc};
+ var best=ord[0],sec=ord[1];
+ if(sec!=null&&sc[best]-sc[sec]<1){return {kind:'guess',list:ord.filter(function(i){return sc[i]>=sc[best]-1.5}).slice(0,3),scores:sc}}
+ return {kind:'go',agent:best,scores:sc}}
+function vName(i){return i===12?'🚀 आमच्या सेवा':(i+1)+'. '+AG[i][1]}
+function vIcon(i){return i===12?'🚀':AG[i][0]}
+
+/* ---- speech out (TTS) ---- */
+function vPickVoice(){if(!window.speechSynthesis)return;var vs=[];try{vs=speechSynthesis.getVoices()||[]}catch(e){}
+ function f(re){for(var i=0;i<vs.length;i++)if(re.test(vs[i].lang||''))return vs[i];return null}
+ V.voice=f(/^mr([-_]|$)/i)||f(/^hi([-_]|$)/i)||null;vTtsNote()}
+if(window.speechSynthesis){vPickVoice();try{speechSynthesis.addEventListener('voiceschanged',vPickVoice)}catch(e){speechSynthesis.onvoiceschanged=vPickVoice}}
+function vSpeakable(t){return String(t||'').replace(/[\u{1F000}-\u{1FAFF}\u{2600}-\u{27BF}\u{2B00}-\u{2BFF}\uFE0F\u200d]/gu,'').replace(/₹\s*(\d[\d,]*)/g,'$1 रुपये').replace(/(\d)\s*%/g,'$1 टक्के').replace(/[“”"*›‹]/g,'').replace(/\s+/g,' ').trim()}
+function vStopSpeak(){try{if(window.speechSynthesis)speechSynthesis.cancel()}catch(e){}}
+function vSpeak(text,cb){var done=false;function fin(){if(done)return;done=true;if(cb)cb()}
+ var t=vSpeakable(text);if(!V.tts||!window.speechSynthesis||!V.voice||!t){setTimeout(fin,250);return}
+ try{speechSynthesis.cancel();var u=new SpeechSynthesisUtterance(t);u.voice=V.voice;u.lang=V.voice.lang;u.rate=0.95;u.onend=fin;u.onerror=fin;
+  setTimeout(fin,2000+t.length*95);speechSynthesis.speak(u)}catch(e){setTimeout(fin,250)}}
+
+/* ---- panel UI ---- */
+function vEl(id){return document.getElementById(id)}
+function vAdd(who,html,cls){var log=vEl('vLog');if(!log)return;var d=document.createElement('div');d.className='vb '+who+(cls?' '+cls:'');d.innerHTML=html;log.appendChild(d);try{d.scrollIntoView({block:'nearest',behavior:'smooth'})}catch(e){}return d}
+/* आरंभ बोलतो: text shown + spoken; after = callback when speaking ends */
+function vSay(text,after,cls,tag){vAdd('da','<i>आरंभ'+(tag?' · '+esc(tag):'')+'</i>'+esc(text),cls);vSpeak(text,after)}
+function vStep(){var fl=V.flow;if(!fl)return '';var app=fl.F.fields.filter(function(f){return (!f.when||f.when(fl.d))&&fl.pre.indexOf(f.k)<0});
+ var tot=app.length+1,done=app.filter(function(f){return fl.d[f.k]!=null}).length;if(fl.stage==='confirm'||fl.stage==='pick')done=app.length;return 'टप्पा '+Math.min(done+1,tot)+'/'+tot}
+function vChoices(arr){var c=vEl('vCh');if(!c)return;c.innerHTML='';(arr||[]).forEach(function(a){var b=document.createElement('button');b.type='button';b.textContent=a[0];if(a[2])b.className=a[2];b.onclick=function(){vStopListen();a[1]()};c.appendChild(b)})}
+function vMicUI(on,label){var m=vEl('vMic'),s=vEl('vMicS');if(m)m.classList.toggle('on',!!on);if(s)s.textContent=label||(on?'ऐकतोय… बोला':(SR?'दाबा आणि बोला':'या ब्राउझरमध्ये आवाज नाही – खाली लिहा'));var h=vEl('vHomeMic');if(h)h.classList.toggle('on',!!on)}
+function vTtsNote(){var n=vEl('vTtsN');if(!n)return;n.textContent=!window.speechSynthesis?'🔇 या ब्राउझरमध्ये वाचून दाखवण्याची सुविधा नाही – मजकूर वाचा.':(!V.voice?'🔇 या फोनवर मराठी/हिंदी आवाज सापडला नाही – मजकूर वाचा.':'🔊 आवाज: '+(V.voice.lang||'')+(/^hi/i.test(V.voice.lang)?' (मराठी आवाज नसल्याने हिंदी आवाज)':''))}
+function vPanel(b){b.innerHTML='<div class="vpanel">'+
+ '<div class="vbar" role="group" aria-label="बोलण्याची भाषा"><button type="button" class="vchip" data-l="mr-IN">मराठी</button><button type="button" class="vchip" data-l="hi-IN">हिंदी</button><button type="button" class="vchip" data-l="en-IN">English</button><span class="sp"></span><button type="button" class="vchip" id="vTts" aria-label="आवाज चालू / बंद"></button></div>'+
+ '<div class="vlog" id="vLog" aria-live="polite"></div><div class="vch" id="vCh"></div>'+
+ '<button type="button" class="vmic" id="vMic"><span class="mi" aria-hidden="true">🎙️</span><span class="vt"><b>बोला</b><small id="vMicS"></small></span></button>'+
+ '<div class="vint" id="vInt"></div>'+
+ '<form class="vtype" id="vF" autocomplete="off"><input id="vIn" placeholder="किंवा इथे लिहा…" aria-label="किंवा इथे लिहा"><button class="btn" type="submit">पाठवा</button></form>'+
+ '<p class="note">ℹ️ हे बोललेले शब्द ओळखून योग्य एजंट उघडते (इंटरनेट लागते). आवाज ओळखणे Android वर Google Chrome मध्ये चालते. नाव, नंबर, रक्कम चुकू शकते – म्हणून शेवटी विचारून खात्री करते.</p><p class="note" id="vTtsN"></p></div>';
+ $$('.vchip[data-l]',b).forEach(function(c){c.classList.toggle('on',c.dataset.l===V.lang);c.onclick=function(){V.lang=c.dataset.l;st.set('vlang',V.lang);$$('.vchip[data-l]',b).forEach(function(x){x.classList.toggle('on',x===c)});toast('बोलण्याची भाषा: '+c.textContent)}});
+ var tb=$('#vTts',b);function tl(){tb.textContent=V.tts?'🔊 आवाज चालू':'🔇 आवाज बंद';tb.classList.toggle('on',V.tts)}tl();
+ tb.onclick=function(){V.tts=!V.tts;st.set('vtts',V.tts);if(!V.tts)vStopSpeak();tl()};
+ $('#vMic',b).onclick=function(){V.auto=true;vListen()};
+ $('#vF',b).onsubmit=function(e){e.preventDefault();var i=$('#vIn',b),t=i.value.trim();if(!t){i.focus();return}i.value='';V.auto=false;vStopListen();vHandle(t,'type')};
+ vMicUI(false);vTtsNote()}
+function vOpen(opts){opts=opts||{};V.flow=null;V.fails=0;vStopListen();vStopSpeak();
+ openSheet('🎙️ आरंभ, माझं ऐक!',vPanel);
+ if(opts.text){vHandle(opts.text,'type');return}
+ if(!SR){vUnsupported();return}
+ if(opts.listen){vAdd('da','<i>आरंभ</i>नमस्कार 🙏 काय काम आहे ते बोला.\nउदा. “साखरेवर 10% ऑफरचं पोस्टर बनव”');vExamples();V.auto=true;vListen();return}
+ vSay('नमस्कार! काय काम आहे ते बोला.');vExamples()}
+function vExamples(){vChoices([['📢 साखरेवर 10% ऑफरचं पोस्टर',function(){vHandle('साखरेवर 10% ऑफरचं पोस्टर बनव','type')},'s'],['🌐 दुकानाची वेबसाइट बनव',function(){vHandle('माझ्या दुकानाची वेबसाइट बनव','type')},'s'],['▦ WhatsApp चा QR बनव',function(){vHandle('WhatsApp चा QR कोड बनव','type')},'s'],['📒 आजचा खर्च लिहायचा',function(){vHandle('आजचा खर्च लिहायचा आहे','type')},'s']])}
+function vUnsupported(){vAdd('da','<i>आरंभ</i>या ब्राउझरमध्ये आवाज ओळखण्याची सुविधा नाही. 🎙️ वापरण्यासाठी हे पेज Android वर Google Chrome मध्ये उघडा (WhatsApp मधून उघडलं असेल तर ⋮ → “Chrome मध्ये उघडा”).\nतोपर्यंत खाली लिहा – तेही चालतं 👇','warn');vSpeak('या ब्राउझरमध्ये आवाज ओळखण्याची सुविधा नाही. खाली लिहा.');vExamples();var i=vEl('vIn');if(i)setTimeout(function(){try{i.focus()}catch(e){}},300)}
+
+/* ---- speech in (STT) ---- */
+var VERR={'not-allowed':'🎤 मायक्रोफोनची परवानगी मिळाली नाही. वर पत्त्याजवळ 🔒 दाबा → परवानग्या → मायक्रोफोन “Allow” करा. WhatsApp मधून उघडलं असेल तर ⋮ → “Chrome मध्ये उघडा”. तोपर्यंत खाली लिहा.',
+ 'service-not-allowed':'🎤 या ब्राउझरने आवाज ओळखण्याची परवानगी दिली नाही. Google Chrome मध्ये उघडा, किंवा खाली लिहा.',
+ 'no-speech':'काहीच ऐकू आलं नाही. 🎙️ दाबा आणि फोन जवळ धरून स्पष्ट बोला.',
+ 'network':'📶 इंटरनेट नाही किंवा कमी आहे. आवाज ओळखायला इंटरनेट लागते. नेट चालू करून पुन्हा 🎙️ दाबा, किंवा खाली लिहा.',
+ 'audio-capture':'🎤 मायक्रोफोन सापडला नाही. दुसरं ॲप माइक वापरत असेल तर ते बंद करा, किंवा खाली लिहा.',
+ 'language-not-supported':'या फोनवर ही भाषा ओळखता येत नाही. वर “हिंदी” निवडून पहा, किंवा खाली लिहा.',
+ 'start':'आवाज ओळख सुरू झाली नाही. पुन्हा 🎙️ दाबा, किंवा खाली लिहा.'};
+function vStopListen(){if(V.rec){try{V.rec.onend=null;V.rec.abort()}catch(e){}}V.rec=null;V.listening=false;vMicUI(false);var t=vEl('vInt');if(t)t.textContent=''}
+function vListen(){if(!SR){vUnsupported();return}
+ if(V.listening){try{V.rec.stop()}catch(e){}return}
+ vStopSpeak();var r;try{r=new SR()}catch(e){vErr('start');return}
+ V.rec=r;V.err='';var fin='',heard=false;
+ r.lang=V.lang;r.interimResults=true;r.continuous=false;r.maxAlternatives=1;
+ r.onstart=function(){V.listening=true;vMicUI(true)};
+ r.onresult=function(e){var t='',isF=false;for(var i=e.resultIndex;i<e.results.length;i++){t+=e.results[i][0].transcript;if(e.results[i].isFinal)isF=true}
+  var el=vEl('vInt');if(el)el.textContent=t?'“'+t+'”':'';if(isF){fin+=t;heard=true}};
+ r.onerror=function(e){V.err=e.error||'start'};
+ r.onend=function(){V.listening=false;V.rec=null;vMicUI(false);var el=vEl('vInt');if(el)el.textContent='';
+  if(heard&&fin.trim()){vHandle(fin.trim(),'voice')}else if(V.err!=='aborted')vErr(V.err||'no-speech')};
+ try{r.start();V.listening=true;vMicUI(true)}catch(e){V.rec=null;vErr('start')}}
+function vErr(code){V.auto=false;var m=VERR[code]||'आवाज ओळखता आला नाही. पुन्हा 🎙️ दाबा, किंवा खाली लिहा.';vSay(m,null,code==='no-speech'?'':'warn');
+ if(V.flow)vAskButtons()}
+/* after a spoken question, keep listening automatically if the user is talking (not typing) */
+function vNextListen(){if(V.auto&&SR&&sheetOpen&&vEl('vMic'))setTimeout(function(){if(V.auto&&!V.listening&&vEl('vMic'))vListen()},250)}
+
+/* ---- main handler ---- */
+function vHandle(text,src){text=String(text||'').trim();if(!text)return;
+ vAdd('me','<i>'+(src==='voice'?'तुम्ही म्हणालात':'तुम्ही लिहिलं')+'</i>“'+esc(text)+'”');
+ if(V.flow)return vFlowAnswer(text);
+ var n=vNorm(text);if(isCan(n)){vSay('ठीक आहे. 🎙️ दाबून पुन्हा बोला.');return}
+ var r=vRoute(text);
+ if(r.kind==='go')return vGo(r.agent,text);
+ if(r.kind==='guess'){vSay('यापैकी कोणतं?',vNextListenOff);vChoices(r.list.map(function(i){return [vIcon(i)+' '+vName(i).replace(/^\d+\.\s/,''),function(){vAdd('me','<i>तुम्ही निवडलं</i>'+esc(vName(i)));vGo(i,text)}]}).concat([['🔁 पुन्हा सांगतो',function(){vChoices([]);V.auto=true;vListen()},'s']]));return}
+ vSay('माफ करा, समजलं नाही. पुन्हा सोप्या शब्दांत सांगा, किंवा खालीलपैकी निवडा.',vNextListenOff);
+ vChoices(AG.map(function(a,i){return [a[0]+' '+a[1],function(){vAdd('me','<i>तुम्ही निवडलं</i>'+esc(vName(i)));vGo(i,'')},'s']}).concat([['🚀 आमच्या सेवा',function(){vGo(12,'')},'s']]))}
+function vNextListenOff(){}
+var VLINE=['','','',
+ 'ग्राहकांसाठी तयार मेसेज उघडतो. प्रकार निवडा आणि WhatsApp वर पाठवा.',
+ 'ग्राहकांच्या प्रश्नांची तयार उत्तरे उघडतो.',
+ 'हिशोब वही उघडतो. रक्कम लिहा आणि सेव्ह करा.',
+ 'Google Review मागवण्याचा मेसेज उघडतो.',
+ 'दुकानाचा पत्ता आणि नकाशा उघडतो.',
+ 'UPI पेमेंट QR उघडतो. रक्कम टाका.',
+ 'सणाचे शुभेच्छा पोस्टर उघडतो. सण निवडा.',
+ 'डिजिटल विजिटिंग कार्ड उघडतो.',
+ 'मेंबर ID आणि Refer लिंक उघडतो.',
+ 'आमच्या सेवा उघडतो. हवी ती सेवा WhatsApp वर ऑर्डर करा.'];
+function vGo(i,text){vChoices([]);
+ if(i===0)return vStartFlow('web',text);if(i===1)return vStartFlow('qr',text);if(i===2)return vStartFlow('poster',text);
+ var line=VLINE[i];
+ if(i===9&&/वाढदिवस|जन्मदिन|बर्थडे|birthday|निमंत्रण|आमंत्रण|invitation|लग्न/i.test(text||''))line='वाढदिवस आणि निमंत्रणाचे वेगळे पोस्टर अजून आलेले नाही. आत्ता सणाचे पोस्टर उघडतो; “स्वतःचा मेसेज” मध्ये तुमचा मजकूर लिहा.';
+ if(i!==5&&i!==11&&i!==12&&!shop.sName)line='आधी दुकानाचं नाव भरा, मग '+line;
+ vAdd('da','<i>आरंभ</i>➡️ <b>'+esc(vName(i))+'</b>\n'+esc(line));vSpeak(line);
+ clearTimeout(V.openT);V.openT=setTimeout(function(){if(!sheetOpen||!vEl('vLog'))return;if(i===12)openSeva();else openAgent(i,true)},1700)}
+
+/* ---- guided flows (one question at a time) ---- */
+var BIZ=[['किराणा','किराणा दुकान'],['kirana','किराणा दुकान'],['मेडिकल','मेडिकल स्टोअर'],['medical','मेडिकल स्टोअर'],['औषध','मेडिकल स्टोअर'],['कपड','कपड्यांचे दुकान'],['कापड','कापड दुकान'],['रेडिमेड','रेडिमेड कपडे'],['हॉटेल','हॉटेल'],['hotel','हॉटेल'],['रेस्टॉरंट','रेस्टॉरंट'],['खानावळ','खानावळ'],['सलून','सलून'],['salon','सलून'],['ब्युटी पार्लर','ब्युटी पार्लर'],['पार्लर','ब्युटी पार्लर'],['टेलर','टेलर'],['शिंपी','टेलर'],['हार्डवेअर','हार्डवेअर'],['मोबाइल','मोबाईल शॉप'],['मोबाईल','मोबाईल शॉप'],['mobile','मोबाईल शॉप'],['फुलां','फुलांचे दुकान'],['फूल','फुलांचे दुकान'],['बेकरी','बेकरी'],['bakery','बेकरी'],['भाजी','भाजीपाला'],['फळ','फळांचे दुकान'],['स्टेशनरी','स्टेशनरी'],['ज्वेलर','ज्वेलर्स'],['सोन','ज्वेलर्स'],['इलेक्ट्रिक','इलेक्ट्रिकल्स'],['डेअरी','डेअरी'],['दूध','डेअरी'],['चहा','चहा कॅफे'],['स्वीट','स्वीट मार्ट'],['मिठाई','स्वीट मार्ट'],['चप्पल','चप्पल दुकान'],['फर्निचर','फर्निचर'],['प्लंबर','प्लंबर'],['इलेक्ट्रिशियन','इलेक्ट्रिशियन'],['गॅरेज','गॅरेज'],['क्लास','क्लासेस'],['मॅरेज ब्युरो','मॅरेज ब्युरो'],['ब्युरो','मॅरेज ब्युरो']];
+function vBiz(text){var f=' '+vFold(text)+' ';for(var i=0;i<BIZ.length;i++){if(f.indexOf(' '+vFold(BIZ[i][0]))>=0)return BIZ[i][1]}return ''}
+function vPhone(text){var d=vNums(text).replace(/\D/g,''),p=normPhone(d);return phoneOk(p)?p:null}
+function vSpaced(p){return String(p).split('').join(' ')}
+function vUpi(text){var t=String(text||'').toLowerCase().replace(/\s+(at|ॲट|अॅट|एट|ऍट|अट)\s+/g,'@').replace(/\s+(dot|डॉट)\s+/g,'.').replace(/\s+/g,'');return upiOk(t)?t:null}
+function vText(min){return function(t){var x=vClean(t);var n=vNorm(x);if(x.length<(min||2)||isYes(n)||isNo(n))return null;return x}}
+function vOffer(t){var x,n=vNums(t);if(isNo(vNorm(t)))return null;
+ var m=n.match(/(\d+)\s*(%|टक्के|टक्का|percent|प्रतिशत)/);if(m&&n.replace(m[0],'').replace(/सूट|सवलत|ऑफर|discount|off|डिस्काउंट/g,'').trim().length<3)return m[1]+'% सूट';
+ if(/^\d+$/.test(n.trim()))return n.trim()+'% सूट';
+ x=String(t).trim().replace(/[।.]+$/,'').replace(/(\d)\s*टक्के/g,'$1%');return x.length>=2?x:null}
+function vPrice(t){var n=vNums(t).trim(),dg=n.replace(/\D/g,'');if(!dg||dg.length>=7)return null;if(/^\d+$/.test(n))return '₹'+n;var x=String(t).trim().replace(/[।.]+$/,'');var m=vNums(x).match(/^(\d+)\s*(रुपये|रुपए|रु|rs|rupees)\s*(.*)$/i);if(m)return '₹'+m[1]+(m[3]?(/^(किलो|kg|लिटर|litre|liter|नग|डझन|पॅकेट|मीटर)/i.test(m[3])?'/'+m[3]:' '+m[3]):'');return x.length>=1?x:null}
+function vQrType(t){var f=' '+vFold(t)+' ';if(/ (व्होट्स|व्हाट्स|वोट्स|वॉट्स|whats|वाट्स|व्हॉट्स)/.test(' '+vNorm(t))||f.indexOf(' व्होट')>=0)return 'wa';
+ if(/ (upi|युपि|यु पि|पेमेंट|पेमेन्ट|payment|पैसे|फोनपे|gpay|google pay|पेटिएम|paytm)/.test(f))return 'upi';
+ if(/ (कॉल|कोल|call|फोन|phone|मोबाइल|मोबाईल)/.test(' '+vNorm(t))||f.indexOf(' कोल')>=0)return 'tel';
+ if(/ (वेबसाइट|वेबसाईट|साइट|website|site|माहिति|वेब|web)/.test(f)||f.indexOf(' वेबसाइट')>=0)return 'site';return null}
+var QRT={wa:'💬 WhatsApp',tel:'📞 थेट कॉल',upi:'💳 UPI पेमेंट',site:'🌐 मिनी वेबसाइट'};
+/* product from "साखरेवर 10% ऑफर" → साखर ; title keeps the spoken form "साखरेवर" */
+var PSTOP=['खरेदीवर','त्यावर','यावर','सगळ्यावर','सगळ्यांवर','सर्वांवर','सर्वावर','पोस्टरवर','व्हॉट्सअॅपवर','whatsappवर','स्टेटसवर','दुकानावर','मालावर','उद्यावर','वर','वरती','नंतर','ऑफरवर','प्रत्येकवर','बिलावर'];
+function vProduct(text){var w=vNorm(text).split(' ');
+ for(var i=0;i<w.length;i++){var t=w[i],m=t.match(/^(.{2,}?)(वरती|वर)$/);if(m&&PSTOP.indexOf(t)<0&&!/\d/.test(t)){var b=m[1];var base=b.replace(/्यां$/,'े').replace(/ां$/,'').replace(/[ेा]$/,'');if(base.length<2)base=b;return {word:t,base:base}}
+  if((t==='पर'||t==='पे')&&i>0&&!/\d/.test(w[i-1])&&['इस','उस','सब'].indexOf(w[i-1])<0)return {word:w[i-1]+' पर',base:w[i-1]};
+  if(t==='on'&&w[i+1]&&!/\d/.test(w[i+1])&&['whatsapp','the','all'].indexOf(w[i+1])<0)return {word:'',base:w[i+1]}}return null}
+var FESTW=[['दिवाळी','दिवाळी'],['दीपावली','दिवाळी'],['diwali','दिवाळी'],['पाडवा','पाडवा'],['गणपती','गणेशोत्सव'],['गणेश','गणेशोत्सव'],['दसरा','दसरा'],['नवरात्र','नवरात्री'],['संक्रांत','संक्रांत'],['होळी','होळी'],['रक्षाबंधन','रक्षाबंधन'],['ईद','ईद'],['नाताळ','नाताळ'],['नवीन वर्ष','नववर्ष']];
+function vPosterGuess(text){var n=vNums(text),f=' '+vFold(text)+' ',o={};
+ var pr=vProduct(text);if(pr){o.product=pr.base;o._pword=pr.word}
+ var m=n.match(/(\d+)\s*(%|टक्के|टक्का|percent|प्रतिशत)/);if(m)o.offer=m[1]+'% सूट';
+ var fm=vNorm(text).match(/(\d+\s*(वर|पर|on)\s*\d+\s*(फ्री|free|मोफत))/);if(fm)o.offer=fm[1].replace(/\s+/g,' ');
+ if(/ उद्या/.test(' '+vNorm(text)))o.till='फक्त उद्या';else if(/ (आज |आजच|आजचा|today)/.test(' '+vNorm(text)+' '))o.till='फक्त आज';
+ o.occ='offer';if(/ (नवीन माल|नया माल|new stock|नवा माल)/.test(f))o.occ='new';else if(/ (उद्घाटन|ओपनिंग|opening)/.test(f))o.occ='open';else if(/ (सेल|sale|डिस्काउंट|discount|महासेल)/.test(f))o.occ='sale';else if(/ (धन्यवाद|आभार|thank)/.test(f))o.occ='thanks';
+ for(var i=0;i<FESTW.length;i++)if(f.indexOf(' '+vFold(FESTW[i][0]))>=0){o.fest=FESTW[i][1];break}
+ var bz=vBiz(text);if(bz)o._biz=bz;return o}
+var VFLOWS={
+ web:{agent:0,title:'🌐 वेबसाइट',intro:'मिनी वेबसाइटसाठी थोडी माहिती विचारतो.',
+  fields:[
+   {k:'sName',l:'दुकानाचं नाव',kw:['नाव','नांव','नाम','name'],q:'तुमच्या दुकानाचं नाव सांगा.',p:vText(2),err:'नाव नीट ऐकू आलं नाही. दुकानाचं नाव पुन्हा सांगा.'},
+   {k:'sType',l:'व्यवसाय',kw:['व्यवसाय','प्रकार','धंदा','business'],q:'कोणता व्यवसाय आहे? उदा. किराणा, मेडिकल, कपडे, हॉटेल.',p:function(t){return vBiz(t)||vText(2)(t)},err:'व्यवसाय पुन्हा सांगा. उदा. किराणा दुकान.'},
+   {k:'sPhone',l:'फोन',kw:['फोन','नंबर','मोबाइल','मोबाईल','phone','number'],q:'दुकानाचा 10 अंकी मोबाइल नंबर सांगा.',p:vPhone,show:vSpaced,err:'नंबर बरोबर वाटत नाही. 10 अंकी नंबर पुन्हा सांगा, किंवा खाली लिहा.'},
+   {k:'sAddr',l:'पत्ता',kw:['पत्ता','पत्त','पता','address'],q:'दुकानाचा पत्ता सांगा. उदा. मोशी प्राधिकरण, पुणे.',p:vText(3),err:'पत्ता पुन्हा सांगा.'},
+   {k:'sTime',l:'वेळ',kw:['वेळ','टाइम','time','समय'],opt:1,q:'दुकानाची वेळ सांगा. उदा. सकाळी 8 ते रात्री 9. नको असेल तर “नाही” म्हणा.',p:vText(3),err:'वेळ पुन्हा सांगा, किंवा “नाही” म्हणा.'}],
+  start:function(d,text){['sName','sType','sPhone','sAddr','sTime'].forEach(function(k){if(shop[k])d[k]=shop[k]});if(!d.sType){var b=vBiz(text);if(b)d.sType=b}if(shop.sName)d.sTime=d.sTime||(shop.sTime||'')},
+  done:function(d){var ch=false;['sName','sType','sPhone','sAddr','sTime'].forEach(function(k){if(d[k]&&shop[k]!==d[k]){shop[k]=d[k];ch=true}});if(ch)saveShop();
+   vFinish(0,function(){},'तुमची मिनी वेबसाइट तयार झाली. “उघडून पहा” दाबा, किंवा WhatsApp वर पाठवा.')}},
+ qr:{agent:1,title:'▦ QR',intro:'QR साठी थोडं विचारतो.',
+  fields:[
+   {k:'qt',l:'QR प्रकार',kw:['प्रकार','qr','क्यूआर','type'],q:'QR स्कॅन केल्यावर काय उघडावं? WhatsApp, कॉल, पेमेंट, की दुकानाची वेबसाइट?',p:vQrType,show:function(v){return QRT[v]},choices:[['wa',QRT.wa],['tel',QRT.tel],['upi',QRT.upi],['site',QRT.site]],err:'WhatsApp, कॉल, पेमेंट की वेबसाइट – यापैकी एक सांगा.'},
+   {k:'sName',l:'दुकानाचं नाव',kw:['नाव','नांव','नाम','name'],q:'QR खाली कोणतं दुकानाचं नाव लिहू?',p:vText(2),err:'नाव पुन्हा सांगा.'},
+   {k:'sPhone',l:'फोन',kw:['फोन','नंबर','मोबाइल','मोबाईल','phone','number'],when:function(d){return d.qt==='wa'||d.qt==='tel'},q:'कोणता 10 अंकी मोबाइल नंबर QR मध्ये टाकू?',p:vPhone,show:vSpaced,err:'नंबर बरोबर वाटत नाही. 10 अंकी नंबर पुन्हा सांगा, किंवा खाली लिहा.'},
+   {k:'sUpi',l:'UPI ID',kw:['upi','यूपीआय','युपीआय','आयडी','id'],when:function(d){return d.qt==='upi'},q:'तुमचा UPI ID सांगा. उदा. name at okaxis. बोलणं अवघड असेल तर खाली लिहा.',p:vUpi,err:'UPI ID बरोबर वाटत नाही. खाली लिहा, उदा. name@okaxis.'},
+   {k:'qa',l:'रक्कम',kw:['रक्कम','amount','पैसे','रुपये'],opt:1,when:function(d){return d.qt==='upi'},q:'ठराविक रक्कम टाकायची आहे का? असेल तर रक्कम सांगा, नाहीतर “नाही” म्हणा.',p:function(t){var n=vNums(t).replace(/[^\d.]/g,'');return n&&Number(n)>0?n:null},show:function(v){return v?'₹'+v:'—'},err:'रक्कम आकड्यांत सांगा, किंवा “नाही” म्हणा.'}],
+  start:function(d,text){var q=vQrType(text.replace(/qr|क्यूआर|क्युआर|कोड|code/gi,' '));if(q)d.qt=q;['sName','sPhone','sUpi'].forEach(function(k){if(shop[k])d[k]=shop[k]})},
+  done:function(d){var ch=false;['sName','sPhone','sUpi'].forEach(function(k){if(d[k]&&!shop[k]){shop[k]=d[k];ch=true}});if(ch)saveShop();
+   vFinish(1,function(b){var qt=$('#qt',b);qt.value=d.qt;if(qt.onchange)qt.onchange();var qu=$('#qu',b);if(qu){if(d.qt==='wa'||d.qt==='tel')qu.value=d.sPhone||'';if(d.qt==='upi')qu.value=d.sUpi||''}var qa=$('#qa',b);if(qa&&d.qa)qa.value=d.qa;$('#ql',b).value=d.sName||shop.sName||'';$('#qg',b).click()},'QR तयार झाला. Download करा किंवा शेअर करा.')}},
+ poster:{agent:2,title:'📢 पोस्टर',intro:'पोस्टरसाठी एकेक प्रश्न विचारतो.',
+  fields:[
+   {k:'sName',l:'दुकानाचं नाव',kw:['नाव','नांव','नाम','name','दुकान'],q:'पोस्टरवर कोणतं दुकानाचं नाव टाकू?',p:vText(2),err:'नाव पुन्हा सांगा.'},
+   {k:'product',l:'वस्तू',kw:['वस्तू','वस्तु','माल','product','चीज'],opt:1,q:'कोणत्या वस्तूवर ऑफर आहे? उदा. साखर. सगळ्या मालावर असेल तर “नाही” म्हणा.',p:function(t){var x=vClean(t);var pr=vProduct(x);if(pr)return pr.base;return vText(2)(x)},err:'वस्तूचं नाव पुन्हा सांगा, किंवा “नाही” म्हणा.'},
+   {k:'offer',l:'ऑफर',kw:['ऑफर','सूट','offer','टक्के','सवलत'],when:function(d){return d.occ==='offer'||d.occ==='sale'},q:'ऑफर काय आहे? उदा. 10 टक्के सूट, किंवा 1 वर 1 फ्री.',p:vOffer,err:'ऑफर पुन्हा सांगा. उदा. 10 टक्के सूट.'},
+   {k:'price',l:'किंमत',kw:['किंमत','किमत','भाव','दर','price','रुपये'],opt:1,q:'किंमत लिहायची आहे का? उदा. 40 रुपये किलो. नको असेल तर “नाही” म्हणा.',p:vPrice,err:'किंमत पुन्हा सांगा, किंवा “नाही” म्हणा.'},
+   {k:'sPhone',l:'फोन',kw:['फोन','नंबर','मोबाइल','मोबाईल','phone','number'],opt:1,q:'पोस्टरवर फोन नंबर टाकू का? 10 अंकी नंबर सांगा, नको असेल तर “नाही” म्हणा.',p:vPhone,show:vSpaced,err:'नंबर बरोबर वाटत नाही. 10 अंकी नंबर पुन्हा सांगा, किंवा “नाही” म्हणा.'},
+   {k:'till',l:'कधीपर्यंत',kw:['कधी','तारीख','पर्यंत','दिवस','date'],opt:1,q:'ऑफर कधीपर्यंत आहे? उदा. रविवारपर्यंत. नको असेल तर “नाही” म्हणा.',p:vText(2),err:'पुन्हा सांगा, किंवा “नाही” म्हणा.'}],
+  start:function(d,text){var g=vPosterGuess(text);['product','offer','till','occ','fest','_pword'].forEach(function(k){if(g[k]!=null)d[k]=g[k]});if(shop.sName)d.sName=shop.sName;if(shop.sPhone)d.sPhone=shop.sPhone},
+  done:function(d){var ch=false;['sName','sPhone'].forEach(function(k){if(d[k]&&!shop[k]){shop[k]=d[k];ch=true}});if(ch)saveShop();
+   var title=d.fest?d.fest+' धमाका ऑफर!':'';if(d.product){var pw=(d._pword&&vProduct(d._pword)&&vProduct(d._pword).base===d.product)?d._pword:d.product+' –';title=(d.fest?d.fest+' ऑफर: ':'')+pw+' खास ऑफर!'}
+   var off=[d.offer,d.price?'फक्त '+d.price:''].filter(Boolean).join(' · ');
+   vFinish(2,function(b){var occ=d.occ||'offer';$('#po',b).value=occ;$('#ph',b).value=title;$('#pf',b).value=off;$('#pd',b).value=d.till?'ही ऑफर '+d.till:'';$('#pg',b).click()},'पोस्टर तयार झालं. खाली Download किंवा WhatsApp बटण दाबा.')}}};
+function vStartFlow(name,text){var F=VFLOWS[name],d={};F.start(d,text||'');V.flow={name:name,F:F,d:d,stage:'ask',cur:null,tries:0,pre:Object.keys(d).filter(function(k){return d[k]!=null})};
+ var got=F.fields.filter(function(f){return d[f.k]&&(!f.when||f.when(d))&&!shop[f.k]}).map(function(f){return f.l+': '+(f.show?f.show(d[f.k]):d[f.k])});
+ var known=F.fields.filter(function(f){return d[f.k]&&shop[f.k]===d[f.k]}).length;
+ var msg='➡️ '+vName(F.agent)+'\n'+F.intro+(got.length?'\nसमजलं: '+got.join(', '):'')+(known?'\n(सेव्ह केलेली दुकानाची माहिती वापरतो)':'');
+ vAdd('da','<i>आरंभ</i>'+esc(msg));vNext()}
+function vField(){var fl=V.flow;return fl.F.fields.filter(function(f){return (!f.when||f.when(fl.d))&&(fl.d[f.k]==null||fl.d[f.k]===undefined)})[0]||null}
+function vNext(){var fl=V.flow;if(!fl)return;var f=vField();
+ if(f){fl.stage='ask';fl.cur=f;fl.tries=0;vSay(f.q,vNextListen,'',vStep());vAskButtons();return}
+ fl.stage='confirm';fl.cur=null;vConfirm()}
+function vAskButtons(){var fl=V.flow;if(!fl)return;var f=fl.cur,a=[];
+ if(fl.stage==='ask'&&f){if(f.choices)f.choices.forEach(function(c){a.push([c[1],function(){vAdd('me','<i>तुम्ही निवडलं</i>'+esc(c[1]));fl.d[f.k]=c[0];vNext()}])});
+  if(f.opt)a.push(['⏭️ नाही / पुढे',function(){vAdd('me','<i>तुम्ही निवडलं</i>नाही');fl.d[f.k]='';vNext()},'s'])}
+ if(fl.stage==='confirm'){a.push(['✅ हो, बनवा',vDoFlow,'y']);a.push(['✏️ दुरुस्ती',vPick])}
+ if(fl.stage==='pick'){vSummaryFields().forEach(function(f2){a.push(['✏️ '+f2.l,function(){vRedo(f2)},'s'])})}
+ a.push(['🔁 पुन्हा सांग',vRepeat,'s']);a.push(['✖ रद्द',vCancel,'s']);vChoices(a)}
+function vSummaryFields(){var fl=V.flow;return fl.F.fields.filter(function(f){return !f.when||f.when(fl.d)})}
+function vSummary(){var fl=V.flow;return vSummaryFields().map(function(f){var v=fl.d[f.k];return f.l+': '+(v?(f.show?f.show(v):v):'—')}).join('\n')}
+function vConfirm(){var fl=V.flow,s=vSummary(),w=vCheck(fl.name,fl.d);if(w.length)vSay('⚠️ तपासा: '+w.join(' '),null,'warn');
+ vSay('हे बरोबर आहे का?\n'+s+'\nहो की नाही?',vNextListen,'',vStep());vAskButtons()}
+/* simple rule-based check before confirmation (no AI): wrong phone, empty name, missing offer/price, UPI without @, odd numbers */
+function vCheck(name,d){var w=[];if(!d.sName||String(d.sName).trim().length<2)w.push('दुकानाचं नाव रिकामं आहे.');
+ if((name==='web'||(name==='qr'&&(d.qt==='wa'||d.qt==='tel')))&&!phoneOk(normPhone(d.sPhone||'')))w.push('फोन नंबर 10 अंकी नाही.');
+ if(name==='qr'&&d.qt==='upi'){if(String(d.sUpi||'').indexOf('@')<0)w.push('UPI ID मध्ये @ नाही.');else if(!upiOk(d.sUpi))w.push('UPI ID चुकीचा वाटतो.');if(d.qa&&Number(d.qa)>100000)w.push('रक्कम ₹'+d.qa+' खूप मोठी वाटते.')}
+ if(name==='poster'){if((d.occ==='offer'||d.occ==='sale')&&!d.offer&&!d.price)w.push('ऑफर किंवा किंमत नाही – पोस्टर साधं राहील.');
+  var pm=String(d.offer||'').match(/(\d+)\s*%/);if(pm){var pv=+pm[1];if(pv===0||pv>90)w.push(pv+'% सूट बरोबर आहे का? आकडा तपासा.')}
+  var rm=String(d.price||'').replace(/,/g,'').match(/\d+/);if(rm&&(+rm[0]===0||+rm[0]>1000000))w.push('किंमत ₹'+rm[0]+' बरोबर आहे का?')}
+ if(name==='web'&&d.sAddr&&String(d.sAddr).length<4)w.push('पत्ता खूप छोटा आहे.');return w}
+function vPick(){var fl=V.flow;fl.stage='pick';vSay('काय बदलायचं? '+vSummaryFields().map(function(f){return f.l}).join(', ')+'.',vNextListen);vAskButtons()}
+function vRedo(f){var fl=V.flow;delete fl.d[f.k];fl.stage='ask';fl.cur=f;fl.tries=0;vSay(f.q,vNextListen,'','दुरुस्ती');vAskButtons()}
+function vRepeat(){var fl=V.flow;if(!fl)return;if(fl.stage==='ask'&&fl.cur){vSay(fl.cur.q,vNextListen);vAskButtons()}else if(fl.stage==='pick')vPick();else vConfirm()}
+function vCancel(){V.flow=null;V.auto=false;vSay('ठीक आहे, रद्द केलं. 🎙️ दाबून पुन्हा बोला.');vExamples()}
+function vFieldByWord(n){var f=vFold(n),list=vSummaryFields();for(var i=0;i<list.length;i++){var kw=list[i].kw||[];for(var j=0;j<kw.length;j++){if((' '+f+' ').indexOf(' '+vFold(kw[j]))>=0)return list[i]}}return null}
+function vFlowAnswer(text){var fl=V.flow,n=vNorm(text);
+ if(isCan(n))return vCancel();
+ if(isRpt(n))return vRepeat();
+ if(fl.stage==='confirm'){if(isYes(n))return vDoFlow();var fx=vFieldByWord(n);if(fx)return vRedo(fx);if(isNo(n)||isFix(n))return vPick();vSay('समजलं नाही. “हो” किंवा “नाही” सांगा.',vNextListen);vAskButtons();return}
+ if(fl.stage==='pick'){var f2=vFieldByWord(n);if(f2)return vRedo(f2);if(isYes(n))return vConfirm();vSay('कोणतं बदलायचं? खालील बटण दाबा किंवा नाव सांगा.',vNextListen);vAskButtons();return}
+ var f=fl.cur;if(!f)return vNext();
+ if(f.opt&&isNo(n)){fl.d[f.k]='';return vNext()}
+ var v=f.p(text);
+ if(v==null||v===''){fl.tries++;V.auto=V.auto&&fl.tries<3;vSay(f.err+(fl.tries>=2?' खाली लिहूनही सांगू शकता.':''),vNextListen);vAskButtons();return}
+ fl.d[f.k]=v;vNext()}
+function vDoFlow(){var fl=V.flow;if(!fl)return;V.flow=null;V.auto=false;vChoices([]);vSay('ठीक आहे, बनवतो.');setTimeout(function(){fl.F.done(fl.d)},500)}
+function vFinish(i,fill,said){if(!shop.sName){toast('दुकानाचं नाव नाही');return}
+ openAgent(i,true);var b=$('#sheetB');b.insertAdjacentHTML('afterbegin','<p class="note gold" id="vDone">🎙️ आवाजाने भरलं – खाली तयार आहे. काही बदलायचं असेल तर इथेच बदलून पुन्हा बटण दाबा.</p>');
+ try{fill(b)}catch(e){}setTimeout(function(){vSpeak(said)},600)}
+/* close: stop mic and speech */
+var _vHide=hideSheet;hideSheet=function(){clearTimeout(V.openT);vStopListen();vStopSpeak();V.flow=null;V.auto=false;_vHide()};
+/* home controls */
+(function(){var hm=$('#vHomeMic'),hf=$('#vHomeF');if(!hm)return;
+ hm.onclick=function(){vOpen({listen:true})};
+ hf.onsubmit=function(e){e.preventDefault();var i=$('#vHomeIn'),t=i.value.trim();if(!t){i.focus();toast('काय काम आहे ते लिहा');return}i.value='';vOpen({text:t})};
+ if(!SR){var h=$('#vHomeHint');if(h)h.textContent='🎙️ आवाजासाठी Google Chrome मध्ये उघडा · तोपर्यंत इथे लिहा'}})();
+
 renderBar();
 if(!showPub()){if(location.hash==='#seva')openSeva()}
 window.addEventListener('hashchange',function(){if(/^#shop=/.test(location.hash))location.reload();else if(location.hash==='#seva')openSeva()});
-window.__DA={qrCanvas:qrCanvas,normPhone:normPhone,upiLink:upiLink,shopLink:shopLink,poster:poster,fontsReady:fontsReady};
+window.__DA={vRoute:vRoute,vScore:vScore,vHandle:function(t){vHandle(t,'type')},vOpen:vOpen,vState:function(){return V},vPosterGuess:vPosterGuess,vProduct:vProduct,vPhone:vPhone,vCheck:vCheck,qrCanvas:qrCanvas,normPhone:normPhone,upiLink:upiLink,shopLink:shopLink,poster:poster,fontsReady:fontsReady};
 })();
 </script>
 </body>
