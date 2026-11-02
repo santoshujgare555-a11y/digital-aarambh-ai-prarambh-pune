@@ -295,6 +295,146 @@ label.dpai input{width:22px;height:22px;margin:0;flex:none}
 .vmopts{display:grid;grid-template-columns:1fr 1fr;gap:0 10px}
 .seva.vmhome{margin:-4px 0 14px;background:radial-gradient(circle at 12% 50%,#f472b655,transparent 40%),linear-gradient(135deg,#1e0b3d,#5b1a5e 55%,#9f1239);border-color:#f472b6;box-shadow:0 8px 26px #ec489944}
 .vers{display:inline-block;margin-top:6px;padding:1px 8px;border-radius:8px;border:1px solid var(--line);color:var(--mut);font-size:12px}
+
+/* ===== 🌐 v14 दुकान वेबसाइट (.ws) ===== */
+body.wsmode{background-image:none!important}
+.ws{--tx:#f4f6ff;--mt:#c3c8ea;position:relative;color:var(--tx);background:var(--b0);font-family:var(--F);line-height:1.55;min-height:100vh;overflow-x:hidden;padding-bottom:84px}
+.ws *{box-sizing:border-box}
+.ws a{color:inherit}
+.wsh{position:relative;overflow:hidden;min-height:clamp(470px,112vw,620px);display:flex;align-items:flex-end;background:radial-gradient(120% 70% at 85% 0%,var(--a4),transparent 60%),radial-gradient(90% 60% at 0% 100%,var(--c2),transparent 65%),linear-gradient(160deg,var(--b1),var(--b0) 78%)}
+.wsh-pt{position:absolute;inset:0;opacity:.22;background-image:radial-gradient(circle at 50% 50%,var(--ac) 1.4px,transparent 1.6px),radial-gradient(circle at 50% 50%,var(--ac2) 1px,transparent 1.2px);background-size:34px 34px,22px 22px;background-position:0 0,11px 11px;-webkit-mask-image:linear-gradient(#000,transparent 85%);mask-image:linear-gradient(#000,transparent 85%);animation:wsDrift 40s linear infinite}
+@keyframes wsDrift{to{background-position:340px 340px,231px 231px}}
+.wsh-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:blur(2px) saturate(1.1);opacity:0;transform:scale(1.08);transition:opacity 1.2s ease,transform 8s ease}
+.wsh.img-on .wsh-img{opacity:1;transform:scale(1)}
+.wsh-ai{position:absolute;right:10px;top:10px;z-index:3;font-size:11px;padding:2px 8px;border-radius:99px;background:#0008;color:#fff;opacity:0;transition:opacity 1s}
+.wsh.img-on .wsh-ai{opacity:.85}
+.wsh-ov{position:absolute;inset:0;background:linear-gradient(180deg,transparent 0%,var(--o1) 38%,var(--o2) 72%,var(--b0) 100%)}
+.wsh-in{position:relative;z-index:2;width:100%;max-width:760px;margin:0 auto;padding:30px 18px 26px;text-align:center}
+.wsh-em{font-size:58px;line-height:1;filter:drop-shadow(0 6px 18px #0009);animation:wsFloat 4s ease-in-out infinite}
+@keyframes wsFloat{50%{transform:translateY(-8px)}}
+.wsh-ty{display:inline-block;margin-top:10px;padding:4px 14px;border-radius:99px;font-size:15px;font-weight:700;color:var(--b0);background:var(--ac);box-shadow:0 4px 16px var(--a5)}
+.ws h1{font-size:clamp(34px,10.5vw,60px);font-weight:800;line-height:1.12;margin:10px 0 4px;letter-spacing:.2px;text-shadow:0 3px 24px #000c;color:#fff}
+.wsh-tg{font-size:clamp(17px,4.8vw,22px);color:#fff;opacity:.92;margin:0 auto;max-width:560px;text-shadow:0 2px 12px #000c}
+.wst{display:inline-flex;align-items:center;gap:8px;margin-top:14px;padding:7px 16px;border-radius:99px;font-weight:700;font-size:16px;background:#0007;border:1.5px solid #fff3;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.wst .dot{width:11px;height:11px;border-radius:50%;background:#9ca3af;flex:none}
+.wst.open{border-color:#22c55e;color:#bbf7d0}.wst.open .dot{background:#22c55e;box-shadow:0 0 0 0 #22c55eaa;animation:wsPulse 1.8s infinite}
+.wst.soon{border-color:#f59e0b;color:#fde68a}.wst.soon .dot{background:#f59e0b}
+.wst.closed{border-color:#ef4444;color:#fecaca}.wst.closed .dot{background:#ef4444}
+.wst.nt{font-weight:600;font-size:15px}
+@keyframes wsPulse{70%{box-shadow:0 0 0 10px #22c55e00}100%{box-shadow:0 0 0 0 #22c55e00}}
+.wsa{display:grid;grid-template-columns:repeat(auto-fit,minmax(56px,1fr));gap:12px 6px;margin:20px auto 0;max-width:430px}
+.wsact{display:flex;flex-direction:column;align-items:center;gap:6px;width:100%;text-decoration:none;color:#fff;background:none;border:0;padding:0;font:inherit;cursor:pointer}
+.wsact .i{width:min(60px,15vw);height:min(60px,15vw);border-radius:20px;display:grid;place-items:center;font-size:27px;background:linear-gradient(#ffffff17,#ffffff17),var(--cd);border:1.5px solid var(--a5);box-shadow:0 8px 22px #0007;transition:transform .15s}
+.wsact:active .i{transform:scale(.92)}
+.wsact.call .i{background:linear-gradient(145deg,#ffffff00,#00000059),var(--ac);border-color:transparent}
+.wsact.wa .i{background:linear-gradient(145deg,#25d366,#128c4a);border-color:transparent}
+.wsact .l{font-size:13.5px;font-weight:700;line-height:1.15;text-shadow:0 1px 6px #000}
+.wsm{max-width:760px;margin:0 auto;padding:6px 14px 10px}
+.wss{margin:26px 0 0}
+.ws h2{display:flex;align-items:center;gap:10px;font-size:23px;font-weight:800;margin:0 0 12px;color:#fff}
+.ws h2 span{width:42px;height:42px;border-radius:13px;display:grid;place-items:center;font-size:22px;background:var(--a2);border:1px solid var(--a4)}
+.wsc{background:linear-gradient(160deg,#ffffff0f,#ffffff00),var(--cd);border:1px solid var(--a3);border-radius:22px;padding:18px;box-shadow:0 12px 30px #0006}
+.wsab{font-size:18px;line-height:1.7;margin:0;color:var(--tx)}
+.wsfacts{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
+.wsab+.wsfacts{padding-top:14px;border-top:1px dashed var(--a4)}
+.wsc>.wsfacts:first-child{margin-top:0}
+.wsfacts div{display:flex;flex-direction:column;gap:2px;padding:12px;border-radius:16px;background:#ffffff0c}
+.wsfacts b{font-size:22px}.wsfacts span{font-size:13.5px;color:var(--mt)}.wsfacts strong{font-size:17px;color:var(--ac);line-height:1.25}
+.wso{margin-top:18px}
+.wso-in{position:relative;overflow:hidden;border-radius:22px;padding:20px 18px;text-align:center;color:#2a1600;background:linear-gradient(135deg,var(--ac),var(--of));box-shadow:0 14px 34px var(--a4)}
+.wso-in::after{content:'';position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(100deg,transparent,#ffffff8c,transparent);transform:skewX(-20deg);animation:wsShine 3.6s ease-in-out infinite}
+@keyframes wsShine{0%,55%{left:-60%}100%{left:130%}}
+.wso-tag{display:inline-block;font-weight:800;font-size:15px;padding:3px 12px;border-radius:99px;background:#0000002e;color:#fff}
+.wso p{font-size:clamp(20px,5.8vw,27px);font-weight:800;line-height:1.3;margin:8px 0 0}
+.wso small{display:block;margin-top:6px;font-weight:700;font-size:15px;opacity:.85}
+.wshint{color:var(--mt);font-size:15px;margin:-4px 0 10px}
+.wsgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(min-width:620px){.wsgrid{grid-template-columns:repeat(3,1fr)}}
+.wsit{position:relative;display:flex;flex-direction:column;align-items:flex-start;gap:4px;text-align:left;padding:16px 14px 14px;border-radius:20px;color:var(--tx);font:inherit;background:linear-gradient(165deg,#ffffff14,#ffffff00),var(--cd);border:1.5px solid var(--a3);box-shadow:0 8px 20px #0005;transition:transform .15s,border-color .2s,box-shadow .2s;min-height:118px}
+button.wsit{cursor:pointer}
+.wsit:active{transform:scale(.97)}
+.wsit .e{font-size:34px;line-height:1;margin-bottom:4px}
+.wsit .nm{font-size:17.5px;font-weight:700;line-height:1.3}
+.wsit .pr{margin-top:auto;font-size:16px;font-weight:800;color:var(--ac);background:var(--a2);padding:2px 10px;border-radius:99px}
+.wsit .ck{position:absolute;right:10px;top:10px;width:26px;height:26px;border-radius:50%;display:grid;place-items:center;font-size:15px;font-weight:800;border:2px solid var(--a5);color:transparent}
+.wsit.on{border-color:var(--ac);box-shadow:0 0 0 2px var(--ac),0 10px 26px #0007}
+.wsit.on .ck{background:var(--ac);border-color:var(--ac);color:var(--b0)}
+.wsnote{font-size:13.5px;color:var(--mt);margin:10px 0 0}
+.wsnote.big{font-size:18px;color:var(--tx);margin:0}
+.wsbig{width:100%;display:flex;flex-direction:column;align-items:center;gap:2px;padding:16px;border:0;border-radius:20px;font:inherit;font-size:20px;font-weight:800;color:#fff;cursor:pointer;background:linear-gradient(135deg,#25d366,#0f8a43);box-shadow:0 12px 30px #25d36655}
+.wsbig small{font-size:14px;font-weight:600;opacity:.92}
+.ws.has-sel .wsbig{animation:wsBump .5s}
+@keyframes wsBump{40%{transform:scale(1.03)}}
+.wstb{width:100%;border-collapse:collapse;font-size:16.5px}
+.wstb th,.wstb td{padding:10px 6px;border-bottom:1px solid #ffffff14;text-align:left;vertical-align:top}
+.wstb th{font-weight:700;width:38%;color:var(--tx)}
+.wstb td{color:var(--mt)}
+.wstb tr:last-child th,.wstb tr:last-child td{border-bottom:0}
+.wstb tr.td th,.wstb tr.td td{color:var(--ac);font-weight:800}
+.wstb tr.td{background:var(--a1)}
+.wstb em{font-style:normal;font-size:12px;padding:1px 7px;border-radius:99px;background:var(--ac);color:var(--b0);margin-left:4px}
+.wstb .off{color:#fca5a5;font-weight:700}
+.wspay{text-align:center}
+.wsqr{display:inline-block;padding:12px;border-radius:20px;background:#fff;box-shadow:0 10px 30px #0008}
+.wsqr canvas{display:block;width:210px!important;height:auto!important;max-width:60vw;border-radius:6px;box-shadow:none;background:#fff;margin:0}
+.wsupi{font-size:18px;font-weight:700;margin:12px 0 0;word-break:break-all;color:var(--ac)}
+.wsrow{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:14px}
+.wsbtn{flex:1 1 150px;display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:50px;padding:10px 14px;border-radius:15px;font:inherit;font-size:16px;font-weight:700;text-decoration:none;cursor:pointer;color:var(--tx);background:#ffffff12;border:1.5px solid #ffffff26}
+.wsbtn.ac{color:var(--b0);background:var(--ac);border-color:transparent}
+.wsaddr{font-size:18px;margin:0;line-height:1.6}
+.wsmap iframe{display:block;width:100%;height:260px;border:0;border-radius:16px;margin-top:14px;background:#0003}
+.wscon .wsline{display:flex;align-items:center;gap:12px;padding:12px 4px;font-size:18px;text-decoration:none;border-bottom:1px solid #ffffff12;word-break:break-word}
+.wscon .wsline b{width:40px;height:40px;flex:none;border-radius:12px;display:grid;place-items:center;font-size:19px;background:#ffffff10}
+.ws footer.wsf{display:flex;align-items:center;justify-content:center;gap:12px;text-align:left;margin:34px auto 0;padding:18px 16px 8px;max-width:760px;font-size:14px;color:var(--mt);line-height:1.6;border-top:1px solid #ffffff14}
+.wsf img{width:40px;height:40px;border-radius:10px;flex:none}
+.wsf b{color:var(--tx)}.wsf a{color:var(--ac);font-weight:700;text-decoration:none}
+.wsbar{position:fixed;left:50%;bottom:calc(10px + env(safe-area-inset-bottom,0px));z-index:50;display:flex;gap:6px;padding:6px;border-radius:99px;transform:translate(-50%,140%);transition:transform .35s cubic-bezier(.2,.9,.3,1.2);background:var(--cd);border:1px solid var(--a4);box-shadow:0 10px 30px #000a;width:max-content;max-width:calc(100% - 20px)}
+.wsbar.show{transform:translate(-50%,0)}
+.wsbar a,.wsbar button{display:flex;align-items:center;gap:4px;padding:10px 15px;border-radius:99px;border:0;font:inherit;font-size:15.5px;font-weight:800;text-decoration:none;color:var(--b0);background:var(--ac);cursor:pointer;white-space:nowrap}
+.wsbar .wa{background:#25d366;color:#fff}
+.ws.fx .rv{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.8,.2,1)}
+.ws.fx .rv.wsin{opacity:1;transform:none}
+.ws.fx .wsh-in>*{animation:wsUp .8s both}
+.ws.fx .wsh-in>*:nth-child(2){animation-delay:.08s}.ws.fx .wsh-in>*:nth-child(3){animation-delay:.16s}.ws.fx .wsh-in>*:nth-child(4){animation-delay:.24s}.ws.fx .wsh-in>*:nth-child(5){animation-delay:.32s}.ws.fx .wsh-in>*:nth-child(6){animation-delay:.42s}
+.ws.fx .wsh-em{animation:wsUp .8s both,wsFloat 4s 1s ease-in-out infinite}
+@keyframes wsUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.ws *,.ws *::after{animation:none!important;transition:none!important}}
+@media(min-width:760px){.wsh{min-height:520px}.wsact .i{width:68px;height:68px}}
+/* पाहणी (builder) */
+.ws.pv{min-height:0;padding-bottom:10px}
+.ws.pv .wsbar{display:none}
+.wsframe{margin-top:8px;height:min(72vh,680px);overflow-y:auto;overflow-x:hidden;border-radius:26px;border:6px solid #1e2050;box-shadow:0 0 0 1px #4c4fd0,0 18px 40px #000a;background:#05061e;max-width:430px;margin-left:auto;margin-right:auto;-webkit-overflow-scrolling:touch}
+.wsframe .wsh{min-height:440px}
+.wsb-top{display:flex;gap:12px;align-items:center;padding:14px;border-radius:18px;background:linear-gradient(135deg,#1e3a8a,#5b21b6);border:1px solid #ffc23d66;margin-bottom:10px}
+.wsb-top .e{font-size:38px}.wsb-top b{display:block;font-size:18px}.wsb-top small{display:block;color:#dfe3ff;font-size:13.5px;line-height:1.45;margin-top:2px}
+.wsb-sec{background:#12155acc;border:1px solid var(--line);border-radius:16px;margin-top:10px;overflow:hidden}
+.wsb-sec>summary{list-style:none;display:flex;align-items:center;gap:10px;padding:13px 14px;font-weight:800;font-size:16.5px;cursor:pointer}
+.wsb-sec>summary::-webkit-details-marker{display:none}
+.wsb-sec>summary::after{content:'›';margin-left:auto;font-size:22px;color:var(--gold);transition:transform .2s}
+.wsb-sec[open]>summary::after{transform:rotate(90deg)}
+.wsb-sec .n{width:28px;height:28px;border-radius:9px;display:grid;place-items:center;font-size:14px;background:var(--gold);color:#241a00;flex:none}
+.wsb-in{padding:0 14px 14px}
+.wsb-it{display:grid;grid-template-columns:64px 1fr 92px 40px;gap:6px;align-items:center;margin-top:8px}
+.wsb-it select{padding:8px 4px;font-size:20px;text-align:center}
+.wsb-it input{margin:0}.wsb-it select{margin:0}
+.wsb-it .x{height:44px;border-radius:10px;border:1px solid #ef444488;background:#ef44441f;color:#fecaca;font-weight:800}
+.wsb-sug{margin-top:10px}.wsb-sug small{color:var(--mut)}
+.wsb-sug #wbSug{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.wsb-sug .chip{padding:6px 11px;border-radius:99px;border:1px dashed #ffc23d99;background:#ffc23d14;color:var(--txt);font-size:14px}
+.wsb-ck{display:flex;align-items:center;gap:8px;font-size:15px;color:var(--txt);margin-top:12px}
+.wsb-ck input{width:22px;height:22px;margin:0;flex:none}
+.wsb-days{display:grid;grid-template-columns:repeat(7,1fr);gap:5px;margin-top:6px}
+.wsb-day{margin:0}.wsb-day input{position:absolute;opacity:0;width:1px;height:1px}
+.wsb-day span{display:block;text-align:center;padding:9px 0;border-radius:10px;border:1px solid #4650c0;background:#0a0d46;color:var(--txt);font-size:14px;font-weight:700}
+.wsb-day input:checked+span{background:#ef4444;border-color:#ef4444;color:#fff}
+.wsb-day input:focus-visible+span{outline:3px solid var(--gold)}
+.wsb-th{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:4px}
+.wsb-sw{display:flex;flex-direction:column;align-items:center;gap:6px;padding:8px 4px;border-radius:14px;border:2px solid #ffffff22;background:#0a0d46;color:var(--txt);font-size:13px;font-weight:700}
+.wsb-sw i{display:block;width:100%;height:38px;border-radius:9px;background:radial-gradient(60% 80% at 80% 10%,var(--ac),transparent 70%),linear-gradient(160deg,var(--b1),var(--b0))}
+.wsb-sw.on{border-color:var(--gold);box-shadow:0 0 0 2px #ffc23d55}
+.wsb-photo{margin-top:12px;padding:12px 14px;border-radius:14px;background:#1a1255;border:1px dashed #ffc23d88;font-size:14.5px;color:#e6e8ff;line-height:1.6}
+.wsb-photo .btn{margin-top:8px}
+.wsb-pvh{display:flex;align-items:baseline;gap:8px;margin-top:16px}.wsb-pvh b{font-size:17px}.wsb-pvh small{color:var(--mut)}
 </style>
 </head>
 <body>
@@ -309,7 +449,7 @@ label.dpai input{width:22px;height:22px;margin:0;flex:none}
  <button class="snd" type="button" id="snd" aria-label="आवाज ऐका — Play welcome with sound">🔊 आवाज ऐका</button>
  <button class="skip" type="button" id="skip">Skip ›</button>
 </div>
-<script>try{if(sessionStorage.getItem('da_splash')||/^#shop=/.test(location.hash)){var s=document.getElementById('splash');s.parentNode.removeChild(s)}}catch(e){}</script>
+<script>try{if(sessionStorage.getItem('da_splash')||/^#(shop|w)=/.test(location.hash)){var s=document.getElementById('splash');s.parentNode.removeChild(s)}}catch(e){}</script>
 
 <div id="app" class="wrap">
  <header class="top"><img class="logo" data-da="full" alt="Digital Aarambh AI logo" width="58" height="58">
@@ -337,8 +477,10 @@ label.dpai input{width:22px;height:22px;margin:0;flex:none}
   <ul><li>सर्वात वर <b>“दुकानाची माहिती”</b> एकदाच भरा – सगळे 13 एजंट्स तीच माहिती वापरतात.</li>
   <li>कोणताही एजंट उघडा → मजकूर / QR / पोस्टर तयार करा → <b>कॉपी</b>, <b>Download</b> किंवा <b>WhatsApp</b> वर पाठवा.</li>
   <li>हे एजंट्स तयार मराठी साच्यांवर (templates) आणि तुमच्या माहितीवर चालतात. एकदा पेज उघडलं की इंटरनेटशिवायही चालतात.</li></ul></details>
- <details class="info" id="whatsnew"><summary>🆕 नवीन काय? (v13)</summary>
-  <ul><li><b>v13 – 🎬 AI व्हिडिओ मेकर:</b> विषय निवडा (दिवाळी ऑफर/शुभेच्छा, पाडवा, भाऊबीज, दुकान जाहिरात, नवीन माल, गणपती, दसरा, संक्रांत, होळी, गुढीपाडवा, आरोग्य टिप, प्रेरणा किंवा स्वतःचा) → AI मराठी स्क्रिप्ट (किंवा तयार साचा) → प्रत्येक सीनला AI चित्र किंवा तुमचा फोटो → मराठी अक्षरं, हलणारी चित्रं, फोनमध्ये तयार होणारं संगीत, हवं तर तुमचा आवाज → 9:16 व्हिडिओ Download / WhatsApp.</li>
+ <details class="info" id="whatsnew"><summary>🆕 नवीन काय? (v14)</summary>
+  <ul><li><b>v14 – 🌐 मोठी, सुंदर दुकान वेबसाइट:</b> मोठा बॅनर (हवं तर AI चित्र), “आत्ता उघडे / बंद” आपोआप, कॉल-WhatsApp-दिशा-UPI-Review बटणे, आमच्याबद्दल, वस्तू/सेवा किंमतीसह (ग्राहक निवडून WhatsApp वर ऑर्डर पाठवतो), ऑफर, आठवड्याच्या वेळा, UPI QR, पत्ता व नकाशा, नंबर सेव्ह, शेअर, 6 रंगसंगती. लाईव्ह पाहणी, एका क्लिकवर लिंक. जुन्या लिंकही नव्या डिझाइनमध्ये उघडतात.</li>
+  <li><b>v14 – 🎉 व्यवसायाचा वर्धापनदिन</b> शुभेच्छा पोस्टर (वर्षे लिहिता येतात) आणि <b>🪪 व्हिजिटिंग कार्डवर ईमेल</b> (Contact फाइलमध्येही).</li>
+  <li><b>v13 – 🎬 AI व्हिडिओ मेकर:</b> विषय निवडा (दिवाळी ऑफर/शुभेच्छा, पाडवा, भाऊबीज, दुकान जाहिरात, नवीन माल, गणपती, दसरा, संक्रांत, होळी, गुढीपाडवा, आरोग्य टिप, प्रेरणा किंवा स्वतःचा) → AI मराठी स्क्रिप्ट (किंवा तयार साचा) → प्रत्येक सीनला AI चित्र किंवा तुमचा फोटो → मराठी अक्षरं, हलणारी चित्रं, फोनमध्ये तयार होणारं संगीत, हवं तर तुमचा आवाज → 9:16 व्हिडिओ Download / WhatsApp.</li>
   <li><b>v12 – 🪔 दिवाळी Pack:</b> 16 व्यवसायांसाठी तयार दिवाळी ऑफर व पोस्टर (चौकोनी + स्टेटस), AI पार्श्वभूमी.</li>
   <li><b>v11 – 🎙️ “आरंभ, माझं ऐक!”:</b> बोलून एजंट उघडा, दुकानाची माहिती आवाजाने भरा.</li></ul></details>
 
@@ -349,7 +491,7 @@ label.dpai input{width:22px;height:22px;margin:0;flex:none}
   <div class="row"><button class="btn wa" type="button" id="founderBtn">💬 WhatsApp वर संपर्क</button></div></div>
  </section>
  <details class="info" id="backup"><summary>💾 बॅकअप / Restore (फोन बदलताना)</summary>
-  <p>तुमची सगळी माहिती (दुकान, हिशोब वही, उधारी, मेंबर ID) फक्त <b>या फोनच्या browser मध्ये</b> असते. फोन बदलण्याआधी किंवा browser clear करण्याआधी बॅकअप घ्या.</p>
+  <p>तुमची सगळी माहिती (दुकान, वेबसाइट, हिशोब वही, उधारी, मेंबर ID) फक्त <b>या फोनच्या browser मध्ये</b> असते. फोन बदलण्याआधी किंवा browser clear करण्याआधी बॅकअप घ्या.</p>
   <div class="row"><button class="btn" type="button" id="bkDl">⬇️ बॅकअप फाइल Download</button><button class="btn alt" type="button" id="bkCopy">📋 बॅकअप कोड कॉपी</button></div>
   <label for="bkIn">Restore: बॅकअप कोड इथे paste करा किंवा फाइल निवडा</label>
   <textarea id="bkIn" style="min-height:70px" placeholder="DA1:...."></textarea>
@@ -359,6 +501,7 @@ label.dpai input{width:22px;height:22px;margin:0;flex:none}
  <details class="info" id="privacy"><summary>🔒 गोपनीयता (Privacy) व अटी (Terms)</summary>
   <p><b>तुमची माहिती तुमच्याच फोनमध्ये:</b> दुकानाची माहिती, हिशोब, उधारी, मेंबर ID – सगळं फक्त या फोनच्या browser (localStorage) मध्ये सेव्ह होतं. आमच्या कोणत्याही सर्व्हरवर काहीही पाठवलं जात नाही.</p>
   <p><b>शेअर लिंक:</b> “दुकान-लिंक” मध्ये तुम्ही भरलेली दुकानाची माहिती लिंकमध्येच असते. ती लिंक ज्यांना पाठवाल त्यांना ती माहिती दिसेल – म्हणून फक्त सार्वजनिक (public) माहितीच भरा.</p>
+  <p><b>दुकान वेबसाइट (v14):</b> वेबसाइटसाठी भरलेली माहिती (वस्तू, किंमती, ऑफर, वेळा, ईमेल, रंगसंगती) या फोनमध्ये सेव्ह होते आणि तयार केलेल्या लिंकमध्येच असते – कोणत्याही सर्व्हरवर नाही. लिंक ज्यांना पाठवाल त्यांना ती दिसेल. बॅनरचं AI चित्र आणण्यासाठी फक्त व्यवसायाचा प्रकार (इंग्रजीत, उदा. “grocery store”) मोफत Pollinations सेवेकडे जातो – नाव, फोन, पत्ता नाही. ग्राहकाने “इथेच नकाशा पहा” दाबलं तरच दुकानाचं नाव व पत्ता Google Maps कडे जातो.</p>
   <p><b>मेंबर ID:</b> हा फक्त या फोनवर तयार होणारा ओळख क्रमांक आहे. कोणतीही OTP/पडताळणी नाही.</p>
   <p><b>पासपोर्ट फोटो:</b> मेंबर ID कार्डसाठी निवडलेला फोटो छोट्या आकारात फक्त या फोनच्या browser मध्ये सेव्ह होतो – कोणत्याही सर्व्हरवर पाठवला जात नाही. तुम्ही ID कार्ड शेअर कराल तेव्हाच तो इतरांना दिसेल. बॅकअप फाइलमध्येही फोटो असतो. “काढा” दाबून कधीही काढू शकता.</p>
   <p><b>Referral:</b> रेफरल रिवॉर्ड्स योजना अजून सुरू झालेली नाही. कोणतेही पैसे/कमिशन सध्या दिले जात नाहीत. नियम व पात्रता जाहीर झाल्यावरच योजना लागू होईल.</p>
@@ -372,7 +515,7 @@ label.dpai input{width:22px;height:22px;margin:0;flex:none}
 
  <footer><div class="brandfoot"><img data-da="tight" alt="" width="34" height="34"><b>Digital Aarambh AI</b></div>Made with ❤️ in Pune for Alandi, Charholi, Moshi, Pimpri<br>
   <b>Digital Aarambh AI</b> – आपला व्यवसाय, आपली डिजिटल ओळख! 🙏<br>
-  निर्मिती व संकल्पना: S. R. Ujgare<br><span class="vers">आवृत्ती v13</span></footer><script>daFill()</script>
+  निर्मिती व संकल्पना: S. R. Ujgare<br><span class="vers">आवृत्ती v14</span></footer><script>daFill()</script>
 </div>
 
 <div id="pub" class="hide"></div>
@@ -573,23 +716,24 @@ function poster(cv,o){var W=1080,H=1350;cv.width=W;cv.height=H;var c=cv.getConte
  cv.className='cv';return cv}
 
 /* ===== Shop details (shared by all agents) ===== */
-var SF=[['sName','दुकानाचे / व्यवसायाचे नाव *','उदा. श्री साई किराणा स्टोअर'],['sType','व्यवसायाचा प्रकार','किराणा / मोबाईल शॉप / हॉटेल / ब्युटी पार्लर'],['sOwner','मालकाचे नाव','उदा. संतोष उजगरे'],['sPhone','फोन / WhatsApp नंबर','98765 43210 (+91 चालेल)'],['sAddr','पत्ता','उदा. मोशी प्राधिकरण, पुणे'],['sTime','वेळ','सकाळी 8 ते रात्री 9 (रविवार बंद)'],['sUpi','UPI ID','name@okaxis'],['sAbout','दुकानाबद्दल / खास गोष्टी','उदा. ताजा माल, घरपोच सेवा, योग्य दर'],['sMap','Google Maps लिंक','https://maps.app.goo.gl/...'],['sReview','Google Review लिंक','https://g.page/r/.../review']];
+var SF=[['sName','दुकानाचे / व्यवसायाचे नाव *','उदा. श्री साई किराणा स्टोअर'],['sType','व्यवसायाचा प्रकार','किराणा / मोबाईल शॉप / हॉटेल / ब्युटी पार्लर'],['sOwner','मालकाचे नाव','उदा. संतोष उजगरे'],['sPhone','फोन / WhatsApp नंबर','98765 43210 (+91 चालेल)'],['sEmail','ईमेल','उदा. shop@gmail.com'],['sAddr','पत्ता','उदा. मोशी प्राधिकरण, पुणे'],['sTime','वेळ','सकाळी 8 ते रात्री 9 (रविवार बंद)'],['sUpi','UPI ID','name@okaxis'],['sAbout','दुकानाबद्दल / खास गोष्टी','उदा. ताजा माल, घरपोच सेवा, योग्य दर'],['sMap','Google Maps लिंक','https://maps.app.goo.gl/...'],['sReview','Google Review लिंक','https://g.page/r/.../review']];
 var shop=st.get('shop',{})||{};if(shop.sPhone)shop.sPhone=normPhone(shop.sPhone);
 function saveShop(){st.set('shop',shop);renderBar()}
 function renderBar(){var b=$('#shopbar');if(shop.sName){b.classList.remove('warn');b.innerHTML='<span style="font-size:26px">🏪</span><span class="t"><b>'+esc(shop.sName)+'</b><small>'+esc([shop.sType,phoneOk(shop.sPhone)?shop.sPhone:'',shop.sAddr].filter(Boolean).join(' · ')||'माहिती पूर्ण करा')+'</small></span><span class="pill">✏️ बदला</span>'}
  else{b.classList.add('warn');b.innerHTML='<span style="font-size:26px">🏪</span><span class="t"><b>आधी दुकानाची माहिती भरा</b><small>एकदाच भरा – सगळे 13 एजंट्स वापरतील</small></span><span class="pill">भरा ›</span>'}}
-var OPT={sMap:1,sReview:1,sUpi:1};
+var OPT={sMap:1,sReview:1,sUpi:1,sEmail:1};
 function shopForm(body,after){var h='<p class="note">ही माहिती फक्त या फोनमध्ये सेव्ह होते. एकदा भरली की सगळे एजंट्स वापरतात.</p><div class="two">';
- SF.forEach(function(f){var k=f[0],ta=k==='sAbout',ex=k==='sPhone'?' type="tel" inputmode="tel"':k==='sUpi'?' autocapitalize="none" autocomplete="off"':(k==='sMap'||k==='sReview')?' type="url" inputmode="url" autocapitalize="none"':'';
+ SF.forEach(function(f){var k=f[0],ta=k==='sAbout',ex=k==='sPhone'?' type="tel" inputmode="tel"':k==='sUpi'?' autocapitalize="none" autocomplete="off"':k==='sEmail'?' type="email" inputmode="email" autocapitalize="none"':(k==='sMap'||k==='sReview')?' type="url" inputmode="url" autocapitalize="none"':'';
   h+='<div'+(ta?' style="grid-column:1/-1"':'')+'><label for="f_'+k+'">'+f[1]+(OPT[k]?' <em>(पर्यायी)</em>':'')+'</label>'+(ta?'<textarea id="f_'+k+'" style="min-height:70px" placeholder="'+esc(f[2])+'"></textarea>':'<input id="f_'+k+'"'+ex+' placeholder="'+esc(f[2])+'">')+'<div class="err" id="e_'+k+'"></div></div>'});
  h+='</div><div class="row"><button class="btn" type="button" id="fSave">✅ सेव्ह करा</button></div>';body.innerHTML=h;
  SF.forEach(function(f){$('#f_'+f[0],body).value=shop[f[0]]||''});
  var ph=$('#f_sPhone',body);ph.addEventListener('blur',function(){var v=ph.value.trim();if(!v)return;var n=normPhone(v);if(phoneOk(n)){ph.value=n;ph.classList.remove('bad');$('#e_sPhone',body).textContent=''}else{ph.classList.add('bad');$('#e_sPhone',body).textContent='10 अंकी मोबाइल नंबर टाका (6/7/8/9 ने सुरू)'}});
  $('#fSave',body).onclick=function(){var nv={},bad=false;SF.forEach(function(f){nv[f[0]]=$('#f_'+f[0],body).value.trim()});
-  ['sName','sPhone','sUpi','sMap','sReview'].forEach(function(k){$('#e_'+k,body).textContent='';$('#f_'+k,body).classList.remove('bad')});
+  ['sName','sPhone','sEmail','sUpi','sMap','sReview'].forEach(function(k){$('#e_'+k,body).textContent='';$('#f_'+k,body).classList.remove('bad')});
   function er(k,m){bad=true;$('#e_'+k,body).textContent=m;$('#f_'+k,body).classList.add('bad')}
   if(!nv.sName)er('sName','नाव आवश्यक आहे');
   if(nv.sPhone){nv.sPhone=normPhone(nv.sPhone);if(!phoneOk(nv.sPhone))er('sPhone','10 अंकी मोबाइल नंबर टाका (उदा. 9876543210)');else $('#f_sPhone',body).value=nv.sPhone}
+  if(nv.sEmail&&!emailOk(nv.sEmail))er('sEmail','ईमेल चुकीचा वाटतो (उदा. shop@gmail.com)');
   if(nv.sUpi&&!upiOk(nv.sUpi))er('sUpi','UPI ID चुकीचा वाटतो (उदा. name@okaxis)');
   if(nv.sMap&&!urlOk(nv.sMap))er('sMap','https:// ने सुरू होणारी लिंक टाका');
   if(nv.sReview&&!urlOk(nv.sReview))er('sReview','https:// ने सुरू होणारी लिंक टाका');
@@ -604,9 +748,9 @@ function b64d(t){t=t.replace(/-/g,'+').replace(/_/g,'/');while(t.length%4)t+='='
 var LIVE_URL='https://santoshujgare555-a11y.github.io/digital-aarambh-ai-prarambh-pune/';
 function base(){var p=location.protocol;if(p==='http:'||p==='https:')return location.origin+location.pathname;return LIVE_URL}
 function pageUrl(){return base()+location.hash}
-function shopLink(){var s=shop,o={n:s.sName,t:s.sType,o:s.sOwner,a:s.sAddr,p:phoneOk(s.sPhone)?s.sPhone:'',h:s.sTime,u:upiOk(s.sUpi||'')?s.sUpi:'',d:s.sAbout,m:urlOk(s.sMap||'')?s.sMap:'',r:urlOk(s.sReview||'')?s.sReview:''};Object.keys(o).forEach(function(k){if(!o[k])delete o[k]});return base()+'#shop='+b64e(o)}
+/* shopLink() – v14: नवी (#w=) लिंक, खाली “दुकान वेबसाइट” विभागात */
 function mapsUrl(s){return urlOk(s.sMap||'')?s.sMap:'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent([s.sName,s.sAddr].filter(Boolean).join(' '))}
-function vcard(s,link){function e(v){return String(v||'').replace(/([,;\\])/g,'\\$1').replace(/\n/g,'\\n')}var L=['BEGIN:VCARD','VERSION:3.0','N:'+e(s.sOwner||s.sName)+';;;;','FN:'+e(s.sOwner||s.sName),'ORG:'+e(s.sName)];if(s.sType)L.push('TITLE:'+e(s.sType));if(phoneOk(s.sPhone))L.push('TEL;TYPE=CELL:+91'+s.sPhone);if(s.sAddr)L.push('ADR;TYPE=WORK:;;'+e(s.sAddr)+';;;;India');if(link)L.push('URL:'+link);if(s.sAbout)L.push('NOTE:'+e(s.sAbout));L.push('END:VCARD');return L.join('\r\n')+'\r\n'}
+function vcard(s,link){function e(v){return String(v||'').replace(/([,;\\])/g,'\\$1').replace(/\n/g,'\\n')}var L=['BEGIN:VCARD','VERSION:3.0','N:'+e(s.sOwner||s.sName)+';;;;','FN:'+e(s.sOwner||s.sName),'ORG:'+e(s.sName)];if(s.sType)L.push('TITLE:'+e(s.sType));if(phoneOk(s.sPhone))L.push('TEL;TYPE=CELL:+91'+s.sPhone);if(emailOk(s.sEmail))L.push('EMAIL;TYPE=INTERNET:'+String(s.sEmail).trim());if(s.sAddr)L.push('ADR;TYPE=WORK:;;'+e(s.sAddr)+';;;;India');if(link)L.push('URL:'+link);if(s.sAbout)L.push('NOTE:'+e(s.sAbout));L.push('END:VCARD');return L.join('\r\n')+'\r\n'}
 
 /* ===== Sheet (agent panel) ===== */
 var sheet=$('#sheet'),sheetOpen=false;
@@ -627,7 +771,7 @@ function qrBlock(box,text,opt,fname){box.innerHTML='';try{var cv=qrCanvas(text,o
 
 /* ===== 12 Agents ===== */
 var AG=[
-['🌐','Business Website','दुकानाची माहिती व मिनी वेबसाइट लिंक','c1',aWebsite],
+['🌐','Business Website','मोठी, सुंदर दुकान वेबसाइट – लिंक तयार करा','c1',aWebsite],
 ['▦','QR Code','WhatsApp, कॉल, UPI, लिंक QR','c2',aQr],
 ['📢','Poster / जाहिरात','ऑफर पोस्टर व जाहिरात मजकूर','c3',aPoster],
 ['💬','Customer WhatsApp Message','ऑर्डर, पेमेंट, नवीन माल – तयार मेसेज','c1',aMsg],
@@ -639,7 +783,7 @@ var AG=[
 ['🪔','Festival Poster','सण, वाढदिवस, निमंत्रण – शुभेच्छा पोस्टर','c1',aFest],
 ['🪪','Digital Visiting Card','कार्ड फोटो, Contact (.vcf), लिंक','c2',aCard],
 ['🤝','Member ID & Referral','सदस्य ओळखपत्र व Refer लिंक','c3',aMember]];
-$('#grid').innerHTML=AG.map(function(a,i){return '<button type="button" class="ag '+a[3]+'" data-i="'+i+'"><span class="no">'+(i+1)+'</span><span class="ic">'+a[0]+'</span><b>'+esc(a[1])+'</b><small>'+esc(a[2])+'</small></button>'}).join('');
+$('#grid').innerHTML=AG.map(function(a,i){return '<button type="button" class="ag '+a[3]+'" data-i="'+i+'"><span class="no">'+(i+1)+'</span><span class="ic">'+a[0]+'</span>'+(i===0?'<span class="newb">v14 नवीन</span>':'')+'<b>'+esc(a[1])+'</b><small>'+esc(a[2])+'</small></button>'}).join('');
 $$('#grid .ag').forEach(function(b){b.onclick=function(){openAgent(+b.dataset.i)}});
 function openAgent(i,replace){var a=AG[i];if(i!==11&&i!==5&&!needShop(i))return;
  if(replace&&sheetOpen){$('#sheetT').textContent=(i+1)+'. '+a[1];var b=$('#sheetB');b.innerHTML='';a[4](b);sheet.scrollTop=0}else openSheet((i+1)+'. '+a[1],a[4])}
@@ -676,15 +820,7 @@ $('#sevaBtn').onclick=openSeva;
 $('#dpHomeBtn').onclick=openDiwali;
 
 /* 1. Business Website */
-function aWebsite(b){var s=shop;
- b.innerHTML='<p class="note">तुमच्या दुकानाचा परिचय (3 प्रकार) आणि ग्राहकांना पाठवता येणारी <b>मिनी वेबसाइट लिंक</b> – WhatsApp, कॉल, नकाशा, UPI बटणांसह.</p><div id="w1"></div><div class="glass"><b>🔗 तुमची मिनी वेबसाइट</b><input id="wl" readonly aria-label="मिनी वेबसाइट लिंक"><div class="row"><a class="btn" id="wOpen" target="_blank" rel="noopener">👀 उघडून पहा</a><button class="btn alt" type="button" id="wCp">📋 लिंक कॉपी</button><button class="btn wa" type="button" id="wWa">WhatsApp वर पाठवा</button></div><div class="row"><button class="btn" type="button" id="wSeva" style="width:100%;justify-content:center;background:linear-gradient(135deg,#ff9a2e,#ffd35c)">🚀 मोठी वेबसाइट + मार्गदर्शन हवं?</button></div><div id="wq"></div><p class="note">टीप: लिंकमध्येच तुमची माहिती असते. माहिती बदलली तर नवीन लिंक पाठवा.</p></div>';
- var ty=s.sType?' ('+s.sType+')':'',ph=phoneOk(s.sPhone)?s.sPhone:'';
- var A=['🏪 '+s.sName+ty+'\n\nनमस्कार! '+(s.sAddr?s.sAddr+' येथे ':'')+'आमचे '+(s.sType||'दुकान')+' आपल्या सेवेत आहे. '+(s.sAbout?s.sAbout+'. ':'')+'योग्य दर, चांगला माल आणि आपुलकीची सेवा हीच आमची ओळख.\n\n'+(s.sTime?'🕒 वेळ: '+s.sTime+'\n':'')+(ph?'📞 फोन/WhatsApp: '+ph+'\n':'')+(s.sAddr?'📍 पत्ता: '+s.sAddr:''),
- '✨ '+s.sName+' – आपल्या परिसरातील विश्वासू '+(s.sType||'दुकान')+'!\n'+(s.sAbout?'✔️ '+s.sAbout+'\n':'')+'✔️ योग्य किंमत\n✔️ वेळेवर सेवा\n'+(ph?'📲 ऑर्डरसाठी WhatsApp करा: '+ph+'\n':'')+(s.sTime?'🕒 '+s.sTime:''),
- s.sName+(s.sType?' | '+s.sType:'')+(s.sAddr?' | '+s.sAddr:'')+(ph?' | '+ph:'')+'\nस्थानिक ग्राहकांसाठी विश्वासाची सेवा. आजच भेट द्या! 🙏'];
- msgCards($('#w1',b),A);var link=shopLink();$('#wSeva',b).onclick=openSeva;$('#wl',b).value=link;$('#wOpen',b).href=link;
- $('#wCp',b).onclick=function(){copy(link)};$('#wWa',b).onclick=function(){waShare('🏪 '+s.sName+' – आमची माहिती, फोन, नकाशा व पेमेंट एका क्लिकवर:\n'+link)};
- qrBlock($('#wq',b),link,{label:s.sName,sub:'Scan करा – दुकानाची माहिती',share:link},slug(s.sName)+'-website-qr.png')}
+/* aWebsite – v14: नवा वेबसाइट बिल्डर “दुकान वेबसाइट” विभागात (खाली) */
 
 /* 2. QR */
 function aQr(b){b.innerHTML='<label for="qt">QR मध्ये काय हवं?</label><select id="qt"><option value="wa">WhatsApp वर मेसेज (फोन नंबरवरून)</option><option value="tel">थेट कॉल</option><option value="upi">UPI पेमेंट</option><option value="site">माझी मिनी वेबसाइट</option><option value="url">कोणतीही लिंक</option><option value="txt">साधा मजकूर</option></select><div id="qx"></div><label for="ql">QR खाली नाव <em>(पर्यायी)</em></label><input id="ql"><div class="row"><button class="btn" type="button" id="qg">QR तयार करा</button></div><div id="qo"></div><p class="note">Download केलेल्या QR ला पांढरी कडा (quiet zone) असते – प्रिंटसाठी योग्य.</p>';
@@ -695,7 +831,7 @@ function aQr(b){b.innerHTML='<label for="qt">QR मध्ये काय हव
  $('#qg',b).onclick=function(){var v=qt.value,qu=$('#qu',b),val=qu?qu.value.trim():'',t='',sub='';
   if(v==='wa'||v==='tel'){var p=normPhone(val);if(!phoneOk(p)){toast('10 अंकी मोबाइल नंबर टाका');qu.classList.add('bad');return}qu.value=p;qu.classList.remove('bad');t=v==='wa'?'https://wa.me/91'+p:'tel:+91'+p;sub=v==='wa'?'Scan करा – WhatsApp करा':'Scan करा – कॉल करा'}
   else if(v==='upi'){if(!upiOk(val)){toast('योग्य UPI ID टाका (उदा. name@okaxis)');return}t=upiLink(val,shop.sName,($('#qa',b)||{}).value);sub='Scan करा – UPI ने पेमेंट करा'}
-  else if(v==='site'){t=shopLink();sub='Scan करा – दुकानाची माहिती'}
+  else if(v==='site'){t=qrSiteLink();sub='Scan करा – दुकानाची वेबसाइट'}
   else if(v==='url'){if(!urlOk(val)){toast('https:// ने सुरू होणारी लिंक टाका');return}t=val}
   else{if(!val){toast('मजकूर टाका');return}t=val}
   qrBlock($('#qo',b),t,{label:$('#ql',b).value.trim(),sub:sub,share:shop.sName||''},slug(shop.sName)+'-'+v+'-qr.png')}}
@@ -823,20 +959,24 @@ var FEST=[
 ['eid','🌙 ईद','🌙','ईद मुबारक!','आपल्या घरी सुख, शांती आणि बरकत नांदो.','#064e3b','#047857','#fde68a'],
 ['xmas','🎄 नाताळ (Christmas)','🎄','नाताळच्या हार्दिक शुभेच्छा!','Merry Christmas! आनंद आणि प्रेम सर्वत्र पसरो.','#7f1d1d','#166534','#fde68a'],
 ['bday','🎂 वाढदिवस','🎂','वाढदिवसाच्या हार्दिक शुभेच्छा!','आपणास उदंड आयुष्य, उत्तम आरोग्य आणि भरभराट लाभो.','#831843','#7c3aed','#fde68a','॥ अभिष्टचिंतन ॥'],
-['invite','💌 निमंत्रण','💌','सस्नेह निमंत्रण','आपण सहकुटुंब, सहपरिवार अवश्य उपस्थित राहावे ही आग्रहाची विनंती.','#3b0764','#be123c','#fde68a','॥ सस्नेह निमंत्रण ॥']];
+['invite','💌 निमंत्रण','💌','सस्नेह निमंत्रण','आपण सहकुटुंब, सहपरिवार अवश्य उपस्थित राहावे ही आग्रहाची विनंती.','#3b0764','#be123c','#fde68a','॥ सस्नेह निमंत्रण ॥'],
+['anniv','🎉 व्यवसायाचा वर्धापनदिन','🎉','वर्धापनदिनाच्या हार्दिक शुभेच्छा!','आपण दाखवलेल्या प्रेम व विश्वासामुळेच आमचा हा प्रवास यशस्वी झाला. सर्व ग्राहकांचे मनःपूर्वक आभार! पुढेही अशीच साथ असू द्या. 🙏','#3b0a45','#b45309','#ffd166','॥ वर्धापन दिन ॥']];
 /* v11: वाढदिवस / निमंत्रण – नाव/कार्यक्रम टाकून शीर्षक बनते */
-function festTitle(f,nm){nm=String(nm||'').trim();if(f[0]==='bday')return nm?nm+' यांना वाढदिवसाच्या हार्दिक शुभेच्छा!':f[3];if(f[0]==='invite')return nm?nm+' – सस्नेह निमंत्रण':f[3];return f[3]}
+function festYears(nm){var n=parseInt(String(nm||'').replace(/[०-९]/g,function(c){return '०१२३४५६७८९'.indexOf(c)}),10);return n>=1&&n<=200?n:0}
+function festBody(f,nm){if(f[0]==='anniv'){var n=festYears(nm);if(n)return 'आपण दाखवलेल्या प्रेम व विश्वासामुळेच आमच्या व्यवसायाने यशस्वी '+n+' '+(n===1?'वर्ष':'वर्षे')+' पूर्ण केली. सर्व ग्राहकांचे मनःपूर्वक आभार! पुढेही अशीच साथ असू द्या. 🙏'}return f[4]}
+function festTitle(f,nm){nm=String(nm||'').trim();if(f[0]==='anniv'){var y=festYears(nm);return y?y+' व्या वर्धापनदिनाच्या हार्दिक शुभेच्छा!':f[3]}if(f[0]==='bday')return nm?nm+' यांना वाढदिवसाच्या हार्दिक शुभेच्छा!':f[3];if(f[0]==='invite')return nm?nm+' – सस्नेह निमंत्रण':f[3];return f[3]}
 function aFest(b){b.innerHTML='<button type="button" class="seva dphome" id="fDp"><span class="sic">🪔</span><span class="st"><b>दिवाळी Pack</b><small>व्यवसायानुसार तयार दिवाळी ऑफर पोस्टर</small></span><span class="go">उघडा ›</span></button><label for="fs">सण / प्रसंग निवडा</label><select id="fs">'+FEST.map(function(f,i){return '<option value="'+i+'">'+f[1]+'</option>'}).join('')+'</select><div id="fnw" class="hide"><label for="fn" id="fnl">नाव</label><input id="fn"></div><label for="fm">स्वतःचा मेसेज <em>(पर्यायी – रिकामा ठेवल्यास तयार शुभेच्छा)</em></label><textarea id="fm" style="min-height:70px"></textarea><label for="fo" id="fol">ऑफर <em>(पर्यायी)</em></label><input id="fo" placeholder="उदा. सणानिमित्त 10% सूट"><div class="row"><button class="btn" type="button" id="fg">पोस्टर तयार करा</button></div><div id="fc"></div><div class="row hide" id="fb" style="justify-content:center"><button class="btn" type="button" id="fdl">⬇️ Download</button><button class="btn wa" type="button" id="fsh">📤 WhatsApp / शेअर</button></div><div id="fmo"></div>';
  var cv=document.createElement('canvas');
  $('#fDp',b).onclick=function(){b.innerHTML='';aDiwali(b,function(){b.innerHTML='';aFest(b);sheet.scrollTop=0});sheet.scrollTop=0};
- var fsS=$('#fs',b);fsS.onchange=function(){var k=FEST[+fsS.value][0],w=$('#fnw',b);w.classList.toggle('hide',k!=='bday'&&k!=='invite');
+ var fsS=$('#fs',b);fsS.onchange=function(){var k=FEST[+fsS.value][0],w=$('#fnw',b);w.classList.toggle('hide',k!=='bday'&&k!=='invite'&&k!=='anniv');$('#fn',b).inputMode=k==='anniv'?'numeric':'text';
   if(k==='bday'){$('#fnl',b).innerHTML='कोणाचा वाढदिवस? नाव <em>(पर्यायी)</em>';$('#fn',b).placeholder='उदा. श्री. रमेश पाटील'}
   if(k==='invite'){$('#fnl',b).innerHTML='कोणता कार्यक्रम? <em>(पर्यायी)</em>';$('#fn',b).placeholder='उदा. दुकानाचे उद्घाटन / साखरपुडा'}
+  if(k==='anniv'){$('#fnl',b).innerHTML='किती वर्षे पूर्ण झाली? <em>(पर्यायी)</em>';$('#fn',b).placeholder='उदा. 10'}
   $('#fol',b).innerHTML=k==='invite'?'तारीख, वेळ, ठिकाण <em>(पर्यायी)</em>':(k==='bday'?'खास ओळ / ऑफर <em>(पर्यायी)</em>':'ऑफर <em>(पर्यायी)</em>');$('#fo',b).placeholder=k==='invite'?'उदा. रविवार 2 नोव्हेंबर, सायं. 6 वा., मोशी':'उदा. सणानिमित्त 10% सूट'};
  $('#fg',b).onclick=function(){var i=+$('#fs',b).value,f=FEST[i],m=$('#fm',b).value.trim(),o=$('#fo',b).value.trim(),s=shop,nm=$('#fn',b).value.trim(),ttl=festTitle(f,nm);
-  fontsReady().then(function(){poster(cv,{bg1:f[5],bg2:f[6],accent:f[7],top:f[8]||'',emoji:f[2],title:ttl,body:m||f[4],offer:o,shop:s.sName,phone:phoneOk(s.sPhone)?s.sPhone:'',addr:s.sAddr,tricolor:f[0]==='indep'||f[0]==='republic',seed:i*13+5});
+  fontsReady().then(function(){poster(cv,{bg1:f[5],bg2:f[6],accent:f[7],top:f[8]||'',emoji:f[2],title:ttl,body:m||festBody(f,nm),offer:o,shop:s.sName,phone:phoneOk(s.sPhone)?s.sPhone:'',addr:s.sAddr,tricolor:f[0]==='indep'||f[0]==='republic',seed:i*13+5});
    $('#fc',b).appendChild(cv);$('#fb',b).classList.remove('hide');
-   $('#fmo',b).innerHTML='<div id="fmc"></div>';msgCards($('#fmc',b),[f[2]+' '+ttl+'\n'+(m||f[4])+(o?'\n'+(f[0]==='invite'?'📅 ':'🎁 ')+o:'')+'\n\n'+(f[0]==='invite'?'निमंत्रक:':'शुभेच्छुक:')+'\n'+sig()]);cv.scrollIntoView({behavior:'smooth',block:'start'})})};
+   $('#fmo',b).innerHTML='<div id="fmc"></div>';msgCards($('#fmc',b),[f[2]+' '+ttl+'\n'+(m||festBody(f,nm))+(o?'\n'+(f[0]==='invite'?'📅 ':'🎁 ')+o:'')+'\n\n'+(f[0]==='invite'?'निमंत्रक:':'शुभेच्छुक:')+'\n'+sig()]);cv.scrollIntoView({behavior:'smooth',block:'start'})})};
  $('#fdl',b).onclick=function(){dlCanvas(cv,slug(shop.sName)+'-festival.png')};$('#fsh',b).onclick=function(){var f=FEST[+$('#fs',b).value];shareCanvas(cv,slug(shop.sName)+'-festival.png',festTitle(f,$('#fn',b).value)+' – '+shop.sName)}}
 
 /* ===== 🪔 दिवाळी Pack (v12) – सणाचे पोस्टर (एजंट 10) चा खास विभाग ===== */
@@ -1037,14 +1177,16 @@ function cardImg(cv,s,link){var W=1050,H=600;cv.width=W;cv.height=H;var c=cv.get
  c.fillStyle='#38e1ff';c.fillRect(56,62,8,110);
  fitText(c,s.sName,{x:80,y:52,w:570,h:124,max:62,min:30,weight:800,color:'#fff',align:'left',maxLines:2,glow:'#3b82f6',blur:16});
  fitText(c,[s.sType,s.sOwner].filter(Boolean).join(' · '),{x:80,y:180,w:570,h:50,max:34,min:20,weight:600,color:'#ffc23d',align:'left',maxLines:1});
- var y=250;[[phoneOk(s.sPhone)?'📞 +91 '+s.sPhone:'',46],[s.sAddr?'📍 '+s.sAddr:'',84],[s.sTime?'🕒 '+s.sTime:'',46],[upiOk(s.sUpi||'')?'💳 UPI: '+s.sUpi:'',46]].forEach(function(r){if(!r[0]||y>H-80)return;var o=fitText(c,r[0],{x:60,y:y,w:600,h:r[1],max:30,min:18,weight:600,color:'#eef',align:'left',top:true,maxLines:r[1]>50?2:1});y+=Math.max(o.h,30)+14});
+ var y=250;[[phoneOk(s.sPhone)?'📞 +91 '+s.sPhone:'',46],[emailOk(s.sEmail)?'✉️ '+s.sEmail:'',46],[s.sAddr?'📍 '+s.sAddr:'',84],[s.sTime?'🕒 '+s.sTime:'',46],[upiOk(s.sUpi||'')?'💳 UPI: '+s.sUpi:'',46]].forEach(function(r){if(!r[0]||y>H-80)return;var o=fitText(c,r[0],{x:60,y:y,w:600,h:r[1],max:30,min:18,weight:600,color:'#eef',align:'left',top:true,maxLines:r[1]>50?2:1});y+=Math.max(o.h,30)+14});
  c.fillStyle='#fff';rrect(c,700,96,300,300,18);c.fill();try{drawQrOn(c,link,712,108,276)}catch(e){}
- fitText(c,'Scan करा – दुकानाची माहिती',{x:690,y:404,w:320,h:44,max:24,min:16,weight:600,color:'#fff'});
+ fitText(c,'Scan करा – दुकान वेबसाइट',{x:690,y:404,w:320,h:44,max:24,min:16,weight:600,color:'#fff'});
  brandBadge(c,W-46,H-98,50,{align:'right'});cv.className='cv';return cv}
-function aCard(b){var s=shop,link=shopLink();b.innerHTML='<p class="note">कार्डवरचा QR स्कॅन केल्यावर तुमची मिनी वेबसाइट उघडते. माहिती बदलायची असल्यास वर “दुकानाची माहिती” बदला.</p><div id="cc"></div><div class="row" style="justify-content:center"><button class="btn" type="button" id="cdl">⬇️ कार्ड फोटो</button><button class="btn alt" type="button" id="cvf">👤 Contact (.vcf)</button><button class="btn wa" type="button" id="csh">📤 शेअर</button><button class="btn alt" type="button" id="cln">🔗 लिंक कॉपी</button></div><p class="note">.vcf फाइल ग्राहकाच्या फोनमध्ये उघडली की तुमचा नंबर थेट Contacts मध्ये सेव्ह होतो.</p>';
- var cv=document.createElement('canvas');fontsReady().then(function(){cardImg(cv,s,link);$('#cc',b).appendChild(cv)});
+function aCard(b){var s=shop,link=shopLink(),qlink=qrSiteLink();b.innerHTML='<p class="note">कार्डवरचा QR स्कॅन केल्यावर तुमची दुकान वेबसाइट उघडते. माहिती बदलायची असल्यास वर “दुकानाची माहिती” बदला.</p><div class="glass" style="margin-top:8px"><label for="cem" style="margin-top:0">✉️ ईमेल <em>(पर्यायी – कार्डवर व Contact फाइलमध्ये येईल)</em></label><div style="display:flex;gap:8px"><input id="cem" type="email" inputmode="email" autocapitalize="none" placeholder="उदा. shop@gmail.com"><button class="btn sm" type="button" id="cemS" style="flex:none">✅ लावा</button></div><div class="err" id="cemE"></div></div><div id="cc"></div><div class="row" style="justify-content:center"><button class="btn" type="button" id="cdl">⬇️ कार्ड फोटो</button><button class="btn alt" type="button" id="cvf">👤 Contact (.vcf)</button><button class="btn wa" type="button" id="csh">📤 शेअर</button><button class="btn alt" type="button" id="cln">🔗 लिंक कॉपी</button></div><p class="note">.vcf फाइल ग्राहकाच्या फोनमध्ये उघडली की तुमचा नंबर'+(emailOk(s.sEmail)?' व ईमेल':'')+' थेट Contacts मध्ये सेव्ह होतो.</p>';
+ var cv=document.createElement('canvas');function draw(){fontsReady().then(function(){cardImg(cv,shop,qlink);if(!cv.parentNode)$('#cc',b).appendChild(cv)})}draw();
+ var ce=$('#cem',b);ce.value=s.sEmail||'';
+ $('#cemS',b).onclick=function(){var v=ce.value.trim();if(v&&!emailOk(v)){$('#cemE',b).textContent='ईमेल चुकीचा वाटतो (उदा. shop@gmail.com)';ce.classList.add('bad');return}$('#cemE',b).textContent='';ce.classList.remove('bad');shop.sEmail=v;saveShop();s=shop;link=shopLink();qlink=qrSiteLink();draw();toast(v?'✅ ईमेल कार्डवर लावला':'ईमेल काढला')};
  $('#cdl',b).onclick=function(){dlCanvas(cv,slug(s.sName)+'-visiting-card.png')};
- $('#cvf',b).onclick=function(){dlBlob(slug(s.sName)+'.vcf',new Blob([vcard(s,link)],{type:'text/vcard;charset=utf-8'}));toast('⬇️ Contact फाइल Download झाली')};
+ $('#cvf',b).onclick=function(){dlBlob(slug(s.sName)+'.vcf',new Blob([vcard(shop,link)],{type:'text/vcard;charset=utf-8'}));toast('⬇️ Contact फाइल Download झाली')};
  $('#csh',b).onclick=function(){shareCanvas(cv,slug(s.sName)+'-visiting-card.png','🪪 '+s.sName+(phoneOk(s.sPhone)?' – '+s.sPhone:'')+'\n'+link)};$('#cln',b).onclick=function(){copy(link)}}
 
 /* 12. Member ID & Referral (honest – no money promises, no fake OTP) */
@@ -1145,27 +1287,240 @@ function aMember(b){var u=st.get('user',null),bk=st.get('user_backup',null),rf=s
  $('#mwa',b).onclick=function(){waShare('🙏 नमस्कार! मी '+cleanName(u.name)+' ('+u.id+'), Digital Aarambh AI चा सदस्य.\nदुकानासाठी मोफत डिजिटल साधने – मिनी वेबसाइट, QR, पोस्टर, सणाचे पोस्टर, हिशोब वही, UPI QR – सगळं मराठीत.\nमाझ्या लिंकने वापरून पहा 👇\n'+link+'\nमाझा Refer कोड: '+u.code)};
  $('#mout',b).onclick=function(){if(confirm('तुमचा ID ('+u.id+') या फोनवरून काढायचा?\nएक बॅकअप ठेवला जाईल – नंतर “तोच ID परत आणा” दाबून परत मिळवता येईल.')){st.set('user_backup',u);st.set('user',null);aMember(b);toast('ID काढला – बॅकअप सुरक्षित आहे')}}}
 
-/* ===== Public mini-site view (#shop=...) ===== */
-function showPub(){var m=location.hash.match(/^#shop=([\w-]+)/);if(!m)return false;var o;try{o=b64d(m[1])}catch(e){return false}
- if(!o||typeof o.n!=='string'||!o.n)return false;
- function g(k){return typeof o[k]==='string'?o[k].slice(0,300):''}
- var n=g('n'),t=g('t'),ow=g('o'),a=g('a'),p=normPhone(g('p')),h=g('h'),u=g('u'),d=g('d'),mp=g('m'),rv=g('r'),ph=phoneOk(p),up=upiOk(u),map=urlOk(mp)?mp:(a?'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(n+' '+a):'');
- document.title=n+(t?' – '+t:'');$('#app').classList.add('hide');var el=$('#pub');el.classList.remove('hide');
- el.innerHTML='<div class="pub"><div class="card"><div style="font-size:44px">🏪</div><h1>'+esc(n)+'</h1>'+(t?'<div class="ty">'+esc(t)+'</div>':'')+(d?'<p class="ab">'+esc(d)+'</p>':'')+
-  '<div class="inf">'+(ow?'👤 '+esc(ow)+'<br>':'')+(a?'📍 '+esc(a)+'<br>':'')+(ph?'📞 '+esc(p)+'<br>':'')+(h?'🕒 '+esc(h):'')+'</div><div class="btns">'+
-  (ph?'<a class="btn wa" href="https://api.whatsapp.com/send?phone=91'+p+'&text='+encodeURIComponent('नमस्कार '+n+' 🙏')+'">💬 WhatsApp</a><a class="btn" href="tel:+91'+p+'">📞 कॉल करा</a>':'')+
-  (map?'<a class="btn alt" target="_blank" rel="noopener" href="'+esc(map)+'">🗺️ नकाशा</a>':'')+(rv&&urlOk(rv)?'<a class="btn alt" target="_blank" rel="noopener" href="'+esc(rv)+'">⭐ Review द्या</a>':'')+
-  '<button class="btn alt" type="button" id="pubSave">👤 नंबर सेव्ह</button><button class="btn alt" type="button" id="pubShare">📤 शेअर करा</button></div>'+
-  (up?'<p style="margin-top:18px;color:var(--mut)">💳 UPI ने पेमेंट करा</p><div id="pubQr"></div><div style="font-size:14px;color:var(--mut);word-break:break-all">'+esc(u)+'</div><div class="row" style="justify-content:center"><a class="btn sm" href="'+esc(upiLink(u,n))+'">📲 UPI ॲपमध्ये उघडा</a></div>':'')+
-  '</div><p style="margin-top:18px;font-size:13px;color:var(--mut)"><img alt="" style="width:22px;height:22px;vertical-align:-6px;margin-right:6px;border-radius:5px" src="'+DA_TIGHT+'">Made with <a href="'+esc(base())+'">Digital Aarambh AI</a> – तुमच्या दुकानाचीही मोफत वेबसाइट बनवा</p></div>';
- if(up){try{var cv=qrCanvas(upiLink(u,n),{px:420,brand:false});cv.style.width='210px';$('#pubQr').appendChild(cv)}catch(e){}}
- var sh={sName:n,sType:t,sOwner:ow,sPhone:p,sAddr:a,sAbout:d};
- $('#pubSave').onclick=function(){dlBlob(slug(n)+'.vcf',new Blob([vcard(sh,pageUrl())],{type:'text/vcard;charset=utf-8'}))};
- $('#pubShare').onclick=function(){if(navigator.share)navigator.share({title:n,url:pageUrl()}).catch(function(){});else waShare(n+'\n'+pageUrl())};
- return true}
+
+/* ===== LZ (lz-string 1.4.4 algorithm, MIT, Pieroxy) – URL-safe base64 alphabet; used for the v14 shop-website link ===== */
+var LZ=(function(){var A='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_',R={};for(var i=0;i<64;i++)R[A.charAt(i)]=i;var H=Object.prototype.hasOwnProperty;
+function comp(s){if(s==null)return '';var dict={},cr={},c,wc,w='',enl=2,size=3,nb=2,out=[],val=0,pos=0,i,j;
+ function put(v,n){for(var k=0;k<n;k++){val=(val<<1)|(v&1);v>>=1;if(pos===5){pos=0;out.push(A.charAt(val));val=0}else pos++}}
+ function emit(){if(H.call(cr,w)){var cc=w.charCodeAt(0);if(cc<256){put(0,nb);put(cc,8)}else{put(1,nb);put(cc,16)}enl--;if(enl===0){enl=Math.pow(2,nb);nb++}delete cr[w]}else put(dict[w],nb);enl--;if(enl===0){enl=Math.pow(2,nb);nb++}}
+ for(i=0;i<s.length;i++){c=s.charAt(i);if(!H.call(dict,c)){dict[c]=size++;cr[c]=true}wc=w+c;if(H.call(dict,wc))w=wc;else{emit();dict[wc]=size++;w=String(c)}}
+ if(w!=='')emit();put(2,nb);
+ while(true){val=(val<<1);if(pos===5){out.push(A.charAt(val));break}else pos++}return out.join('')}
+function decomp(s){if(s==null||s==='')return null;s=String(s);var dict=[0,1,2],enl=4,size=4,nb=3,entry='',res=[],w,c,dv={val:R[s.charAt(0)],pos:32,idx:1};
+ if(dv.val==null)return null;
+ function rd(n){var b=0,p=1,m=Math.pow(2,n);while(p!==m){var r=dv.val&dv.pos;dv.pos>>=1;if(dv.pos===0){dv.pos=32;dv.val=R[s.charAt(dv.idx++)]|0}b|=(r>0?1:0)*p;p<<=1}return b}
+ switch(rd(2)){case 0:c=String.fromCharCode(rd(8));break;case 1:c=String.fromCharCode(rd(16));break;default:return ''}
+ dict[3]=c;w=c;res.push(c);
+ while(true){if(dv.idx>s.length+1)return null;c=rd(nb);
+  switch(c){case 0:dict[size++]=String.fromCharCode(rd(8));c=size-1;enl--;break;case 1:dict[size++]=String.fromCharCode(rd(16));c=size-1;enl--;break;case 2:return res.join('')}
+  if(enl===0){enl=Math.pow(2,nb);nb++}
+  if(dict[c])entry=dict[c];else if(c===size)entry=w+w.charAt(0);else return null;
+  res.push(entry);dict[size++]=w+entry.charAt(0);enl--;w=entry;if(enl===0){enl=Math.pow(2,nb);nb++}}}
+return {c:comp,d:decomp}})();
+
+/* ===== 🌐 v14: मोठी, सुंदर दुकान वेबसाइट – सर्व माहिती लिंकमध्येच (सर्व्हर नाही).
+   नवी लिंक: #w=<LZ> (v:2). जुनी लिंक (#shop=<base64 JSON>, v13 व आधीची) अजूनही नव्या डिझाइनमध्ये उघडते. ===== */
+var WS_THEMES=[
+ ['navy','🌌 रात्र निळी','#070b24','#16205a','#121a48','#ffc23d','#38e1ff','#ff9a2e'],
+ ['festive','🪔 सणासुदी','#1e040b','#6a1226','#36091a','#ffcc4d','#ff8a3d','#ff8a3d'],
+ ['green','🌿 हिरवळ','#03140d','#0d4a32','#0c2a1f','#7ee8a1','#ffd166','#ffd166'],
+ ['saffron','🧡 केशरी','#1c0b02','#7a3106','#371606','#ff9a2e','#ffe08a','#ffd35c'],
+ ['purple','💜 जांभळा','#10041d','#44137a','#240e3d','#e9a8ff','#ffc23d','#ffc23d'],
+ ['ocean','🌊 समुद्र','#021820','#0b5266','#082c38','#5eead4','#fcd34d','#fcd34d']];
+var WS_DAYS=['रविवार','सोमवार','मंगळवार','बुधवार','गुरुवार','शुक्रवार','शनिवार'],WS_DAYL=['रविवारी','सोमवारी','मंगळवारी','बुधवारी','गुरुवारी','शुक्रवारी','शनिवारी'];
+var WS_EMO=['🛍️','🍚','🌾','🫘','🛢️','🧂','🍬','🥛','🍞','🥚','🍎','🥦','☕','🍛','🌶️','🥻','👗','👔','👟','📱','🔌','🎧','💊','💄','💇','🔧','🚗','🏍️','📚','✂️','🎁','⭐','🚚','🪔','🌸','💍','📦','🛠️','🧴','🍰'];
+var WS_SUG={0:[['🥻','साड्या'],['👗','ड्रेस मटेरियल'],['👔','शर्ट'],['👖','जीन्स / पँट'],['🧒','लहान मुलांचे कपडे'],['🧣','ओढणी / शाल']],
+ 1:[['🍚','तांदूळ'],['🌾','गहू / पीठ'],['🫘','डाळी'],['🛢️','खाद्य तेल'],['🧂','मसाले'],['🍬','साखर / गूळ'],['🧼','साबण, डिटर्जंट'],['🥛','दूध / दही']],
+ 2:[['📱','नवीन मोबाईल'],['🔌','चार्जर / केबल'],['🎧','इयरफोन'],['🛡️','स्क्रीन गार्ड / कव्हर'],['🔧','मोबाईल दुरुस्ती'],['💳','रिचार्ज']],
+ 4:[['💇','हेअरकट'],['💆','फेशियल'],['💅','मॅनिक्युअर'],['🌿','मेहंदी'],['👰','ब्रायडल मेकअप'],['🧖','हेअर स्पा']],
+ 5:[['🍛','थाळी'],['🌶️','मिसळ पाव'],['🍔','वडा पाव'],['☕','चहा / कॉफी'],['🍚','बिर्याणी'],['🥡','पार्सल']],
+ 6:[['💊','औषधे'],['🩹','प्रथमोपचार साहित्य'],['🧴','सौंदर्य प्रसाधने'],['🍼','बेबी केअर'],['🩺','BP / शुगर मशीन']],
+ 10:[['🏍️','टू-व्हीलर सर्व्हिसिंग'],['🚗','फोर-व्हीलर सर्व्हिसिंग'],['🛞','पंक्चर / टायर'],['🔋','बॅटरी'],['🧽','वॉशिंग'],['🛢️','ऑइल बदल']],
+ 15:[['🥛','दूध'],['🍮','पेढे'],['🍬','लाडू'],['🍨','श्रीखंड / आम्रखंड'],['🧈','तूप / लोणी'],['🍎','फळे']],
+ d:[['🛍️','मुख्य वस्तू'],['⭐','खास सेवा'],['📦','ऑर्डरप्रमाणे माल'],['🎁','गिफ्ट पॅक']]};
+function emailOk(e){return /^[^\s@<>"']+@[^\s@<>"']+\.[a-z]{2,}$/i.test(String(e||''))}
+function wsMin(t){var m=/^(\d{2}):(\d{2})$/.exec(t||'');return m?(+m[1])*60+(+m[2]):-1}
+function wsClock(m){m=((m%1440)+1440)%1440;var h=Math.floor(m/60),mm=m%60,p=h<4?'रात्री':h<12?'सकाळी':h<17?'दुपारी':h<20?'संध्याकाळी':'रात्री';return p+' '+(h%12||12)+':'+('0'+mm).slice(-2)}
+function wsNow(){return (window.__WS_NOW!=null?+window.__WS_NOW:Date.now())}
+function wsIst(now){return new Date((now==null?wsNow():now)+19800000)}/* दुकानाच्या वेळा भारतीय वेळेत (IST) – ग्राहक परदेशात असला तरी */
+function wsToday(){var t=wsIst();return t.getUTCFullYear()+'-'+('0'+(t.getUTCMonth()+1)).slice(-2)+'-'+('0'+t.getUTCDate()).slice(-2)}
+function wsIv(h,dd){if(!h||h.x.indexOf(dd)>=0)return [];var o=wsMin(h.o),c=wsMin(h.c);if(o<0||c<0)return [];if(c<=o)c+=1440;
+ if(h.b){var b=wsMin(h.b),B=wsMin(h.B);if(b>o&&B>b&&B<c)return [[o,b],[B,c]]}return [[o,c]]}
+function wsStatus(h,now){if(!h)return null;var t=wsIst(now),day=t.getUTCDay(),min=t.getUTCHours()*60+t.getUTCMinutes(),L=[];
+ wsIv(h,(day+6)%7).forEach(function(r){L.push([r[0]-1440,r[1]-1440])});wsIv(h,day).forEach(function(r){L.push(r)});
+ for(var i=0;i<L.length;i++)if(min>=L[i][0]&&min<L[i][1]){var left=L[i][1]-min;return {open:true,soon:left<=30,txt:(left<=30?'लवकरच बंद होईल · ':'आत्ता उघडे · ')+wsClock(L[i][1])+' पर्यंत'}}
+ for(var k=0;k<8;k++){var dd=(day+k)%7,R=wsIv(h,dd);for(var j=0;j<R.length;j++){if(R[j][0]+k*1440>min)return {open:false,txt:'आत्ता बंद · उघडेल: '+(k===0?'आज ':k===1?'उद्या ':WS_DAYL[dd]+' ')+wsClock(R[j][0])}}}
+ return {open:false,txt:'आत्ता बंद'}}
+function wsVars(T){return '--b0:'+T[2]+';--b1:'+T[3]+';--cd:'+T[4]+';--ac:'+T[5]+';--ac2:'+T[6]+';--a1:'+T[5]+'1a;--a2:'+T[5]+'2e;--a3:'+T[5]+'40;--a4:'+T[5]+'59;--a5:'+T[5]+'8c;--c2:'+T[6]+'42;--o1:'+T[2]+'59;--o2:'+T[2]+'e0;--of:'+(T[7]||T[6])}
+function wsEmoji(t){var i=dpGuessType(t);return i>=0?DP_TYPES[i][0]:'🏪'}
+function wsPrice(p){p=String(p||'').trim();return /^\d+(\.\d{1,2})?$/.test(p)?'₹'+Number(p).toLocaleString('en-IN'):p}
+function wsDate(s){var m=/^(\d{4})-(\d{2})-(\d{2})$/.exec(s||'');if(!m)return '';var M=['जानेवारी','फेब्रुवारी','मार्च','एप्रिल','मे','जून','जुलै','ऑगस्ट','सप्टेंबर','ऑक्टोबर','नोव्हेंबर','डिसेंबर'];return (+m[3])+' '+M[+m[2]-1]+' '+m[1]}
+function wsHeroKey(d){var k=String(d.hp||'').replace(/[^a-z ,&-]/gi,'').trim().slice(0,60);if(k)return k;var i=dpGuessType(d.t);return i>=0?DP_TYPES[i][2]:'local shop'}
+function wsHeroUrl(d){return 'https://image.pollinations.ai/prompt/'+encodeURIComponent('beautiful welcoming '+wsHeroKey(d)+', close-up of neatly arranged colourful products on shelves, warm golden fairy lights, soft bokeh, Indian local shop, wide banner photo, cinematic, high detail, no people faces, no text, no letters, no logos, no signboards, no watermark')+'?width=1024&height=640&nologo=true&seed='+((+d.sd||0)%1000000||7)}
+/* कोणत्याही (नवी/जुनी) लिंकमधील माहिती → एकच सुरक्षित रूप */
+function wsNorm(o){if(!o||typeof o!=='object')return null;function g(k,n){var v=o[k];return (typeof v==='string'||typeof v==='number')?String(v).trim().slice(0,n||300):''}
+ var d={v:+o.v||1,n:g('n',80),t:g('t',60),g:g('g',120),o:g('o',60),y:0,d:g('d',600),p:normPhone(g('p')),w:normPhone(g('w')),e:g('e',80),a:g('a',200),m:g('m',600),r:g('r',600),u:g('u',80),f:'',fd:'',hn:'',th:0,hi:0,hp:g('hp',60),sd:(+o.sd||0)%1000000,i:[],h:null};
+ if(!d.n)return null;
+ if(!phoneOk(d.p))d.p='';if(!phoneOk(d.w)||d.w===d.p)d.w='';if(!emailOk(d.e))d.e='';if(!urlOk(d.m))d.m='';if(!urlOk(d.r))d.r='';if(!upiOk(d.u))d.u='';
+ var y=parseInt(o.y,10),cy=wsIst().getUTCFullYear();if(y>=1900&&y<=cy)d.y=y;
+ var th=parseInt(o.th,10);if(th>=0&&th<WS_THEMES.length)d.th=th;
+ if(d.v<2){d.hn=g('h',160);return d}/* v13 व आधीची लिंक: वेळ फक्त मजकूर */
+ d.hi=o.hi?1:0;d.hn=g('hn',160);d.f=g('f',220);d.fd=/^\d{4}-\d{2}-\d{2}$/.test(g('fd'))?g('fd'):'';
+ if(Array.isArray(o.i))o.i.slice(0,15).forEach(function(it){if(!Array.isArray(it))return;var nm=String(it[1]==null?'':it[1]).trim().slice(0,60);if(nm)d.i.push([String(it[0]||'').slice(0,8),nm,String(it[2]==null?'':it[2]).trim().slice(0,30)])});
+ var h=o.h,tm=/^([01]\d|2[0-3]):[0-5]\d$/;if(h&&typeof h==='object'&&tm.test(h.o)&&tm.test(h.c)){d.h={o:h.o,c:h.c,b:'',B:'',x:[]};if(tm.test(h.b)&&tm.test(h.B)){d.h.b=h.b;d.h.B=h.B}
+  if(Array.isArray(h.x))h.x.forEach(function(k){k=parseInt(k,10);if(k>=0&&k<7&&d.h.x.indexOf(k)<0)d.h.x.push(k)});if(d.h.x.length>=7)d.h=null}
+ return d}
+function wsFromHash(hash){var m;hash=String(hash||'');
+ if((m=/^#w=([\w-]+)/.exec(hash))){try{return wsNorm(JSON.parse(LZ.d(m[1])))}catch(e){return null}}
+ if((m=/^#shop=([\w-]+)/.exec(hash))){try{var o=b64d(m[1]);if(o&&typeof o==='object')delete o.v;return wsNorm(o)}catch(e){return null}}
+ return null}
+function wsSite(){var x=st.get('site',null);return (x&&typeof x==='object')?x:{}}
+/* दुकानाची माहिती (shop) + वेबसाइटची जास्तीची माहिती (site) → लिंकमधील छोटी keys */
+function wsData(lite){var s=shop,x=wsSite(),o={v:2,n:s.sName,t:s.sType,g:x.g,o:s.sOwner,y:x.y,p:phoneOk(s.sPhone)?s.sPhone:'',w:(phoneOk(x.w||'')&&x.w!==s.sPhone)?x.w:'',e:emailOk(s.sEmail)?s.sEmail:'',a:s.sAddr,m:urlOk(s.sMap||'')?s.sMap:'',r:urlOk(s.sReview||'')?s.sReview:'',u:upiOk(s.sUpi||'')?s.sUpi:'',th:x.th||0,hi:x.hi===0?0:1,hp:x.hp||'',sd:x.sd||0};
+ if(x.h&&x.h.o&&x.h.c){o.h={o:x.h.o,c:x.h.c};if(x.h.b&&x.h.B){o.h.b=x.h.b;o.h.B=x.h.B}if(x.h.x&&x.h.x.length)o.h.x=x.h.x;o.hn=x.hn||''}else o.hn=x.hn||s.sTime||'';
+ if(!lite){o.d=s.sAbout;o.f=x.f;o.fd=x.f?x.fd:'';o.i=(x.i||[]).filter(function(it){return it&&String(it[1]||'').trim()}).slice(0,15).map(function(it){var r=[it[0]||'',String(it[1]).trim()];if(String(it[2]||'').trim())r.push(String(it[2]).trim());return r})}
+ Object.keys(o).forEach(function(k){var v=o[k];if(v===''||v==null||v===0&&k!=='v'||(Array.isArray(v)&&!v.length))delete o[k]});return o}
+function shopLink(lite){return base()+'#w='+LZ.c(JSON.stringify(wsData(lite)))}
+function qrSiteLink(){var l=shopLink();return l.length>600?shopLink(true):l}/* छापील कार्ड/QR स्कॅन सोपा राहावा म्हणून */
+
+/* ---- पेज (HTML) ---- */
+function wsHtml(d,pv){var T=WS_THEMES[d.th]||WS_THEMES[0],ph=d.p,wa=d.w||d.p,map=d.m||(d.a?'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(d.n+' '+d.a):''),off=d.f&&!(d.fd&&d.fd<wsToday()),cy=wsIst().getUTCFullYear(),today=wsIst().getUTCDay(),h='';
+ function act(href,ic,lb,cls,ext){return '<a class="wsact '+(cls||'')+'" href="'+esc(href)+'"'+(ext?' target="_blank" rel="noopener"':'')+'><span class="i">'+ic+'</span><span class="l">'+lb+'</span></a>'}
+ h+='<div class="ws th-'+T[0]+(pv?' pv':'')+'" style="'+wsVars(T)+'">';
+ h+='<header class="wsh"><div class="wsh-pt" aria-hidden="true"></div>'+(d.hi?'<img class="wsh-img" alt="" aria-hidden="true" data-u="'+esc(wsHeroUrl(d))+'"><span class="wsh-ai">AI चित्र</span>':'')+'<div class="wsh-ov" aria-hidden="true"></div><div class="wsh-in">'+
+  '<div class="wsh-em" aria-hidden="true">'+wsEmoji(d.t)+'</div>'+(d.t?'<div class="wsh-ty">'+esc(d.t)+'</div>':'')+'<h1>'+esc(d.n)+'</h1>'+(d.g?'<p class="wsh-tg">'+esc(d.g)+'</p>':'')+
+  (d.h?'<div class="wst" data-ws="st"><span class="dot"></span><span class="tx"></span></div>':(d.hn?'<div class="wst nt"><span class="tx">🕒 '+esc(d.hn)+'</span></div>':''))+
+  '<nav class="wsa" aria-label="संपर्क बटणे">'+(ph?act('tel:+91'+ph,'📞','कॉल','call'):'')+(wa?act('https://api.whatsapp.com/send?phone=91'+wa+'&text='+encodeURIComponent('नमस्कार '+d.n+' 🙏'),'💬','WhatsApp','wa',1):'')+
+  (map?act(map,'📍','दिशा','dir',1):'')+(d.u?'<button type="button" class="wsact upi" data-go="pay"><span class="i">💳</span><span class="l">UPI पेमेंट</span></button>':'')+(d.r?act(d.r,'⭐','Review','rev',1):'')+'</nav></div></header><main class="wsm">';
+ if(off)h+='<section class="wso rv"><div class="wso-in"><div class="wso-tag">🎁 विशेष ऑफर</div><p>'+esc(d.f)+'</p>'+(d.fd?'<small>⏳ '+esc(wsDate(d.fd))+' पर्यंत</small>':'')+'</div></section>';
+ if(d.d||d.o||d.y){var n=d.y?cy-d.y:0;h+='<section class="wss rv"><h2><span>🙏</span>आमच्याबद्दल</h2><div class="wsc">'+(d.d?'<p class="wsab">'+esc(d.d)+'</p>':'')+((d.o||d.y)?'<div class="wsfacts">'+(d.o?'<div><b>👤</b><span>मालक</span><strong>'+esc(d.o)+'</strong></div>':'')+(d.y?'<div><b>📅</b><span>'+d.y+' पासून सेवेत</span><strong>'+(n>=1?n+(n===1?' वर्षाचा':' वर्षांचा')+' विश्वास':'नवीन सुरुवात')+'</strong></div>':'')+'</div>':'')+'</div></section>'}
+ if(d.i.length){h+='<section class="wss rv"><h2><span>🛍️</span>वस्तू / सेवा</h2>'+(wa?'<p class="wshint">👆 हवं ते निवडा, मग WhatsApp वर ऑर्डर पाठवा</p>':'')+'<div class="wsgrid">'+d.i.map(function(it,k){var tag=wa?'button type="button" aria-pressed="false" data-it="'+k+'"':'div';return '<'+tag+' class="wsit"><span class="e" aria-hidden="true">'+esc(it[0]||'🛍️')+'</span><span class="nm">'+esc(it[1])+'</span>'+(it[2]?'<span class="pr">'+esc(wsPrice(it[2]))+'</span>':'')+(wa?'<span class="ck" aria-hidden="true">✓</span>':'')+'</'+(wa?'button':'div')+'>'}).join('')+'</div>'+
+  (d.i.some(function(it){return it[2]})?'<p class="wsnote">किंमती दुकानदाराने लिहिल्याप्रमाणे; बदलू शकतात – खात्रीसाठी विचारा.</p>':'')+'</section>'}
+ if(wa)h+='<section class="wss rv wsorder"><button type="button" class="wsbig" data-act="order"><span>💬 WhatsApp वर ऑर्डर / चौकशी</span><small data-ws="oc">'+(d.i.length?'वरून वस्तू निवडा किंवा थेट मेसेज करा':'एका टॅपमध्ये मेसेज तयार')+'</small></button></section>';
+ if(d.h||d.hn){h+='<section class="wss rv"><h2><span>🕒</span>दुकानाच्या वेळा</h2><div class="wsc">';
+  if(d.h){h+='<table class="wstb"><tbody>'+[1,2,3,4,5,6,0].map(function(dd){var R=wsIv(d.h,dd);return '<tr'+(dd===today?' class="td"':'')+'><th>'+WS_DAYS[dd]+(dd===today?' <em>आज</em>':'')+'</th><td>'+(R.length?R.map(function(r){return wsClock(r[0])+' – '+wsClock(r[1])}).join('<br>'):'<span class="off">बंद</span>')+'</td></tr>'}).join('')+'</tbody></table>'}
+  if(d.hn)h+='<p class="wsnote'+(d.h?'':' big')+'">'+(d.h?'📌 ':'🕒 ')+esc(d.hn)+'</p>';h+='</div></section>'}
+ if(d.u)h+='<section class="wss rv" id="wsPay" data-sec="pay"><h2><span>💳</span>UPI ने पेमेंट करा</h2><div class="wsc wspay"><div class="wsqr" data-ws="qr"></div><p class="wsupi">'+esc(d.u)+'</p><div class="wsrow"><button type="button" class="wsbtn" data-act="upicopy">📋 UPI ID कॉपी</button><a class="wsbtn ac" href="'+esc(upiLink(d.u,d.n))+'">📲 UPI ॲप उघडा</a></div><p class="wsnote">GPay, PhonePe, Paytm, BHIM – कोणत्याही UPI ॲपने QR स्कॅन करा. पैसे थेट दुकानाच्या UPI खात्यात जातात. पेमेंट झालं की ॲपमध्ये खात्री करा.</p></div></section>';
+ if(d.a||d.m)h+='<section class="wss rv"><h2><span>📍</span>पत्ता</h2><div class="wsc">'+(d.a?'<p class="wsaddr">'+esc(d.a)+'</p>':'')+'<div class="wsrow"><a class="wsbtn ac" target="_blank" rel="noopener" href="'+esc(map)+'">🧭 Google Maps मध्ये दिशा</a>'+(d.a?'<button type="button" class="wsbtn" data-act="map">🗺️ इथेच नकाशा पहा</button>':'')+'</div><div class="wsmap" data-ws="map"></div></div></section>';
+ h+='<section class="wss rv"><h2><span>📇</span>संपर्क</h2><div class="wsc wscon">'+(ph?'<a class="wsline" href="tel:+91'+ph+'"><b>📞</b><span>+91 '+ph.slice(0,5)+' '+ph.slice(5)+'</span></a>':'')+(d.w?'<a class="wsline" target="_blank" rel="noopener" href="https://api.whatsapp.com/send?phone=91'+d.w+'"><b>💬</b><span>WhatsApp: +91 '+d.w.slice(0,5)+' '+d.w.slice(5)+'</span></a>':'')+(d.e?'<a class="wsline" href="mailto:'+esc(d.e)+'"><b>✉️</b><span>'+esc(d.e)+'</span></a>':'')+(d.o?'<div class="wsline"><b>👤</b><span>'+esc(d.o)+'</span></div>':'')+
+  '<div class="wsrow"><button type="button" class="wsbtn ac" data-act="vcf">👤 नंबर सेव्ह करा</button><button type="button" class="wsbtn" data-act="share">📤 ही वेबसाइट शेअर करा</button></div></div></section>';
+ h+='</main><footer class="wsf"><img alt="" width="40" height="40" src="'+DA_TIGHT+'"><div><b>Digital Aarambh AI</b> ने बनवलेली वेबसाइट<br><a href="'+esc(base())+'" target="_blank" rel="noopener">तुमच्या दुकानाचीही मोफत वेबसाइट बनवा ›</a></div></footer>';
+ if(ph||wa||map)h+='<nav class="wsbar" aria-label="झटपट संपर्क">'+(ph?'<a href="tel:+91'+ph+'">📞 कॉल</a>':'')+(wa?'<button type="button" class="wa" data-act="order">💬 WhatsApp</button>':'')+(map?'<a target="_blank" rel="noopener" href="'+esc(map)+'">📍 दिशा</a>':'')+'</nav>';
+ return h+'</div>'}
+
+/* ---- AI बॅनर चित्र: कधीही पेज अडवत नाही; न आल्यास रंगीत बॅनरच राहतो ---- */
+var WS_IMG={};
+function wsHeroApply(url){var s=WS_IMG[url];$$('img.wsh-img').forEach(function(im){if(im.getAttribute('data-u')!==url)return;var hd=im.parentNode;
+  if(s==='ok'){if(im.getAttribute('src')!==url)im.src=url;hd.classList.add('img-on')}hd.setAttribute('data-hero',s||'wait')})}
+function wsHeroLoad(root){var im=$('img.wsh-img',root);if(!im)return;var url=im.getAttribute('data-u');
+ if(WS_IMG[url])return wsHeroApply(url);
+ if(navigator.onLine===false){WS_IMG[url]='fail';return wsHeroApply(url)}
+ WS_IMG[url]='wait';wsHeroApply(url);
+ /* पेज पूर्ण उघडल्यानंतरच चित्र मागवा – त्यामुळे पेज कधीच अडत नाही */
+ function go(){var pre=new Image();
+ var to=setTimeout(function(){if(WS_IMG[url]==='wait'){WS_IMG[url]='fail';wsHeroApply(url)}},window.__WS_HERO_MS||25000);/* उशीर झाला तरी चित्र नंतर आलं तर लावू */
+ pre.onload=function(){clearTimeout(to);WS_IMG[url]=pre.naturalWidth>0?'ok':'fail';wsHeroApply(url)};
+ pre.onerror=function(){clearTimeout(to);WS_IMG[url]='fail';wsHeroApply(url)};
+ pre.src=url}
+ if(document.readyState==='complete')go();else window.addEventListener('load',go,{once:true})}
+function wsHeroRetry(d){var u=wsHeroUrl(d);delete WS_IMG[u]}
+
+/* ---- पेजवरील बटणे ---- */
+var WS_T=null;
+function wsWire(root,d,pv,url){var sel=[],wa=d.w||d.p;
+ function stat(){var el=$('[data-ws="st"]',root);if(!el)return;var s=wsStatus(d.h);el.className='wst '+(s.open?(s.soon?'soon':'open'):'closed');$('.tx',el).textContent=s.txt}
+ stat();clearInterval(WS_T);if(d.h)WS_T=setInterval(stat,30000);
+ var q=$('[data-ws="qr"]',root);if(q&&d.u){try{var cv=qrCanvas(upiLink(d.u,d.n),{px:520,brand:false});cv.className='';q.appendChild(cv)}catch(e){}}
+ function orderMsg(){if(!sel.length)return 'नमस्कार, मला ... हवं आहे';return 'नमस्कार, मला हे हवं आहे:\n'+sel.map(function(k){var it=d.i[k];return '• '+it[1]+(it[2]?' ('+wsPrice(it[2])+')':'')}).join('\n')}
+ $$('[data-it]',root).forEach(function(b){b.onclick=function(){var k=+b.getAttribute('data-it'),i=sel.indexOf(k);if(i>=0)sel.splice(i,1);else sel.push(k);b.classList.toggle('on',i<0);b.setAttribute('aria-pressed',i<0?'true':'false');
+  var oc=$('[data-ws="oc"]',root);if(oc)oc.textContent=sel.length?('✅ '+sel.length+' वस्तू निवडल्या – पाठवा'):'वरून वस्तू निवडा किंवा थेट मेसेज करा';root.classList.toggle('has-sel',sel.length>0)}});
+ $$('[data-go]',root).forEach(function(b){b.onclick=function(){var t=$('[data-sec="'+b.getAttribute('data-go')+'"]',root);if(t)t.scrollIntoView({behavior:'smooth',block:'start'})}});
+ $$('[data-act]',root).forEach(function(b){b.onclick=function(){var a=b.getAttribute('data-act');
+  if(a==='order'){if(pv){toast('नमुना: ग्राहकाला WhatsApp मध्ये असा मेसेज दिसेल → '+orderMsg().split('\n')[0]);return}window.open('https://api.whatsapp.com/send?phone=91'+wa+'&text='+encodeURIComponent(orderMsg()),'_blank','noopener')}
+  else if(a==='upicopy')copy(d.u);
+  else if(a==='vcf'){dlBlob(slug(d.n)+'.vcf',new Blob([vcard({sName:d.n,sType:d.t,sOwner:d.o,sPhone:d.p,sAddr:d.a,sAbout:d.d,sEmail:d.e},url)],{type:'text/vcard;charset=utf-8'}));toast('⬇️ Contact फाइल – उघडून सेव्ह करा')}
+  else if(a==='share'){if(navigator.share&&!pv)navigator.share({title:d.n,text:'🏪 '+d.n+(d.t?' – '+d.t:''),url:url}).catch(function(){});else copy(url)}
+  else if(a==='map'){var m=$('[data-ws="map"]',root);if(m&&!m.firstChild){m.innerHTML='<iframe title="नकाशा" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q='+encodeURIComponent(d.n+', '+d.a)+'&z=15&output=embed"></iframe>';b.remove()}}}});
+ if(pv)$$('a',root).forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();toast('ही फक्त पाहणी आहे – खरी लिंक तयार करून उघडा')})});
+ wsHeroLoad(root);
+ var ws=$('.ws',root),RM=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+ if(!pv&&!RM&&window.IntersectionObserver){ws.classList.add('fx');var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('wsin');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px',threshold:0.06});$$('.rv',ws).forEach(function(s){io.observe(s)});
+  var bar=$('.wsbar',ws),hd=$('.wsh',ws);if(bar&&hd){new IntersectionObserver(function(es){bar.classList.toggle('show',!es[0].isIntersecting)}).observe(hd)}}}
+function wsRevealAll(){$$('.ws .rv').forEach(function(s){s.classList.add('wsin')})}
+
+/* ---- ग्राहकाने लिंक उघडल्यावर ---- */
+function showPub(){var hs=location.hash;if(!/^#(w|shop)=/.test(hs))return false;var d=wsFromHash(hs);
+ if(!d){setTimeout(function(){toast('ही दुकान-लिंक अपूर्ण आहे – दुकानदाराकडून पूर्ण लिंक पुन्हा मागवा')},400);return false}
+ var T=WS_THEMES[d.th]||WS_THEMES[0];document.title=d.n+(d.t?' – '+d.t:'');try{$('meta[name="theme-color"]').setAttribute('content',T[2])}catch(e){}
+ $('#app').classList.add('hide');document.body.classList.add('wsmode');document.body.style.background=T[2];var el=$('#pub');el.classList.remove('hide');
+ el.innerHTML=wsHtml(d,false);wsWire(el,d,false,pageUrl());return true}
+
+/* ---- दुकानदारासाठी: वेबसाइट बनवा (एजंट 1) ---- */
+function wsParseTime(t){t=String(t||'');var r={};var nums=[],re=/(सकाळी|सकाळ|दुपारी|दुपार|संध्याकाळी|सायंकाळी|सायं\.?|रात्री|रात्र)?\s*(\d{1,2})(?:[:.](\d{2}))?/g,m;
+ while((m=re.exec(t))){var h=+m[2],mm=m[3]?+m[3]:0,p=m[1]||'';if(h>23||mm>59)continue;if(/दुपार/.test(p)&&h<12&&h>=1&&h<=5)h+=12;else if(/संध्या|सायं/.test(p)&&h<12)h+=12;else if(/रात्र/.test(p)&&h>=5&&h<12)h+=12;nums.push([h,mm,!!p])}
+ if(nums.length>=2){var a=nums[0],b=nums[nums.length-1];if(!b[2]&&b[0]<=a[0]&&b[0]<12)b[0]+=12;function f(x){return ('0'+x[0]).slice(-2)+':'+('0'+x[1]).slice(-2)}r.o=f(a);r.c=f(b)}
+ var x=[];if(/बंद|सुट्टी/.test(t))WS_DAYS.forEach(function(dn,i){if(t.indexOf(dn)>=0)x.push(i)});r.x=x;return r}
+function aWebsite(b){var x=wsSite(),s=shop;if(!x.h&&s.sTime){var pt=wsParseTime(s.sTime);if(pt.o)x.h={o:pt.o,c:pt.c,x:pt.x}}if(x.sd==null)x.sd=Math.floor(Math.random()*900000)+1000;if(x.hi==null)x.hi=1;if(!x.i)x.i=[];st.set('site',x);
+ function F(id,lb,ph,o){o=o||{};return '<div'+(o.full?' style="grid-column:1/-1"':'')+'><label for="'+id+'">'+lb+(o.opt?' <em>(पर्यायी)</em>':'')+'</label>'+(o.ta?'<textarea id="'+id+'" style="min-height:70px" placeholder="'+esc(ph)+'"></textarea>':'<input id="'+id+'"'+(o.attr||'')+' placeholder="'+esc(ph)+'">')+'<div class="err" id="'+id+'_e"></div></div>'}
+ function S(n,t,body,open){return '<details class="wsb-sec"'+(open?' open':'')+'><summary><span class="n">'+n+'</span>'+t+'</summary><div class="wsb-in">'+body+'</div></details>'}
+ var days='<div class="wsb-days">'+[1,2,3,4,5,6,0].map(function(k){return '<label class="wsb-day"><input type="checkbox" id="wb_x'+k+'"><span>'+WS_DAYS[k].slice(0,3)+'</span></label>'}).join('')+'</div>';
+ var hpOpt='<option value="">आपोआप (व्यवसायानुसार)</option>'+DP_TYPES.map(function(t){return '<option value="'+esc(t[2])+'">'+t[0]+' '+esc(t[1])+'</option>'}).join('');
+ b.innerHTML='<div class="wsb-top"><div class="e">🌐</div><div><b>तुमच्या दुकानाची मोठी, सुंदर वेबसाइट</b><small>माहिती भरा → खाली लगेच दिसेल → “लिंक तयार करा” → ग्राहकांना WhatsApp वर पाठवा. सर्व्हर नाही – माहिती लिंकमध्येच.</small></div></div>'+
+ S('1','🏪 मूळ माहिती','<div class="two">'+F('wb_n','दुकानाचे / व्यवसायाचे नाव *','उदा. श्री साई किराणा स्टोअर')+F('wb_t','व्यवसायाचा प्रकार','उदा. किराणा दुकान',{opt:1})+F('wb_g','एका ओळीत खासियत (टॅगलाइन)','उदा. ताजा माल, योग्य दर, आपुलकीची सेवा',{opt:1,full:1})+F('wb_p','फोन नंबर','98765 43210',{attr:' type="tel" inputmode="tel"'})+F('wb_w','WhatsApp नंबर (वेगळा असल्यास)','रिकामा = वरचाच नंबर',{opt:1,attr:' type="tel" inputmode="tel"'})+F('wb_e','ईमेल','उदा. shop@gmail.com',{opt:1,full:1,attr:' type="email" inputmode="email" autocapitalize="none"'})+'</div>',1)+
+ S('2','🙏 आमच्याबद्दल','<div class="two">'+F('wb_o','मालकाचे नाव','उदा. संतोष उजगरे',{opt:1})+F('wb_y','कधीपासून? (वर्ष)','उदा. 2010',{opt:1,attr:' inputmode="numeric" maxlength="4"'})+F('wb_d','दुकानाबद्दल थोडक्यात','उदा. 15 वर्षांपासून ताजा माल, घरपोच सेवा, योग्य दर',{opt:1,ta:1,full:1})+'</div>')+
+ S('3','🛍️ वस्तू / सेवा व किंमत','<p class="note">जास्तीत जास्त 15. किंमत पर्यायी – फक्त तुम्ही लिहिलेली किंमत दिसते (उदा. 60 किंवा “₹60/किलो”).</p><div id="wbItems"></div><div class="row"><button class="btn sm" type="button" id="wbAdd">➕ वस्तू जोडा</button></div><div class="wsb-sug"><small>झटपट जोडा (टॅप करा):</small><div id="wbSug"></div></div>')+
+ S('4','🎁 ऑफर','<div class="two">'+F('wb_f','आजची / विशेष ऑफर','उदा. दिवाळीनिमित्त सर्व फराळ साहित्यावर 10% सूट',{opt:1,full:1,ta:1})+F('wb_fd','ऑफर कधीपर्यंत?','',{opt:1,attr:' type="date"'})+'</div><p class="note">ही तारीख उलटली की ऑफर वेबसाइटवरून आपोआप लपते.</p>')+
+ S('5','🕒 दुकानाच्या वेळा','<div class="two">'+F('wb_ho','उघडण्याची वेळ','',{attr:' type="time"'})+F('wb_hc','बंद होण्याची वेळ','',{attr:' type="time"'})+'</div><label class="wsb-ck"><input type="checkbox" id="wb_hbk"> दुपारी काही वेळ बंद असतं</label><div class="two hide" id="wbBrk">'+F('wb_hb','दुपारी बंद – पासून','',{attr:' type="time"'})+F('wb_hB','पुन्हा उघडतं','',{attr:' type="time"'})+'</div><label>साप्ताहिक सुट्टी <em>(असल्यास निवडा)</em></label>'+days+F('wb_hn','वेळेबद्दल टीप','उदा. सणाच्या दिवशीही उघडे',{opt:1})+'<p class="note">वेळ भरल्यास वेबसाइटवर “आत्ता उघडे / बंद” आपोआप दिसतं (भारतीय वेळेनुसार).</p>')+
+ S('6','💳 पेमेंट व पत्ता','<div class="two">'+F('wb_u','UPI ID','name@okaxis',{opt:1,attr:' autocapitalize="none" autocomplete="off"'})+F('wb_a','पत्ता','उदा. मोशी प्राधिकरण, पुणे',{opt:1})+F('wb_m','Google Maps लिंक','https://maps.app.goo.gl/...',{opt:1,attr:' type="url" inputmode="url" autocapitalize="none"'})+F('wb_r','Google Review लिंक','https://g.page/r/.../review',{opt:1,attr:' type="url" inputmode="url" autocapitalize="none"'})+'</div>')+
+ S('7','🎨 रंगसंगती व बॅनर','<div class="wsb-th" id="wbTh">'+WS_THEMES.map(function(t,i){return '<button type="button" class="wsb-sw" data-th="'+i+'" style="--b0:'+t[2]+';--b1:'+t[3]+';--ac:'+t[5]+'" aria-label="'+t[1]+'"><i></i><span>'+t[1]+'</span></button>'}).join('')+'</div><label class="wsb-ck"><input type="checkbox" id="wb_hi"> बॅनरवर AI चित्र लावा (मोफत; यायला 5-30 सेकंद, न आल्यास रंगीत बॅनर)</label><div class="two"><div><label for="wb_hp">बॅनर चित्राचा प्रकार</label><select id="wb_hp">'+hpOpt+'</select></div><div style="display:flex;align-items:flex-end"><button class="btn sm alt" type="button" id="wbSeed" style="width:100%;justify-content:center">🔄 दुसरं चित्र</button></div></div><p class="note">AI चित्र हे सर्वसाधारण नमुना-चित्र आहे, तुमच्या दुकानाचा खरा फोटो नाही – म्हणून वेबसाइटवर त्यावर छोटं “AI चित्र” लिहिलेलं असतं. मोफत सेवा साधारण 45 सेकंदाला एकच चित्र देते.</p>',1)+
+ '<div class="wsb-photo">📷 <b>दुकानाचे स्वतःचे फोटो?</b> ही वेबसाइट लिंकमध्येच असते, त्यामुळे त्यात फोटो ठेवता येत नाहीत. स्वतःचे फोटो असलेली व्यावसायिक वेबसाइट हवी असल्यास आमची वेबसाइट सेवा ₹2,999 पासून आहे. <button class="btn sm" type="button" id="wSeva">🚀 आमच्या सेवा पहा</button></div>'+
+ '<div class="wsb-pvh"><b>📱 लाईव्ह पाहणी</b><small>ग्राहकाला अशी दिसेल</small></div><div class="wsframe" id="wbPv"></div>'+
+ '<div class="row"><button class="btn" type="button" id="wbGo" style="width:100%;justify-content:center;font-size:19px;padding:15px">🔗 लिंक तयार करा</button></div>'+
+ '<div class="glass hide" id="wbRes"><b>🔗 तुमच्या वेबसाइटची लिंक</b><input id="wl" readonly aria-label="वेबसाइट लिंक"><div id="wbLen" class="note"></div><div class="row"><a class="btn" id="wOpen" target="_blank" rel="noopener">👀 उघडून पहा</a><button class="btn alt" type="button" id="wCp">📋 लिंक कॉपी</button><button class="btn wa" type="button" id="wWa">WhatsApp वर पाठवा</button></div><div id="wq"></div><p class="note">टीप: लिंकमध्येच तुमची माहिती असते. काहीही बदललं तर नवीन लिंक तयार करून पाठवा.</p></div>'+
+ '<details class="wsb-sec"><summary><span class="n">📝</span>तयार परिचय मेसेज (3 प्रकार)</summary><div class="wsb-in"><div id="w1"></div></div></details>';
+ var V={wb_n:s.sName,wb_t:s.sType,wb_g:x.g,wb_p:s.sPhone,wb_w:x.w,wb_e:s.sEmail,wb_o:s.sOwner,wb_y:x.y,wb_d:s.sAbout,wb_f:x.f,wb_fd:x.fd,wb_hn:x.hn||(x.h?'':s.sTime),wb_u:s.sUpi,wb_a:s.sAddr,wb_m:s.sMap,wb_r:s.sReview,wb_hp:x.hp};
+ Object.keys(V).forEach(function(k){var e=$('#'+k,b);if(e)e.value=V[k]==null?'':V[k]});
+ if(x.h){$('#wb_ho',b).value=x.h.o||'';$('#wb_hc',b).value=x.h.c||'';if(x.h.b){$('#wb_hbk',b).checked=true;$('#wb_hb',b).value=x.h.b;$('#wb_hB',b).value=x.h.B;$('#wbBrk',b).classList.remove('hide')}(x.h.x||[]).forEach(function(k){var c=$('#wb_x'+k,b);if(c)c.checked=true})}
+ $('#wb_hi',b).checked=x.hi!==0;
+ function items(){var box=$('#wbItems',b);box.innerHTML=x.i.map(function(it,k){return '<div class="wsb-it"><select data-ie="'+k+'" aria-label="चिन्ह">'+WS_EMO.concat(WS_EMO.indexOf(it[0])<0&&it[0]?[it[0]]:[]).map(function(e){return '<option'+(e===it[0]?' selected':'')+'>'+e+'</option>'}).join('')+'</select><input data-in="'+k+'" placeholder="वस्तू / सेवेचं नाव" maxlength="60"><input data-ip="'+k+'" placeholder="किंमत" maxlength="30" class="pr"><button type="button" class="x" data-ix="'+k+'" aria-label="काढा">✕</button></div>'}).join('')||'<p class="note">अजून वस्तू नाहीत – “➕ वस्तू जोडा” किंवा खालचे पर्याय टॅप करा.</p>';
+  x.i.forEach(function(it,k){$('[data-in="'+k+'"]',box).value=it[1]||'';$('[data-ip="'+k+'"]',box).value=it[2]||''});
+  $$('[data-ie]',box).forEach(function(e){e.onchange=function(){x.i[+e.getAttribute('data-ie')][0]=e.value;save()}});
+  $$('[data-in]',box).forEach(function(e){e.oninput=function(){x.i[+e.getAttribute('data-in')][1]=e.value;save()}});
+  $$('[data-ip]',box).forEach(function(e){e.oninput=function(){x.i[+e.getAttribute('data-ip')][2]=e.value;save()}});
+  $$('[data-ix]',box).forEach(function(e){e.onclick=function(){x.i.splice(+e.getAttribute('data-ix'),1);items();save()}});$('#wbAdd',b).disabled=x.i.length>=15;sug()}
+ function sug(){var ti=dpGuessType($('#wb_t',b).value),L=WS_SUG[ti]||WS_SUG.d,have=x.i.map(function(it){return it[1]});$('#wbSug',b).innerHTML=L.filter(function(s2){return have.indexOf(s2[1])<0}).map(function(s2){return '<button type="button" class="chip" data-sg="'+esc(s2[0]+'|'+s2[1])+'">'+s2[0]+' '+esc(s2[1])+'</button>'}).join('')||'<small>सगळे जोडले ✅</small>';
+  $$('[data-sg]',b).forEach(function(c){c.onclick=function(){if(x.i.length>=15){toast('जास्तीत जास्त 15 वस्तू');return}var p=c.getAttribute('data-sg').split('|');x.i.push([p[0],p[1],'']);items();save()}})}
+ $('#wbAdd',b).onclick=function(){if(x.i.length>=15){toast('जास्तीत जास्त 15 वस्तू');return}x.i.push(['🛍️','','']);items();var l=$$('[data-in]',b);if(l.length)l[l.length-1].focus();save()};
+ function th(){$$('[data-th]',b).forEach(function(e){e.classList.toggle('on',+e.getAttribute('data-th')===(x.th||0));e.setAttribute('aria-pressed',+e.getAttribute('data-th')===(x.th||0)?'true':'false')})}
+ $$('[data-th]',b).forEach(function(e){e.onclick=function(){x.th=+e.getAttribute('data-th');th();save(true)}});
+ $('#wb_hbk',b).onchange=function(){$('#wbBrk',b).classList.toggle('hide',!this.checked);save()};
+ $('#wbSeed',b).onclick=function(){x.sd=Math.floor(Math.random()*900000)+1000;if(!$('#wb_hi',b).checked)$('#wb_hi',b).checked=true;save(true);toast('🔄 नवीन AI चित्र मागवलं – थोडा वेळ लागेल')};
+ function v(id){return ($('#'+id,b).value||'').trim()}
+ function err(id,m){var e=$('#'+id+'_e',b),i=$('#'+id,b);if(e)e.textContent=m||'';if(i)i.classList.toggle('bad',!!m);return !m}
+ function read(){var okAll=true,ns={};SF.forEach(function(f){ns[f[0]]=shop[f[0]]||''});
+  ns.sName=v('wb_n');ns.sType=v('wb_t');ns.sOwner=v('wb_o');ns.sAbout=v('wb_d');ns.sAddr=v('wb_a');
+  var p=v('wb_p'),pn=normPhone(p);okAll=err('wb_p',p&&!phoneOk(pn)?'10 अंकी मोबाइल नंबर टाका (उदा. 9876543210)':'')&&okAll;ns.sPhone=phoneOk(pn)?pn:(p?shop.sPhone||'':'');
+  var w=v('wb_w'),wn=normPhone(w);okAll=err('wb_w',w&&!phoneOk(wn)?'10 अंकी WhatsApp नंबर टाका':'')&&okAll;x.w=phoneOk(wn)?wn:'';
+  var e=v('wb_e');okAll=err('wb_e',e&&!emailOk(e)?'ईमेल चुकीचा वाटतो (उदा. shop@gmail.com)':'')&&okAll;ns.sEmail=emailOk(e)?e:'';
+  var u=v('wb_u');okAll=err('wb_u',u&&!upiOk(u)?'UPI ID चुकीचा वाटतो (उदा. name@okaxis)':'')&&okAll;ns.sUpi=upiOk(u)?u:'';
+  ['wb_m','wb_r'].forEach(function(id){var t=v(id);okAll=err(id,t&&!urlOk(t)?'https:// ने सुरू होणारी लिंक टाका':'')&&okAll});ns.sMap=urlOk(v('wb_m'))?v('wb_m'):'';ns.sReview=urlOk(v('wb_r'))?v('wb_r'):'';
+  var y=v('wb_y'),yn=parseInt(y,10),cy=wsIst().getUTCFullYear();okAll=err('wb_y',y&&!(yn>=1900&&yn<=cy&&/^\d{4}$/.test(y))?'4 अंकी वर्ष टाका (उदा. 2010)':'')&&okAll;x.y=(yn>=1900&&yn<=cy)?yn:'';
+  x.g=v('wb_g');x.f=v('wb_f');x.fd=v('wb_fd');x.hn=v('wb_hn');x.hp=$('#wb_hp',b).value;x.hi=$('#wb_hi',b).checked?1:0;
+  var ho=v('wb_ho'),hc=v('wb_hc');if(ho&&hc){x.h={o:ho,c:hc,x:[]};if($('#wb_hbk',b).checked&&v('wb_hb')&&v('wb_hB')){x.h.b=v('wb_hb');x.h.B=v('wb_hB')}[0,1,2,3,4,5,6].forEach(function(k){if($('#wb_x'+k,b).checked)x.h.x.push(k)})}else x.h=null;
+  ns.sTime=x.h?wsHoursText(x.h):(x.hn||shop.sTime||'');
+  if(ns.sName){shop=ns;saveShop()}st.set('site',x);return okAll}
+ var pvT;function save(now){clearTimeout(pvT);pvT=setTimeout(function(){read();preview()},now?0:350)}
+ function preview(){var d=wsNorm(wsData());var box=$('#wbPv',b);if(!d){box.innerHTML='<p class="note" style="padding:18px">👆 आधी दुकानाचं नाव लिहा – मग इथे वेबसाइट दिसेल.</p>';return}var sc=box.scrollTop;box.innerHTML=wsHtml(d,true);wsWire(box,d,true,shopLink());box.scrollTop=sc}
+ $$('input,textarea,select',b).forEach(function(e){if(e.closest('#wbItems')||e.id==='wl')return;e.addEventListener('input',function(){save()});e.addEventListener('change',function(){save()})});
+ $('#wb_t',b).addEventListener('input',sug);
+ $('#wSeva',b).onclick=openSeva;
+ $('#wbGo',b).onclick=function(){var okAll=read();preview();if(!shop.sName){err('wb_n','नाव आवश्यक आहे');$('#wb_n',b).focus();toast('आधी दुकानाचं नाव लिहा');return}
+  if(!okAll){toast('लाल रंगातील माहिती दुरुस्त करा');var bad=$('.bad',b);if(bad){var det=bad.closest('details');if(det)det.open=true;bad.focus()}return}
+  var link=shopLink(),r=$('#wbRes',b);r.classList.remove('hide');$('#wl',b).value=link;$('#wOpen',b).href=link;
+  var n=link.length;$('#wbLen',b).innerHTML='लिंकची लांबी: '+n.toLocaleString('en-IN')+' अक्षरे'+(n>2500?'<br><b class="gold">⚠️ लिंक खूप लांब आहे.</b> WhatsApp वर चालेल, पण वस्तू/मजकूर थोडा कमी केल्यास लिंक छोटी व QR सोपा होईल.':n>600?'<br>✅ WhatsApp वर पाठवायला चांगली. (QR मध्ये फक्त मुख्य माहिती – खाली पहा)':'<br>✅ छोटी व चांगली लिंक.');
+  $('#wCp',b).onclick=function(){copy(link)};$('#wWa',b).onclick=function(){waShare('🏪 '+shop.sName+' – आमची वेबसाइट 👇\nवस्तू, वेळा, पत्ता, कॉल, WhatsApp व UPI पेमेंट एका क्लिकवर:\n'+link)};
+  var ql=qrSiteLink();qrBlock($('#wq',b),ql,{label:shop.sName,sub:'Scan करा – दुकानाची वेबसाइट',share:link},slug(shop.sName)+'-website-qr.png');
+  if(ql!==link){var p=document.createElement('p');p.className='note';p.textContent='QR सोपा राहावा म्हणून QR मध्ये मुख्य माहिती, वेळा, पेमेंट व नकाशा आहे (वस्तू व ऑफर नाहीत). पूर्ण वेबसाइट WhatsApp लिंकने पाठवा.';$('#wq',b).appendChild(p)}
+  r.scrollIntoView({behavior:'smooth',block:'start'});toast('✅ वेबसाइट लिंक तयार')};
+ var s2=shop,ty=s2.sType?' ('+s2.sType+')':'',ph=phoneOk(s2.sPhone)?s2.sPhone:'';
+ if(s2.sName)msgCards($('#w1',b),['🏪 '+s2.sName+ty+'\n\nनमस्कार! '+(s2.sAddr?s2.sAddr+' येथे ':'')+'आमचे '+(s2.sType||'दुकान')+' आपल्या सेवेत आहे. '+(s2.sAbout?s2.sAbout+'. ':'')+'योग्य दर, चांगला माल आणि आपुलकीची सेवा हीच आमची ओळख.\n\n'+(s2.sTime?'🕒 वेळ: '+s2.sTime+'\n':'')+(ph?'📞 फोन/WhatsApp: '+ph+'\n':'')+(s2.sAddr?'📍 पत्ता: '+s2.sAddr:''),
+  '✨ '+s2.sName+' – आपल्या परिसरातील विश्वासू '+(s2.sType||'दुकान')+'!\n'+(s2.sAbout?'✔️ '+s2.sAbout+'\n':'')+'✔️ योग्य किंमत\n✔️ वेळेवर सेवा\n'+(ph?'📲 ऑर्डरसाठी WhatsApp करा: '+ph+'\n':'')+(s2.sTime?'🕒 '+s2.sTime:''),
+  s2.sName+(s2.sType?' | '+s2.sType:'')+(s2.sAddr?' | '+s2.sAddr:'')+(ph?' | '+ph:'')+'\nस्थानिक ग्राहकांसाठी विश्वासाची सेवा. आजच भेट द्या! 🙏']);
+ items();th();preview()}
+function wsHoursText(h){var t=wsClock(wsMin(h.o))+' ते '+wsClock(wsMin(h.c));if(h.b&&h.B)t+=' (दुपारी '+wsClock(wsMin(h.b)).replace(/^\S+ /,'')+'–'+wsClock(wsMin(h.B)).replace(/^\S+ /,'')+' बंद)';if(h.x&&h.x.length)t+=' · '+h.x.map(function(k){return WS_DAYS[k]}).join(', ')+' बंद';return t}
 
 /* ===== Backup / Restore ===== */
-var KEYS=['shop','user','user_backup','hisab','udhari','refFrom'];
+var KEYS=['shop','user','user_backup','hisab','udhari','refFrom','site'];
 function backupObj(){var o={app:'digital-aarambh',v:2,at:new Date().toISOString()};KEYS.forEach(function(k){o[k]=st.get(k,null)});return o}
 $('#bkDl').onclick=function(){dlBlob('digital-aarambh-backup-'+today()+'.json',new Blob([JSON.stringify(backupObj(),null,1)],{type:'application/json'}));toast('⬇️ बॅकअप फाइल Download झाली')};
 $('#bkCopy').onclick=function(){copy('DA1:'+b64e(backupObj()))};
@@ -1232,7 +1587,7 @@ var VK=[
 /*6 Review*/[['review',3],['रिव्ह्यू',3],['रिव्यू',3],['रिव्ह्यु',3],['रिव्हू',3],['रिव्हु',3],['रिविव',3],['रिव्ह्य',3],['अभिप्राय',3],['फीडबॅक',3],['फिडबॅक',3],['feedback',3],['रेटिंग',3],['rating',3],['स्टार',2],['star',2],['समीक्षा',3],['प्रतिक्रिया',2]],
 /*7 नकाशा*/[['पत्त',3],['पत्ता',4],['पता=',2],['मॅप',3],['मेप',3],['map',3],['maps',3],['नकाशा',3],['नकाश',3],['नक्शा',3],['लोकेशन',3],['location',3],['दिशा',2],['direction',3],['रस्ता',2],['रास्ता',2],['address',3],['ऍड्रेस',3],['अॅड्रेस',3],['एड्रेस',3],['कुठे आहे',2],['कसं यायचं',3]],
 /*8 UPI*/[['upi',4],['यूपीआय',4],['युपीआय',4],['यूपीआई',4],['युपीआई',4],['यु पी आय',4],['पेमेंट',4],['पेमेन्ट',4],['payment',4],['pay=',2],['भुगतान',3],['फोनपे',3],['phonepe',3],['gpay',3],['जीपे',3],['google pay',3],['गूगल पे',3],['paytm',3],['पेटीएम',3],['पैसे घ्या',3],['पैसे घेण्या',3],['स्कॅनर',3],['scanner',3],['पैसे मागा',3],['रक्कम',1],['ऑनलाइन पैसे',3]],
-/*9 सण*/[['सण',3],['सणाच',3],['त्योहार',3],['त्यौहार',3],['festival',3],['दिवाळी',3],['दीपावली',3],['diwali',3],['पाडवा',3],['गुढी',3],['गणपती',3],['गणेश',3],['नवरात्र',3],['दसरा',3],['संक्रांत',3],['होळी',3],['होली',3],['रंगपंचमी',3],['शिवजयंती',3],['जयंती',2],['रक्षाबंधन',3],['राखी',2],['भाऊबीज',3],['ईद',3],['नाताळ',3],['ख्रिसमस',3],['christmas',3],['नवीन वर्ष',3],['नया साल',3],['new year',3],['स्वातंत्र्य दिन',3],['प्रजासत्ताक',3],['महाराष्ट्र दिन',3],['एकादशी',3],['शुभेच्छा',3],['शुभकामना',3],['बधाई',2],['wishes',3],['greeting',3],['वाढदिवस',3],['जन्मदिन',3],['बर्थडे',3],['birthday',3],['निमंत्रण',3],['आमंत्रण',3],['invitation',3],['इन्व्हिटेशन',3],['पत्रिका',2],['लग्न',2],['साखरपुडा',3],['बारसे',3],['बारसं',3],['नामकरण',3],['गृहप्रवेश',3],['वास्तुशांत',3],['अभिष्टचिंतन',3],['बड्डे',3],['जन्मदिवस',3],['लक्ष्मीपूजन',3],['भाऊबीज',3],['विजयादशमी',3],['आषाढी',3],['आंबेडकर',3],['वटपौर्णिमा',3],['हळदीकुंकू',3],['बलिप्रतिपदा',3],['संक्रांति',3],['15 ऑगस्ट',3],['26 जानेवारी',3]],
+/*9 सण*/[['सण',3],['सणाच',3],['त्योहार',3],['त्यौहार',3],['festival',3],['दिवाळी',3],['दीपावली',3],['diwali',3],['पाडवा',3],['गुढी',3],['गणपती',3],['गणेश',3],['नवरात्र',3],['दसरा',3],['संक्रांत',3],['होळी',3],['होली',3],['रंगपंचमी',3],['शिवजयंती',3],['जयंती',2],['रक्षाबंधन',3],['राखी',2],['भाऊबीज',3],['ईद',3],['नाताळ',3],['ख्रिसमस',3],['christmas',3],['नवीन वर्ष',3],['नया साल',3],['new year',3],['स्वातंत्र्य दिन',3],['प्रजासत्ताक',3],['महाराष्ट्र दिन',3],['एकादशी',3],['शुभेच्छा',3],['शुभकामना',3],['बधाई',2],['wishes',3],['greeting',3],['वाढदिवस',3],['जन्मदिन',3],['वर्धापन',3],['anniversary',3],['बर्थडे',3],['birthday',3],['निमंत्रण',3],['आमंत्रण',3],['invitation',3],['इन्व्हिटेशन',3],['पत्रिका',2],['लग्न',2],['साखरपुडा',3],['बारसे',3],['बारसं',3],['नामकरण',3],['गृहप्रवेश',3],['वास्तुशांत',3],['अभिष्टचिंतन',3],['बड्डे',3],['जन्मदिवस',3],['लक्ष्मीपूजन',3],['भाऊबीज',3],['विजयादशमी',3],['आषाढी',3],['आंबेडकर',3],['वटपौर्णिमा',3],['हळदीकुंकू',3],['बलिप्रतिपदा',3],['संक्रांति',3],['15 ऑगस्ट',3],['26 जानेवारी',3]],
 /*10 विजिटिंग कार्ड*/[['व्हिजिटिंग',4],['विजिटिंग',4],['व्हिजीटिंग',4],['visiting',4],['बिझनेस कार्ड',4],['बिजनेस कार्ड',4],['business card',4],['कार्ड',2],['card',2],['कार्ड बनव',5],['card बनव',5],['vcf',3],['कॉन्टॅक्ट',2],['contact',2],['संपर्क',2],['बायोडाटा',2]],
 /*11 मेंबर*/[['मेंबर कार्ड',4],['member card',4],['मेंबर',3],['मेम्बर',3],['member',3],['membership',3],['सदस्य',3],['सभासद',3],['id=',2],['आयडी',2],['ओळखपत्र',3],['पहचान पत्र',3],['रेफर',3],['refer',3],['referral',3],['रेफरल',3],['invite',2],['आमंत्रित',2]],
 /*12 सेवा*/[['सेवा',2],['seva',2],['service',2],['services',2],['मोठी वेबसाइट',5],['मोठी वेबसाईट',5],['प्रोफेशनल वेबसाइट',5],['लोगो',3],['logo',3],['विडिओ',3],['व्हिडिओ',3],['व्हिडीओ',3],['video',3],['इबुक',3],['ई बुक',3],['ebook',3],['गूगल मॅप लिस्टिंग',5],['लिस्टिंग',3]]];
@@ -1429,7 +1784,7 @@ var VLINE=['','','',
  'आमच्या सेवा उघडतो. हवी ती सेवा WhatsApp वर ऑर्डर करा.'];
 
 /* v11: सणाच्या एजंटमध्ये बोललेला सण / वाढदिवस / निमंत्रण आधीच निवडून ठेवतो */
-var FESTPICK=[['गुढी','gudi'],['भाऊबीज','padwa'],['पाडवा','padwa'],['बलिप्रतिपदा','padwa'],['लक्ष्मीपूजन','diwali'],['दिवाळी','diwali'],['दीपावली','diwali'],['diwali','diwali'],['गणपती','ganesh'],['गणेश','ganesh'],['नवरात्र','navratri'],['दसरा','dasara'],['विजयादशमी','dasara'],['संक्रांत','sankrant'],['संक्रांति','sankrant'],['होळी','holi'],['होली','holi'],['रंगपंचमी','holi'],['शिवजयंती','shiv'],['शिवाजी','shiv'],['आंबेडकर','ambedkar'],['भीम जयंती','ambedkar'],['महाराष्ट्र दिन','mahdin'],['आषाढी','ashadhi'],['एकादशी','ashadhi'],['रक्षाबंधन','raksha'],['राखी','raksha'],['स्वातंत्र्य','indep'],['15 ऑगस्ट','indep'],['प्रजासत्ताक','republic'],['26 जानेवारी','republic'],['नवीन वर्ष','newyear'],['नववर्ष','newyear'],['नया साल','newyear'],['new year','newyear'],['ईद','eid'],['नाताळ','xmas'],['ख्रिसमस','xmas'],['christmas','xmas']];
+var FESTPICK=[['वर्धापन','anniv'],['anniversary','anniv'],['गुढी','gudi'],['भाऊबीज','padwa'],['पाडवा','padwa'],['बलिप्रतिपदा','padwa'],['लक्ष्मीपूजन','diwali'],['दिवाळी','diwali'],['दीपावली','diwali'],['diwali','diwali'],['गणपती','ganesh'],['गणेश','ganesh'],['नवरात्र','navratri'],['दसरा','dasara'],['विजयादशमी','dasara'],['संक्रांत','sankrant'],['संक्रांति','sankrant'],['होळी','holi'],['होली','holi'],['रंगपंचमी','holi'],['शिवजयंती','shiv'],['शिवाजी','shiv'],['आंबेडकर','ambedkar'],['भीम जयंती','ambedkar'],['महाराष्ट्र दिन','mahdin'],['आषाढी','ashadhi'],['एकादशी','ashadhi'],['रक्षाबंधन','raksha'],['राखी','raksha'],['स्वातंत्र्य','indep'],['15 ऑगस्ट','indep'],['प्रजासत्ताक','republic'],['26 जानेवारी','republic'],['नवीन वर्ष','newyear'],['नववर्ष','newyear'],['नया साल','newyear'],['new year','newyear'],['ईद','eid'],['नाताळ','xmas'],['ख्रिसमस','xmas'],['christmas','xmas']];
 var INVW=[['निमंत्रण',''],['आमंत्रण',''],['invitation',''],['इन्व्हिटेशन',''],['पत्रिका',''],['लग्न','शुभविवाह'],['विवाह','शुभविवाह'],['साखरपुडा','साखरपुडा'],['बारसे','बारसे'],['बारसं','बारसे'],['नामकरण','नामकरण सोहळा'],['गृहप्रवेश','गृहप्रवेश'],['वास्तुशांती','वास्तुशांती'],['वास्तुशांत','वास्तुशांती'],['पूजा','पूजा']];
 var BDAYW=['वाढदिवस','जन्मदिन','जन्मदिवस','बर्थडे','बड्डे','birthday','अभिष्टचिंतन','हॅपी बर्थडे'];
 function vFestIdx(id){for(var i=0;i<FEST.length;i++)if(FEST[i][0]===id)return i;return -1}
@@ -1624,7 +1979,7 @@ var _vHide=hideSheet;hideSheet=function(){clearTimeout(V.openT);vStopListen();vS
 
 renderBar();
 if(!showPub()){if(location.hash==='#seva')openSeva()}
-window.addEventListener('hashchange',function(){if(/^#shop=/.test(location.hash))location.reload();else if(location.hash==='#seva')openSeva()});
+window.addEventListener('hashchange',function(){if(/^#(shop|w)=/.test(location.hash))location.reload();else if(location.hash==='#seva')openSeva()});
 window.__DA={vUnkAdd:vUnkAdd,FEST:FEST,vFestPick:vFestPick,vUnkGet:vUnkGet,vUnkText:vUnkText,vUnkLink:vUnkLink,vClassify:vClassify,vShopIntent:vShopIntent,vRoute:vRoute,vScore:vScore,vHandle:function(t){vHandle(t,'type')},vOpen:vOpen,vState:function(){return V},vPosterGuess:vPosterGuess,vProduct:vProduct,vPhone:vPhone,vCheck:vCheck,qrCanvas:qrCanvas,normPhone:normPhone,upiLink:upiLink,shopLink:shopLink,poster:poster,fontsReady:fontsReady};
 
 /* ===== 🎬 व्हिडिओ मेकर (v13) – विषय → मराठी स्क्रिप्ट → AI चित्रं → मराठी अक्षरं + संगीत → 9:16 व्हिडिओ.
@@ -1965,8 +2320,8 @@ var hb=$('#vmHomeBtn');if(hb)hb.onclick=function(){openVM(false)};
 window.addEventListener('popstate',function(){VM.imgGen=(VM.imgGen||0)+1;VM.imgBusy=false;if(VM.busy&&VM.stop)VM.stop();try{if(window.speechSynthesis)speechSynthesis.cancel()}catch(e){}});
 })();
 
-/* v13 test hook (read-only use) */
-try{window.__DA.openAgent=openAgent;window.__DA.closeSheet=closeSheet;window.__DA.openSheet=openSheet;window.__DA.KEYS=KEYS;window.__DA.aMember=aMember;window.__DA.saveUser=saveUser;window.__DA.backupObj=backupObj;window.__DA.vHandle2=vHandle}catch(e){}
+/* v13/v14 test hook (read-only use) */
+try{window.__DA.ws={norm:wsNorm,fromHash:wsFromHash,status:wsStatus,data:wsData,link:shopLink,qrLink:qrSiteLink,lz:LZ,themes:WS_THEMES,revealAll:wsRevealAll,parseTime:wsParseTime,heroUrl:wsHeroUrl,img:WS_IMG};window.__DA.vcard=vcard;window.__DA.FESTx=FEST;window.__DA.openAgent=openAgent;window.__DA.closeSheet=closeSheet;window.__DA.openSheet=openSheet;window.__DA.KEYS=KEYS;window.__DA.aMember=aMember;window.__DA.saveUser=saveUser;window.__DA.backupObj=backupObj;window.__DA.vHandle2=vHandle}catch(e){}
 })();
 </script>
 </body>
