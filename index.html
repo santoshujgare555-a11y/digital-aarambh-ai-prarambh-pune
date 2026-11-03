@@ -1288,7 +1288,7 @@ function aMember(b){var u=st.get('user',null),bk=st.get('user_backup',null),rf=s
    function(){if(!confirm('कार्डवरचा फोटो काढायचा?'))return;delete u.photo;saveUser(u);drawBox();draw();toast('फोटो काढला')})}
  draw();drawBox();
  $('#mdl',b).onclick=function(){dlCanvas(cv,(u.id||'member')+'.png')};$('#mcp',b).onclick=function(){copy(link)};$('#mcg',b).onclick=function(){mCongrats(b,u,false)};
- $('#mwa',b).onclick=function(){waShare('🙏 नमस्कार! मी '+cleanName(u.name)+' ('+u.id+'), Digital Aarambh AI चा सदस्य.\nदुकानासाठी मोफत डिजिटल साधने – मिनी वेबसाइट, QR, पोस्टर, सणाचे पोस्टर, हिशोब वही, UPI QR – सगळं मराठीत.\nमाझ्या लिंकने वापरून पहा 👇\n'+link+'\nमाझा Refer कोड: '+u.code)};
+ $('#mwa',b).onclick=function(){waShare('🙏💐 नमस्कार! 💐🙏\n\nमी '+cleanName(u.name)+' ('+u.id+'), Digital Aarambh AI चा अभिमानी सभासद.\n\nलहान-मोठ्या दुकानदारांना आपला व्यवसाय डिजिटल करता यावा म्हणून Digital Aarambh AI हे पूर्ण मराठीतलं मोफत अॅप आहे. एकदाच माहिती भरा – मग 13 स्मार्ट एजंट्स तुमच्यासाठी काम करतात:\n\n🌐 स्वतःची दुकान वेबसाइट\n▦ QR कोड व 💳 UPI QR\n📢 ऑफर पोस्टर व 🪔 सणाचे पोस्टर\n💬 ग्राहकांसाठी तयार WhatsApp मेसेज\n📒 हिशोब वही – जमा-खर्च व उधारी\n⭐ Google Review व 📍 नकाशा\n🪪 डिजिटल व्हिजिटिंग कार्ड\n🎬 AI जाहिरात व्हिडिओ\n\nकोणतंही डाउनलोड नाही, फक्त लिंक उघडा. माहिती तुमच्याच फोनमध्ये सुरक्षित राहते.\n\nमाझ्या लिंकने एकदा नक्की वापरून पहा 👇\n'+link+'\nमाझा Refer कोड: '+u.code+'\n\n🌱 Journey from AI to SI\nआपला व्यवसाय, आपली डिजिटल ओळख! 🙏')};
  $('#mout',b).onclick=function(){if(confirm('तुमचा ID ('+u.id+') या फोनवरून काढायचा?\nएक बॅकअप ठेवला जाईल – नंतर “तोच ID परत आणा” दाबून परत मिळवता येईल.')){st.set('user_backup',u);st.set('user',null);aMember(b);toast('ID काढला – बॅकअप सुरक्षित आहे')}}}
 
 
