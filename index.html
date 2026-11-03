@@ -477,8 +477,9 @@ button.wsit{cursor:pointer}
   <ul><li>सर्वात वर <b>“दुकानाची माहिती”</b> एकदाच भरा – सगळे 13 एजंट्स तीच माहिती वापरतात.</li>
   <li>कोणताही एजंट उघडा → मजकूर / QR / पोस्टर तयार करा → <b>कॉपी</b>, <b>Download</b> किंवा <b>WhatsApp</b> वर पाठवा.</li>
   <li>हे एजंट्स तयार मराठी साच्यांवर (templates) आणि तुमच्या माहितीवर चालतात. एकदा पेज उघडलं की इंटरनेटशिवायही चालतात.</li></ul></details>
- <details class="info" id="whatsnew"><summary>🆕 नवीन काय? (v16)</summary>
-  <ul><li><b>v16 – 🎉 अभिनंदन कार्ड</b> आता ID कार्डसारख्या आडव्या साइजमध्ये (1200×756) – फोटो डावीकडे, नाव मध्ये, QR उजवीकडे; लांब नाव/पत्ता दोन ओळींत.</li>
+ <details class="info" id="whatsnew"><summary>🆕 नवीन काय? (v17)</summary>
+  <ul><li><b>v17 – 🪪</b> सभासद झाल्यावर आता प्रीमियम ID कार्डच दिसतं व शेअर होतं (अभिनंदन मेसेजसह).</li>
+  <li><b>v16 – 🎉 अभिनंदन कार्ड</b> आता ID कार्डसारख्या आडव्या साइजमध्ये (1200×756) – फोटो डावीकडे, नाव मध्ये, QR उजवीकडे; लांब नाव/पत्ता दोन ओळींत.</li>
   <li><b>v15 – 🔗 लहान Refer लिंक:</b> आता सदस्याची Refer लिंक खूप लहान (उदा. <b>…/?r=DAL6QK09-2788</b>) – मराठी नाव असलं तरी. आधी पाठवलेल्या जुन्या लांब लिंकही चालतात.</li>
   <li><b>v15 – 🎉 सभासद अभिनंदन कार्ड:</b> सदस्य ID बनवला की “आरंभ टीमकडून हार्दिक अभिनंदन” डिजिटल कार्ड (नाव, ID, QR व Refer लिंक) – Download किंवा WhatsApp वर पाठवा. नंतरही 12 नं. एजंटमध्ये “🎉 अभिनंदन कार्ड” बटणाने उघडता येतं.</li>
   <li><b>v14 – 🌐 मोठी, सुंदर दुकान वेबसाइट:</b> मोठा बॅनर (हवं तर AI चित्र), “आत्ता उघडे / बंद” आपोआप, कॉल-WhatsApp-दिशा-UPI-Review बटणे, आमच्याबद्दल, वस्तू/सेवा किंमतीसह (ग्राहक निवडून WhatsApp वर ऑर्डर पाठवतो), ऑफर, आठवड्याच्या वेळा, UPI QR, पत्ता व नकाशा, नंबर सेव्ह, शेअर, 6 रंगसंगती. लाईव्ह पाहणी, एका क्लिकवर लिंक. जुन्या लिंकही नव्या डिझाइनमध्ये उघडतात.</li>
@@ -518,7 +519,7 @@ button.wsit{cursor:pointer}
 
  <footer><div class="brandfoot"><img data-da="tight" alt="" width="34" height="34"><b>Digital Aarambh AI</b></div>Made with ❤️ in Pune for Alandi, Charholi, Moshi, Pimpri<br>
   <b>Digital Aarambh AI</b> – आपला व्यवसाय, आपली डिजिटल ओळख! 🙏<br>
-  निर्मिती व संकल्पना: S. R. Ujgare<br><span class="vers">आवृत्ती v16</span></footer><script>daFill()</script>
+  निर्मिती व संकल्पना: S. R. Ujgare<br><span class="vers">आवृत्ती v17</span></footer><script>daFill()</script>
 </div>
 
 <div id="pub" class="hide"></div>
@@ -1358,7 +1359,7 @@ function mCongrats(b,u,fresh){var link=refLink(u),fn='Abhinandan-'+(u.id||'membe
   '<div class="glass"><label for="cgl">तुमची Refer लिंक</label><input id="cgl" readonly><p class="note">कार्डवरचा QR स्कॅन केला की हीच लिंक उघडते.</p></div>'+
   '<div class="row" style="justify-content:center"><button class="btn alt" type="button" id="cgback">🪪 माझं ID कार्ड पहा</button></div>';
  $('#cgl',b).value=link;var cv=document.createElement('canvas');
- Promise.all([fontsReady(),loadImg(u.photo)]).then(function(r){congratsImg(cv,u,r[1]);if(!cv.parentNode)$('#cgc',b).appendChild(cv)});
+ Promise.all([fontsReady(),loadImg(u.photo),loadImg(CARD_BG)]).then(function(r){memberImg(cv,u,r[1],r[2]);if(!cv.parentNode)$('#cgc',b).appendChild(cv)});
  $('#cgdl',b).onclick=function(){dlCanvas(cv,fn)};$('#cgcp',b).onclick=function(){copy(link)};
  $('#cgwa',b).onclick=function(){shareCanvas(cv,fn,congratsMsg(u))};
  $('#cgback',b).onclick=function(){aMember(b)};
