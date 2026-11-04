@@ -483,8 +483,8 @@ button.wsit{cursor:pointer}
   <ul><li>सर्वात वर <b>“दुकानाची माहिती”</b> एकदाच भरा – सगळे 13 एजंट्स तीच माहिती वापरतात.</li>
   <li>कोणताही एजंट उघडा → मजकूर / QR / पोस्टर तयार करा → <b>कॉपी</b>, <b>Download</b> किंवा <b>WhatsApp</b> वर पाठवा.</li>
   <li>हे एजंट्स तयार मराठी साच्यांवर (templates) आणि तुमच्या माहितीवर चालतात. एकदा पेज उघडलं की इंटरनेटशिवायही चालतात.</li></ul></details>
- <details class="info" id="whatsnew"><summary>🆕 नवीन काय? (v19)</summary>
-  <ul><li><b>v19 – ✨ मोशन ग्राफिक्स जाहिरात:</b> 🎬 व्हिडिओ मेकरमध्ये नवा पर्याय “✨ मोशन जाहिरात”. दुकानाचे नाव, ऑफर, 3 वैशिष्ट्ये, किंमत/सूट व फोन लिहा → नाव-लोगो उलगडतो, ऑफरचे शब्द एकेक येतात, वैशिष्ट्यांचे कार्ड सरकत येतात, सूट/किंमत 0 पासून मोजत वाढते, शेवटी फोन + WhatsApp QR. 3 रंगसंगती (सोनेरी, सण, ताजे), फोनमध्येच तयार होणारं हलकं संगीत. AI चित्रं नाहीत, इंटरनेट लागत नाही – सुमारे 15 सेकंदांत 9:16 व्हिडिओ → Download / WhatsApp.</li>
+ <details class="info" id="whatsnew"><summary>🆕 नवीन काय? (v20)</summary>
+  <ul><li><b>v20 – सर / मॅडम:</b> सभासद बनवताना “पुरुष – सर / महिला – मॅडम” निवडा; अभिनंदन संदेशात तसंच येतं. आधीच्या कार्डसाठी कार्डखाली “संबोधन” बदलता येतं.</li><li><b>v19 – ✨ मोशन ग्राफिक्स जाहिरात:</b> 🎬 व्हिडिओ मेकरमध्ये नवा पर्याय “✨ मोशन जाहिरात”. दुकानाचे नाव, ऑफर, 3 वैशिष्ट्ये, किंमत/सूट व फोन लिहा → नाव-लोगो उलगडतो, ऑफरचे शब्द एकेक येतात, वैशिष्ट्यांचे कार्ड सरकत येतात, सूट/किंमत 0 पासून मोजत वाढते, शेवटी फोन + WhatsApp QR. 3 रंगसंगती (सोनेरी, सण, ताजे), फोनमध्येच तयार होणारं हलकं संगीत. AI चित्रं नाहीत, इंटरनेट लागत नाही – सुमारे 15 सेकंदांत 9:16 व्हिडिओ → Download / WhatsApp.</li>
   <li><b>v18 – 📩</b> नवीन सभासदाची नोंद (नाव, फोन, गाव, ID) आरंभ टीमच्या ईमेलवर येते.</li>
   <li><b>v17 – 🪪</b> सभासद झाल्यावर आता प्रीमियम ID कार्डच दिसतं व शेअर होतं (अभिनंदन मेसेजसह).</li>
   <li><b>v16 – 🎉 अभिनंदन कार्ड</b> आता ID कार्डसारख्या आडव्या साइजमध्ये (1200×756) – फोटो डावीकडे, नाव मध्ये, QR उजवीकडे; लांब नाव/पत्ता दोन ओळींत.</li>
@@ -527,7 +527,7 @@ button.wsit{cursor:pointer}
 
  <footer><div class="brandfoot"><img data-da="tight" alt="" width="34" height="34"><b>Digital Aarambh AI</b></div>Made with ❤️ in Pune for Alandi, Charholi, Moshi, Pimpri<br>
   <b>Digital Aarambh AI</b> – आपला व्यवसाय, आपली डिजिटल ओळख! 🙏<br>
-  निर्मिती व संकल्पना: S. R. Ujgare<br><span class="vers">आवृत्ती v19</span></footer><script>daFill()</script>
+  निर्मिती व संकल्पना: S. R. Ujgare<br><span class="vers">आवृत्ती v20</span></footer><script>daFill()</script>
 </div>
 
 <div id="pub" class="hide"></div>
@@ -1284,17 +1284,17 @@ function regNotify(u){try{var fd={access_key:'ea75c5ca-25e2-4ed9-85ae-1f437762a0
  var f=new FormData();for(var k in fd)f.append(k,fd[k]);fetch('https://api.web3forms.com/submit',{method:'POST',body:f}).catch(function(){})}catch(e){}}
 function aMember(b){var u=st.get('user',null),bk=st.get('user_backup',null),rf=st.get('refFrom','');
  if(!u){var pend='';b.innerHTML='<p class="note">तुमचा Digital Aarambh सदस्य ID बनवा आणि इतर व्यावसायिकांना Refer लिंक पाठवा. <b>OTP/पडताळणी नाही</b>. ID या फोनवर सेव्ह होतो; नाव, फोन, गाव व ID नोंदीसाठी आरंभ टीमकडे जातात.</p>'+(bk&&bk.id?'<div class="glass"><b>आधीचा ID सापडला: '+esc(bk.id)+'</b> ('+esc(cleanName(bk.name))+')<div class="row"><button class="btn" type="button" id="mRes">♻️ तोच ID परत आणा</button></div></div>':'')+
-  '<div class="glass"><label for="m1">तुमचे नाव</label><input id="m1"><label for="m2">फोन नंबर</label><input id="m2" type="tel" inputmode="tel"><div class="err" id="m2e"></div><label for="m3">जिल्हा / गाव</label><input id="m3" value="पुणे">'+(rf?'<p class="note">तुम्हाला Refer करणारे: <b>'+esc(st.get('refBy','')||st.get('refId','')||rf)+'</b>'+(st.get('refBy','')||st.get('refId','')?' ('+esc(rf)+')':'')+'</p>':'')+'<div id="mPh"></div><div class="row"><button class="btn" type="button" id="mMk">🪪 सदस्य ID बनवा</button></div></div>';
+  '<div class="glass"><label for="m1">तुमचे नाव</label><input id="m1"><label for="m2">फोन नंबर</label><input id="m2" type="tel" inputmode="tel"><div class="err" id="m2e"></div><label for="m3">जिल्हा / गाव</label><input id="m3" value="पुणे"><label for="m4">संबोधन (अभिनंदन संदेशासाठी)</label><select id="m4"><option value="सर">पुरुष – सर</option><option value="मॅडम">महिला – मॅडम</option></select>'+(rf?'<p class="note">तुम्हाला Refer करणारे: <b>'+esc(st.get('refBy','')||st.get('refId','')||rf)+'</b>'+(st.get('refBy','')||st.get('refId','')?' ('+esc(rf)+')':'')+'</p>':'')+'<div id="mPh"></div><div class="row"><button class="btn" type="button" id="mMk">🪪 सदस्य ID बनवा</button></div></div>';
   $('#m1',b).value=shop.sOwner||'';$('#m2',b).value=shop.sPhone||'';
   function drawPend(){var h=$('#mPh',b);h.innerHTML=photoBox('mPhB',pend,'ऐच्छिक');var bx=$('#mPhB',h);bx.style.margin='12px 0 0';bx.style.padding='10px';
    wirePhoto(bx,function(d){pend=d;drawPend();toast('✅ फोटो जोडला')},function(){pend='';drawPend()})}
   drawPend();
   if(bk&&bk.id)$('#mRes',b).onclick=function(){st.set('user',bk);aMember(b);toast('✅ ID परत आला')};
   $('#mMk',b).onclick=function(){var n=cleanName($('#m1',b).value),p=normPhone($('#m2',b).value);if(!n){toast('नाव टाका');return}if(!phoneOk(p)){$('#m2e',b).textContent='10 अंकी मोबाइल नंबर टाका';$('#m2',b).classList.add('bad');return}
-   var code='DA'+Math.random().toString(36).slice(2,6).toUpperCase()+p.slice(-2);u={name:n,phone:p,dist:$('#m3',b).value.trim(),code:code,id:'DA-MH-'+Math.floor(1000+Math.random()*9000),ref:rf||'',at:today()};
+   var code='DA'+Math.random().toString(36).slice(2,6).toUpperCase()+p.slice(-2);u={name:n,phone:p,dist:$('#m3',b).value.trim(),code:code,id:'DA-MH-'+Math.floor(1000+Math.random()*9000),ref:rf||'',at:today(),g:($('#m4',b)||{}).value||'सर'};
    if(pend)u.photo=pend;if(!saveUser(u)){if(u.photo){delete u.photo;toast(PHOTO_FULL)}if(!saveUser(u)){toast('सेव्ह झाले नाही (storage भरले?)');return}}regNotify(u);mCongrats(b,u,true);toast('🎉 '+u.id+' तयार')};return}
  var link=refLink(u);b.innerHTML='<div id="mc"></div><div class="row" style="justify-content:center"><button class="btn" type="button" id="mdl">⬇️ ID कार्ड</button><button class="btn wa" type="button" id="mwa">💬 WhatsApp वर Refer करा</button><button class="btn alt" type="button" id="mcp">🔗 लिंक कॉपी</button></div>'+
-  '<div class="row" style="justify-content:center"><button class="btn" type="button" id="mcg" style="box-shadow:0 0 18px #f2c14e88">🎉 अभिनंदन कार्ड</button></div>'+
+  '<div class="row" style="justify-content:center"><button class="btn" type="button" id="mcg" style="box-shadow:0 0 18px #f2c14e88">🎉 अभिनंदन कार्ड</button></div><div class="row" style="justify-content:center;align-items:center;gap:8px"><label for="mg" style="margin:0">संबोधन:</label><select id="mg" style="width:auto"><option value="सर">सर</option><option value="मॅडम">मॅडम</option></select></div>'+
   '<div id="mPh"></div>'+
   '<div class="glass"><label for="mrl">तुमची Refer लिंक (लहान)</label><input id="mrl" readonly><p class="note gold">🎁 Referral रिवॉर्ड्स – <b>लवकरच</b>. नियम व पात्रता जाहीर झाल्यावरच योजना सुरू होईल. सध्या कोणतेही पैसे/कमिशन दिले जात नाहीत आणि Refer ची मोजणी होत नाही.</p></div>'+
   '<div class="row"><button class="btn red sm" type="button" id="mout">ID या फोनवरून काढा</button></div>';
@@ -1304,13 +1304,13 @@ function aMember(b){var u=st.get('user',null),bk=st.get('user_backup',null),rf=s
   wirePhoto($('#mPhB',h),function(d){var old=u.photo;u.photo=d;if(!saveUser(u)){if(old)u.photo=old;else delete u.photo;toast(PHOTO_FULL);return}drawBox();draw();toast('✅ फोटो कार्डवर लागला')},
    function(){if(!confirm('कार्डवरचा फोटो काढायचा?'))return;delete u.photo;saveUser(u);drawBox();draw();toast('फोटो काढला')})}
  draw();drawBox();
- $('#mdl',b).onclick=function(){dlCanvas(cv,(u.id||'member')+'.png')};$('#mcp',b).onclick=function(){copy(link)};$('#mcg',b).onclick=function(){mCongrats(b,u,false)};
+ $('#mdl',b).onclick=function(){dlCanvas(cv,(u.id||'member')+'.png')};$('#mcp',b).onclick=function(){copy(link)};$('#mcg',b).onclick=function(){mCongrats(b,u,false)};var mg=$('#mg',b);if(mg){mg.value=u.g||'सर';mg.onchange=function(){u.g=mg.value;saveUser(u);toast('✅ संबोधन: '+u.g)}};
  $('#mwa',b).onclick=function(){waShare('🙏💐 नमस्कार! 💐🙏\n\nमी '+cleanName(u.name)+' ('+u.id+'), Digital Aarambh AI चा अभिमानी सभासद.\n\nलहान-मोठ्या दुकानदारांना आपला व्यवसाय डिजिटल करता यावा म्हणून Digital Aarambh AI हे पूर्ण मराठीतलं मोफत अॅप आहे. एकदाच माहिती भरा – मग 13 स्मार्ट एजंट्स तुमच्यासाठी काम करतात:\n\n🌐 स्वतःची दुकान वेबसाइट\n▦ QR कोड व 💳 UPI QR\n📢 ऑफर पोस्टर व 🪔 सणाचे पोस्टर\n💬 ग्राहकांसाठी तयार WhatsApp मेसेज\n📒 हिशोब वही – जमा-खर्च व उधारी\n⭐ Google Review व 📍 नकाशा\n🪪 डिजिटल व्हिजिटिंग कार्ड\n🎬 AI जाहिरात व्हिडिओ\n\nकोणतंही डाउनलोड नाही, फक्त लिंक उघडा. माहिती तुमच्याच फोनमध्ये सुरक्षित राहते.\n\nमाझ्या लिंकने एकदा नक्की वापरून पहा 👇\n'+link+'\nमाझा Refer कोड: '+u.code+'\n\n🌱 Journey from AI to SI\nआपला व्यवसाय, आपली डिजिटल ओळख! 🙏')};
  $('#mout',b).onclick=function(){if(confirm('तुमचा ID ('+u.id+') या फोनवरून काढायचा?\nएक बॅकअप ठेवला जाईल – नंतर “तोच ID परत आणा” दाबून परत मिळवता येईल.')){st.set('user_backup',u);st.set('user',null);aMember(b);toast('ID काढला – बॅकअप सुरक्षित आहे')}}}
 
 
 /* ===== 🎉 v15: सभासद अभिनंदन कार्ड (Digital Aarambh AI – आरंभ टीमकडून). फक्त अभिनंदन – कोणताही “verified/official” दावा नाही. ===== */
-function congratsMsg(u){var nm=cleanName(u.name);return '🙏💐 हार्दिक अभिनंदन! 💐🙏\n\nमा. '+nm+' साहेब,\n\nआपले Digital Aarambh AI परिवारात मनःपूर्वक स्वागत!\n\nआपण Digital Aarambh AI चे सभासद झाल्याबद्दल संपूर्ण आरंभ टीमच्या वतीने आपले हार्दिक अभिनंदन आणि पुढील वाटचालीस मनःपूर्वक शुभेच्छा! 💐\n\n🎓 आपली डिजिटल सभासद ओळख तयार झाली आहे.\n'+(u.id?'\n🪪 Member ID: '+u.id+'\n':'')+(u.dist?'\n📍 ठिकाण: '+String(u.dist).trim()+'\n':'')+'\n🔗 आपले डिजिटल सदस्यत्व कार्ड आणि वैयक्तिक लिंक येथे पाहा:\n\n'+refLink(u)+(u.code?'\nRefer कोड: '+u.code:'')+'\n\n🤝 चला, महाराष्ट्रातील छोट्या व्यावसायिकांना डिजिटल बनवण्याच्या प्रवासात एकत्र सहभागी होऊया.\n\nआपला सहभाग हीच आमची ताकद!\n\n🙏 हार्दिक अभिनंदन!\n\nआपलेच,\nआरंभ टीम\nDigital Aarambh AI, आळंदी, पुणे\n\n🌱 Journey from AI to SI\nआपला व्यवसाय, आपली डिजिटल ओळख!'}
+function congratsMsg(u){var nm=cleanName(u.name);return '🙏💐 हार्दिक अभिनंदन! 💐🙏\n\nमा. '+nm+' '+(u.g||'सर')+',\n\nआपले Digital Aarambh AI परिवारात मनःपूर्वक स्वागत!\n\nआपण Digital Aarambh AI चे सभासद झाल्याबद्दल संपूर्ण आरंभ टीमच्या वतीने आपले हार्दिक अभिनंदन आणि पुढील वाटचालीस मनःपूर्वक शुभेच्छा! 💐\n\n🎓 आपली डिजिटल सभासद ओळख तयार झाली आहे.\n'+(u.id?'\n🪪 Member ID: '+u.id+'\n':'')+(u.dist?'\n📍 ठिकाण: '+String(u.dist).trim()+'\n':'')+'\n🔗 आपले डिजिटल सदस्यत्व कार्ड आणि वैयक्तिक लिंक येथे पाहा:\n\n'+refLink(u)+(u.code?'\nRefer कोड: '+u.code:'')+'\n\n🤝 चला, महाराष्ट्रातील छोट्या व्यावसायिकांना डिजिटल बनवण्याच्या प्रवासात एकत्र सहभागी होऊया.\n\nआपला सहभाग हीच आमची ताकद!\n\n🙏 हार्दिक अभिनंदन!\n\nआपलेच,\nआरंभ टीम\nDigital Aarambh AI, आळंदी, पुणे\n\n🌱 Journey from AI to SI\nआपला व्यवसाय, आपली डिजिटल ओळख!'}
 function congratsImg(cv,u,ph){var W=1200,H=756;cv.width=W;cv.height=H;var c=cv.getContext('2d'),GOLD='#f2c14e',CREAM='#f6dca0',name=cleanName(u.name)||'सभासद';
  /* v16: आडवं (ID कार्डसारखं 1200x756) – डावीकडे फोटो, मध्ये नाव/ठिकाण/ID/संदेश, उजवीकडे QR */
  var bg=c.createLinearGradient(0,0,W,H);bg.addColorStop(0,'#020a1f');bg.addColorStop(.5,'#0a1f52');bg.addColorStop(1,'#020a1f');c.fillStyle=bg;c.fillRect(0,0,W,H);
