@@ -295,6 +295,12 @@ label.dpai input{width:22px;height:22px;margin:0;flex:none}
 .vmopts{display:grid;grid-template-columns:1fr 1fr;gap:0 10px}
 .seva.vmhome{margin:-4px 0 14px;background:radial-gradient(circle at 12% 50%,#f472b655,transparent 40%),linear-gradient(135deg,#1e0b3d,#5b1a5e 55%,#9f1239);border-color:#f472b6;box-shadow:0 8px 26px #ec489944}
 .vers{display:inline-block;margin-top:6px;padding:1px 8px;border-radius:8px;border:1px solid var(--line);color:var(--mut);font-size:12px}
+/* ===== ✨ मोशन जाहिरात (v19) ===== */
+.vmmode{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:10px 0 2px}
+.vmmode button{border:1.5px solid var(--line);background:#0f1450;color:var(--txt);border-radius:14px;padding:10px 8px;font:inherit;font-size:15px;font-weight:800;line-height:1.25;min-height:58px;cursor:pointer}
+.vmmode button small{display:block;font-size:12px;font-weight:600;color:var(--mut);margin-top:2px}
+.vmmode button.on{border-color:var(--gold);background:linear-gradient(135deg,#0b1148,#1d2580);box-shadow:0 0 12px #ffc23d55;color:#ffd35c}
+.mghead{background:linear-gradient(135deg,#050822,#0f1a5c 60%,#3b2a07);border-color:#ffc23d88}
 
 /* ===== 🌐 v14 दुकान वेबसाइट (.ws) ===== */
 body.wsmode{background-image:none!important}
@@ -466,7 +472,7 @@ button.wsit{cursor:pointer}
   <p class="vhint" id="vHomeHint">बोललेले शब्द ओळखून योग्य एजंट उघडते · इंटरनेट लागते</p>
  </div>
  <button type="button" class="seva dphome" id="dpHomeBtn"><span class="sic">🪔</span><span class="st"><b>दिवाळी Pack</b><small>16 व्यवसायांसाठी तयार मराठी ऑफर · दुकानाचं दिवाळी पोस्टर · चौकोनी + स्टेटस</small></span><span class="go">उघडा ›</span></button>
- <button type="button" class="seva vmhome" id="vmHomeBtn"><span class="sic">🎬</span><span class="st"><b>AI व्हिडिओ मेकर <small style="display:inline;color:#ffd35c">नवीन</small></b><small>दिवाळी, सण, दुकान जाहिरात – मराठी स्क्रिप्ट + चित्रं + संगीत → 9:16 व्हिडिओ</small></span><span class="go">उघडा ›</span></button>
+ <button type="button" class="seva vmhome" id="vmHomeBtn"><span class="sic">🎬</span><span class="st"><b>AI व्हिडिओ मेकर <small style="display:inline;color:#ffd35c">नवीन</small></b><small>दिवाळी, सण, दुकान जाहिरात – मराठी स्क्रिप्ट + चित्रं + संगीत → 9:16 व्हिडिओ · ✨ नवीन: मोशन जाहिरात (लगेच)</small></span><span class="go">उघडा ›</span></button>
  <h2 class="sec">🤖 13 स्मार्ट एजंट्स <small>– कोणतेही एक निवडा</small></h2>
  <nav class="grid" id="grid" aria-label="13 एजंट्स"></nav>
  <button type="button" class="seva" id="sevaBtn"><span class="sic">🚀</span><span class="st"><b>आमच्या सेवा</b><small>मोठी वेबसाइट · इबुक स्टोअर · Google Maps · जाहिरात विडिओ · पोस्टर</small></span><span class="go">पहा ›</span></button>
@@ -477,8 +483,9 @@ button.wsit{cursor:pointer}
   <ul><li>सर्वात वर <b>“दुकानाची माहिती”</b> एकदाच भरा – सगळे 13 एजंट्स तीच माहिती वापरतात.</li>
   <li>कोणताही एजंट उघडा → मजकूर / QR / पोस्टर तयार करा → <b>कॉपी</b>, <b>Download</b> किंवा <b>WhatsApp</b> वर पाठवा.</li>
   <li>हे एजंट्स तयार मराठी साच्यांवर (templates) आणि तुमच्या माहितीवर चालतात. एकदा पेज उघडलं की इंटरनेटशिवायही चालतात.</li></ul></details>
- <details class="info" id="whatsnew"><summary>🆕 नवीन काय? (v18)</summary>
-  <ul><li><b>v18 – 📩</b> नवीन सभासदाची नोंद (नाव, फोन, गाव, ID) आरंभ टीमच्या ईमेलवर येते.</li>
+ <details class="info" id="whatsnew"><summary>🆕 नवीन काय? (v19)</summary>
+  <ul><li><b>v19 – ✨ मोशन ग्राफिक्स जाहिरात:</b> 🎬 व्हिडिओ मेकरमध्ये नवा पर्याय “✨ मोशन जाहिरात”. दुकानाचे नाव, ऑफर, 3 वैशिष्ट्ये, किंमत/सूट व फोन लिहा → नाव-लोगो उलगडतो, ऑफरचे शब्द एकेक येतात, वैशिष्ट्यांचे कार्ड सरकत येतात, सूट/किंमत 0 पासून मोजत वाढते, शेवटी फोन + WhatsApp QR. 3 रंगसंगती (सोनेरी, सण, ताजे), फोनमध्येच तयार होणारं हलकं संगीत. AI चित्रं नाहीत, इंटरनेट लागत नाही – सुमारे 15 सेकंदांत 9:16 व्हिडिओ → Download / WhatsApp.</li>
+  <li><b>v18 – 📩</b> नवीन सभासदाची नोंद (नाव, फोन, गाव, ID) आरंभ टीमच्या ईमेलवर येते.</li>
   <li><b>v17 – 🪪</b> सभासद झाल्यावर आता प्रीमियम ID कार्डच दिसतं व शेअर होतं (अभिनंदन मेसेजसह).</li>
   <li><b>v16 – 🎉 अभिनंदन कार्ड</b> आता ID कार्डसारख्या आडव्या साइजमध्ये (1200×756) – फोटो डावीकडे, नाव मध्ये, QR उजवीकडे; लांब नाव/पत्ता दोन ओळींत.</li>
   <li><b>v15 – 🔗 लहान Refer लिंक:</b> आता सदस्याची Refer लिंक खूप लहान (उदा. <b>…/?r=DAL6QK09-2788</b>) – मराठी नाव असलं तरी. आधी पाठवलेल्या जुन्या लांब लिंकही चालतात.</li>
@@ -520,7 +527,7 @@ button.wsit{cursor:pointer}
 
  <footer><div class="brandfoot"><img data-da="tight" alt="" width="34" height="34"><b>Digital Aarambh AI</b></div>Made with ❤️ in Pune for Alandi, Charholi, Moshi, Pimpri<br>
   <b>Digital Aarambh AI</b> – आपला व्यवसाय, आपली डिजिटल ओळख! 🙏<br>
-  निर्मिती व संकल्पना: S. R. Ujgare<br><span class="vers">आवृत्ती v18</span></footer><script>daFill()</script>
+  निर्मिती व संकल्पना: S. R. Ujgare<br><span class="vers">आवृत्ती v19</span></footer><script>daFill()</script>
 </div>
 
 <div id="pub" class="hide"></div>
@@ -2262,12 +2269,12 @@ function vmFonts(){if(!document.fonts||!document.fonts.load)return Promise.resol
 function vmRender(opt){opt=opt||{};if(VM.busy)return Promise.reject(new Error('busy'));
  var mime=vmMime();if(mime===null)return Promise.reject(new Error('norec'));
  var sz=opt.size||vmSize(),W=sz[0],H=sz[1],cv=opt.canvas||$('#vmCv');if(!cv)return Promise.reject(new Error('nocv'));cv.width=W;cv.height=H;var c=cv.getContext('2d');
- var P=vmPlan(W,H);if(!P.sc.length)return Promise.reject(new Error('empty'));
+ var P=opt.plan?opt.plan(W,H):vmPlan(W,H),FR=opt.frame||vmFrame;if(!P.sc.length)return Promise.reject(new Error('empty'));
  VM.busy=true;var mic=null,ac=null,rec=null,raf=0,stopped=false,chunks=[],music=opt.music!=null?opt.music:(vmVal('vmMus')||'festive');
  function clean(){VM.busy=false;cancelAnimationFrame(raf);if(mic)try{mic.getTracks().forEach(function(t){t.stop()})}catch(e){}if(ac)try{ac.close()}catch(e){}VM.stop=null}
  return vmFonts().then(function(){
   if(opt.mic)return navigator.mediaDevices.getUserMedia({audio:{echoCancellation:true,noiseSuppression:true,autoGainControl:true}}).then(function(s){mic=s}).catch(function(){throw new Error('mic')})})
- .then(function(){vmFrame(c,W,H,P,0);
+ .then(function(){FR(c,W,H,P,0);
   var AC=window.AudioContext||window.webkitAudioContext,vs=cv.captureStream?cv.captureStream(30):null;if(!vs)throw new Error('norec');
   var tracks=vs.getVideoTracks().slice();
   if(AC&&(music!=='none'||mic)){ac=new AC();var dest=ac.createMediaStreamDestination(),mg=ac.createGain(),comp=ac.createDynamicsCompressor();mg.gain.value=mic?0.3:0.85;mg.connect(comp);comp.connect(dest);if(!mic&&opt.listen!==false)comp.connect(ac.destination);
@@ -2281,12 +2288,12 @@ function vmRender(opt){opt=opt||{};if(VM.busy)return Promise.reject(new Error('b
    var startAt=0,last=-1;
    function go(){if(ac&&ac.state==='suspended'){var rp;try{rp=ac.resume()}catch(e){}if(rp&&rp.then){var gone=false;var g2=function(){if(gone)return;gone=true;go2()};rp.then(g2,g2);setTimeout(g2,1500);return}}go2()}
    function go2(){
-    rec.start(1000);var t0=ac?ac.currentTime+0.05:0;if(ac)vmMusic(ac,VM.musicOut,music,t0,P.total);startAt=performance.now();
+    rec.start(1000);var t0=ac?ac.currentTime+0.05:0;if(ac){if(opt.audio)opt.audio(ac,VM.musicOut,t0,P);else vmMusic(ac,VM.musicOut,music,t0,P.total)}startAt=performance.now();
     if(ac){var mg=VM.musicOut.gain;mg.setValueAtTime(mg.value,t0+Math.max(0.1,P.total-1.6));mg.linearRampToValueAtTime(0.0001,t0+P.total)}
     loop()}
-   function loop(){var t=(performance.now()-startAt)/1000;if(t>=P.total){vmFrame(c,W,H,P,P.total);setTimeout(function(){try{rec.stop()}catch(e){}},250);return}
+   function loop(){var t=(performance.now()-startAt)/1000;if(t>=P.total){FR(c,W,H,P,P.total);setTimeout(function(){try{rec.stop()}catch(e){}},250);return}
     if(!document.body.contains(cv)){stopped='cancel';try{rec.stop()}catch(e){clean()}return}
-    vmFrame(c,W,H,P,t);if(opt.onTick)opt.onTick(t,P);raf=requestAnimationFrame(loop)}
+    FR(c,W,H,P,t);if(opt.onTick)opt.onTick(t,P);raf=requestAnimationFrame(loop)}
    VM.stop=function(){stopped='cancel';try{rec.stop()}catch(e){clean()}};
    if(opt.countdown){var n=3;(function cd(){if(opt.onCount)opt.onCount(n);if(n===0)return go();n--;setTimeout(cd,800)})()}else go()})})
  .catch(function(e){clean();throw e})}
@@ -2297,6 +2304,213 @@ function vmSpeakAll(btn){if(!window.speechSynthesis){toast('या फोनम�
  if(speechSynthesis.speaking){speechSynthesis.cancel();btn.textContent='🔊 स्क्रिप्ट ऐका (फक्त झलक)';return}
  var v=vmVoice(),L=VM.scenes.map(function(s){return s.t}).filter(Boolean);if(!L.length)return;if(!v)toast('मराठी/हिंदी आवाज सापडला नाही – फोनचा आवाज वापरतो');
  btn.textContent='⏹️ थांबवा';L.forEach(function(t,i){var u=new SpeechSynthesisUtterance(t);if(v){u.voice=v;u.lang=v.lang}else u.lang='mr-IN';u.rate=0.95;if(i===L.length-1)u.onend=u.onerror=function(){btn.textContent='🔊 स्क्रिप्ट ऐका (फक्त झलक)'};speechSynthesis.speak(u)})}
+/* ===== ✨ मोशन ग्राफिक्स जाहिरात (v19) – AI चित्रांशिवाय, फक्त canvas ॲनिमेशन.
+   सीन: नाव/लोगो → ऑफर (शब्द-शब्द) → सरकणारे वैशिष्ट्य-कार्ड → आकडा मोजणारा किंमत/सूट बॅज → संपर्क + WhatsApp QR → “Digital Aarambh AI ने बनवले”.
+   इंटरनेट/AI सेवा लागत नाही. रेकॉर्डिंग वरच्या vmRender ने (canvas + WebAudio + MediaRecorder). ===== */
+var MG={busy:false,blob:null,url:'',mime:'',prev:0};
+var MG_ST={
+ sona:{n:'✨ सोनेरी',bg:['#04061c','#0b1148','#17206a'],a:'#ffc23d',a2:'#ffe7a3',a3:'#b7791f',ink:'#211600',dot:'255,200,90',card:'rgba(14,20,80,.93)',ch:[[62,66,69],[59,62,66],[55,59,62],[57,61,64]]},
+ san:{n:'🪔 सण',bg:['#0c0420','#26093f','#4a0f3c'],a:'#ff9f1c',a2:'#ffd27a',a3:'#c2410c',ink:'#2a0e00',dot:'255,150,60',card:'rgba(46,10,58,.93)',ch:[[62,66,69],[64,67,71],[66,69,73],[62,66,69]]},
+ taje:{n:'🌿 ताजे',bg:['#03101f','#062a40','#0a4152'],a:'#34d399',a2:'#c7f9e3',a3:'#0f766e',ink:'#022c22',dot:'110,231,183',card:'rgba(5,38,56,.93)',ch:[[60,64,67],[65,69,72],[67,71,74],[64,67,71]]}};
+function mgC(x){return x<0?0:x>1?1:x}
+function mgOut(x){x=mgC(x);return 1-Math.pow(1-x,3)}
+function mgBack(x){x=mgC(x);var s=1.70158;x=x-1;return x*x*((s+1)*x+s)+1}
+function mgIO(x){x=mgC(x);return x<0.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2}
+var MG_DV='०१२३४५६७८९';
+function mgNum(price){var s=String(price||'').replace(/\s+/g,' ').trim();if(!s)return null;
+ var dev=/[०-९]/.test(s),a=s.replace(/[०-९]/g,function(d){return String(MG_DV.indexOf(d))});
+ var m=/(₹|rs\.?|रु\.?)?\s*(\d[\d,]*(?:\.\d+)?)\s*(%|\/-|₹|रु\.?|टक्के)?/i.exec(a);
+ var pct=/%|टक्के|सूट|off|discount/i.test(s);if(!m||(a.match(/\d[\d,]*(?:\.\d+)?/g)||[]).length>1)return {txt:s,pct:pct};
+ var n=parseFloat(m[2].replace(/,/g,''));if(!isFinite(n)||n<=0)return {txt:s,pct:pct};
+ var pre=(m[1]||(m[3]&&/₹|रु/.test(m[3])))?'₹':'',suf=m[3]==='%'||m[3]==='टक्के'?'%':m[3]==='/-'?'/-':'';
+ var cap=(s.slice(0,m.index)+' '+s.slice(m.index+m[0].length)).replace(/\s+/g,' ').trim();
+ var dec=(m[2].split('.')[1]||'').length;
+ return {n:n,pre:pre,suf:suf,cap:cap,dev:dev,comma:/,/.test(m[2])||n>=10000,dec:dec,pct:pct||suf==='%'}}
+function mgFmt(pr,v){var s=pr.comma?Number(v).toLocaleString('en-IN',{minimumFractionDigits:pr.dec,maximumFractionDigits:pr.dec}):Number(v).toFixed(pr.dec);
+ if(pr.dev)s=s.replace(/\d/g,function(d){return MG_DV[+d]});return pr.pre+s+pr.suf}
+function mgSprite(rgb){var c=document.createElement('canvas');c.width=c.height=128;var x=c.getContext('2d'),g=x.createRadialGradient(64,64,0,64,64,64);
+ g.addColorStop(0,'rgba('+rgb+',1)');g.addColorStop(0.35,'rgba('+rgb+',.45)');g.addColorStop(1,'rgba('+rgb+',0)');x.fillStyle=g;x.fillRect(0,0,128,128);return c}
+function mgBgCanvas(W,H,S){var c=document.createElement('canvas');c.width=W;c.height=H;var x=c.getContext('2d'),g=x.createLinearGradient(0,0,W*0.35,H);
+ g.addColorStop(0,S.bg[0]);g.addColorStop(0.55,S.bg[1]);g.addColorStop(1,S.bg[2]);x.fillStyle=g;x.fillRect(0,0,W,H);
+ x.strokeStyle='rgba(255,255,255,.035)';x.lineWidth=1;for(var i=-H;i<W;i+=46){x.beginPath();x.moveTo(i,0);x.lineTo(i+H*0.6,H);x.stroke()}
+ var v=x.createRadialGradient(W/2,H*0.45,H*0.15,W/2,H*0.45,H*0.8);v.addColorStop(0,'rgba(0,0,0,0)');v.addColorStop(1,'rgba(0,0,0,.55)');x.fillStyle=v;x.fillRect(0,0,W,H);return c}
+function mgLines(c,text,weight,maxS,minS,maxW,maxL){var s=Math.round(maxS),lines=[text];for(;s>minS;s-=2){c.font=weight+' '+s+'px '+FONT;lines=vmWrap(c,text,maxW);if(lines.length<=maxL)break}
+ c.font=weight+' '+s+'px '+FONT;lines=vmWrap(c,text,maxW).slice(0,maxL);return {s:s,lines:lines}}
+function mgTxt(c,t,x,y,fill,s,ow){c.lineJoin='round';c.lineWidth=s*(ow||0.12);c.strokeStyle='rgba(0,0,0,.55)';c.strokeText(t,x,y);c.fillStyle=fill;c.fillText(t,x,y)}
+function mgStar(c,cx,cy,r,col){c.save();c.fillStyle=col;c.beginPath();for(var i=0;i<8;i++){var a=i*Math.PI/4,rr=i%2?r*0.3:r;c.lineTo(cx+Math.cos(a)*rr,cy+Math.sin(a)*rr)}c.closePath();c.fill();c.restore()}
+function mgShopIcon(c,cx,cy,s,col,col2){c.save();c.lineJoin='round';c.lineCap='round';var aw=cy-s*0.36,ah=s*0.2,n=5,w=s*1.0,x0=cx-w/2,sw=w/n;
+ c.fillStyle=col;c.fillRect(x0,aw-s*0.05,w,s*0.05);
+ for(var i=0;i<n;i++){c.fillStyle=i%2?col2:col;c.fillRect(x0+i*sw,aw,sw,ah);c.beginPath();c.arc(x0+i*sw+sw/2,aw+ah,sw/2,0,Math.PI);c.fill()}
+ c.strokeStyle=col;c.lineWidth=s*0.06;c.strokeRect(cx-s*0.4,aw+ah+sw/2,s*0.8,s*0.42);
+ c.fillStyle=col;c.fillRect(cx+s*0.05,aw+ah+sw/2+s*0.1,s*0.22,s*0.32);
+ c.fillStyle=col2;c.fillRect(cx-s*0.3,aw+ah+sw/2+s*0.1,s*0.24,s*0.16);c.restore()}
+function mgData(){var g=function(id){return vmVal(id)};var f=[g('mgF1'),g('mgF2'),g('mgF3')].filter(Boolean);
+ var ph=normPhone(g('mgPhone')),s=vmShop(),ad=$('#mgAddr')&&$('#mgAddr').checked?(s.sAddr||''):'';
+ return {name:g('mgName'),offer:g('mgOffer'),feats:f,price:g('mgPrice'),phone:/^[6-9]\d{9}$/.test(ph)?ph:'',rawPhone:g('mgPhone'),tag:String(s.sType||'').trim(),addr:ad,style:MG.style||'sona',au:g('mgAu')||'music'}}
+function mgPlan(d,W,H){var S=MG_ST[d.style]||MG_ST.sona,X=0.5,sc=[];
+ sc.push({k:'title',d:3.1});
+ if(d.offer)sc.push({k:'offer',d:Math.max(2.9,Math.min(4.2,2.3+vmGraph(d.offer).length*0.035))});
+ if(d.feats.length)sc.push({k:'feat',d:1.7+0.75*d.feats.length});
+ var pr=d.price?mgNum(d.price):null;if(pr)sc.push({k:'price',d:3.1});
+ sc.push({k:'cta',d:d.phone?3.9:3.2});
+ var base=sc.reduce(function(a,s){return a+s.d},0)-X*sc.length+1.9,f=base<14.6?Math.min(1.45,14.6/base):1;sc.forEach(function(s){s.d*=f});
+ sc.push({k:'end',d:1.9});var t=0;sc.forEach(function(s){s.t0=t;s.t1=t+s.d;t=s.t1-X});
+ var P={sc:sc,X:X,W:W,H:H,S:S,d:d,pr:pr,total:sc[sc.length-1].t1,bg:mgBgCanvas(W,H,S),dot:mgSprite(S.dot),parts:[]};
+ var r=11;function rnd(){r=(r*9301+49297)%233280;return r/233280}
+ for(var i=0;i<30;i++)P.parts.push({x:rnd()*W,y:rnd()*H,v:14+rnd()*40,r:W*(0.012+rnd()*0.035),w:0.4+rnd()*1.2,ph:rnd()*6.3,a:0.25+rnd()*0.5});
+ P.qr=null;if(d.phone){try{P.qr=qrCanvas('https://wa.me/91'+d.phone,{px:420,brand:false})}catch(e){P.qr=null}}
+ return P}
+function mgBgDraw(c,W,H,P,t){c.drawImage(P.bg,0,0,W,H);c.save();c.globalCompositeOperation='lighter';
+ var R=W*1.1;c.globalAlpha=0.22;c.drawImage(P.dot,W*0.15+Math.sin(t*0.35)*W*0.2-R/2,H*0.22+Math.cos(t*0.28)*H*0.06-R/2,R,R);
+ c.globalAlpha=0.16;c.drawImage(P.dot,W*0.85+Math.cos(t*0.3)*W*0.18-R/2,H*0.78+Math.sin(t*0.25)*H*0.06-R/2,R,R);
+ P.parts.forEach(function(p){var y=((p.y-t*p.v)%(H+60)+H+60)%(H+60)-30,x=p.x+Math.sin(t*p.w+p.ph)*12,a=p.a*(0.55+0.45*Math.sin(t*p.w*2+p.ph));c.globalAlpha=Math.max(0,a);c.drawImage(P.dot,x-p.r,y-p.r,p.r*2,p.r*2)});
+ c.restore()}
+var MG_DRAW={
+ title:function(c,W,H,P,lt){var S=P.S,d=P.d,cx=W/2,cy=H*0.34,R=W*0.17;
+  c.save();c.translate(cx,cy);c.rotate(lt*0.25);c.globalAlpha*=0.14*mgOut(lt/0.8);c.fillStyle=S.a;
+  for(var i=0;i<12;i++){c.rotate(Math.PI/6);c.beginPath();c.moveTo(0,0);c.lineTo(-W*0.035,-W*0.62);c.lineTo(W*0.035,-W*0.62);c.closePath();c.fill()}c.restore();
+  c.save();c.globalAlpha*=0.5*mgOut(lt/0.6);c.drawImage(P.dot,cx-R*2,cy-R*2,R*4,R*4);c.restore();
+  var k=mgBack((lt-0.15)/0.6);if(k>0){c.save();c.translate(cx,cy);c.scale(k,k);c.beginPath();c.arc(0,0,R*0.86,0,6.2832);c.fillStyle=S.card;c.fill();mgShopIcon(c,0,0,R*1.0,S.a,S.a2);c.restore()}
+  c.save();c.lineWidth=W*0.012;c.lineCap='round';c.strokeStyle=S.a;c.beginPath();c.arc(cx,cy,R,-Math.PI/2,-Math.PI/2+6.2832*mgOut(lt/0.85));c.stroke();
+  c.lineWidth=W*0.004;c.strokeStyle=S.a2;c.globalAlpha*=0.6;c.beginPath();c.arc(cx,cy,R*1.12,Math.PI/2,Math.PI/2+6.2832*mgOut((lt-0.2)/0.9));c.stroke();c.restore();
+  var L=mgLines(c,d.name||'आपलं दुकान','800',W*0.13,W*0.06,W*0.86,2),s=L.s,lh=s*1.25,y0=H*0.585-(L.lines.length-1)*lh/2,e=mgOut((lt-0.55)/0.65);
+  if(e>0){c.save();c.beginPath();c.rect(cx-W*0.5*e,y0-lh,W*e,lh*(L.lines.length+1));c.clip();c.textAlign='center';c.textBaseline='middle';c.font='800 '+s+'px '+FONT;
+   var g=c.createLinearGradient(0,y0-s/2,0,y0+(L.lines.length-1)*lh+s/2);g.addColorStop(0,S.a2);g.addColorStop(1,S.a);
+   L.lines.forEach(function(l,i){mgTxt(c,l,cx,y0+i*lh+(1-e)*18,g,s,0.1)});c.restore()}
+  var uy=y0+(L.lines.length-1)*lh+s*0.85,uw=W*0.5*mgOut((lt-1.0)/0.5);if(uw>1){c.save();c.fillStyle=S.a;c.fillRect(cx-uw/2,uy-3,uw,6);mgStar(c,cx-uw/2-14,uy,12,S.a2);mgStar(c,cx+uw/2+14,uy,12,S.a2);c.restore()}
+  var ta=mgOut((lt-1.3)/0.5);if(ta>0){var tg=d.tag||'आपल्या सेवेत सदैव तत्पर',T=mgLines(c,tg,'600',W*0.058,W*0.038,W*0.84,1);c.save();c.globalAlpha*=ta;c.textAlign='center';c.textBaseline='middle';c.font='600 '+T.s+'px '+FONT;mgTxt(c,T.lines[0],cx,uy+T.s*1.5+(1-ta)*14,'#f3f0ff',T.s,0.1);c.restore()}},
+ offer:function(c,W,H,P,lt){var S=P.S,d=P.d,cx=W/2;
+  var L=mgLines(c,d.offer,'800',W*0.105,W*0.055,W*0.76,4),s=L.s,lh=s*1.36,ph=L.lines.length*lh+s*1.3,pw=W*0.88,py=H*0.52-ph/2;
+  var pk=mgOut(lt/0.45);c.save();c.translate(cx,py+ph/2);c.scale(pk,1);vmRR(c,-pw/2,-ph/2,pw,ph,s*0.5);c.fillStyle=S.card;c.fill();c.lineWidth=W*0.006;c.strokeStyle=S.a;c.stroke();c.restore();
+  var lb='खास ऑफर',ls=Math.round(W*0.058),lp=mgBack((lt-0.1)/0.5);if(lp>0){c.save();c.font='800 '+ls+'px '+FONT;var lw=c.measureText(lb).width+ls*1.8,ly=py-ls*1.9+(1-lp)*-60;
+   c.globalAlpha*=mgC(lp);vmRR(c,cx-lw/2,ly-ls*0.85,lw,ls*1.7,ls*0.85);c.fillStyle=S.a;c.fill();c.textAlign='center';c.textBaseline='middle';c.fillStyle=S.ink;c.fillText(lb,cx,ly+ls*0.05);
+   mgStar(c,cx-lw/2-ls*0.8,ly,ls*0.45,S.a2);mgStar(c,cx+lw/2+ls*0.8,ly,ls*0.45,S.a2);c.restore()}
+  c.font='800 '+s+'px '+FONT;var sp=c.measureText(' ').width,k=0;c.textBaseline='middle';c.textAlign='left';
+  L.lines.forEach(function(l,i){var ws=l.split(' '),tw=c.measureText(l).width,x=cx-tw/2,y=py+s*0.65+lh*(i+0.5);
+   ws.forEach(function(w){var ww=c.measureText(w).width,dl=0.35+k*0.11,p=mgBack((lt-dl)/0.42),a=mgC((lt-dl)/0.22);k++;
+    if(a>0){c.save();c.globalAlpha*=a;c.translate(x+ww/2,y);var z=0.55+0.45*p;c.scale(z,z);mgTxt(c,w,-ww/2,0,/[0-9०-९%₹]/.test(w)?S.a:'#fff6e0',s,0.1);c.restore()}x+=ww+sp})});
+  var sw=mgOut((lt-0.9)/0.6);if(sw>0){c.save();c.fillStyle=S.a;c.globalAlpha*=0.9;c.fillRect(cx-pw*0.3*sw,py+ph+s*0.55,pw*0.6*sw,5);c.restore()}},
+ feat:function(c,W,H,P,lt){var S=P.S,F=P.d.feats,cx=W/2,hs=Math.round(W*0.078),ha=mgOut(lt/0.5);
+  c.save();c.globalAlpha*=ha;c.textAlign='center';c.textBaseline='middle';c.font='800 '+hs+'px '+FONT;mgTxt(c,'आमची खासियत',cx+(1-ha)*-40,H*0.22,S.a2,hs,0.1);
+  c.fillStyle=S.a;c.fillRect(cx-W*0.12*ha,H*0.22+hs*0.85,W*0.24*ha,5);c.restore();
+  var ch=W*0.17,gap=W*0.045,cw=W*0.86,tot=F.length*ch+(F.length-1)*gap,y0=H*0.53-tot/2;
+  F.forEach(function(f,i){var dl=0.35+i*0.42,p=mgOut((lt-dl)/0.6);if(p<=0)return;var x=(W-cw)/2+(1-p)*W*1.05*(i%2?1:-1),y=y0+i*(ch+gap);
+   c.save();c.globalAlpha*=mgC(p*1.4);vmRR(c,x,y,cw,ch,ch*0.22);c.fillStyle=S.card;c.fill();c.lineWidth=2;c.strokeStyle='rgba(255,255,255,.14)';c.stroke();
+   c.fillStyle=S.a;vmRR(c,x,y,ch*0.09,ch,ch*0.045);c.fill();
+   var ccx=x+ch*0.55,ccy=y+ch/2,cr=ch*0.27,q=mgBack((lt-dl-0.3)/0.4);if(q>0){c.save();c.translate(ccx,ccy);c.scale(q,q);c.beginPath();c.arc(0,0,cr,0,6.2832);c.fillStyle=S.a;c.fill();c.restore();
+    var cp=mgOut((lt-dl-0.45)/0.35);if(cp>0){c.save();c.strokeStyle=S.ink;c.lineWidth=cr*0.22;c.lineCap='round';c.lineJoin='round';c.beginPath();
+     var pts=[[-0.45,0.02],[-0.12,0.35],[0.48,-0.32]],L1=Math.hypot(0.33,0.33),L2=Math.hypot(0.6,0.67),tl=(L1+L2)*cp;c.moveTo(ccx+pts[0][0]*cr,ccy+pts[0][1]*cr);
+     if(tl<=L1){var r1=tl/L1;c.lineTo(ccx+(pts[0][0]+0.33*r1)*cr,ccy+(pts[0][1]+0.33*r1)*cr)}else{var r2=(tl-L1)/L2;c.lineTo(ccx+pts[1][0]*cr,ccy+pts[1][1]*cr);c.lineTo(ccx+(pts[1][0]+0.6*r2)*cr,ccy+(pts[1][1]-0.67*r2)*cr)}c.stroke();c.restore()}}
+   var tx=x+ch*1.0,T=mgLines(c,f,'800',W*0.062,W*0.04,cw-ch*1.15,2),lh=T.s*1.28;c.textAlign='left';c.textBaseline='middle';c.font='800 '+T.s+'px '+FONT;
+   T.lines.forEach(function(l,j){mgTxt(c,l,tx,y+ch/2+(j-(T.lines.length-1)/2)*lh,'#fff6e0',T.s,0.08)});c.restore()})},
+ price:function(c,W,H,P,lt){var S=P.S,pr=P.pr,cx=W/2,cy=H*0.47,R=W*0.3,hs=Math.round(W*0.08),ha=mgOut(lt/0.5);
+  c.save();c.globalAlpha*=ha;c.textAlign='center';c.textBaseline='middle';c.font='800 '+hs+'px '+FONT;mgTxt(c,pr.pct?'खास ऑफर':'खास किंमत',cx,H*0.2+(1-ha)*-30,S.a2,hs,0.1);c.restore();
+  var k=mgBack((lt-0.1)/0.6);if(k>0){c.save();c.translate(cx,cy);c.scale(k,k);c.save();c.rotate(lt*0.35);c.beginPath();for(var i=0;i<36;i++){var a=i*Math.PI/18,rr=i%2?R*0.87:R;c.lineTo(Math.cos(a)*rr,Math.sin(a)*rr)}c.closePath();
+   var g=c.createRadialGradient(0,-R*0.3,R*0.1,0,0,R);g.addColorStop(0,S.a2);g.addColorStop(0.6,S.a);g.addColorStop(1,S.a3);c.fillStyle=g;c.fill();c.restore();
+   c.beginPath();c.arc(0,0,R*0.76,0,6.2832);c.fillStyle=S.bg[1];c.fill();c.lineWidth=W*0.006;c.strokeStyle=S.a2;c.stroke();
+   c.textAlign='center';c.textBaseline='middle';
+   if(pr.n!=null){var v=pr.n*mgOut((lt-0.45)/1.3),txt=mgFmt(pr,pr.dec?v:Math.round(v)),full=mgFmt(pr,pr.n),fs=vmFit(c,full,'800',Math.round(R*0.62),Math.round(R*0.22),R*1.3);c.font='800 '+fs+'px '+FONT;mgTxt(c,txt,0,R*0.02,S.a,fs,0.06)}
+   else{var T=mgLines(c,pr.txt,'800',R*0.3,R*0.13,R*1.3,3),lh=T.s*1.25;c.font='800 '+T.s+'px '+FONT;T.lines.forEach(function(l,j){mgTxt(c,l,0,(j-(T.lines.length-1)/2)*lh,S.a,T.s,0.06)})}
+   c.restore()}
+  var q=(lt-1.75)/0.7;if(q>0&&q<1){c.save();c.globalAlpha*=1-q;c.lineWidth=W*0.01*(1-q)+1;c.strokeStyle=S.a2;c.beginPath();c.arc(cx,cy,R*(1+0.45*mgOut(q)),0,6.2832);c.stroke();c.restore()}
+  for(var j=0;j<6;j++){var an=[200,250,290,340,20,160][j]*Math.PI/180,tw=Math.sin(lt*5+j*1.7),sa=mgC((lt-0.6)/0.4)*Math.max(0,tw);if(sa>0){c.save();c.globalAlpha*=sa;mgStar(c,cx+Math.cos(an)*R*1.22,cy+Math.sin(an)*R*1.22,W*0.022,S.a2);c.restore()}}
+  if(pr.n!=null&&pr.cap){var ca=mgOut((lt-0.9)/0.5);if(ca>0){var C=mgLines(c,pr.cap,'800',W*0.09,W*0.05,W*0.84,2),lh2=C.s*1.3;c.save();c.globalAlpha*=ca;c.textAlign='center';c.textBaseline='middle';c.font='800 '+C.s+'px '+FONT;
+   C.lines.forEach(function(l,j){mgTxt(c,l,cx,cy+R*1.3+C.s*0.5+j*lh2+(1-ca)*20,S.a2,C.s,0.1)});c.restore()}}},
+ cta:function(c,W,H,P,lt){var S=P.S,d=P.d,cx=W/2,hs=Math.round(W*0.085),ha=mgOut(lt/0.5);
+  c.save();c.globalAlpha*=ha;c.textAlign='center';c.textBaseline='middle';c.font='800 '+hs+'px '+FONT;mgTxt(c,d.phone?'आजच संपर्क करा':'आजच भेट द्या',cx,H*0.13+(1-ha)*-30,S.a2,hs,0.1);
+  if(d.name){var N=mgLines(c,d.name,'600',W*0.058,W*0.038,W*0.86,1);c.font='600 '+N.s+'px '+FONT;mgTxt(c,N.lines[0],cx,H*0.13+hs*1.15,'#f3f0ff',N.s,0.1)}c.restore();
+  var y=H*0.25;
+  if(P.qr){var Q=W*0.46,p=mgBack((lt-0.25)/0.6);if(p>0){c.save();c.translate(cx,y+Q/2);c.rotate((1-mgC(p))*0.25);c.scale(p,p);
+    c.save();c.globalAlpha*=0.55;c.drawImage(P.dot,-Q,-Q,Q*2,Q*2);c.restore();
+    vmRR(c,-Q/2,-Q/2,Q,Q,Q*0.07);c.fillStyle='#fff';c.fill();c.lineWidth=W*0.008;c.strokeStyle=S.a;c.stroke();var m=Q*0.04;c.imageSmoothingEnabled=false;c.drawImage(P.qr,-Q/2+m,-Q/2+m,Q-2*m,Q-2*m);c.imageSmoothingEnabled=true;c.restore()}
+   var qa=mgOut((lt-0.7)/0.5);if(qa>0){var qs=Math.round(W*0.046);c.save();c.globalAlpha*=qa;c.textAlign='center';c.textBaseline='middle';c.font='800 '+qs+'px '+FONT;mgTxt(c,'QR स्कॅन करा → WhatsApp वर बोला',cx,y+Q+qs*1.3,S.a,qs,0.1);c.restore()}
+   y=y+Q+W*0.21}
+  else if(d.offer){var O=mgLines(c,d.offer,'800',W*0.075,W*0.045,W*0.8,3),lh=O.s*1.3,bh=O.lines.length*lh+O.s,oa=mgOut((lt-0.25)/0.5);c.save();c.globalAlpha*=oa;vmRR(c,W*0.07,y,W*0.86,bh,O.s*0.5);c.fillStyle=S.card;c.fill();c.lineWidth=W*0.005;c.strokeStyle=S.a;c.stroke();
+   c.textAlign='center';c.textBaseline='middle';c.font='800 '+O.s+'px '+FONT;O.lines.forEach(function(l,j){mgTxt(c,l,cx,y+O.s*0.5+lh*(j+0.5),'#fff6e0',O.s,0.1)});c.restore();y+=bh+W*0.1}
+  else y=H*0.42;
+  if(d.phone){var bp=mgBack((lt-0.55)/0.55);if(bp>0){var pw=W*0.84,phh=W*0.17,pul=lt>1.2?1+0.035*Math.sin((lt-1.2)*6):1,num=d.phone.slice(0,5)+' '+d.phone.slice(5);
+    c.save();c.translate(cx,y+phh/2);c.scale(bp*pul,bp*pul);var g=c.createLinearGradient(0,-phh/2,0,phh/2);g.addColorStop(0,'#2bd46d');g.addColorStop(1,'#128c4a');vmRR(c,-pw/2,-phh/2,pw,phh,phh/2);c.fillStyle=g;c.fill();c.lineWidth=W*0.005;c.strokeStyle='rgba(255,255,255,.55)';c.stroke();
+    c.textAlign='center';c.textBaseline='middle';var fs=vmFit(c,num,'800',Math.round(phh*0.5),Math.round(phh*0.3),pw*0.8);c.font='800 '+fs+'px '+FONT;mgTxt(c,num,0,phh*0.03,'#ffffff',fs,0.08);c.restore();
+    var ls=Math.round(W*0.042);c.save();c.globalAlpha*=mgC(bp);c.textAlign='center';c.textBaseline='middle';c.font='600 '+ls+'px '+FONT;mgTxt(c,'कॉल / WhatsApp',cx,y-ls*0.9,'#c9f7da',ls,0.1);c.restore()}y+=W*0.24}
+  if(d.addr){var aa=mgOut((lt-0.9)/0.5);if(aa>0){var A=mgLines(c,d.addr,'600',W*0.045,W*0.032,W*0.84,2),lh3=A.s*1.35;c.save();c.globalAlpha*=aa;c.textAlign='center';c.textBaseline='middle';c.font='600 '+A.s+'px '+FONT;
+   A.lines.forEach(function(l,j){mgTxt(c,l,cx,y+j*lh3,'#ffe9c2',A.s,0.1)});c.restore()}}},
+ end:function(c,W,H,P,lt){var S=P.S,cx=W/2,e=mgOut(lt/0.6),bh=Math.round(W*0.14);
+  c.save();c.globalAlpha*=0.6*e;c.drawImage(P.dot,cx-W*0.6,H*0.45-W*0.6,W*1.2,W*1.2);c.restore();
+  c.save();c.globalAlpha*=e;c.translate(cx,H*0.45);var z=0.85+0.15*e;c.scale(z,z);brandBadge(c,0,-bh/2,bh,{align:'center'});c.restore();
+  var ta=mgOut((lt-0.3)/0.5),ts=Math.round(W*0.06);if(ta>0){c.save();c.globalAlpha*=ta;c.textAlign='center';c.textBaseline='middle';c.font='800 '+ts+'px '+FONT;mgTxt(c,'Digital Aarambh AI ने बनवले',cx,H*0.45+bh*0.95+(1-ta)*16,S.a2,ts,0.1);
+   c.font='600 '+Math.round(ts*0.72)+'px '+FONT;mgTxt(c,'मोफत मराठी डिजिटल ॲप',cx,H*0.45+bh*0.95+ts*1.4,'#e6e8ff',ts*0.72,0.1);c.restore()}}};
+function mgFrame(c,W,H,P,t){mgBgDraw(c,W,H,P,t);var X=P.X,n=P.sc.length;
+ for(var i=0;i<n;i++){var s=P.sc[i];if(t<s.t0||t>s.t1)continue;var lt=t-s.t0,inn=i?mgOut(lt/X):1,out=i<n-1?mgIO((t-(s.t1-X))/X):0,a=Math.min(inn,1-out);if(a<=0.002)continue;
+  c.save();c.globalAlpha=a;var dy=(1-inn)*H*0.035-out*H*0.045,z=1+out*0.05;c.translate(W/2,H/2+dy);c.scale(z,z);c.translate(-W/2,-H/2);MG_DRAW[s.k](c,W,H,P,lt,s);c.restore()}
+ for(var j=0;j<n-1;j++){var b=P.sc[j],q=(t-(b.t1-X))/X;if(q<=0||q>=1)continue;var x=-W*0.7+q*W*2.2,bw=W*0.22;
+  c.save();c.globalAlpha=0.75*Math.sin(Math.PI*q);c.fillStyle=P.S.a;c.beginPath();c.moveTo(x,0);c.lineTo(x+bw,0);c.lineTo(x+bw-H*0.35,H);c.lineTo(x-H*0.35,H);c.closePath();c.fill();
+  c.globalAlpha=0.5*Math.sin(Math.PI*q);c.fillStyle=P.S.a2;c.beginPath();c.moveTo(x+bw*1.25,0);c.lineTo(x+bw*1.4,0);c.lineTo(x+bw*1.4-H*0.35,H);c.lineTo(x+bw*1.25-H*0.35,H);c.closePath();c.fill();c.restore()}
+ var mid=P.sc.filter(function(s){return s.k==='offer'||s.k==='feat'||s.k==='price'});
+ if(P.d.name&&mid.length){var m0=mid[0].t0,m1=mid[mid.length-1].t1,ba=Math.min(mgC((t-m0)/0.5),mgC((m1-t)/0.5));if(ba>0){var bs=Math.round(W*0.036);c.save();c.globalAlpha=ba;c.font='800 '+bs+'px '+FONT;
+  var nm=P.d.name.length>34?P.d.name.slice(0,34)+'…':P.d.name,bw2=c.measureText(nm).width+bs*1.6;vmRR(c,(W-bw2)/2,H*0.045,bw2,bs*1.8,bs*0.9);c.fillStyle='rgba(4,6,30,.65)';c.fill();c.lineWidth=2;c.strokeStyle=P.S.a;c.stroke();
+  c.textAlign='center';c.textBaseline='middle';c.fillStyle=P.S.a2;c.fillText(nm,W/2,H*0.045+bs*0.92);c.restore()}}
+ c.save();c.globalAlpha=0.7;c.fillStyle=P.S.a;c.fillRect(0,H-5,W*mgC(t/P.total),5);c.restore()}
+/* ---- मोशन आवाज: WebAudio ने इथेच (हलकं संगीत + व्हूश/क्लिक/टिक/घंटा) ---- */
+function mgWhoosh(ac,out,nb,t,vol){var s=ac.createBufferSource(),f=ac.createBiquadFilter(),g=ac.createGain();s.buffer=nb;f.type='bandpass';f.Q.value=1.2;f.frequency.setValueAtTime(350,t);f.frequency.exponentialRampToValueAtTime(3200,t+0.42);
+ g.gain.setValueAtTime(0.0001,t);g.gain.exponentialRampToValueAtTime(vol,t+0.16);g.gain.exponentialRampToValueAtTime(0.0001,t+0.48);s.connect(f);f.connect(g);g.connect(out);s.start(t);s.stop(t+0.5)}
+function mgPop(ac,out,t,f0,vol){var o=ac.createOscillator(),g=ac.createGain();o.type='sine';o.frequency.setValueAtTime(f0,t);o.frequency.exponentialRampToValueAtTime(f0*0.45,t+0.09);g.gain.setValueAtTime(vol,t);g.gain.exponentialRampToValueAtTime(0.0001,t+0.1);o.connect(g);g.connect(out);o.start(t);o.stop(t+0.12)}
+function mgAudio(ac,out,t0,P,mode){if(!mode||mode==='none')return;var nb=vmNoise(ac),hz=function(m){return 440*Math.pow(2,(m-69)/12)},T=P.total,S=P.S,d=P.d;
+ if(mode==='music'){var bar=60/96*4;vmDrone(ac,out,[hz(S.ch[0][0]-24)],t0,t0+T,0.025);
+  for(var b=0,u=t0;u<t0+T-0.6;b++,u+=bar){var cc=S.ch[b%4];cc.forEach(function(m){vmTone(ac,out,hz(m),u,Math.min(bar*1.05,t0+T-u),'triangle',0.035,0.5)});
+   for(var q=0;q<4;q++){var tq=u+q*bar/4;if(tq>t0+T-0.8)break;vmDrum(ac,out,tq,100,45,0.25,q%2?0.18:0.32);vmHit(ac,out,nb,tq+bar/8,6500,1,0.04,0.05)}
+   if(u<t0+T-1.5)vmBell(ac,out,hz(cc[2]+12),u+bar*0.5,0.035)}}
+ P.sc.forEach(function(s,i){if(i)mgWhoosh(ac,out,nb,t0+s.t0-0.2,0.22);
+  if(s.k==='title'){vmBell(ac,out,hz(74),t0+0.6,0.08);vmBell(ac,out,hz(81),t0+0.95,0.06)}
+  if(s.k==='offer'){var nw=String(d.offer).split(/\s+/).length;for(var k=0;k<Math.min(nw,14);k++)mgPop(ac,out,t0+s.t0+0.35+k*0.11,1000+k*30,0.06)}
+  if(s.k==='feat')d.feats.forEach(function(f,j){mgPop(ac,out,t0+s.t0+0.45+j*0.42,700,0.12);mgPop(ac,out,t0+s.t0+0.8+j*0.42,1300,0.06)});
+  if(s.k==='price'){for(var k2=0;k2<16;k2++){var tt=s.t0+0.45+1.3*(1-Math.pow(1-k2/16,1/3)*1);mgPop(ac,out,t0+s.t0+0.45+k2*0.075*(1+k2*0.06),1800,0.05)}vmBell(ac,out,hz(86),t0+s.t0+1.8,0.09);vmBell(ac,out,hz(79),t0+s.t0+1.85,0.06)}
+  if(s.k==='cta'){vmBell(ac,out,hz(76),t0+s.t0+0.6,0.07)}
+  if(s.k==='end')vmBell(ac,out,hz(69),t0+s.t0+0.25,0.07)})}
+function mgUI(s){var sv=st.get('mg',{})||{},v=function(k,d){return esc(sv[k]!=null?sv[k]:(d||''))};
+ return '<div class="vmmode" id="vmMode"><button type="button" data-m="ai">🎬 AI चित्रांसह व्हिडिओ</button><button type="button" data-m="mg">✨ मोशन जाहिरात<small>AI चित्रांशिवाय, लगेच</small></button></div>'+
+ '<div id="mgBox" class="hide"><div class="vmhead mghead"><b>✨ मोशन ग्राफिक्स जाहिरात</b><small>नाव, ऑफर, वैशिष्ट्ये, किंमत/सूट व फोन लिहा → हलणारी अक्षरं, सरकणारे कार्ड, आकडा मोजणारा बॅज, WhatsApp QR → सुमारे 15 सेकंदाचा 9:16 व्हिडिओ (Status / Reels). AI चित्रं नाहीत, इंटरनेट लागत नाही – लगेच तयार.</small></div>'+
+ '<div class="two"><div><label for="mgName">दुकानाचे नाव</label><input id="mgName" maxlength="40" value="'+v('name',s.sName)+'"></div><div><label for="mgPhone">फोन <em>(WhatsApp QR)</em></label><input id="mgPhone" inputmode="tel" maxlength="16" value="'+v('phone',s.sPhone)+'"></div></div>'+
+ '<label for="mgOffer">ऑफर / मुख्य ओळ</label><input id="mgOffer" maxlength="80" placeholder="उदा. दिवाळी धमाका – सर्व साड्यांवर खास सूट" value="'+v('offer')+'">'+
+ '<label for="mgF1">वैशिष्ट्ये <em>(ऐच्छिक, 3 पर्यंत – एका ओळीत एक)</em></label><input id="mgF1" maxlength="40" placeholder="उदा. ताजा माल रोज" value="'+v('f1')+'"><input id="mgF2" aria-label="वैशिष्ट्य 2" maxlength="40" placeholder="उदा. घरपोच सेवा" value="'+v('f2')+'" style="margin-top:6px"><input id="mgF3" aria-label="वैशिष्ट्य 3" maxlength="40" placeholder="उदा. UPI पेमेंट चालते" value="'+v('f3')+'" style="margin-top:6px">'+
+ '<label for="mgPrice">किंमत / सूट <em>(ऐच्छिक – आकडा 0 पासून मोजत वाढतो; तुम्ही लिहाल तेच दिसेल)</em></label><input id="mgPrice" maxlength="40" placeholder="उदा. 50% सूट  किंवा  ₹199 पासून" value="'+v('price')+'">'+
+ (s.sAddr?'<label class="dpai"><input type="checkbox" id="mgAddr"'+(sv.addr?' checked':'')+'> 📍 शेवटच्या सीनवर दुकानाचा पत्ता पण</label>':'')+
+ '<div class="vmstep">🎨 रंगसंगती</div><div class="vmchips" id="mgSt">'+Object.keys(MG_ST).map(function(k){return '<button type="button" data-st="'+k+'">'+esc(MG_ST[k].n)+'</button>'}).join('')+'</div>'+
+ '<div class="vmopts"><div><label for="mgAu">आवाज</label><select id="mgAu"><option value="music">🎵 हलकं संगीत + क्लिक</option><option value="sfx">🔔 फक्त क्लिक/व्हूश</option><option value="none">🔇 आवाज नको</option></select></div><div><label>व्हिडिओ</label><p class="note" id="mgLen" style="margin:6px 0 0">720×1280 · 9:16</p></div></div>'+
+ '<div class="row"><button class="btn alt" type="button" id="mgPrev">▶️ झलक पाहा</button><button class="btn" type="button" id="mgGo">🎬 मोशन व्हिडिओ बनवा</button></div><p class="note" id="mgN">झलक फक्त पाहण्यासाठी; “बनवा” दाबल्यावर व्हिडिओ जितका लांब तितका वेळ (सुमारे 15 सेकंद) लागतो – स्क्रीन चालू ठेवा.</p>'+
+ '<div class="vmstage"><canvas id="mgCv" width="720" height="1280"></canvas></div>'+
+ '<div class="vmres hide" id="mgRes"><video id="mgVid" controls playsinline></video><p class="note gold" id="mgFmt"></p><div class="row" style="justify-content:center"><button class="btn" type="button" id="mgDl">⬇️ Download</button><button class="btn wa" type="button" id="mgSh">📤 WhatsApp वर पाठवा</button></div><p class="note">WhatsApp बटण चालत नसेल तर: Download करा → WhatsApp → 📎 → गॅलरी/Document मधून व्हिडिओ निवडा.</p></div></div>'}
+function mgInit(b){var sv=st.get('mg',{})||{},W=720,H=1280,cv=$('#mgCv',b),c=cv.getContext('2d'),N=$('#mgN',b),rt=0;MG.style=MG_ST[sv.st]?sv.st:'sona';if(sv.au)$('#mgAu',b).value=sv.au;
+ function save(){var d=mgData();st.set('mg',{name:vmVal('mgName'),phone:vmVal('mgPhone'),offer:d.offer,f1:vmVal('mgF1'),f2:vmVal('mgF2'),f3:vmVal('mgF3'),price:d.price,st:MG.style,au:d.au,addr:!!($('#mgAddr',b)&&$('#mgAddr',b).checked)})}
+ function stopPrev(){if(MG.prev){cancelAnimationFrame(MG.prev);MG.prev=0;$('#mgPrev',b).textContent='▶️ झलक पाहा'}}
+ function still(){if(MG.prev||VM.busy)return;cv.width=W;cv.height=H;vmFonts().then(function(){if(MG.prev||VM.busy)return;var P=mgPlan(mgData(),W,H);mgFrame(c,W,H,P,Math.min(2.6,P.sc[0].t1-0.6));$('#mgLen',b).textContent='720×1280 · 9:16 · '+Math.round(P.total)+' सेकंद · '+(P.sc.length-1)+' सीन + शेवट'})}
+ function mode(m){$$('#vmMode [data-m]',b).forEach(function(x){x.classList.toggle('on',x.dataset.m===m)});$('#mgBox',b).classList.toggle('hide',m!=='mg');$('#vmAiBox',b).classList.toggle('hide',m==='mg');st.set('vmMode',m);if(m==='mg')still();else stopPrev()}
+ $$('#vmMode [data-m]',b).forEach(function(x){x.onclick=function(){if(VM.busy){toast('आधी चालू व्हिडिओ पूर्ण होऊ द्या');return}mode(x.dataset.m)}});
+ function stUI(){$$('#mgSt [data-st]',b).forEach(function(x){x.classList.toggle('on',x.dataset.st===MG.style)})}stUI();
+ $$('#mgSt [data-st]',b).forEach(function(x){x.onclick=function(){MG.style=x.dataset.st;stUI();save();still()}});
+ ['mgName','mgPhone','mgOffer','mgF1','mgF2','mgF3','mgPrice'].forEach(function(id){var e=$('#'+id,b);e.oninput=function(){save();clearTimeout(rt);rt=setTimeout(still,400)}});
+ $('#mgAu',b).onchange=save;var ad=$('#mgAddr',b);if(ad)ad.onchange=function(){save();still()};
+ function check(){var d=mgData();if(!d.name){toast('आधी दुकानाचे नाव लिहा');$('#mgName',b).focus();return null}
+  if(d.rawPhone&&!d.phone){toast('फोन 10 अंकी लिहा (उदा. 9876543210) किंवा रिकामा ठेवा');$('#mgPhone',b).focus();return null}return d}
+ $('#mgPrev',b).onclick=function(){if(MG.prev){stopPrev();still();return}if(VM.busy)return;var d=check();if(!d)return;var btn=this;
+  vmFonts().then(function(){cv.width=W;cv.height=H;var P=mgPlan(d,W,H),st0=performance.now();btn.textContent='⏹️ झलक थांबवा';
+   (function f(){var t=(performance.now()-st0)/1000;if(t>=P.total||!document.body.contains(cv)){mgFrame(c,W,H,P,Math.min(t,P.total));MG.prev=0;btn.textContent='▶️ झलक पाहा';return}mgFrame(c,W,H,P,t);MG.prev=requestAnimationFrame(f)})()})};
+ $('#mgGo',b).onclick=function(){var btn=this;if(VM.busy){if(VM.stop)VM.stop();return}var d=check();if(!d)return;stopPrev();save();
+  if(vmMime()===null){N.textContent='⚠️ या browser मध्ये व्हिडिओ रेकॉर्डिंग चालत नाही. Android वर Chrome मध्ये उघडा.';return}
+  $('#mgRes',b).classList.add('hide');$('.vmstage',$('#mgBox',b)).classList.remove('hide');btn.textContent='⏹️ थांबवा';N.textContent='🎬 मोशन व्हिडिओ बनतोय… स्क्रीन चालू ठेवा, हे पान सोडू नका.';
+  try{cv.scrollIntoView({behavior:'smooth',block:'center'})}catch(e){}
+  vmRender({canvas:cv,size:[W,H],music:d.au,plan:function(w,h){return mgPlan(d,w,h)},frame:mgFrame,audio:function(ac,out,t0,P){mgAudio(ac,out,t0,P,d.au)},
+   onTick:function(t,P){N.textContent='🎬 बनतोय… '+Math.floor(t)+' / '+Math.round(P.total)+' सेकंद'}})
+  .then(function(r){MG.blob=r.blob;MG.mime=r.mime;MG.full=r.full;if(MG.url)try{URL.revokeObjectURL(MG.url)}catch(e){}MG.url=URL.createObjectURL(r.blob);$('#mgVid',b).src=MG.url;
+   var MB=(r.blob.size/1048576).toFixed(1);$('#mgFmt',b).textContent=vmFmtNote(r.mime,MB,r.full);$('#mgRes',b).classList.remove('hide');$('.vmstage',$('#mgBox',b)).classList.add('hide');
+   N.textContent='✅ मोशन व्हिडिओ तयार – '+Math.round(r.dur)+' सेकंद, '+r.W+'×'+r.H+'. आधी एकदा पाहा, मग पाठवा.';try{$('#mgRes',b).scrollIntoView({behavior:'smooth'})}catch(e){}})
+  .catch(function(e){var m=e&&e.message;N.textContent=m==='cancel'?'⏹️ थांबवलं.':'⚠️ व्हिडिओ बनला नाही. Chrome अपडेट करून पुन्हा प्रयत्न करा.';$('.vmstage',$('#mgBox',b)).classList.remove('hide');still()})
+  .then(function(){btn.textContent='🎬 मोशन व्हिडिओ बनवा'})};
+ function fname(){return 'aarambh-motion-'+new Date().toISOString().slice(0,10)+(/mp4/.test(MG.mime)?'.mp4':'.webm')}
+ $('#mgDl',b).onclick=function(){if(!MG.blob)return;var a=document.createElement('a');a.href=MG.url;a.download=fname();document.body.appendChild(a);a.click();setTimeout(function(){a.remove()},500)};
+ $('#mgSh',b).onclick=function(){if(!MG.blob)return;var f;try{f=new File([MG.blob],fname(),{type:MG.mime})}catch(e){f=null}
+  if(f&&navigator.canShare&&navigator.canShare({files:[f]})){navigator.share({files:[f],text:vmVal('mgName')||'Digital Aarambh AI'}).catch(function(){})}
+  else toast('या फोनवर थेट शेअर होत नाही – Download करून WhatsApp मधून पाठवा')};
+ mode(st.get('vmMode','ai')==='mg'?'mg':'ai')}
 /* ---- UI ---- */
 function vmSave(){st.set('vm',{k:VM.kind,tp:VM.topic,sc:VM.scenes.map(function(s){return {t:s.t,en:s.en}}),of:vmVal('vmOffer'),mu:vmVal('vmMus'),q:vmVal('vmQ')})}
 function vmLab(s){return s.st==='ld'?'⏳':s.st==='fail'?'रंगीत':s.src==='user'?'तुमचा फोटो':s.url?'AI चित्र':'चित्र नाही'}
@@ -2337,7 +2551,7 @@ function vmFmtNote(mime,MB,full){var mp4=/mp4/.test(mime),h264=/avc1|h264/i.test
 function aVideo(b){var sv=st.get('vm',{})||{},s=vmShop();VM.kind=sv.k||'';VM.topic=sv.tp||'';
  var ch='';VM_ORDER.forEach(function(g){ch+='<span class="grp">'+g[1]+'</span>';for(var k in VM_K)if(VM_K[k].g===g[0])ch+='<button type="button" data-k="'+k+'"'+(VM.kind===k?' class="on"':'')+'>'+esc(VM_K[k].n)+'</button>'});
  var mime=vmMime(),fmt=mime===null?'⚠️ या browser मध्ये व्हिडिओ रेकॉर्डिंग चालत नाही – Chrome वापरा.':/avc1/.test(mime)?'हा फोन MP4 (H.264) व्हिडिओ बनवेल ✅':/mp4/.test(mime)?'हा browser MP4 बनवेल (पण VP9 प्रकार – H.264 नाही).':'हा browser WEBM व्हिडिओ बनवेल (MP4 नाही).';
- b.innerHTML='<div class="vmhead"><b>🎬 AI व्हिडिओ मेकर</b><small>विषय निवडा → मराठी स्क्रिप्ट → चित्रं → मराठी अक्षरं + संगीत → 9:16 व्हिडिओ (Status / Shorts / Reels). सगळं तुमच्या फोनमध्येच बनतं.</small></div>'+
+ b.innerHTML=mgUI(s)+'<div id="vmAiBox"><div class="vmhead"><b>🎬 AI व्हिडिओ मेकर</b><small>विषय निवडा → मराठी स्क्रिप्ट → चित्रं → मराठी अक्षरं + संगीत → 9:16 व्हिडिओ (Status / Shorts / Reels). सगळं तुमच्या फोनमध्येच बनतं.</small></div>'+
  '<p class="note">ℹ️ खरं सांगायचं तर: हा फोनच्या browser मधला सोपा व्हिडिओ मेकर आहे – स्टॉक व्हिडिओ क्लिप नाहीत, AI चित्रं हलतात (झूम/सरकत). स्क्रिप्ट व चित्रं मोफत AI सेवेकडून येतात (इंटरनेट लागते, कधी हळू/बंद) – न मिळाल्यास तयार मराठी साचे व रंगीत पार्श्वभूमी वापरते. '+fmt+'</p>'+
  '<div class="vmstep">1️⃣ विषय निवडा</div><div class="vmchips" id="vmChips">'+ch+'</div>'+
  '<label for="vmTopic">विषय (स्वतःचा लिहू शकता)</label><input id="vmTopic" maxlength="120" placeholder="उदा. दिवाळीसाठी नवीन साड्या आल्या" value="'+esc(VM.topic)+'">'+
@@ -2355,7 +2569,7 @@ function aVideo(b){var sv=st.get('vm',{})||{},s=vmShop();VM.kind=sv.k||'';VM.top
  '<p class="note">🔊 फोनचा आवाज फक्त ऐकण्यासाठी आहे – तो व्हिडिओत रेकॉर्ड होऊ शकत नाही (browser ची मर्यादा). व्हिडिओत आवाज हवा असेल तर 🎙️ तुमचा आवाज वापरा. पार्श्वसंगीत फोनमध्येच तयार होतं – कॉपीराइट गाणं नाही.</p>'+
  '<div class="row"><button class="btn" type="button" id="vmGo">🎬 व्हिडिओ बनवा</button></div><p class="note" id="vmGoN"></p>'+
  '<div class="vmstage"><canvas id="vmCv" width="360" height="640"></canvas><div class="vmcd hide" id="vmCd"></div></div><div class="vmtp hide" id="vmTp"><div class="now" id="vmTpNow"></div><div class="nx" id="vmTpNx"></div></div>'+
- '<div class="vmres hide" id="vmRes"><video id="vmVid" controls playsinline></video><p class="note gold" id="vmFmt"></p><div class="row" style="justify-content:center"><button class="btn" type="button" id="vmDl">⬇️ Download</button><button class="btn wa" type="button" id="vmSh">📤 WhatsApp वर पाठवा</button></div><p class="note">WhatsApp बटण चालत नसेल तर: Download करा → WhatsApp → 📎 → गॅलरी/Document मधून व्हिडिओ निवडा.</p></div></div>';
+ '<div class="vmres hide" id="vmRes"><video id="vmVid" controls playsinline></video><p class="note gold" id="vmFmt"></p><div class="row" style="justify-content:center"><button class="btn" type="button" id="vmDl">⬇️ Download</button><button class="btn wa" type="button" id="vmSh">📤 WhatsApp वर पाठवा</button></div><p class="note">WhatsApp बटण चालत नसेल तर: Download करा → WhatsApp → 📎 → गॅलरी/Document मधून व्हिडिओ निवडा.</p></div></div></div>';
  if(sv.mu)$('#vmMus',b).value=sv.mu;if(sv.q)$('#vmQ',b).value=sv.q;
  VM.imgGen=(VM.imgGen||0)+1;VM.imgBusy=false;if(sv.sc&&sv.sc.length)vmSetScenes(sv.sc);else vmScenesUI();
  $$('#vmChips [data-k]',b).forEach(function(x){x.onclick=function(){VM.kind=x.dataset.k;$$('#vmChips [data-k]',b).forEach(function(y){y.classList.toggle('on',y===x)});
@@ -2394,8 +2608,9 @@ function aVideo(b){var sv=st.get('vm',{})||{},s=vmShop();VM.kind=sv.k||'';VM.top
  $('#vmDl',b).onclick=function(){if(!VM.blob)return;var a=document.createElement('a');a.href=VM.url;a.download=fname();document.body.appendChild(a);a.click();setTimeout(function(){a.remove()},500)};
  $('#vmSh',b).onclick=function(){if(!VM.blob)return;var f;try{f=new File([VM.blob],fname(),{type:VM.mime})}catch(e){f=null}
   if(f&&navigator.canShare&&navigator.canShare({files:[f]})){navigator.share({files:[f],text:vmVal('vmName')||'Digital Aarambh AI'}).catch(function(){})}
-  else toast('या फोनवर थेट शेअर होत नाही – Download करून WhatsApp मधून पाठवा')}}
-window.aVideo=aVideo;window.VMx={VM:VM,K:VM_K,template:vmTemplate,parse:vmParse,claimOk:vmClaimOk,render:vmRender,plan:vmPlan,frame:vmFrame,mime:vmMime,imgs:vmImgs,setScenes:vmSetScenes,aiScript:vmAiScript,fonts:vmFonts};
+  else toast('या फोनवर थेट शेअर होत नाही – Download करून WhatsApp मधून पाठवा')};
+ mgInit(b)}
+window.aVideo=aVideo;window.MGx={MG:MG,ST:MG_ST,plan:mgPlan,frame:mgFrame,data:mgData,num:mgNum,fmt:mgFmt};window.VMx={VM:VM,K:VM_K,template:vmTemplate,parse:vmParse,claimOk:vmClaimOk,render:vmRender,plan:vmPlan,frame:vmFrame,mime:vmMime,imgs:vmImgs,setScenes:vmSetScenes,aiScript:vmAiScript,fonts:vmFonts};
 function openVM(replace){var T='13. 🎬 AI व्हिडिओ मेकर';if(replace&&sheetOpen){$('#sheetT').textContent=T;var bb=$('#sheetB');bb.innerHTML='';aVideo(bb);sheet.scrollTop=0}else openSheet(T,aVideo)}
 window.openVM=openVM;
 var grid=$('#grid');if(grid){var t=document.createElement('button');t.type='button';t.className='ag vmtile';t.id='vmTile';
