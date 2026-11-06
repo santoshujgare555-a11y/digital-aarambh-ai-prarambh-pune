@@ -452,6 +452,25 @@ button.wsit{cursor:pointer}
 .wsda{position:absolute;left:10px;top:10px;z-index:4;display:inline-flex;align-items:center;gap:5px;padding:3px 10px 3px 4px;border-radius:99px;background:#060726b8;border:1px solid #ffc23d70;color:#ffe9b0;font-size:11.5px;font-weight:700;line-height:1.2;text-decoration:none;opacity:.93}
 .wsda img{width:18px;height:18px;border-radius:5px;flex:none}
 .wsb-pvh{display:flex;align-items:baseline;gap:8px;margin-top:16px}.wsb-pvh b{font-size:17px}.wsb-pvh small{color:var(--mut)}
+
+/* v24: अपॉइंटमेंट बुक करा – सोनेरी/नेव्ही */
+.wsappt-btn{width:100%;display:flex;flex-direction:column;align-items:center;gap:2px;padding:16px;border:2px solid #ffe7a0;border-radius:20px;font:inherit;font-size:20px;font-weight:800;color:#0b1a3a;cursor:pointer;background:linear-gradient(135deg,#ffe08a,#f2b632 55%,#d4941a);box-shadow:0 12px 30px #f2b63255}
+.wsappt-btn small{font-size:14px;font-weight:700;opacity:.85}
+.wsappt-btn[aria-expanded="true"]{border-radius:20px 20px 0 0;box-shadow:none}
+.wsapf{background:linear-gradient(170deg,#13285a,#0b1a3a);border:2px solid #f2b632;border-top:0;border-radius:0 0 20px 20px;padding:16px 16px 18px;color:#fff;box-shadow:0 14px 34px #0008}
+.wsapf h3{margin:0 0 4px;font-size:19px;color:#ffd76a}
+.wsapf .wsap-sub{margin:0 0 12px;font-size:14px;color:#dfe6ff;opacity:.9}
+.wsapf label{display:block;font-size:15px;font-weight:700;color:#ffe7a0;margin:10px 0 5px}
+.wsapf label em{font-style:normal;font-weight:500;color:#c9d3f5;font-size:13px}
+.wsapf input,.wsapf select,.wsapf textarea{width:100%;box-sizing:border-box;min-height:48px;padding:10px 12px;border-radius:12px;border:1.5px solid #f2b63299;background:#fff;color:#0b1a3a;font:inherit;font-size:17px}
+.wsapf textarea{min-height:70px;resize:vertical}
+.wsapf input:focus,.wsapf select:focus,.wsapf textarea:focus{outline:3px solid #ffd76a88;border-color:#ffd76a}
+.wsapf .wsap2{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:0 10px}
+.wsapf .wsap2>div{min-width:0}
+.wsapf .wsap-e{min-height:0;color:#ff9b9b;font-size:13.5px;font-weight:700;margin-top:3px}
+.wsapf .bad{border-color:#ff6b6b;background:#fff3f3}
+.wsapf .wsap-go{width:100%;margin-top:16px;min-height:54px;border:0;border-radius:16px;font:inherit;font-size:18px;font-weight:800;color:#0b1a3a;cursor:pointer;background:linear-gradient(135deg,#ffe08a,#f2b632);box-shadow:0 8px 22px #f2b63244}
+.wsapf .wsap-note{margin:10px 0 0;font-size:13px;color:#c9d3f5;text-align:center}
 </style>
 </head>
 <body>
@@ -494,8 +513,8 @@ button.wsit{cursor:pointer}
   <ul><li>सर्वात वर <b>“दुकानाची माहिती”</b> एकदाच भरा – सगळे 13 एजंट्स तीच माहिती वापरतात.</li>
   <li>कोणताही एजंट उघडा → मजकूर / QR / पोस्टर तयार करा → <b>कॉपी</b>, <b>Download</b> किंवा <b>WhatsApp</b> वर पाठवा.</li>
   <li>हे एजंट्स तयार मराठी साच्यांवर (templates) आणि तुमच्या माहितीवर चालतात. एकदा पेज उघडलं की इंटरनेटशिवायही चालतात.</li></ul></details>
- <details class="info" id="whatsnew"><summary>🆕 नवीन काय? (v23)</summary>
-  <ul><li><b>v23 – नवा अधिकृत लोगो 🌅:</b> उगवता सूर्य, सोनेरी बाण आणि AI चिप असलेला आरंभचा नवा लोगो आता अॅपमध्ये सगळीकडे – हेडर, आयकॉन, बॅनर, कार्ड, पोस्टर आणि व्हिडिओ वॉटरमार्क.</li><li><b>v22 – वेबसाइटवर तुमचा फोटो + आरंभ लोगो:</b> 🌐 वेबसाइट बनवताना तुमचा / दुकानाचा फोटो निवडा – ग्राहकाने वेबसाइट उघडताच तो सर्वात वर दिसतो. आणि आरंभमधून बनलेल्या प्रत्येक गोष्टीवर – वेबसाइट, पोस्टर, सणाचं पोस्टर, व्हिजिटिंग कार्ड, QR, व्हिडिओ – कोपऱ्यात लहान “Digital Aarambh AI” लोगो.</li><li><b>v21 – वेबसाइटचा WhatsApp मेसेज:</b> ग्राहकाने वेबसाइटवरून WhatsApp दाबलं की आता पूर्ण मेसेज जातो – “नमस्कार [दुकानाचं नाव], आपली वेबसाइट पाहिली. मला … माहिती हवी आहे” (आधी “मला ... हवं आहे” असा अर्धवट जायचा).</li><li><b>v20 – सर / मॅडम:</b> सभासद बनवताना “पुरुष – सर / महिला – मॅडम” निवडा; अभिनंदन संदेशात तसंच येतं. आधीच्या कार्डसाठी कार्डखाली “संबोधन” बदलता येतं.</li><li><b>v19 – ✨ मोशन ग्राफिक्स जाहिरात:</b> 🎬 व्हिडिओ मेकरमध्ये नवा पर्याय “✨ मोशन जाहिरात”. दुकानाचे नाव, ऑफर, 3 वैशिष्ट्ये, किंमत/सूट व फोन लिहा → नाव-लोगो उलगडतो, ऑफरचे शब्द एकेक येतात, वैशिष्ट्यांचे कार्ड सरकत येतात, सूट/किंमत 0 पासून मोजत वाढते, शेवटी फोन + WhatsApp QR. 3 रंगसंगती (सोनेरी, सण, ताजे), फोनमध्येच तयार होणारं हलकं संगीत. AI चित्रं नाहीत, इंटरनेट लागत नाही – सुमारे 15 सेकंदांत 9:16 व्हिडिओ → Download / WhatsApp.</li>
+ <details class="info" id="whatsnew"><summary>🆕 नवीन काय? (v24)</summary>
+  <ul><li><b>v24 – वेबसाइटवर अपॉइंटमेंट बटण 📅:</b> आरंभने बनवलेल्या प्रत्येक दुकान-वेबसाइटवर आता “📅 अपॉइंटमेंट बुक करा” बटण – ग्राहक नाव, मोबाईल, सेवा, तारीख-वेळ भरतो आणि ती माहिती थेट तुमच्या WhatsApp वर येते. क्लिनिक, पार्लर, केटरिंग, क्लास – सर्वांसाठी. सर्व्हर नाही, खर्च शून्य.</li><li><b>v23 – नवा अधिकृत लोगो 🌅:</b> उगवता सूर्य, सोनेरी बाण आणि AI चिप असलेला आरंभचा नवा लोगो आता अॅपमध्ये सगळीकडे – हेडर, आयकॉन, बॅनर, कार्ड, पोस्टर आणि व्हिडिओ वॉटरमार्क.</li><li><b>v22 – वेबसाइटवर तुमचा फोटो + आरंभ लोगो:</b> 🌐 वेबसाइट बनवताना तुमचा / दुकानाचा फोटो निवडा – ग्राहकाने वेबसाइट उघडताच तो सर्वात वर दिसतो. आणि आरंभमधून बनलेल्या प्रत्येक गोष्टीवर – वेबसाइट, पोस्टर, सणाचं पोस्टर, व्हिजिटिंग कार्ड, QR, व्हिडिओ – कोपऱ्यात लहान “Digital Aarambh AI” लोगो.</li><li><b>v21 – वेबसाइटचा WhatsApp मेसेज:</b> ग्राहकाने वेबसाइटवरून WhatsApp दाबलं की आता पूर्ण मेसेज जातो – “नमस्कार [दुकानाचं नाव], आपली वेबसाइट पाहिली. मला … माहिती हवी आहे” (आधी “मला ... हवं आहे” असा अर्धवट जायचा).</li><li><b>v20 – सर / मॅडम:</b> सभासद बनवताना “पुरुष – सर / महिला – मॅडम” निवडा; अभिनंदन संदेशात तसंच येतं. आधीच्या कार्डसाठी कार्डखाली “संबोधन” बदलता येतं.</li><li><b>v19 – ✨ मोशन ग्राफिक्स जाहिरात:</b> 🎬 व्हिडिओ मेकरमध्ये नवा पर्याय “✨ मोशन जाहिरात”. दुकानाचे नाव, ऑफर, 3 वैशिष्ट्ये, किंमत/सूट व फोन लिहा → नाव-लोगो उलगडतो, ऑफरचे शब्द एकेक येतात, वैशिष्ट्यांचे कार्ड सरकत येतात, सूट/किंमत 0 पासून मोजत वाढते, शेवटी फोन + WhatsApp QR. 3 रंगसंगती (सोनेरी, सण, ताजे), फोनमध्येच तयार होणारं हलकं संगीत. AI चित्रं नाहीत, इंटरनेट लागत नाही – सुमारे 15 सेकंदांत 9:16 व्हिडिओ → Download / WhatsApp.</li>
   <li><b>v18 – 📩</b> नवीन सभासदाची नोंद (नाव, फोन, गाव, ID) आरंभ टीमच्या ईमेलवर येते.</li>
   <li><b>v17 – 🪪</b> सभासद झाल्यावर आता प्रीमियम ID कार्डच दिसतं व शेअर होतं (अभिनंदन मेसेजसह).</li>
   <li><b>v16 – 🎉 अभिनंदन कार्ड</b> आता ID कार्डसारख्या आडव्या साइजमध्ये (1200×756) – फोटो डावीकडे, नाव मध्ये, QR उजवीकडे; लांब नाव/पत्ता दोन ओळींत.</li>
@@ -538,7 +557,7 @@ button.wsit{cursor:pointer}
 
  <footer><div class="brandfoot"><img data-da="tight" alt="" width="34" height="34"><b>Digital Aarambh AI</b></div>Made with ❤️ in Pune for Alandi, Charholi, Moshi, Pimpri<br>
   <b>Digital Aarambh AI</b> – आपला व्यवसाय, आपली डिजिटल ओळख! 🙏<br>
-  निर्मिती व संकल्पना: S. R. Ujgare<br><span class="vers">आवृत्ती v23</span></footer><script>daFill()</script>
+  निर्मिती व संकल्पना: S. R. Ujgare<br><span class="vers">आवृत्ती v24</span></footer><script>daFill()</script>
 </div>
 
 <div id="pub" class="hide"></div>
@@ -1505,6 +1524,15 @@ function wsHtml(d,pv){var T=WS_THEMES[d.th]||WS_THEMES[0],ph=d.p,wa=d.w||d.p,map
  if(d.d||d.o||d.y){var n=d.y?cy-d.y:0;h+='<section class="wss rv"><h2><span>🙏</span>आमच्याबद्दल</h2><div class="wsc">'+(d.d?'<p class="wsab">'+esc(d.d)+'</p>':'')+((d.o||d.y)?'<div class="wsfacts">'+(d.o?'<div><b>👤</b><span>मालक</span><strong>'+esc(d.o)+'</strong></div>':'')+(d.y?'<div><b>📅</b><span>'+d.y+' पासून सेवेत</span><strong>'+(n>=1?n+(n===1?' वर्षाचा':' वर्षांचा')+' विश्वास':'नवीन सुरुवात')+'</strong></div>':'')+'</div>':'')+'</div></section>'}
  if(d.i.length){h+='<section class="wss rv"><h2><span>🛍️</span>वस्तू / सेवा</h2>'+(wa?'<p class="wshint">👆 हवं ते निवडा, मग WhatsApp वर ऑर्डर पाठवा</p>':'')+'<div class="wsgrid">'+d.i.map(function(it,k){var tag=wa?'button type="button" aria-pressed="false" data-it="'+k+'"':'div';return '<'+tag+' class="wsit"><span class="e" aria-hidden="true">'+esc(it[0]||'🛍️')+'</span><span class="nm">'+esc(it[1])+'</span>'+(it[2]?'<span class="pr">'+esc(wsPrice(it[2]))+'</span>':'')+(wa?'<span class="ck" aria-hidden="true">✓</span>':'')+'</'+(wa?'button':'div')+'>'}).join('')+'</div>'+
   (d.i.some(function(it){return it[2]})?'<p class="wsnote">किंमती दुकानदाराने लिहिल्याप्रमाणे; बदलू शकतात – खात्रीसाठी विचारा.</p>':'')+'</section>'}
+ if(wa){var aSv=d.i.filter(function(it){return it&&it[1]}).map(function(it){return it[1]});/* v24: अपॉइंटमेंट बुक करा */
+  h+='<section class="wss rv wsappt" data-sec="appt"><button type="button" class="wsappt-btn" data-apt="open" aria-expanded="false" aria-controls="wsApF"><span>📅 अपॉइंटमेंट बुक करा</span><small>नाव, सेवा, तारीख-वेळ निवडा → थेट WhatsApp वर</small></button>'+
+  '<form class="wsapf hide" id="wsApF" novalidate autocomplete="on"><h3>📅 अपॉइंटमेंट / बुकिंग</h3><p class="wsap-sub">माहिती भरा – '+esc(d.n)+' यांना WhatsApp वर मेसेज जाईल.</p>'+
+  '<label for="wsApN">तुमचे नाव *</label><input id="wsApN" name="name" autocomplete="name" maxlength="60" placeholder="उदा. रमेश पाटील"><div class="wsap-e" data-ape="n"></div>'+
+  '<label for="wsApM">मोबाईल नंबर *</label><input id="wsApM" name="tel" type="tel" inputmode="numeric" autocomplete="tel" maxlength="18" placeholder="98765 43210"><div class="wsap-e" data-ape="m"></div>'+
+  '<label for="wsApS">सेवा '+(aSv.length?'<em>(निवडा)</em>':'<em>(पर्यायी)</em>')+'</label>'+(aSv.length?'<select id="wsApS" name="service"><option value="">— सेवा निवडा —</option>'+aSv.map(function(x){return '<option>'+esc(x)+'</option>'}).join('')+'<option value="इतर">इतर (टीपमध्ये लिहा)</option></select>':'<input id="wsApS" name="service" maxlength="80" placeholder="उदा. तपासणी / हेअरकट / ऑर्डर">')+
+  '<div class="wsap2"><div><label for="wsApD">तारीख *</label><input id="wsApD" name="date" type="date" min="'+wsToday()+'"><div class="wsap-e" data-ape="d"></div></div><div><label for="wsApT">वेळ <em>(पर्यायी)</em></label><input id="wsApT" name="time" type="time"></div></div>'+
+  '<label for="wsApX">टीप <em>(पर्यायी)</em></label><textarea id="wsApX" name="note" maxlength="300" placeholder="उदा. 2 जण येणार, संध्याकाळी जमल्यास बरं"></textarea>'+
+  '<button type="submit" class="wsap-go">💬 WhatsApp वर अपॉइंटमेंट पाठवा</button><p class="wsap-note">मेसेज तुमच्या WhatsApp मध्ये तयार होईल – फक्त “Send” दाबा. दुकानदार वेळ निश्चित करून उत्तर देतील.</p></form></section>'}
  if(wa)h+='<section class="wss rv wsorder"><button type="button" class="wsbig" data-act="order"><span>💬 WhatsApp वर ऑर्डर / चौकशी</span><small data-ws="oc">'+(d.i.length?'वरून वस्तू निवडा किंवा थेट मेसेज करा':'एका टॅपमध्ये मेसेज तयार')+'</small></button></section>';
  if(d.h||d.hn){h+='<section class="wss rv"><h2><span>🕒</span>दुकानाच्या वेळा</h2><div class="wsc">';
   if(d.h){h+='<table class="wstb"><tbody>'+[1,2,3,4,5,6,0].map(function(dd){var R=wsIv(d.h,dd);return '<tr'+(dd===today?' class="td"':'')+'><th>'+WS_DAYS[dd]+(dd===today?' <em>आज</em>':'')+'</th><td>'+(R.length?R.map(function(r){return wsClock(r[0])+' – '+wsClock(r[1])}).join('<br>'):'<span class="off">बंद</span>')+'</td></tr>'}).join('')+'</tbody></table>'}
@@ -1544,6 +1572,21 @@ function wsWire(root,d,pv,url){var sel=[],wa=d.w||d.p;
  $$('[data-it]',root).forEach(function(b){b.onclick=function(){var k=+b.getAttribute('data-it'),i=sel.indexOf(k);if(i>=0)sel.splice(i,1);else sel.push(k);b.classList.toggle('on',i<0);b.setAttribute('aria-pressed',i<0?'true':'false');
   var oc=$('[data-ws="oc"]',root);if(oc)oc.textContent=sel.length?('✅ '+sel.length+' वस्तू निवडल्या – पाठवा'):'वरून वस्तू निवडा किंवा थेट मेसेज करा';root.classList.toggle('has-sel',sel.length>0)}});
  $$('[data-go]',root).forEach(function(b){b.onclick=function(){var t=$('[data-sec="'+b.getAttribute('data-go')+'"]',root);if(t)t.scrollIntoView({behavior:'smooth',block:'start'})}});
+ (function(){var ab=$('[data-apt="open"]',root),af=$('#wsApF',root);if(!ab||!af)return;/* v24: अपॉइंटमेंट */
+  ab.onclick=function(){var o=af.classList.toggle('hide');ab.setAttribute('aria-expanded',o?'false':'true');if(!o){try{$('#wsApN',af).focus({preventScroll:true})}catch(e){}try{ab.scrollIntoView({behavior:'smooth',block:'start'})}catch(e){}}};
+  function er(k,m,el){var e=$('[data-ape="'+k+'"]',af);if(e)e.textContent=m;if(el)el.classList.toggle('bad',!!m)}
+  af.addEventListener('input',function(ev){var t=ev.target;if(t&&t.classList.contains('bad')){t.classList.remove('bad');var k={wsApN:'n',wsApM:'m',wsApD:'d'}[t.id];if(k)er(k,'')}});
+  af.onsubmit=function(ev){ev.preventDefault();var N=$('#wsApN',af),M=$('#wsApM',af),S=$('#wsApS',af),D=$('#wsApD',af),Tm=$('#wsApT',af),X=$('#wsApX',af);
+   var nm=N.value.trim(),mob=normPhone(M.value),sv=S.value.trim(),dt=D.value,tm=Tm.value,nt=X.value.trim(),bad=null;
+   if(nm.length<2){er('n','कृपया तुमचे नाव लिहा',N);bad=bad||N}else er('n','',N);
+   if(!/^\d{10}$/.test(mob)||!phoneOk(mob)){er('m','10 अंकी मोबाईल नंबर लिहा',M);bad=bad||M}else er('m','',M);
+   if(!/^\d{4}-\d{2}-\d{2}$/.test(dt)){er('d','तारीख निवडा',D);bad=bad||D}else if(dt<wsToday()){er('d','आजची किंवा पुढची तारीख निवडा',D);bad=bad||D}else er('d','',D);
+   if(bad){try{bad.focus()}catch(e){}return}
+   var tmTx='';if(/^\d{2}:\d{2}/.test(tm)){var hm=tm.split(':');tmTx=wsClock((+hm[0])*60+(+hm[1]))}
+   var msg='नमस्कार सर/मॅडम, मला अपॉइंटमेंट हवी आहे.\nनाव: '+nm+'\nमोबाईल: '+mob+(sv?'\nसेवा: '+sv:'')+'\nतारीख: '+(wsDate(dt)||dt)+(tmTx?'\nवेळ: '+tmTx:'')+(nt?'\nटीप: '+nt:'')+'\n(Digital Aarambh AI वेबसाइटवरून)';
+   var u='https://wa.me/91'+wa+'?text='+encodeURIComponent(msg);
+   if(pv){toast('नमुना: ग्राहकाचा अपॉइंटमेंट मेसेज WhatsApp वर असा जाईल → '+msg.split('\n').slice(1,4).join(', '));return}
+   window.open(u,'_blank','noopener')}})();
  $$('[data-act]',root).forEach(function(b){b.onclick=function(){var a=b.getAttribute('data-act');
   if(a==='order'){if(pv){toast('नमुना: ग्राहकाला WhatsApp मध्ये असा मेसेज दिसेल → '+orderMsg().split('\n')[0]);return}window.open('https://api.whatsapp.com/send?phone=91'+wa+'&text='+encodeURIComponent(orderMsg()),'_blank','noopener')}
   else if(a==='upicopy')copy(d.u);
